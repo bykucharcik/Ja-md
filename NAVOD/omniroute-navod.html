@@ -1,0 +1,488 @@
+<title>OmniRoute za 10 minút</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#EAEBEF; --surface:#FBFBFD; --surface-2:#F1F2F6; --edge:#D2D4DD; --edge-soft:#E1E3EA;
+  --ink:#13151C; --ink-2:#3A3E4B; --muted:#606675;
+  --accent:#9A5A0B; --accent-bright:#D98324; --accent-soft:#F6E7D2;
+  --ok:#0C6F60; --ok-soft:#DCEEEA;
+  --warn:#9C2B22; --warn-soft:#F7E2DF;
+  --term-bg:#171A22; --term-ink:#DDE0E8; --term-edge:#2A2F3C; --term-dim:#767E92;
+  --shadow:0 1px 2px rgba(19,21,28,.06), 0 8px 24px -16px rgba(19,21,28,.28);
+  --step-w:2.15rem;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1117; --surface:#171A22; --surface-2:#1D212B; --edge:#2C313E; --edge-soft:#242936;
+    --ink:#E8EAF0; --ink-2:#C3C7D3; --muted:#949BAC;
+    --accent:#E4941F; --accent-bright:#E4941F; --accent-soft:#332614;
+    --ok:#43C4AC; --ok-soft:#14302C;
+    --warn:#EC8377; --warn-soft:#341F1C;
+    --term-bg:#0A0C11; --term-ink:#DDE0E8; --term-edge:#232833; --term-dim:#767E92;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1117; --surface:#171A22; --surface-2:#1D212B; --edge:#2C313E; --edge-soft:#242936;
+  --ink:#E8EAF0; --ink-2:#C3C7D3; --muted:#949BAC;
+  --accent:#E4941F; --accent-bright:#E4941F; --accent-soft:#332614;
+  --ok:#43C4AC; --ok-soft:#14302C;
+  --warn:#EC8377; --warn-soft:#341F1C;
+  --term-bg:#0A0C11; --term-ink:#DDE0E8; --term-edge:#232833; --term-dim:#767E92;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Familjen Grotesk","IBM Plex Sans",sans-serif; text-wrap:balance; margin:0}
+code,kbd,pre{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+a{color:var(--accent); text-underline-offset:3px; text-decoration-thickness:1px}
+a:hover{color:var(--accent-bright)}
+:focus-visible{outline:2px solid var(--accent-bright); outline-offset:3px; border-radius:3px}
+
+.wrap{max-width:53rem; margin:0 auto; padding:0 1.25rem 6rem}
+
+/* ---------- hero ---------- */
+.hero{padding:3.25rem 0 2rem; border-bottom:1px solid var(--edge)}
+.eyebrow{
+  display:inline-flex; align-items:center; gap:.5rem;
+  font-family:"IBM Plex Mono",monospace; font-size:.72rem; font-weight:500;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  border:1px solid var(--edge); background:var(--surface);
+  padding:.34rem .7rem; border-radius:999px;
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--ok);flex:none}
+h1{font-size:clamp(2.1rem,6.4vw,3.4rem); font-weight:700; letter-spacing:-.022em; line-height:1.06; margin:1.1rem 0 0}
+h1 em{font-style:normal; color:var(--accent); }
+.lede{font-size:1.09rem; color:var(--ink-2); max-width:36rem; margin:1rem 0 0}
+
+.flow{
+  display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;
+  margin-top:1.75rem; padding:.85rem 1rem; background:var(--surface); border:1px solid var(--edge);
+  border-radius:10px; font-family:"IBM Plex Mono",monospace; font-size:.8rem; color:var(--ink-2);
+  overflow-x:auto;
+}
+.flow b{font-weight:600; color:var(--ink); white-space:nowrap}
+.flow .arw{color:var(--accent-bright); flex:none}
+.flow .free{color:var(--ok); white-space:nowrap}
+
+.meta{display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:1.5rem; font-size:.85rem; color:var(--muted)}
+.meta div{display:flex; flex-direction:column; gap:.1rem}
+.meta b{color:var(--ink); font-weight:600; font-size:.95rem}
+
+/* ---------- sections ---------- */
+section{padding-top:2.75rem}
+.kicker{
+  font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:.5rem;
+}
+h2{font-size:1.55rem; font-weight:600; letter-spacing:-.014em; line-height:1.2}
+h3{font-size:1.05rem; font-weight:600; margin-top:1.9rem}
+p{margin:.85rem 0; max-width:38rem}
+ul,ol{max-width:38rem; padding-left:1.15rem; margin:.85rem 0}
+li{margin:.4rem 0}
+.small{font-size:.9rem; color:var(--muted)}
+
+/* ---------- steps ---------- */
+.step{
+  position:relative; padding-left:calc(var(--step-w) + 1rem); margin-top:2.5rem;
+}
+.step::before{
+  content:""; position:absolute; left:calc(var(--step-w)/2 - .5px); top:var(--step-w);
+  bottom:-2.5rem; width:1px; background:var(--edge-soft);
+}
+.step:last-of-type::before{display:none}
+.step-num{
+  position:absolute; left:0; top:-.15rem;
+  width:var(--step-w); height:var(--step-w); border-radius:50%;
+  display:grid; place-items:center; cursor:pointer;
+  background:var(--surface); border:1px solid var(--edge); color:var(--muted);
+  font-family:"IBM Plex Mono",monospace; font-size:.82rem; font-weight:600;
+  transition:background .15s ease, color .15s ease, border-color .15s ease;
+}
+.step-num:hover{border-color:var(--accent-bright); color:var(--accent)}
+.step.done .step-num{background:var(--ok); border-color:var(--ok); color:var(--bg)}
+.step.done .step-num::after{content:"✓"}
+.step.done .step-num span{display:none}
+.step h2{font-size:1.3rem}
+.step-hint{font-size:.78rem; color:var(--muted); font-family:"IBM Plex Mono",monospace; margin-top:.35rem}
+
+/* ---------- terminal ---------- */
+.term{
+  background:var(--term-bg); border:1px solid var(--term-edge); border-radius:10px;
+  margin:1.1rem 0; overflow:hidden; box-shadow:var(--shadow);
+}
+.term-bar{
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:.45rem .55rem .45rem .85rem; border-bottom:1px solid var(--term-edge);
+}
+.term-label{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--term-dim)}
+.copy{
+  font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.06em;
+  background:transparent; border:1px solid var(--term-edge); color:var(--term-dim);
+  padding:.24rem .55rem; border-radius:5px; cursor:pointer; transition:color .15s, border-color .15s;
+}
+.copy:hover{color:var(--term-ink); border-color:var(--term-dim)}
+.copy.ok{color:#43C4AC; border-color:#43C4AC}
+.term pre{
+  margin:0; padding:.9rem 1rem; overflow-x:auto; color:var(--term-ink);
+  font-size:.83rem; line-height:1.75;
+}
+.term .pr{color:#E4941F; user-select:none}
+.term .cm{color:var(--term-dim)}
+.term .st{color:#43C4AC}
+
+p code, li code, td code{
+  background:var(--surface-2); border:1px solid var(--edge-soft);
+  padding:.1em .38em; border-radius:4px; font-size:.86em; color:var(--ink)
+}
+
+/* ---------- callouts ---------- */
+.note{
+  border-left:3px solid var(--accent-bright); background:var(--accent-soft);
+  padding:.9rem 1.1rem; border-radius:0 8px 8px 0; margin:1.2rem 0;
+}
+.note.danger{border-left-color:var(--warn); background:var(--warn-soft)}
+.note.good{border-left-color:var(--ok); background:var(--ok-soft)}
+.note p{margin:.35rem 0; max-width:none; font-size:.95rem}
+.note p:first-child{margin-top:0} .note p:last-child{margin-bottom:0}
+.note strong{font-weight:600}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto; margin:1.2rem 0; border:1px solid var(--edge); border-radius:10px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:.9rem; min-width:30rem}
+th{
+  text-align:left; font-family:"IBM Plex Mono",monospace; font-weight:500;
+  font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+  padding:.7rem .9rem; border-bottom:1px solid var(--edge); background:var(--surface-2);
+}
+td{padding:.7rem .9rem; border-bottom:1px solid var(--edge-soft); vertical-align:top; color:var(--ink-2)}
+tr:last-child td{border-bottom:none}
+td:first-child{color:var(--ink); font-weight:500; white-space:nowrap}
+td.q{font-family:"IBM Plex Mono",monospace; font-size:.84rem}
+
+/* ---------- provider grid ---------- */
+.provs{display:grid; grid-template-columns:repeat(auto-fill,minmax(13rem,1fr)); gap:.6rem; margin:1.2rem 0}
+.prov{
+  background:var(--surface); border:1px solid var(--edge); border-radius:9px; padding:.75rem .9rem;
+}
+.prov b{display:block; font-size:.95rem; font-weight:600; letter-spacing:-.01em}
+.prov span{display:block; font-size:.8rem; color:var(--muted); margin-top:.15rem}
+.prov.pick{border-color:var(--ok); background:var(--ok-soft)}
+.prov.pick b::after{content:" ★"; color:var(--ok); font-size:.8em}
+
+/* ---------- footer ---------- */
+footer{margin-top:4rem; padding-top:1.75rem; border-top:1px solid var(--edge); font-size:.88rem; color:var(--muted)}
+footer a{font-weight:500}
+.links{display:grid; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); gap:.5rem 1.5rem; margin:1rem 0 1.75rem}
+.sig{display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap; margin-top:1.5rem}
+.sig b{color:var(--ink); font-family:"Familjen Grotesk",sans-serif; font-size:1rem}
+
+@media (max-width:620px){
+  :root{--step-w:1.85rem}
+  .step{padding-left:calc(var(--step-w) + .75rem)}
+  body{font-size:15.5px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <span class="eyebrow"><span class="dot"></span>Open-source · MIT · beží lokálne</span>
+  <h1>Kóď s AI <em>zadarmo</em></h1>
+  <p class="lede">Claude Code, Cursor alebo Codex napojené na vyše 90 free providerov cez jednu lokálnu bránu. Keď jednému dôjde kvóta, request ide automaticky na ďalší.</p>
+
+  <div class="flow">
+    <b>Claude&nbsp;Code</b><span class="arw">→</span><b>OmniRoute</b><span class="cm">:20128</span><span class="arw">→</span><span class="free">352 providerov · 154 s free tierom</span>
+  </div>
+
+  <div class="meta">
+    <div><b>~10 min</b>čistý čas nastavenia</div>
+    <div><b>Node.js 24</b>jediná podmienka</div>
+    <div><b>0 €</b>bez karty, bez registrácie</div>
+  </div>
+</header>
+
+<section>
+  <div class="kicker">Čo to je</div>
+  <h2>Brána medzi tvojím editorom a modelmi</h2>
+  <p>Normálne to ide takto: Claude Code → Anthropic → tvoja karta. S OmniRoute sa medzi ne postaví server, ktorý beží u teba na počítači a rozhoduje, kam request pošle.</p>
+  <p>Tri veci, ktoré ti to reálne dá:</p>
+  <ul>
+    <li><strong>Jeden endpoint namiesto desiatich kľúčov.</strong> Všetky nástroje mieria na jednu adresu.</li>
+    <li><strong>Automatický fallback.</strong> Rate limit na jednom provideri ťa nezastaví — router prepne na ďalšieho cez štyri vrstvy: predplatné → API kľúč → lacné → free.</li>
+    <li><strong>Kompresia tokenov.</strong> Skracuje prompty a výstupy nástrojov, takže na free limity narazíš neskôr.</li>
+  </ul>
+  <div class="note">
+    <p><strong>Aby sme si rozumeli:</strong> free tier neznamená, že modely bežia zadarmo z dobroty srdca. Znamená, že OmniRoute vie naraz využiť free kvóty desiatok providerov. Kvóty sa menia — dnes ti provider dá milión tokenov, o mesiac free tier zruší. Preto má dashboard stránku so živým stavom.</p>
+  </div>
+</section>
+
+<section>
+  <div class="kicker">Pred štartom</div>
+  <h2>Skontroluj si Node</h2>
+  <p>Toto je jediné miesto, kde to ľuďom reálne padá. Podporované je <code>22.22.2+</code> alebo <code>24.x</code>–<code>26.x</code>. Na starších verziách ti dashboard nabehne ako biela stránka alebo hodí <code>Module did not self-register</code>.</p>
+  <div class="term">
+    <div class="term-bar"><span class="term-label">terminál</span><button class="copy" type="button">kopírovať</button></div>
+<pre><span class="pr">$</span> node --version
+<span class="cm"># ak je to menej ako v22.22.2, nainštaluj 24-ku:</span>
+<span class="pr">$</span> nvm install 24 &amp;&amp; nvm use 24</pre>
+  </div>
+  <p class="small">Potrebuješ ešte terminál (na Windowse PowerShell alebo WSL) a voľný port <code>20128</code>.</p>
+</section>
+
+<section id="kroky">
+  <div class="kicker">Postup · klikni na číslo a odškrtni si krok</div>
+  <h2>Šesť krokov</h2>
+
+  <div class="step" data-step="1">
+    <div class="step-num" role="button" tabindex="0" aria-label="Odškrtnúť krok 1"><span>1</span></div>
+    <h2>Inštalácia</h2>
+    <div class="term">
+      <div class="term-bar"><span class="term-label">terminál</span><button class="copy" type="button">kopírovať</button></div>
+<pre><span class="pr">$</span> npm install -g omniroute
+<span class="pr">$</span> omniroute</pre>
+    </div>
+    <p>Dashboard máš na <code>http://localhost:20128</code>, API na <code>http://localhost:20128/v1</code>.</p>
+    <p class="small">Ak ti npm vypíše kopu žltých warningov (<code>ERESOLVE</code>, <code>peer</code>, <code>deprecated</code>) — ignoruj ich. Sú to zastarané peer-dependency rozsahy v cudzích balíkoch. Inštalácia prešla, ak vidíš <code>added N packages</code>.</p>
+  </div>
+
+  <div class="step" data-step="2">
+    <div class="step-num" role="button" tabindex="0" aria-label="Odškrtnúť krok 2"><span>2</span></div>
+    <h2>Over, že to žije — bez kľúča</h2>
+    <p>Toto ľudí prekvapí: čerstvá inštalácia odpovedá aj bez registrácie a bez API kľúča, lebo pár keyless free providerov je predpojených v <code>auto</code> combe.</p>
+    <div class="term">
+      <div class="term-bar"><span class="term-label">terminál</span><button class="copy" type="button">kopírovať</button></div>
+<pre><span class="pr">$</span> curl http://localhost:20128/v1/chat/completions \
+    -H <span class="st">"Content-Type: application/json"</span> \
+    -d <span class="st">'{"model":"auto","messages":[{"role":"user","content":"Ahoj, funguješ?"}]}'</span></pre>
+    </div>
+    <p>Príde odpoveď → brána beží.</p>
+  </div>
+
+  <div class="step" data-step="3">
+    <div class="step-num" role="button" tabindex="0" aria-label="Odškrtnúť krok 3"><span>3</span></div>
+    <h2>Pripoj free providerov</h2>
+    <p>Bez kľúča ti bežia len tie najzákladnejšie modely. Na reálne kódenie chceš pripojiť poriadnych. V dashboarde choď na <strong>Providers</strong> a pripoj si:</p>
+    <div class="provs">
+      <div class="prov pick"><b>Kiro AI</b><span>free Claude, ~50 kreditov/mesiac na účet</span></div>
+      <div class="prov pick"><b>OpenCode Free</b><span>bez prihlásenia, bez tokenového stropu</span></div>
+      <div class="prov pick"><b>Cerebras</b><span>1M tokenov denne, veľmi rýchle</span></div>
+      <div class="prov"><b>Z.AI GLM</b><span>GLM-4.7 / 4.5-Flash</span></div>
+      <div class="prov"><b>Qoder AI</b><span>Qwen3-Max, Kimi-K2</span></div>
+      <div class="prov"><b>NVIDIA NIM</b><span>~40 requestov za minútu</span></div>
+      <div class="prov"><b>Cloudflare AI</b><span>50+ modelov, 10K neurónov/deň</span></div>
+      <div class="prov"><b>Pollinations</b><span>bez kľúča</span></div>
+    </div>
+    <div class="note good">
+      <p><strong>Pripoj aspoň tri, nie jedného.</strong> V tom je celý point. S jedným providerom narazíš na limit do hodiny; s tromi ťa fallback prepne a ty si to ani nevšimneš. Hviezdičkou sú označené tie, ktorými sa oplatí začať.</p>
+    </div>
+    <p class="small">Živý stav kvót — koľko si minul a koľko zostáva — nájdeš na <code>/dashboard/free-tiers</code>.</p>
+  </div>
+
+  <div class="step" data-step="4">
+    <div class="step-num" role="button" tabindex="0" aria-label="Odškrtnúť krok 4"><span>4</span></div>
+    <h2>Vytiahni si kľúč</h2>
+    <p>Dashboard → <strong>Endpoints</strong> → skopíruj kľúč. Vyzerá takto: <code>sk-xxxxxxxxxxxxxxxx-xxxxxxxxx</code></p>
+    <p>Je to tvoj <strong>lokálny</strong> kľúč do OmniRoute, nie kľúč od providera. Nikam ho neposielaj a nedávaj do repa.</p>
+  </div>
+
+  <div class="step" data-step="5">
+    <div class="step-num" role="button" tabindex="0" aria-label="Odškrtnúť krok 5"><span>5</span></div>
+    <h2>Napoj svoj nástroj</h2>
+
+    <h3>Claude Code — najrýchlejšia cesta</h3>
+    <div class="term">
+      <div class="term-bar"><span class="term-label">terminál</span><button class="copy" type="button">kopírovať</button></div>
+<pre><span class="cm"># načíta živý zoznam modelov a zapíše konfig</span>
+<span class="pr">$</span> omniroute setup-claude
+<span class="cm"># spustí Claude Code cez OmniRoute</span>
+<span class="pr">$</span> omniroute run claude</pre>
+    </div>
+
+    <h3>Claude Code — ručne</h3>
+    <p>Vytvor <code>~/.claude/settings.json</code>:</p>
+    <div class="term">
+      <div class="term-bar"><span class="term-label">~/.claude/settings.json</span><button class="copy" type="button">kopírovať</button></div>
+<pre>{
+  <span class="st">"env"</span>: {
+    <span class="st">"ANTHROPIC_BASE_URL"</span>: <span class="st">"http://localhost:20128"</span>,
+    <span class="st">"ANTHROPIC_AUTH_TOKEN"</span>: <span class="st">"sk-tvoj-omniroute-kluc"</span>,
+    <span class="st">"CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY"</span>: <span class="st">"1"</span>
+  }
+}</pre>
+    </div>
+    <div class="note danger">
+      <p><strong>Dva detaily, na ktorých ľudia zamrznú.</strong></p>
+      <p>1. Pri <code>ANTHROPIC_BASE_URL</code> <strong>nedávaj <code>/v1</code> na koniec</strong> — Claude Code si <code>/v1/messages</code> dolepí sám. Ostatné nástroje <code>/v1</code> naopak chcú. Toto je príčina väčšiny 401-iek.</p>
+      <p>2. Premenné sa čítajú <strong>iba pri štarte</strong>. Po zmene musíš Claude Code reštartovať.</p>
+    </div>
+
+    <h3>Codex CLI</h3>
+    <div class="term">
+      <div class="term-bar"><span class="term-label">~/.codex/config.toml</span><button class="copy" type="button">kopírovať</button></div>
+<pre>model_provider = <span class="st">"omniroute"</span>
+
+[model_providers.omniroute]
+name                 = <span class="st">"OmniRoute"</span>
+base_url             = <span class="st">"http://localhost:20128/v1"</span>
+env_key              = <span class="st">"OMNIROUTE_API_KEY"</span>
+requires_openai_auth = false</pre>
+    </div>
+
+    <h3>Cursor, Cline, Kilo, Continue, Aider, Goose, OpenCode</h3>
+    <p>Každý má svoj setup príkaz — alebo to naklikaj v dashboarde cez <strong>CLI Code → Apply Config</strong>.</p>
+    <div class="term">
+      <div class="term-bar"><span class="term-label">terminál</span><button class="copy" type="button">kopírovať</button></div>
+<pre><span class="pr">$</span> omniroute setup-cursor    <span class="pr">$</span> omniroute setup-cline
+<span class="pr">$</span> omniroute setup-kilo      <span class="pr">$</span> omniroute setup-continue
+<span class="pr">$</span> omniroute setup-aider     <span class="pr">$</span> omniroute setup-opencode</pre>
+    </div>
+
+    <h3>Hocijaký iný OpenAI-kompatibilný nástroj</h3>
+    <div class="tw"><table>
+      <tr><th>Pole</th><th>Hodnota</th></tr>
+      <tr><td>Base URL</td><td class="q">http://localhost:20128/v1</td></tr>
+      <tr><td>API Key</td><td class="q">sk-tvoj-omniroute-kluc</td></tr>
+      <tr><td>Model</td><td class="q">auto</td></tr>
+    </table></div>
+    <p class="small">Vo VS Code funguje aj rozšírenie <strong>OmniCopilot</strong> — modely ti naskočia priamo do natívneho pickera v Copilot Chate.</p>
+  </div>
+
+  <div class="step" data-step="6">
+    <div class="step-num" role="button" tabindex="0" aria-label="Odškrtnúť krok 6"><span>6</span></div>
+    <h2>Finálna kontrola</h2>
+    <div class="term">
+      <div class="term-bar"><span class="term-label">terminál</span><button class="copy" type="button">kopírovať</button></div>
+<pre><span class="pr">$</span> curl http://localhost:20128/v1/models \
+    -H <span class="st">"Authorization: Bearer sk-tvoj-omniroute-kluc"</span></pre>
+    </div>
+    <p>Vypíše ti zoznam modelov, ktoré máš cez pripojených providerov k dispozícii. Ak tam sú, si hotový.</p>
+  </div>
+</section>
+
+<section>
+  <div class="kicker">Používanie</div>
+  <h2>Ktorý model písať</h2>
+  <div class="tw"><table>
+    <tr><th>Model</th><th>Kedy</th></tr>
+    <tr><td class="q">auto</td><td>Default. Router vyberá podľa dostupnosti, ceny a zdravia providera a padá cez štyri vrstvy.</td></tr>
+    <tr><td class="q">auto/fast</td><td>Keď ti ide o rýchlosť odpovede viac než o kvalitu.</td></tr>
+    <tr><td class="q">glm/glm-5.2</td><td>Formát <code>provider/model</code>, keď presne vieš, čo chceš.</td></tr>
+  </table></div>
+  <p class="small">Ak <code>auto</code> vyberie iného providera, než si čakal — nie je to chyba, to je presne jeho práca.</p>
+</section>
+
+<section>
+  <div class="kicker">Keď to nejde</div>
+  <h2>Riešenie problémov</h2>
+  <div class="tw"><table>
+    <tr><th>Vidím</th><th>Čo s tým</th></tr>
+    <tr><td>biela stránka</td><td>Zlá verzia Node.js. <code>nvm install 24 &amp;&amp; nvm use 24</code>, potom <code>npm install -g omniroute</code> znova.</td></tr>
+    <tr><td>Can't connect</td><td>OmniRoute nebeží. Spusti <code>omniroute</code>.</td></tr>
+    <tr><td class="q">401</td><td>Zlý kľúč — alebo máš <code>/v1</code> navyše v <code>ANTHROPIC_BASE_URL</code>.</td></tr>
+    <tr><td class="q">429</td><td>Free kvóta providera je vyčerpaná. Počkaj minútu alebo pripoj ďalšieho.</td></tr>
+    <tr><td class="q">502</td><td>Provider je dole. Použi <code>auto</code> a prepne ťa.</td></tr>
+    <tr><td>better-sqlite3</td><td>npm v11 preskočil build: <code>npm approve-scripts better-sqlite3 &amp;&amp; npm install</code></td></tr>
+    <tr><td>antivírus</td><td>Avast/AVG karanténuje <code>README.md</code> — známy false positive.</td></tr>
+  </table></div>
+
+  <h3>Keď ti padajú agenti a automatizácie</h3>
+  <p>Náhodné <code>429</code>/<code>400</code>/<code>401</code> pri agentoch na free provideroch rieši rotácia. Nastav v prostredí, kde beží OmniRoute, a reštartuj:</p>
+  <div class="term">
+    <div class="term-bar"><span class="term-label">prostredie servera</span><button class="copy" type="button">kopírovať</button></div>
+<pre><span class="pr">$</span> export OMNIROUTE_ROTATE_ON_400=true
+<span class="pr">$</span> export OMNIROUTE_CHAT_MAX_HEAVY_IN_FLIGHT=4
+<span class="pr">$</span> export OMNIROUTE_CHAT_ADMISSION_QUEUE_MS=5000</pre>
+  </div>
+  <p class="small">Prvý z nich je zďaleka najsilnejší — spraví z tvrdej chyby tichý retry na zdravého providera.</p>
+</section>
+
+<section>
+  <div class="kicker">Kde inde to beží</div>
+  <h2>Docker, Android, Raspberry Pi</h2>
+  <div class="tw"><table>
+    <tr><th>Kde</th><th>Ako</th></tr>
+    <tr><td>npm</td><td class="q">npm install -g omniroute</td></tr>
+    <tr><td>Docker</td><td class="q">docker run -d -p 127.0.0.1:20128:20128 -v omniroute-data:/app/data diegosouzapw/omniroute:latest</td></tr>
+    <tr><td>Android</td><td class="q">pkg install nodejs &amp;&amp; npx -y omniroute</td></tr>
+    <tr><td>Raspberry Pi</td><td>natívne <code>arm64</code></td></tr>
+    <tr><td>Desktop</td><td>Electron build — Windows, macOS, Linux</td></tr>
+  </table></div>
+  <div class="note">
+    <p><strong>Pozor pri Dockeri.</strong> Image má default heap <code>1024 MB</code> — to stačí na dashboard a chat, ale <strong>nie na coding agentov</strong>. Na jedného agenta daj <code>-e OMNIROUTE_MEMORY_MB=8192 --memory=10g</code>, inak ti proces spadne na <code>FATAL ERROR</code> pri dlhých kontextoch.</p>
+  </div>
+</section>
+
+<section>
+  <div class="kicker">Toto si prečítaj, aj keď preskakuješ</div>
+  <h2>Kde je háčik</h2>
+  <p>Čo je v poriadku: kľúče sa šifrujú lokálne (AES-256-GCM), prompty idú priamo na vybraného providera a telemetria je defaultne vypnutá.</p>
+  <div class="note danger">
+    <p><strong>Free tier znamená, že tvoje prompty idú cez cudzie servery.</strong> Free providerov je vyše deväťdesiat a každý má vlastné podmienky — nie všetci garantujú, že tvoje dáta nepoužijú na tréning. Katalóg projektu sám označuje 15 providerov ako rizikových z hľadiska podmienok, aby si sa vedel rozhodnúť.</p>
+    <p>Na hobby projekty, učenie a vlastné veci: super. <strong>Firemný kód, klientske dáta, osobné údaje a prístupy cez free tier neposielaj.</strong> Na to si nechaj platený alebo lokálny model.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="kicker">Zdroje</div>
+  <div class="links">
+    <a href="https://omniroute.online/">omniroute.online</a>
+    <a href="https://github.com/diegosouzapw/OmniRoute">GitHub — diegosouzapw/OmniRoute</a>
+    <a href="https://github.com/diegosouzapw/OmniRoute/blob/main/docs/guides/SETUP_GUIDE.md">Setup Guide</a>
+    <a href="https://github.com/diegosouzapw/OmniRoute/blob/main/docs/guides/CLAUDE-CODE-CONFIGURATION.md">Claude Code konfigurácia</a>
+    <a href="https://github.com/diegosouzapw/OmniRoute/blob/main/docs/reference/FREE_TIERS.md">Free tiers — metodika</a>
+    <a href="https://github.com/diegosouzapw/OmniRoute/blob/main/docs/guides/TROUBLESHOOTING.md">Troubleshooting</a>
+  </div>
+  <p class="small">OmniRoute nie je môj projekt — autorom je <a href="https://github.com/diegosouzapw">diegosouzapw</a>, licencia MIT. Ja som len spísal postup, ktorý mi funguje. Čísla o počte providerov a objeme free tokenov uvádza samotný projekt a sám píše, že sa menia oboma smermi — aktuálny stav si over na <code>/dashboard/free-tiers</code>.</p>
+  <p class="small">Postup spísaný podľa oficiálnej dokumentácie k septembru 2026.</p>
+  <div class="sig"><b>@kuchar.ai</b><span class="small">Keby čokoľvek nešlo, napíš mi do DM screenshot chyby.</span></div>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll(".copy").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var pre = btn.closest(".term").querySelector("pre");
+      var text = pre.innerText.replace(/^\$ /gm,"").replace(/\n {4}/g,"\n    ");
+      navigator.clipboard.writeText(text).then(function(){
+        btn.textContent = "skopírované"; btn.classList.add("ok");
+        setTimeout(function(){ btn.textContent = "kopírovať"; btn.classList.remove("ok"); }, 1800);
+      }).catch(function(){
+        btn.textContent = "označ a skopíruj";
+        setTimeout(function(){ btn.textContent = "kopírovať"; }, 1800);
+      });
+    });
+  });
+
+  var KEY = "omniroute-navod-kroky";
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch(e){ done = {}; }
+
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(done)); } catch(e){} }
+
+  document.querySelectorAll(".step").forEach(function(step){
+    var id = step.dataset.step;
+    if (done[id]) step.classList.add("done");
+    var btn = step.querySelector(".step-num");
+    function toggle(){
+      var isDone = step.classList.toggle("done");
+      if (isDone) { done[id] = 1; } else { delete done[id]; }
+      save();
+    }
+    btn.addEventListener("click", toggle);
+    btn.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+    });
+  });
+})();
+</script>
