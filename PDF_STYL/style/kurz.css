@@ -1,0 +1,295 @@
+/* ============================================================
+   PDF štýl kurzu @kuchar.ai
+   Prekreslené 1:1 podľa referencie Kuchar_AI_Student_Kit.pdf
+   — tmavá navy, modrý akcent, grid, zaoblené karty.
+   ============================================================ */
+
+@import url("fonts.css");
+
+:root{
+  /* plochy */
+  --bg:#020711;
+  --bg-tint:#061329;
+  --grid:#0A1A35;
+  --card:#08162C;
+  --card-2:#0B1731;
+  --card-hi:#0A1C3B;
+  --pill:#0F264C;
+  --thead:#0D2347;
+
+  /* linky */
+  --edge:#12294A;
+  --edge-2:#1C4685;
+  --edge-blue:#2B65BB;
+
+  /* text */
+  --ink:#F7F9FC;
+  --ink-2:#C3CEDE;
+  --muted:#8A97AC;
+  --muted-2:#737D8D;
+
+  /* akcenty */
+  --accent:#3D8BFF;
+  --accent-2:#69B4FF;
+  --ok:#50DFA7;
+  --warn:#FD7A87;
+
+  --r:14px;
+  --r-sm:9px;
+}
+
+@page{ size:A4; }
+
+*{box-sizing:border-box}
+
+html{
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact;
+  background-color:var(--bg);
+  /* jemný technický grid + zvislý svetlejší pás, ako v referencii */
+  background-image:
+    repeating-linear-gradient(90deg, #091A31 0 1px, transparent 1px 64px),
+    repeating-linear-gradient(0deg,  #08182D 0 1px, transparent 1px 64px),
+    linear-gradient(90deg, #050F21 0 38%, rgba(5,15,33,0) 54%);
+}
+
+/* Pri generovaní PDF kreslí pozadie samostatná podkladová vrstva
+   (pozadie.html), ktorá sa zlúči pod každú stranu — Chromium totiž
+   pozadie do okrajov strany nikdy nevykreslí. */
+html.pdf{background:none}
+html.pdf .deco{display:none}
+
+body{
+  margin:0;
+  color:var(--ink-2);
+  font-family:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;
+  font-size:9.9pt;
+  font-weight:400;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4{margin:0; color:var(--ink); break-after:avoid-page; page-break-after:avoid}
+code,kbd,pre,.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+a{color:var(--accent-2); text-decoration:none; word-break:break-word}
+strong,b{font-weight:600; color:var(--ink)}
+
+/* ============================== obálka ============================== */
+
+.cover{padding-top:.45rem; margin-bottom:1.5rem}
+
+.brandbar{
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding-bottom:1.6rem;
+}
+.brandbar .who{font-size:10.5pt; font-weight:700; color:var(--ink); letter-spacing:-.01em}
+.brandbar .kit{
+  font-size:7.4pt; letter-spacing:.13em; text-transform:uppercase; color:var(--muted-2);
+}
+
+.eyebrow{
+  font-size:7.8pt; font-weight:700; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--accent-2);
+  margin-bottom:.9rem;
+}
+
+/* dvojtónový titulok: prvý riadok bold biely, druhý light */
+h1{
+  font-size:30pt; font-weight:700; line-height:1.1; letter-spacing:-.025em;
+  text-wrap:balance;
+}
+h1 .thin{display:block; font-weight:300; color:var(--ink)}
+h1.small{font-size:23pt}
+h1.xsmall{font-size:18.5pt; line-height:1.18}
+
+.lede{
+  margin:1.1rem 0 0; max-width:38em;
+  font-size:10.4pt; color:var(--muted); line-height:1.7;
+}
+
+/* zvýraznená karta pod titulkom (ako „ČO V TOMTO KITE ZÍSKAŠ“) */
+.hilite{
+  margin-top:1.5rem; padding:1rem 1.15rem;
+  background:var(--card-hi); border:1px solid var(--edge-blue); border-radius:var(--r);
+  break-inside:avoid; page-break-inside:avoid;
+}
+.hilite .lbl{
+  display:block; font-size:7.2pt; font-weight:700; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--accent-2); margin-bottom:.55rem;
+}
+.hilite dl{display:grid; grid-template-columns:auto 1fr; gap:.3rem 1rem; margin:0}
+.hilite dt{
+  font-family:"IBM Plex Mono",monospace; font-size:6.9pt; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted-2); padding-top:.2rem; white-space:nowrap;
+}
+.hilite dd{margin:0; font-size:9.1pt; color:var(--ink-2); word-break:break-word; line-height:1.5}
+.hilite dd a{font-family:"IBM Plex Mono",monospace; font-size:8pt}
+
+/* pilulky s metadátami */
+.pills{display:flex; flex-wrap:wrap; gap:.45rem; margin-top:1.2rem}
+.pill{
+  padding:.34rem .75rem; border-radius:999px;
+  background:var(--pill); border:1px solid var(--edge-2);
+  font-size:7.2pt; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--ink-2);
+}
+.stamp{
+  margin-top:1.1rem; font-family:"IBM Plex Mono",monospace;
+  font-size:7.6pt; color:var(--muted-2); letter-spacing:.04em;
+}
+
+/* ============================== sekcie ============================== */
+
+section{margin-top:1.9rem}
+.kicker{
+  font-size:7.4pt; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--accent-2); margin-bottom:.35rem;
+  break-after:avoid-page; page-break-after:avoid;
+}
+h2{font-size:16pt; font-weight:700; letter-spacing:-.02em; line-height:1.22; margin-bottom:.15rem}
+/* niektoré zdroje (SKILL.md) nesú vlastný H1 v tele — ten patrí na úroveň H2 */
+section h1{font-size:14pt; font-weight:700; letter-spacing:-.018em; line-height:1.25; margin:1.5rem 0 .15rem}
+h3{font-size:11.2pt; font-weight:600; margin:1.35rem 0 .15rem; color:var(--ink)}
+h4{font-size:10pt; font-weight:600; margin:1rem 0 .1rem; color:var(--ink-2)}
+
+p{margin:.6rem 0; max-width:44em; orphans:2; widows:2}
+ul,ol{max-width:44em; padding-left:1.15rem; margin:.6rem 0}
+li{margin:.28rem 0}
+li::marker{color:var(--accent)}
+li > ul, li > ol{margin:.22rem 0}
+hr{border:none; border-top:1px solid var(--edge); margin:1.4rem 0}
+
+blockquote{
+  margin:1rem 0; padding:.7rem 1rem;
+  background:var(--card); border-left:2px solid var(--accent); border-radius:0 var(--r-sm) var(--r-sm) 0;
+  color:var(--muted);
+}
+blockquote p{margin:.25rem 0}
+
+p code, li code, td code, dd code, h2 code, h3 code, blockquote code{
+  background:var(--pill); border:1px solid var(--edge);
+  padding:.08em .36em; border-radius:5px;
+  font-size:.86em; color:var(--accent-2); word-break:break-word;
+}
+
+/* ============================== kód / terminál ============================== */
+
+.term{
+  background:var(--card); border:1px solid var(--edge); border-radius:var(--r);
+  margin:1rem 0; overflow:hidden;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.term-bar{padding:.5rem .95rem .35rem; border-bottom:1px solid var(--edge)}
+.term-label{
+  font-family:"IBM Plex Mono",monospace; font-size:6.8pt; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--accent-2);
+}
+.term pre{
+  margin:0; padding:.8rem .95rem; color:var(--ink-2);
+  font-size:8.1pt; line-height:1.7;
+  white-space:pre-wrap; word-break:break-word;
+}
+.term.long{break-inside:auto; page-break-inside:auto}
+
+/* ============================== callouty ============================== */
+
+.note{
+  margin:1.1rem 0; padding:.9rem 1.1rem;
+  background:var(--card); border:1px solid var(--edge); border-radius:var(--r);
+  break-inside:avoid; page-break-inside:avoid;
+}
+.note .lbl{
+  display:block; font-size:7.2pt; font-weight:700; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--accent-2); margin-bottom:.45rem;
+}
+.note p{margin:.3rem 0; max-width:none; font-size:9.4pt}
+.note p:first-of-type{margin-top:0}
+.note p:last-child{margin-bottom:0}
+.note ul,.note ol{margin:.35rem 0; max-width:none; font-size:9.4pt}
+
+.note.blue{background:var(--card-hi); border-color:var(--edge-blue)}
+.note.danger{border-color:#3A1B26}
+.note.danger .lbl{color:var(--warn)}
+.note.good{border-color:#123B33}
+.note.good .lbl{color:var(--ok)}
+
+/* chýbajúca informácia v zdroji */
+.gap{
+  display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:7.8pt;
+  color:var(--muted-2); background:var(--card); border:1px dashed var(--edge-2);
+  border-radius:6px; padding:.1rem .5rem;
+}
+
+/* ============================== tabuľky ============================== */
+
+.tw{
+  margin:1.1rem 0; border-radius:var(--r); overflow:hidden;
+  background:var(--card); border:1px solid var(--edge);
+}
+table{border-collapse:collapse; width:100%; font-size:8.3pt; table-layout:fixed}
+th{
+  text-align:left; background:var(--thead);
+  font-size:6.9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted); padding:.6rem .75rem; vertical-align:bottom;
+}
+th:nth-child(2){color:var(--accent-2)}
+td{
+  padding:.55rem .75rem; border-top:1px solid var(--edge);
+  vertical-align:top; color:var(--muted); word-break:break-word; line-height:1.5;
+}
+td:first-child{color:var(--ink); font-weight:600}
+thead{display:table-header-group}
+tr{break-inside:avoid; page-break-inside:avoid}
+
+/* ============================== kroky (číslované) ============================== */
+
+.steps{margin:1.2rem 0; padding:0; list-style:none; max-width:none}
+.steps li{
+  position:relative; padding-left:2.6rem; margin:0 0 1rem;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.steps li::before{
+  counter-increment:st; content:counter(st);
+  position:absolute; left:0; top:-.05rem;
+  width:1.65rem; height:1.65rem; border-radius:50%;
+  background:var(--accent); color:#04101F;
+  font-size:8.2pt; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.steps{counter-reset:st}
+
+/* ============================== obsah (INDEX) ============================== */
+
+.toc-sec{margin-top:1.6rem}
+.toc-sec h2{break-after:avoid-page; page-break-after:avoid}
+.toc-sec ol{list-style:none; padding:0; margin:.5rem 0; max-width:none}
+.toc-sec li{
+  display:flex; gap:.75rem; align-items:baseline;
+  font-size:8.7pt; padding:.28rem .2rem; border-bottom:1px solid var(--edge); margin:0;
+}
+.toc-sec li:last-child{border-bottom:none}
+.toc-sec .n{
+  font-family:"IBM Plex Mono",monospace; font-size:7.6pt; color:var(--accent);
+  min-width:2rem; flex:none;
+}
+.toc-sec .t{color:var(--ink-2); flex:1}
+
+/* ============================== pätka dokumentu ============================== */
+
+.docfoot{
+  margin-top:2.4rem; padding-top:.9rem; border-top:1px solid var(--edge);
+  font-size:7.6pt; color:var(--muted-2); line-height:1.6;
+  break-inside:avoid; page-break-inside:avoid;
+}
+.docfoot b{color:var(--ink-2); font-weight:600}
+
+/* ============================== dekor (sústredné kruhy) ============================== */
+
+.deco{
+  position:fixed; right:-185px; bottom:-185px;
+  width:430px; height:430px; z-index:-1; pointer-events:none;
+}
+.deco circle{fill:none}
+.deco .r1{stroke:var(--edge-blue); stroke-width:1.5}
+.deco .r2{stroke:var(--edge-2); stroke-width:1.1}
+.deco .r3{stroke:var(--edge); stroke-width:1}

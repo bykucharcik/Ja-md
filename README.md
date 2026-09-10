@@ -14,6 +14,7 @@ Presne ten istý mechanizmus, aký používa Nick Saraev: komentár → ManyChat
 | `FUNNEL/REEL_CTA_A_KOMENTARE.md` | CTA do videa, pinned komentár, odpovede pod video. |
 | `FUNNEL/FAQ_ODPOVEDE_NA_DM.md` | Odpovede na to, čo ti ľudia napíšu po návode ("mám otázku"). |
 | `ZDROJE_A_FAKTY.md` | Čo je overený fakt, čo je marketing projektu, a čo NIKDY netvrdiť. |
+| `PDF_STYL/` | Generátor PDF v našom štýle — markdown archív → hotové PDF do kurzu. |
 
 ## Poradie, v akom to spustiť
 
