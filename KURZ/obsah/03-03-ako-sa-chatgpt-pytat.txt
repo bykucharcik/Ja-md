@@ -1,0 +1,101 @@
+# Modul 03 — ChatGPT / lekcia 3
+modul: 03 ChatGPT
+cislo: 03.3
+titul: Ako sa ChatGPT pýtať
+stopa: CHATGPT × KUCHAR.AI
+stitky: Prompting | 13 min | Praktické
+
+@obal
+stitok: AKO SA CHATGPT PÝTAŤ
+h1: Tá istá kostra.
+h2: Iné návyky.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Použiť kostru zadania z modulu 02 aj v ChatGPT -- a pridať k nej tri veci, ktoré tu fungujú inak.
+vedlajsie: Nástroje si musíš vypýtať. Pamäť ti do odpovede tichom prilieva starý kontext. A dlhé odpovede treba brzdiť.
+karta: VYPÝTAJ SI | Web, súbor, výpočet | SAMO SA TO NEZAPNE VŽDY
+karta: SKONTROLUJ | Pamäť | MIEŠA SA DO ODPOVEDÍ
+vysledok: Po dokončení vieš, prečo ti to isté zadanie dáva v ChatGPT iný výsledok než v Claudovi -- a čo s tým.
+drobne: Kostra zadania je v lekcii 02.5. Táto lekcia na ňu nadväzuje, neopakuje ju.
+
+@strana
+stitok: ZÁKLAD ZOSTÁVA
+h1: Rola, úloha,
+h2: vstup, tvar.
+
+@text
+Štyri veci z lekcie 02.5 platia rovnako. Model nehádaj, model dopĺňa -- a je jedno, od koho ten model je. Ak nepovieš, pre koho píšeš, dostaneš text pre nikoho.
+
+@text
+Čo je tu iné, sú tri návyky navyše. Nie sú to triky, sú to reakcie na to, ako je ChatGPT postavený.
+
+@kroky
+01 | NÁSTROJE SI PÝTAJ | „Pozri na web a daj zdroje." „Z toho súboru, nie z pamäti." „Prepočítaj to." Bez toho odpovie z hlavy.
+02 | STRÁŽ PAMÄŤ | Ukladá si o tebe veci a použije ich, aj keď o ne nestojíš. Keď potrebuješ čistý štart, použi dočasný chat.
+03 | BRZDI DĹŽKU | Má sklon písať viac, než si chcel. Uveď počet bodov, počet slov alebo „bez úvodu a bez záveru".
+
+@strana
+stitok: NÁSTROJE
+h1: Povedz nahlas,
+h2: čím má pracovať.
+
+@pojmy
+WEB | „Over to na webe a uveď odkazy." Bez toho ti odpovie z tréningu -- a ten má dátum.
+SÚBORY | „Pracuj len s nahratým súborom a nič nedopĺňaj." Inak mieša tvoj dokument so všeobecnými znalosťami.
+VÝPOČTY | Pri číslach si vypýtaj postup: „ukáž medzikroky". Chyba sa potom dá nájsť.
+OBRÁZKY | Popíš, čo má byť na obrázku, nie akým štýlom má vyzerať. Štýl uveď až na konci.
+
+@pravidlo VETA, KTORÁ RIEŠI POLOVICU PROBLÉMOV
+„Ak niečo nevieš alebo to nie je v podklade, napíš NEVIEM. Nedopĺňaj." Znie to banálne. Zníži to počet vymyslených údajov viac než akákoľvek iná inštrukcia.
+
+@strana
+stitok: PAMÄŤ
+h1: Pamätá si viac,
+h2: než čakáš.
+
+@text
+ChatGPT si naprieč rozhovormi ukladá, čo o tebe zistil. Je to užitočné, kým to nezačne prekážať -- napríklad keď píšeš text pre klienta a on ti doň zamieša tvoj vlastný štýl z minulého mesiaca.
+
+@kroky
+01 | POZRI SA | Nastavenia -> Personalizácia -> pamäť. Uvidíš zoznam a môžeš mazať jednotlivé položky.
+02 | DOČASNÝ CHAT | Keď chceš odpoveď bez vplyvu pamäti a histórie, otvor dočasný rozhovor.
+03 | CIELENE PLŇ | Čo chceš, aby si pamätal natrvalo, mu povedz priamo: „zapamätaj si, že píšem po slovensky a nepoužívam výkričníky."
+
+@pravidlo KEĎ TI ODPOVEDÁ ČUDNE
+Než začneš prepisovať zadanie, pozri sa do pamäte. Veľmi často je príčina tam -- nie v tom, ako si sa spýtal.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Tri vety navyše.
+h2: Jeden test.
+
+@zoznam
+01 | Vezmi zadanie, ktoré si si pripravil v lekcii 02.5, a spusti ho v ChatGPT tak, ako je.
+02 | Spusti ho znova a doplň jednu vetu: „Over to na webe a uveď zdroje."
+03 | Spusti ho tretíkrát v dočasnom chate -- teda bez pamäti. Porovnaj tón a obsah.
+04 | Do štvrtého pokusu pridaj brzdu: „maximálne 150 slov, bez úvodu, bez záveru."
+05 | Vyber si verziu, ktorá bola najbližšie k tomu, čo si chcel. To je tvoja šablóna pre ChatGPT.
+
+@pravidlo ČO TU HĽADÁME
+Nehľadáme, kto je lepší. Hľadáme, ktoré tri vety musíš v ChatGPT pridať, aby si dostal to isté, čo inde dostaneš bez nich.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Máš dve šablóny.
+
+@checklist
+Kostru zadania používam rovnako ako pri Claudovi.
+Hľadanie na webe si pýtam výslovne.
+Pri práci so súborom hovorím „nič nedopĺňaj".
+Pridávam vetu „ak nevieš, napíš NEVIEM".
+Viem, kde je pamäť a čo v nej je.
+Keď chcem čistý štart, použijem dočasný chat.
+Dĺžku odpovede brzdím číslom, nie slovom „stručne".
+
+@odkazy
+PROJEKTY V CHATGPT | https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt
+KOSTRA ZADANIA — LEKCIA 02.5 | https://kuchar.ai
+
+@zaver
+hlavne: Ďalšia lekcia: Projects a Custom GPTs -- a jedna dôležitá zmena, ktorú väčšina návodov ešte nemá.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

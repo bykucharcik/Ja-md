@@ -1,0 +1,129 @@
+# Modul 04 — Claude Skills / lekcia 2
+modul: 04 Claude Skills
+cislo: 04.2
+titul: Ako skills nainštalovať a spustiť
+stopa: SKILLS × KUCHAR.AI
+stitky: Skills | 12 min | Začiatočník
+
+@obal
+stitok: AKO SKILLS NAINŠTALOVAŤ A SPUSTIŤ
+h1: Nainštaluj.
+h2: Spusti.
+h3: Over.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Dostaneš skill do Claude Code, spustíš ho príkazom a budeš vedieť prečo mlčí, keď mlčí.
+vedlajsie: Sú len dve rozhodnutia: osobný priečinok alebo projekt, a slash alebo automatika. Zvyšok je kopírovanie priečinkov.
+karta: OSOBNÉ | ~/.claude/skills | PLATÍ VŠADE
+karta: PROJEKT | .claude/skills | LEN TENTO REPO
+vysledok: Po dokončení vieš skill nainštalovať bez hádania a vieš overiť, že sa naozaj načítal.
+drobne: Cesty platia pre Claude Code (terminál, VS Code, desktop, web). V claude.ai chate sa skills spravujú cez rozhranie — over si to vo svojom účte, lebo to sa mení.
+
+@strana
+stitok: NAJPRV POCHOP
+h1: Skill je priečinok.
+h2: Nič viac.
+
+@text
+Skill nie je aplikácia, ktorú inštaluješ. Je to obyčajný priečinok s jedným povinným súborom `SKILL.md`. Keď ten priečinok položíš na správne miesto, Claude Code ho nájde sám. Keď ho odtiaľ zmažeš, skill zmizne. Toto je celý inštalačný proces.
+
+@kroky
+01 | PRIEČINOK | Volá sa ako skill. Z názvu priečinka vznikne aj príkaz -- priečinok `n8n` dá príkaz `/n8n`.
+02 | SKILL.MD | Povinný súbor vnútri. Hore YAML hlavička medzi `---`, pod ňou obyčajný text v markdowne.
+03 | ZVYŠOK | Ďalšie `.md` súbory a skripty sú voliteľné. Claude ich načíta až keď ich potrebuje.
+
+@pravidlo AKO TO OVERIŤ
+Ak priečinok nemá `SKILL.md` presne s týmto názvom, Claude ho ignoruje bez akejkoľvek chybovej hlášky. Skontroluj názov súboru ako prvé.
+
+@strana
+stitok: KAM TO DAŤ
+h1: Dva priečinky.
+h2: Vyber jeden.
+
+@kroky
+01 | OSOBNÉ | `~/.claude/skills/<nazov>/SKILL.md`. Platí vo všetkých projektoch na tomto počítači. Sem daj svoje osobné veci.
+02 | PROJEKT | `<repo>/.claude/skills/<nazov>/SKILL.md`. Platí len v tomto repozitári. Commitni a máš to zdieľané s tímom.
+03 | PLUGIN | Skill zabalený v plugine sa volá `/nazov-pluginu:nazov-skillu`. Nemusíš nič kopírovať, plugin sa zapne.
+
+@terminal TERMINÁL — INŠTALÁCIA PACKU
+# osobné — platí vo všetkých projektoch
+mkdir -p ~/.claude/skills
+cp -R SKILLS/n8n ~/.claude/skills/
+
+# projektové — platí len tu, ide do gitu
+mkdir -p .claude/skills
+cp -R SKILLS/n8n .claude/skills/
+
+@text drobne
+Štruktúru vnútri priečinka skillu nemeň. Ak sú v ňom podpriečinky ako scripts/ alebo súbory ako reference.md, SKILL.md sa na ne odkazuje relatívnou cestou a po presune prestanú fungovať.
+
+@strana
+stitok: SPUSTENIE
+h1: Dva spôsoby.
+h2: Oba sú správne.
+
+@zoznam
+01 | **Ručne:** v Claude Code napíšeš `/n8n`. Istejšie, lebo si to vypýtal ty. Argumenty ideš za príkaz: `/n8n moja úloha`.
+02 | **Automaticky:** opíšeš úlohu bežnou vetou. Claude skill načíta sám, ak sedí `description` z hlavičky.
+03 | Ak sa nenačíta, `description` je slabá — alebo si v claude.ai chate namiesto Claude Code.
+04 | Nebezpečné veci (deploy, mazanie) nechaj len na slash. V hlavičke to zapneš cez `disable-model-invocation: true`.
+
+@pravidlo KEĎ MLČÍ
+Otvor `SKILL.md` a prečítaj `description`. Použi vetu, ktorá tam je. Potom skús `/nazov`. Až potom hľadaj chybu v inštalácii — v deviatich z desiatich prípadov žiadna nie je.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Nespúšťaj všetko.
+h2: Vyber jeden.
+
+@text
+Nainštaluj si jeden skill, ktorý ti dnes ušetrí prácu, a spusti ho na skutočnej úlohe. Nie na testovacej. Pack, ktorý si celý nainštaluješ a nikdy nespustíš, je len priečinok na disku.
+
+@kroky
+01 | KROK 1 | Skopíruj jeden skill do `~/.claude/skills/`.
+02 | KROK 2 | Otvor Claude Code a napíš `/` -- v ponuke musíš vidieť jeho názov.
+03 | KROK 3 | Spusti ho na reálnej úlohe a pozri sa, čo vypľuje.
+04 | KROK 4 | Otvor `SKILL.md` a uprav jednu vec, ktorá ti nesedela.
+
+@pravidlo PRAVIDLO
+Cudzí skill je cudzí interný dokument. Prečítaj ho skôr, než ho pustíš na svoje dáta — presne tak, ako by si si prečítal makro, ktoré ti niekto pošle v exceli.
+
+@strana
+stitok: ÚPRAVA
+h1: Uprav description.
+h2: To stačí najčastejšie.
+
+@pojmy
+JAZYK | Ak chceš slovenské výstupy, napíš to do tela **aj** do `description`. Inak skill ostane v angličtine.
+STOPKY | Doplň, čo nesmie: vymýšľať čísla, sľubovať výsledky, používať tvoje zakázané slová.
+NÁZOV | `name` nemeň, kým nemáš dôvod. Zmeníš tým `/príkaz` aj svoj zvyk.
+GIT | Projektové skills commitni. Osobné nie, ak sú v nich interné veci, ktoré nemajú ísť von.
+DĹŽKA | Drž `SKILL.md` pod 500 riadkami. Dlhé referencie odsuň do vedľajšieho `.md` a odkáž sa naň.
+
+@terminal SKILL.MD — MINIMÁLNA KOSTRA
+---
+name: moj-skill
+description: Čo skill robí a kedy ho použiť. Podľa tejto vety sa Claude rozhoduje, či ho načítať.
+---
+
+Sem príde inštrukcia pre Clauda. Obyčajný text, po slovensky.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Teraz to nainštaluj.
+
+@checklist
+Skill je v `~/.claude/skills/` alebo v `.claude/skills/` projektu.
+Vnútri priečinka je súbor s presným názvom `SKILL.md`.
+Napísal som `/` a videl som skill v ponuke.
+Spustil som ho aspoň raz na reálnej úlohe.
+Prečítal som `SKILL.md` skôr, než som ho pustil na svoje dáta.
+Nebezpečné skills mám vypnuté z automatiky.
+
+@odkazy
+DOKUMENTÁCIA SKILLS | https://code.claude.com/docs/en/skills
+NASTAVENIE OPRÁVNENÍ | https://code.claude.com/docs/en/permissions
+
+@zaver
+hlavne: Pošli tento návod človeku, ktorý skills zbiera a nikdy ich nespustí.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

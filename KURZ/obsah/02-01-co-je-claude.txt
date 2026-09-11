@@ -1,0 +1,102 @@
+# Modul 02 — Claude / lekcia 1
+modul: 02 Claude
+cislo: 02.1
+titul: Čo je Claude
+stopa: CLAUDE × KUCHAR.AI
+stitky: Claude | 12 min | Začiatočník
+
+@obal
+stitok: ČO JE CLAUDE
+h1: Jeden model.
+h2: Štyri dvere.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Rozoznať chat, Claude Code, API a predplatné -- a vedieť, ktoré dvere máš otvoriť pre svoju úlohu.
+vedlajsie: Za všetkými štyrmi je ten istý model. Líšia sa len tým, čo okolo neho beží a čo ti dovolí robiť.
+karta: CHAT | claude.ai | PÍSANIE, ROZBOR, SÚBORY
+karta: KÓD | Claude Code | ČÍTA A MENÍ TVOJE SÚBORY
+vysledok: Po dokončení vieš povedať, či tvoju úlohu riešiť v chate, v termináli alebo cez API.
+drobne: Stav k 10. 9. 2026. Ceny a názvy plánov sa menia a líšia podľa regiónu -- aktuálne čísla si vždy over priamo v účte.
+
+@strana
+stitok: ZÁKLAD
+h1: Claude je model.
+h2: Zvyšok je obal.
+
+@text
+Claude je jazykový model od firmy Anthropic. Model sám o sebe je len funkcia: dáš mu text, vráti text. Všetko ostatné -- okno v prehliadači, terminál, doplnok v editore -- je obal, ktorý ten model niekam pripojí a niečo mu dovolí.
+
+@text
+Preto je zbytočné pýtať sa „ktorý Claude je lepší". Je to ten istý model. Otázka znie, **čo okolo neho beží** a **na čo má prístup**.
+
+@kroky
+01 | ROVNAKÉ | Schopnosti modelu, spôsob uvažovania, kvalita textu.
+02 | ROZDIELNE | Prístup k tvojim súborom, možnosť spúšťať príkazy, dĺžka pamäti, cena, limity.
+03 | DÔSLEDOK | Nástroj nevyberáš podľa inteligencie. Vyberáš ho podľa toho, čoho sa má dotknúť.
+
+@strana
+stitok: ŠTVORO DVERÍ
+h1: Kde Claude býva.
+h2: A čo za nimi je.
+
+@kroky
+01 | CHAT | `claude.ai` v prehliadači alebo mobile. Píšeš, nahráš súbory, dostaneš odpoveď. Nedotkne sa ničoho na tvojom disku.
+02 | CLAUDE CODE | Beží v termináli, v editore, v desktop appke aj vo webe. Číta tvoj projekt, mení súbory, púšťa príkazy.
+03 | API | Pre vývojárov. Claude zapojíš do vlastnej aplikácie a platíš za tokeny, nie mesačný paušál.
+04 | DOPLNKY | Claude v ďalších nástrojoch (rozšírenia do editorov, integrácie do firemných aplikácií). Ten istý model, iné rozhranie.
+
+@pravidlo AKO SA ROZHODNÚŤ
+Ak výsledok chceš prečítať -- choď do chatu. Ak chceš, aby sa niečo v tvojich súboroch naozaj zmenilo -- choď do Claude Code. Ak to má bežať bez teba a opakovane -- to je API.
+
+@strana
+stitok: PLÁNY
+h1: Zadarmo funguje.
+h2: Len kratšie.
+
+@text
+Predplatné neurčuje, aký múdry Claude je. Určuje, **koľko** ho máš, **ktoré modely** si vieš vybrať a **čo máš odomknuté** okolo neho.
+
+@tabulka PLÁN | NA ČO TO JE | ČO SI VŠIMNI
+Free | Vyskúšať si to. Bežné otázky, kratšie rozhovory. | Nižšie limity, obmedzený výber modelov.
+Pro | Denná práca jedného človeka. | Väčšie limity, projekty, Claude Code v cene.
+Max (5× / 20×) | Ak s Claudom pracuješ celý deň. | Násobne vyšší limit na reláciu, k tomu týždenný strop.
+Team / Enterprise | Firmy. | Spoločná správa, fakturácia, prísnejšie nastavenia pre firemné dáta.
+
+@pravidlo DÔLEŽITÉ
+Claude Code je v cene každého plateného plánu a **ťahá z toho istého limitu** ako tvoje chaty. Práca v termináli a rozhovor v prehliadači si delia jeden mešec.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Zaraď svoje tri veci.
+h2: Do správnych dverí.
+
+@text
+Zober tie tri úlohy, ktoré si si napísal v module 01, a ku každej doplň, kam patrí. Nie podľa toho, čo znie modernejšie, ale podľa toho, čoho sa má výsledok dotknúť.
+
+@tabulka TVOJA ÚLOHA | KAM S ŇOU | PREČO
+Zhrnutie z mailov | Chat | Výsledok si prečítaš a skopíruješ. Nič sa nemá zmeniť samo.
+Prepis a čistenie prepisu | Chat + súbor | Nahráš súbor, dostaneš text späť.
+Prerobiť skript, ktorý ti padá | Claude Code | Musí vidieť tvoje súbory a spustiť ich.
+Rozposielať to každý pondelok samo | API alebo naplánovaná úloha | Beží to bez teba.
+
+@pravidlo KEĎ SI NEISTÝ
+Začni v chate. Je to najlacnejšie a najmenej rizikové. Do Claude Code prejdi až vtedy, keď ťa začne unavovať kopírovanie textu tam a späť.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Vieš, kam klopať.
+
+@checklist
+Viem, že chat, Claude Code a API používajú ten istý model.
+Viem povedať, čo z toho sa dotkne mojich súborov a čo nie.
+Zaradil som svoje tri úlohy do správnych dverí.
+Viem, že Claude Code je v cene plateného plánu a delí sa o limit s chatom.
+Viem, že cenník a názvy plánov si mám overiť v účte, nie v tomto PDF.
+
+@odkazy
+PREHĽAD MODELOV | https://platform.claude.com/docs/en/models/overview
+ČO JE CLAUDE CODE | https://code.claude.com/docs/en/overview
+
+@zaver
+hlavne: Ďalšia lekcia: Claude v prehliadači -- projekty, artefakty a súbory, čiže tri veci, ktoré väčšina ľudí nikdy nezapne.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

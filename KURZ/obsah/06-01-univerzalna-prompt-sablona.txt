@@ -1,0 +1,116 @@
+# Modul 06 — Šablóny / lekcia 1
+modul: 06 Šablóny
+cislo: 06.1
+titul: Univerzálna prompt šablóna
+stopa: ŠABLÓNY × KUCHAR.AI
+stitky: Šablóna | 11 min | Základ modulu
+
+@obal
+stitok: UNIVERZÁLNA PROMPT ŠABLÓNA
+h1: Šesť blokov.
+h2: Vždy tie isté.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Jednu kostru, z ktorej sú odvodené všetky ostatné šablóny v tomto module -- a ktorú vieš použiť na čokoľvek.
+vedlajsie: Ďalších päť lekcií je len táto šablóna vyplnená pre konkrétny typ práce. Ak pochopíš túto, zvyšok je kopírovanie.
+karta: PRE KOHO | Rola a publikum | URČUJE SLOVNÍK
+karta: ČO NIE | Zákazy | URČUJE KVALITU VIAC NEŽ ZADANIE
+vysledok: Po dokončení máš šablónu uloženú a viackrát použitú na svojej skutočnej práci.
+drobne: Šablóna funguje rovnako v Claudovi aj v ChatGPT. Nie je to trik na konkrétny model -- je to zoznam toho, čo mu chýba.
+
+@strana
+stitok: ŠABLÓNA
+h1: Skopíruj si to.
+h2: Vyplň zátvorky.
+
+@terminal UNIVERZÁLNA ŠABLÓNA
+ROLA
+Si [kto] a pracuješ pre [pre koho].
+
+ÚLOHA
+[Jedno sloveso + presný výsledok.]
+
+PODKLAD
+[Tvoje dáta, text, čísla. Vlož ich sem doslova.]
+
+VÝSTUP
+Formát: [tabuľka / body / súvislý text]
+Dĺžka: [počet slov alebo bodov]
+Jazyk: [slovenčina]
+
+NIKDY
+- Nevymýšľaj údaje, ktoré nie sú v podklade.
+- [Tvoj zákaz.]
+- [Tvoj zákaz.]
+
+AK NIEČO CHÝBA
+Spýtaj sa skôr, než začneš. Nedopĺňaj si to sám.
+
+@strana
+stitok: PREČO PRÁVE TOTO
+h1: Šesť blokov.
+h2: Každý rieši inú chybu.
+
+@tabulka BLOK | AKÚ CHYBU RIEŠI
+ROLA | Text pre nikoho. Bez roly si model vyberie neutrálny priemerný hlas.
+ÚLOHA | Odpoveď na tému namiesto výsledku. Sloveso rozhoduje viac než téma.
+PODKLAD | Vymyslené údaje. Bez tvojich dát si model vyrobí vlastné, ktoré znejú rozumne.
+VÝSTUP | Esej tam, kde si chcel tri body. Dĺžku uveď číslom, nie slovom „stručne".
+NIKDY | Vata, hype, sľuby. Zákazy zlepšujú výsledok viac než akékoľvek ďalšie zadanie.
+AK NIEČO CHÝBA | Tiché domýšľanie. Toto je blok, ktorý ľudia vynechávajú najčastejšie.
+
+@pravidlo KTORÝ BLOK VYNECHAŤ MÔŽEŠ
+Podklad, ak úloha naozaj žiadny nemá. Všetky ostatné nechaj -- aj keby si do nich napísal jednu vetu. Prázdny blok je lacnejší než chýbajúci.
+
+@strana
+stitok: AKO JU ZLEPŠIŤ
+h1: Jeden príklad bije
+h2: desať prídavných mien.
+
+@text
+Keď chceš konkrétny štýl, neopisuj ho. Ukáž ho. Vlož do šablóny jeden krátky príklad toho, ako má výstup vyzerať -- a povedz, že to je vzor, nie obsah.
+
+@terminal PRÍKLAD DO ŠABLÓNY
+VZOR VÝSTUPU (len forma, nie obsah)
+---
+Nadpis: tri slová, bez slovesa
+Prvý riadok: konkrétny údaj
+Zvyšok: dve vety, každá do 12 slov
+---
+
+@pojmy
+JEDEN PRÍKLAD | Stačí jeden dobrý. Tri priemerné výsledok zhoršia, lebo model spriemeruje.
+POVEDZ, ŽE JE TO VZOR | Inak ti ten obsah prepíše do výstupu.
+TVOJ STARÝ TEXT | Najlepší vzor je niečo, čo si sám napísal a bol si s tým spokojný.
+KEĎ NEMÁŠ VZOR | Vypýtaj si tri varianty, vyber najbližší a ten použi ako vzor nabudúce.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Vyplň ju.
+h2: Trikrát.
+
+@zoznam
+01 | Skopíruj šablónu zo strany 02 do poznámok. Odteraz ju máš po ruke.
+02 | Vyplň ju pre úlohu, ktorú robíš najčastejšie. Všetkých šesť blokov.
+03 | Spusti ju. Do bloku NIKDY doplň to, čo ti vo výstupe prekážalo, a spusti znova.
+04 | Zopakuj to ešte dvakrát pre iné úlohy. Po tretíkrát to už budeš vypĺňať bez pozerania.
+05 | Vyplnené verzie si ulož do projektu v claude.ai alebo v ChatGPT. To sú tvoje osobné šablóny.
+
+@pravidlo AKO RÁSTIE DOBRÁ ŠABLÓNA
+Blok NIKDY sa ti bude plniť sám. Vždy, keď ťa niečo vo výstupe naštve, pridaj to tam ako zákaz. Po mesiaci budeš mať šablónu, ktorá je presne tvoja -- a nikto iný ju nemá.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Máš kostru.
+
+@checklist
+Mám šablónu uloženú tam, kde ju nájdem.
+Vyplnil som ju aspoň trikrát na skutočnej práci.
+Dĺžku výstupu uvádzam číslom.
+Mám v nej aspoň tri zákazy.
+Mám v nej vetu „ak niečo chýba, spýtaj sa".
+Keď mi niečo prekáža, pridám to do bloku NIKDY.
+
+@zaver
+hlavne: Ďalších päť lekcií je táto šablóna vyplnená pre obsah, biznis, výskum, kód a agentov.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

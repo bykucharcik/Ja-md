@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>06.5 Kód a debug</title>
+<link rel="stylesheet" href="../build/styl.css">
+</head>
+<body>
+<section class="strana strana--titulna">
+  <div class="obal"></div>
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">ŠABLÓNY × KUCHAR.AI</div></div>
+  <div class="obal__telo">
+    <div class="obal__stitok">KÓD A DEBUG</div>
+    <div class="obal__nadpis"><b>Opíš chybu.</b><span>Nie svoju</span><span>teóriu o nej.</span></div>
+  </div>
+  <div class="uvod dvojstlpec">
+    <div class="dvojstlpec__stitok">ČO ŤA TÁTO LEKCIA NAUČÍ</div>
+    <div class="dvojstlpec__telo">
+      <div class="uvod__hlavne">Zadať opravu kódu tak, aby si dostal riešenie príčiny — a nie prvý nápad, ktorý chybu prelepí.</div>
+      <div class="uvod__vedlajsie">Funguje aj vtedy, keď programovať nevieš. Väčšina práce je v tom, čo do zadania vložíš, nie v tom, čo z neho pochopíš.</div>
+    </div>
+  </div>
+  <div class="stitky"><div class="stitok">Šablóna</div><div class="stitok">13 min</div><div class="stitok">Aj pre neprogramátorov</div></div>
+  <div class="karty"><div class="karta"><div class="karta__hore">VŽDY PRILOŽ</div><div class="karta__stred">Chybovú hlášku</div><div class="karta__dole">CELÚ, DOSLOVA</div></div><div class="karta"><div class="karta__hore">VŽDY NAPÍŠ</div><div class="karta__stred">Čo si čakal</div><div class="karta__dole">INAK NEVIE, ČO JE ZLE</div></div></div>
+  <div class="zaver">
+    <div class="zaver__veta">Po dokončení máš šablónu, ktorá funguje na skript, tabuľku aj web — a vieš, prečo nefunguje „nejde mi to”.</div>
+    <div class="zaver__drobne">Ak pracuješ v Claude Code, väčšinu podkladu si vezme sám zo súborov. V chate mu ho musíš dať ty.</div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>01 / 6</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">ŠABLÓNY × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">PREČO TO NEJDE</div>
+    <div class="nadpis"><b>Nejde mi to</b><span>nie je popis chyby.</span></div>
+    <div class="blok"><p class="odsek">Model ti chybu neopraví z toho, že je múdry. Opraví ju z toho, čo mu dáš. „Nejde mi to” neobsahuje ani jednu informáciu, z ktorej sa dá vychádzať — tak si domyslí najbežnejší problém a ponúkne riešenie naň.</p></div><div class="blok"><p class="odsek">Druhá častá chyba je opačná: namiesto chyby pošleš svoju teóriu. „Asi je problém v tom pripojení.” Model ju vezme ako fakt a bude hľadať tam, aj keď je príčina inde.</p></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div class="krok__stitok">ČO SI UROBIL</div><div class="krok__text">Presné kroky, ktorými sa chyba vyvolá. Aby sa dali zopakovať.</div></div><div class="krok"><div class="krok__cislo">02</div><div class="krok__stitok">ČO SI ČAKAL</div><div class="krok__text">Bez toho model nevie, čo je vlastne zle. Toto vynecháva skoro každý.</div></div><div class="krok"><div class="krok__cislo">03</div><div class="krok__stitok">ČO SA STALO</div><div class="krok__text">Chybová hláška doslova, celá. Nie prerozprávaná.</div></div><div class="krok"><div class="krok__cislo">04</div><div class="krok__stitok">ČO SI SKÚSIL</div><div class="krok__text">Aby neponúkal to, čo už nefungovalo.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">TEORETIZOVANIE NECHAJ NA KONIEC</div><div class="pravidlo__text">Ak máš podozrenie, napíš ho — ale označené: „môj tip, ktorý nemusí byť správny”. Inak si model tvoju domnienku vezme ako zadanie a nájde ti riešenie na problém, ktorý nemáš.</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>02 / 6</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">ŠABLÓNY × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">ŠABLÓNA</div>
+    <div class="nadpis"><b>Kód</b><span>a debug.</span></div>
+    <div class="blok"><div class="terminal__stitok">ŠABLÓNA — OPRAVA CHYBY</div><div class="terminal">KONTEXT
+Prostredie: [jazyk / nástroj / verzia / OS]
+Čo ten kód má robiť: [jedna veta]
+
+ČO SOM UROBIL
+1. [krok]
+2. [krok]
+
+ČO SOM ČAKAL
+[konkrétny výsledok]
+
+ČO SA STALO
+[chybová hláška doslova, celá]
+
+KÓD
+[vlož relevantnú časť, nie celý projekt]
+
+ČO SOM SKÚSIL
+- [pokus] -&gt; [výsledok]
+
+CHCEM
+1. Príčinu — prečo sa to deje
+2. Opravu — najmenšiu možnú zmenu
+3. Ako si overím, že je to opravené
+
+NIKDY
+- Neprepisuj mi celý súbor, keď stačí pár riadkov.
+- Nepridávaj knižnice, ktoré tam nie sú.
+- Ak si nie si istý príčinou, povedz to a navrhni, ako ju zistiť.</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>03 / 6</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">ŠABLÓNY × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">DRUHÝ ŤAH</div>
+    <div class="nadpis"><b>Pýtaj si príčinu,</b><span>nie záplatu.</span></div>
+    <div class="blok"><p class="odsek">Model rád ponúkne rýchlu opravu, ktorá chybu prikryje. Funguje to — kým to za týždeň nepraskne inde. Preto je v šablóne bod „príčinu” ako prvý a „opravu” až druhý.</p></div><div class="blok"><div class="pojem"><div class="pojem__stitok">NAJMENŠIA ZMENA</div><div class="pojem__text">„Oprav to najmenším možným zásahom a povedz, čo presne si zmenil a prečo.”</div></div><div class="pojem"><div class="pojem__stitok">OVERENIE</div><div class="pojem__text">„Ako si overím, že to funguje?” — konkrétny príkaz alebo krok, nie „skús to”.</div></div><div class="pojem"><div class="pojem__stitok">DVE MOŽNOSTI</div><div class="pojem__text">„Daj rýchlu záplatu aj správnu opravu. Povedz, čo riskujem pri každej.”</div></div><div class="pojem"><div class="pojem__stitok">NEROZUMIEM</div><div class="pojem__text">„Vysvetli mi to tak, ako by si to vysvetľoval niekomu, kto tento jazyk nepozná.”</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">KEĎ NEPROGRAMUJEŠ</div><div class="pravidlo__text">Posledný bod používaj bez ostychu. To, že nerozumieš kódu, neznamená, že ho nemôžeš opraviť — znamená to, že si musíš vypýtať vysvetlenie skôr, než niečo spustíš. Nikdy nespúšťaj kód, ktorému nerozumieš, na dátach, ktoré nemáš zálohované.</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>04 / 6</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">ŠABLÓNY × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">PRVÁ ÚLOHA</div>
+    <div class="nadpis"><b>Jedna chyba.</b><span>Dva pokusy.</span></div>
+    <div class="blok"><div class="riadok"><div class="riadok__cislo">01</div><div class="riadok__text">Nájdi si niečo, čo ti reálne nefunguje. Skript, vzorec v tabuľke, nastavenie, čokoľvek.</div></div><div class="riadok"><div class="riadok__cislo">02</div><div class="riadok__text">Napíš to najprv tak, ako by si to napísal bežne — jednou vetou. Výsledok si nechaj.</div></div><div class="riadok"><div class="riadok__cislo">03</div><div class="riadok__text">Vyplň šablónu celú, vrátane „čo som čakal” a celej chybovej hlášky.</div></div><div class="riadok"><div class="riadok__cislo">04</div><div class="riadok__text">Porovnaj: v prvom prípade ti ponúkol riešenie na svoju domnienku. V druhom na tvoju chybu.</div></div><div class="riadok"><div class="riadok__cislo">05</div><div class="riadok__text">Než čokoľvek spustíš, vypýtaj si vysvetlenie a zálohu. V tomto poradí.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">ČO SI Z TOHO ODNIESŤ</div><div class="pravidlo__text">Rozdiel medzi tými dvoma pokusmi nie je v modeli. Je v chybovej hláške, ktorú si v prvom prípade neposlal — a ktorá obsahovala odpoveď.</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>05 / 6</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">ŠABLÓNY × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">FINÁLNY CHECKLIST</div>
+    <div class="nadpis"><b>Hotovo.</b><span>Aj bez programovania.</span></div>
+    <div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Prikladám chybovú hlášku doslova a celú.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Píšem, čo som čakal, nielen čo sa stalo.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Svoje domnienky označujem ako domnienky.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Pýtam si príčinu pred opravou.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Pýtam si spôsob, ako si overím, že je to opravené.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Kódu, ktorý spúšťam, rozumiem aspoň v hrubom.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Dáta, na ktorých to skúšam, mám zálohované.</div></div></div><div class="blok odkaz-na-koniec"><div class="odkaz-na-koniec__hlavne">Posledná lekcia kurzu: system prompt a inštrukcie pre agenta — keď to má bežať bez teba.</div><div class="odkaz-na-koniec__vedlajsie">Ďalšie praktické AI návody nájdeš na @kuchar.ai</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>06 / 6</span></div>
+</section>
+</body>
+</html>

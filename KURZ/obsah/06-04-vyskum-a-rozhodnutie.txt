@@ -1,0 +1,117 @@
+# Modul 06 — Šablóny / lekcia 4
+modul: 06 Šablóny
+cislo: 06.4
+titul: Výskum a rozhodnutie
+stopa: ŠABLÓNY × KUCHAR.AI
+stitky: Šablóna | 13 min | Podklady
+
+@obal
+stitok: VÝSKUM A ROZHODNUTIE
+h1: Najnebezpečnejší
+h2: výstup je ten,
+h3: čo znie isto.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Vypýtať si podklad, na ktorom sa dá postaviť rozhodnutie -- so zdrojmi, s rozlíšením istého od odhadu a s tým, čo hovorí proti.
+vedlajsie: Model píše nesprávne údaje rovnako presvedčivo ako správne. Preto sa tu nepýtame len na odpoveď, ale aj na to, odkiaľ je.
+karta: POVINNÉ | Zdroj pri každom fakte | INAK TO NEBER
+karta: POVINNÉ | Čo hovorí proti | INAK MÁŠ LEN POTVRDENIE
+vysledok: Po dokončení máš jedno svoje rozhodnutie podložené tak, že ho vieš obhájiť aj o mesiac.
+drobne: Táto šablóna je jediná, kde musíš výslovne zapnúť hľadanie na webe. Bez toho dostaneš odpoveď z tréningu -- a tá má dátum.
+
+@strana
+stitok: PROBLÉM
+h1: Model neznie neisto,
+h2: keď si istý nie je.
+
+@text
+Keď človek nevie, počuješ to na ňom. Zaváha, povie „myslím, že". Model to nerobí. Údaj, ktorý má z tréningu overený tisíckrát, a údaj, ktorý si práve domyslel, napíše úplne rovnakým tónom.
+
+@text
+Preto sa pri výskume nepýtame len na odpoveď. Pýtame sa na odpoveď **plus na to, ako veľmi si je ňou istý a odkiaľ ju má**.
+
+@kroky
+01 | FAKT | Dá sa overiť v zdroji, ktorý model uvedie. Zdroj musí byť otvárateľný.
+02 | ODHAD | Model to vyvodil. Môže byť rozumný, ale nie je to údaj.
+03 | NEVIEM | Legitímna odpoveď. Ak ju nikdy nedostaneš, tvoja šablóna je zle napísaná.
+
+@pravidlo NAJUŽITOČNEJŠÍ RIADOK CELÉHO MODULU
+„Pri každom tvrdení označ: FAKT (so zdrojom) / ODHAD / NEVIEM." Jedna veta, ktorá ti ušetrí to najtrápnejšie -- poslať klientovi vymyslené číslo.
+
+@strana
+stitok: ŠABLÓNA
+h1: Výskum
+h2: a rozhodnutie.
+
+@terminal ŠABLÓNA — PODKLAD PRE ROZHODNUTIE
+ROLA
+Si analytik. Pripravuješ podklad pre rozhodnutie, nie článok.
+
+ÚLOHA
+Mám sa rozhodnúť medzi [A] a [B] pre [účel].
+Pozri na web a priprav podklad.
+
+ČO O TOM VIEM
+- Kontext: [moja situácia, veľkosť, rozpočet]
+- Čo je pre mňa dôležité, zoradené: [1., 2., 3.]
+- Čo už mám vyskúšané: [skúsenosť]
+
+VÝSTUP
+1. Tabuľka: kritérium | A | B | zdroj
+2. Čo hovorí PROTI každej možnosti — min. 2 veci ku každej
+3. Za akých podmienok je správne A a za akých B
+4. Čo by som potreboval vedieť navyše, aby bolo rozhodnutie jasné
+
+PRI KAŽDOM TVRDENÍ OZNAČ
+FAKT (+ odkaz) / ODHAD / NEVIEM
+
+NIKDY
+- Nevymýšľaj čísla, ceny ani dátumy.
+- Neuvádzaj zdroj, ktorý si neotvoril.
+- Nedávaj odporúčanie bez podmienok, za ktorých platí.
+
+@strana
+stitok: KONTROLA
+h1: Over tri veci.
+h2: Vždy tie isté.
+
+@pojmy
+OTVOR DVA ODKAZY | Nie všetky -- dva náhodné. Ak nesedia, neveríš zvyšku a začínaš odznova.
+POZRI DÁTUM | Údaj z roku 2023 o cenách ti dnes nepomôže. Dátum musí byť pri každom zdroji.
+HĽADAJ PROTIARGUMENT | Ak sekcia „čo hovorí proti" znie slabo a formálne, model ti len potvrdzuje, čo si chcel počuť.
+SKÚS OPAČNE | Polož tú istú otázku obrátene: „prečo je A zlá voľba". Ak dostaneš rovnako silnú odpoveď, obe strany sú spracované poctivo.
+
+@pravidlo NAJČASTEJŠIA PASCA
+Ak si do zadania napíšeš, ku ktorej možnosti sa prikláňaš, dostaneš podklad, ktorý ťa podporí. Nenapíš to. Nech to vyjde z kritérií, nie z tvojho tónu.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jedno rozhodnutie.
+h2: Ktoré odkladáš.
+
+@zoznam
+01 | Vyber si rozhodnutie, ktoré máš teraz na stole -- nástroj, dodávateľ, spôsob práce.
+02 | Vyplň šablónu. Kritériá zoraď podľa dôležitosti, to je najdôležitejší blok.
+03 | Nikde nenaznač, ku ktorej možnosti sa prikláňaš.
+04 | Z výstupu otvor dva náhodné zdroje a over ich. Ak nesedia, celý výstup zahoď.
+05 | Prečítaj si bod 4 (čo by som potreboval vedieť navyše). Toto je často to najcennejšie z celého výstupu.
+
+@pravidlo AK VYJDE, ŽE TO NEVIEŠ ROZHODNÚŤ
+Tak to je výsledok, nie zlyhanie. Bod 4 ti povie, aký údaj si musíš zohnať sám. To je oveľa užitočnejšie než odporúčanie postavené na vzduchu.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Vieš to obhájiť.
+
+@checklist
+V zadaní mám riadok FAKT / ODHAD / NEVIEM.
+Výslovne som si vypýtal hľadanie na webe.
+Kritériá mám zoradené podľa dôležitosti.
+Nenaznačil som, ku ktorej možnosti sa prikláňam.
+Otvoril som dva náhodné zdroje a overil ich.
+Mám sekciu „čo hovorí proti" ku každej možnosti.
+Viem, aký údaj mi ešte chýba.
+
+@zaver
+hlavne: Ďalšia šablóna: kód a debug -- aj pre toho, kto programovať nevie.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

@@ -1,0 +1,118 @@
+# Modul 06 — Šablóny / lekcia 3
+modul: 06 Šablóny
+cislo: 06.3
+titul: Biznis a operácie
+stopa: ŠABLÓNY × KUCHAR.AI
+stitky: Šablóna | 12 min | Procesy
+
+@obal
+stitok: BIZNIS A OPERÁCIE
+h1: Výstupom nie je
+h2: text.
+h3: Je to postup.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Zadať prevádzkovú úlohu tak, aby z nej vypadol postup, ktorý sa dá vykonať -- nie odsek o tom, aké je to dôležité.
+vedlajsie: Rozdiel je v jednej veci: pri každom kroku musí byť napísané, kto ho robí, kedy a podľa čoho sa pozná, že je hotový.
+karta: KAŽDÝ KROK | Kto, kedy, hotovo | INAK TO NIE JE POSTUP
+karta: NAJVÄČŠIA CHYBA | Chýbajúce čísla | KOĽKO, DOKEDY, ZA KOĽKO
+vysledok: Po dokončení máš jeden svoj proces prepísaný do podoby, podľa ktorej ho vie spraviť aj niekto iný.
+drobne: Šablóna funguje na onboarding, reklamácie, mesačné uzávierky, prípravu ponuky aj na odovzdanie práce kolegovi.
+
+@strana
+stitok: PROBLÉM
+h1: Rada nie je
+h2: postup.
+
+@text
+Keď sa spýtaš „ako mám nastaviť onboarding klienta", dostaneš päť odsekov o tom, že je dôležitá komunikácia a jasné očakávania. Je to pravda a nie je to na nič -- pretože podľa toho nikto nič nespraví.
+
+@text
+Postup je niečo iné. Má kroky, poradie, zodpovednú osobu a podmienku, podľa ktorej sa pozná, že krok skončil. Ak to v zadaní nevypýtaš, nedostaneš to.
+
+@kroky
+01 | RADA | „Komunikuj jasne a stanov očakávania." -> nevykonateľné.
+02 | POSTUP | „Do 24 h po podpise: pošli uvítací mail zo šablóny A. Hotovo = klient potvrdil termín." -> vykonateľné.
+03 | ROZDIEL | Sloveso, osoba, čas a podmienka dokončenia. Štyri veci, ktoré si musíš vypýtať.
+
+@strana
+stitok: ŠABLÓNA
+h1: Biznis
+h2: a operácie.
+
+@terminal ŠABLÓNA — PROCES
+ROLA
+Si prevádzkový manažér v [odvetvie], firma má [počet] ľudí.
+
+ÚLOHA
+Navrhni postup pre [proces] od [začiatok] po [koniec].
+
+PODKLAD — REALITA, NIE IDEÁL
+- Kto sa toho dnes dotýka: [role]
+- Nástroje, ktoré máme: [zoznam]
+- Čo dnes najčastejšie zlyhá: [konkrétne]
+- Obmedzenia: [rozpočet, čas, ľudia, pravidlá]
+
+VÝSTUP
+Tabuľka: krok | kto | kedy | hotovo = | čo keď nie
+Počet krokov: [max 8]
+Pod tabuľkou: 3 najväčšie riziká a čo s nimi.
+
+NIKDY
+- Nenavrhuj nástroj, ktorý nemáme v podklade.
+- Nepíš všeobecné rady bez vykonateľného kroku.
+- Nevymýšľaj čísla, normy ani lehoty.
+
+AK NIEČO CHÝBA
+Spýtaj sa. Nedopĺňaj si našu realitu podľa priemeru v odvetví.
+
+@pravidlo STĹPEC „HOTOVO ="
+Toto je stĺpec, ktorý oddeľuje použiteľný postup od zoznamu želaní. „Hotovo = klient potvrdil termín" sa dá overiť. „Hotovo = klient je informovaný" nie.
+
+@strana
+stitok: DRUHÝ ŤAH
+h1: Nechaj si to
+h2: rozbiť.
+
+@text
+Keď máš postup, nechaj ho otestovať skôr, než ho niekomu dáš. Model je v tomto užitočnejší ako pri vymýšľaní -- hľadať diery ide ľahšie než ich neurobiť.
+
+@pojmy
+NAJDI DIERY | „Kde sa tento postup zasekne, ak ochorie človek z kroku 3?"
+SPOČÍTAJ ČAS | „Koľko minút zaberie každý krok? Spočítaj to a povedz, čo je najdrahšie."
+ČO KEĎ ZLYHÁ | „Pre každý krok napíš, čo sa stane, keď sa nespraví načas."
+SKRÁŤ | „Ktoré dva kroky sa dajú spojiť bez straty kontroly?"
+
+@pravidlo AKO POZNÁŠ DOBRÝ VÝSTUP
+Dobrý výstup je ten, ktorý by si vedel dať novému kolegovi bez slova vysvetlenia. Ak by sa musel na niečo spýtať, ten krok nie je hotový.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jeden proces.
+h2: Ten, čo ťa najviac hnevá.
+
+@zoznam
+01 | Vyber si proces, ktorý u teba pravidelne drhne. Nie ten najdôležitejší -- ten najotravnejší.
+02 | Vyplň šablónu. Do bloku „čo dnes najčastejšie zlyhá" napíš pravdu, nie diplomatickú verziu.
+03 | Vypýtaj si tabuľku s max ôsmimi krokmi. Viac ako osem si nikto nezapamätá.
+04 | Použi druhý ťah: nechaj si postup rozbiť otázkou „kde sa to zasekne".
+05 | Prepíš finálnu verziu a skús ju raz odovzdať niekomu inému bez vysvetľovania.
+
+@pravidlo PREČO OSEM KROKOV
+Postup, ktorý má pätnásť krokov, sa nedodržuje -- prečíta sa raz a potom sa robí po svojom. Ak ti vyjde viac, rozdeľ to na dva procesy s jasným odovzdaním medzi nimi.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Dá sa podľa toho pracovať.
+
+@checklist
+Každý krok má osobu, čas a podmienku „hotovo =".
+Postup má najviac osem krokov.
+V podklade som napísal, čo dnes reálne zlyháva.
+Nenavrhuje nástroje, ktoré nemáme k dispozícii.
+Nechal som si postup rozbiť otázkou, kde sa zasekne.
+Dal by som ho novému kolegovi bez vysvetľovania.
+
+@zaver
+hlavne: Ďalšia šablóna: výskum a rozhodnutie -- keď potrebuješ podklad, na ktorom sa dá stáť.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

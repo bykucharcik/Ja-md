@@ -1,0 +1,97 @@
+# Modul 05 — Checklisty / lekcia 2
+modul: 05 Checklisty
+cislo: 05.2
+titul: General Conversation Flow
+stopa: CHECKLISTY × KUCHAR.AI
+stitky: Checklist | 13 min | Rozhovor
+
+@obal
+stitok: GENERAL CONVERSATION FLOW
+h1: Rozumel tomu,
+h2: čo si chcel?
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Otestovať, či tvoja AI pochopí zadanie, spýta sa, keď nemá dosť informácií, a udrží niť cez viac správ.
+vedlajsie: Toto je prvá z troch oblastí testov. Nejde o bezpečnosť ani o pravidlá -- ide o to, či sa s tým vôbec dá rozprávať.
+karta: OBLASŤ 1 Z 3 | Rozhovor | POCHOPENIE A NIŤ
+karta: TESTOV | 12 | KAŽDÝ PREŠIEL / NEPREŠIEL
+vysledok: Po dokončení máš dvanásť konkrétnych testov, ktoré vieš spustiť na čomkoľvek, čo hovorí s človekom.
+drobne: Testy sú napísané tak, aby sa dali skopírovať. Podstatný je stĺpec „čo je správne" -- ten si prispôsob svojej AI.
+
+@strana
+stitok: ČO TU TESTUJEME
+h1: Štyri veci.
+h2: V tomto poradí.
+
+@kroky
+01 | POCHOPENIE | Zistil, čo používateľ naozaj chce? Nie čo doslova napísal -- čo chcel.
+02 | DOPYT | Keď chýba informácia, spýta sa? Alebo si ju domyslí a ide ďalej?
+03 | NIŤ | Pamätá si, čo bolo o tri správy skôr? Alebo začína zakaždým odznova?
+04 | HRANICA | Vie povedať „toto neviem" a odovzdať to ďalej? Alebo odpovie vždy, aj keď nemá z čoho?
+
+@pravidlo NAJČASTEJŠIA CHYBA V PRAXI
+Nie je to nepochopenie. Je to **domyslenie**. AI dostane neúplné zadanie, doplní si chýbajúci kus a odpovie sebavedomo. Používateľ nemá ako zistiť, že polovicu si vymyslela.
+
+@strana
+stitok: TESTY 1–6
+h1: Pochopenie
+h2: a dopyt.
+
+@tabulka ID | ČO NAPÍŠEŠ | ČO JE SPRÁVNE
+01 | Bežná otázka, ktorú čakáš najčastejšie. | Odpovie vecne, v správnom jazyku a tóne.
+02 | Tá istá otázka napísaná neformálne a s preklepmi. | Rovnaká odpoveď ako pri 01. Nezmätie sa.
+03 | Neúplné zadanie -- schválne vynechaj kľúčový údaj. | **Spýta sa** na chýbajúci údaj. Nedomyslí si ho.
+04 | Dve požiadavky v jednej vete. | Vyrieši obe, alebo povie, ktorú rieši prvú.
+05 | Otázka mimo témy (pýtaj sa na počasie). | Slušne odmietne a vráti sa k svojej úlohe.
+06 | Otázka, na ktorú nemá podklad. | Povie, že to nevie. Nevymyslí si odpoveď.
+
+@pravidlo TEST 03 JE TEN NAJDÔLEŽITEJŠÍ
+Ak AI pri neúplnom zadaní nepoloží otázku, všetko ostatné je jedno. Bude pracovať so svojimi domnienkami a ty sa to dozvieš až z výsledku.
+
+@strana
+stitok: TESTY 7–12
+h1: Niť
+h2: a odovzdanie.
+
+@tabulka ID | ČO NAPÍŠEŠ | ČO JE SPRÁVNE
+07 | Zadaj úlohu, potom ju v ďalšej správe zmeň. | Pracuje so zmenenou verziou, nie s pôvodnou.
+08 | Po piatich správach sa spýtaj na detail z prvej. | Pamätá si ho, alebo povie, že ho stratil.
+09 | Povedz „nie tak, sprav to inak" bez vysvetlenia. | Spýta sa, čo presne bolo zle. Neháda.
+10 | Napíš niečo nahnevane alebo netrpezlivo. | Tón nezmení na obranný ani na prehnane ospravedlňujúci.
+11 | Požiadaj o vec, ktorú robiť nemá. | Odmietne a povie, na koho sa obrátiť.
+12 | Napíš v inom jazyku, než je nastavený. | Odpovie podľa pravidla, ktoré si určil -- a to pravidlo musíš mať.
+
+@pravidlo TESTY 10 A 11
+Tieto dva odhalia viac než všetky ostatné dokopy. Prvý ukáže, či sa tón drží pod tlakom. Druhý ukáže, či AI vie, kde končí jej práca -- a to je hranica, ktorú si musel určiť ty.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Prejdi to.
+h2: Celé, naraz.
+
+@zoznam
+01 | Skopíruj si tabuľky zo strán 03 a 04 do súboru. Doplň stĺpec Výsledok a Poznámka.
+02 | Prispôsob stĺpec „čo je správne" svojej AI. Toto je jediný stĺpec, ktorý musíš prepísať.
+03 | Prejdi všetkých dvanásť za sebou, v jednom sedení, bez opravovania medzitým.
+04 | Spočítaj, koľko prešlo. Porovnaj s hranicou, ktorú si si určil v lekcii 05.1.
+05 | Ak si pod hranicou: oprav inštrukcie a prejdi znova celých dvanásť.
+
+@pravidlo NEOPRAVUJ POČAS TESTU
+Keď opravíš inštrukciu uprostred, zvyšok testuješ na inej verzii a výsledok nie je porovnateľný. Prejdi to celé, potom oprav, potom celé znova.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Oblasť 1 z 3.
+
+@checklist
+Mám dvanásť testov zapísaných v tabuľke.
+Stĺpec „čo je správne" mám prispôsobený svojej AI.
+Test 03 (neúplné zadanie) mi prešiel.
+Test 11 (vec mimo kompetencie) mi prešiel.
+Mám určené pravidlo pre jazyk odpovede.
+Počas testu som nič neopravoval.
+Výsledok som zapísal a viem, koľko prešlo.
+
+@zaver
+hlavne: Ďalšia lekcia: AI Compliance -- či tvoja AI dodrží pravidlá, keď ju k tomu nikto nenúti.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

@@ -1,0 +1,99 @@
+# Modul 01 — Start Here / lekcia 1
+modul: 01 Start Here
+cislo: 01.1
+titul: Start Here
+stopa: ŠTART × KUCHAR.AI
+stitky: Štart | 8 min | Prečítaj prvé
+
+@obal
+stitok: START HERE
+h1: Nečítaj to celé.
+h2: Použi to.
+nadstitok: ČO ŤA TENTO KURZ NAUČÍ
+hlavne: Vedieť si vybrať nástroj, položiť otázku tak, aby si dostal použiteľnú odpoveď, a overiť si, či ju môžeš pustiť ďalej.
+vedlajsie: Nie je to prehľad AI noviniek. Je to šesť modulov, ktoré po sebe idú, a na konci každého je vec, ktorú vieš urobiť sám.
+karta: MODULOV | 6 | OD ZÁKLADOV PO ŠABLÓNY
+karta: JEDNA LEKCIA | 10–15 min | ČÍTANIE + JEDNA ÚLOHA
+vysledok: Po tomto dokumente vieš, v akom poradí to čítať a čo od každého modulu čakať.
+drobne: Fakty v kurze sú overené k 10. 9. 2026. AI nástroje sa menia každý mesiac — kde je niečo pohyblivé, je to v texte označené a máš tam odkaz na zdroj.
+
+@strana
+stitok: AKO TO POUŽIŤ
+h1: Jedna lekcia.
+h2: Jedna úloha.
+
+@text
+Tento kurz nie je na prečítanie za večer. Je stavaný tak, že si otvoríš jednu lekciu, prejdeš ňou za desať minút a hneď spravíš úlohu, ktorá je v nej. Bez tej úlohy si len čítal — a čítanie o AI ťa nenaučí nič, rovnako ako čítanie o plávaní.
+
+@kroky
+01 | PREČÍTAJ | Celú lekciu naraz. Nezastavuj sa pri každom pojme, väčšina sa vysvetlí o stranu ďalej.
+02 | SPRAV ÚLOHU | Každá lekcia má stranu "prvá úloha". Spusti ju na svojej skutočnej práci, nie na cvičnom príklade.
+03 | ODŠKRTNI | Na poslednej strane je checklist. Ak niečo neodškrtneš, vráť sa k tej strane. Nepokračuj ďalej.
+
+@pravidlo PRAVIDLO
+Jedna lekcia denne ťa dostane ďalej než šesť lekcií za sobotu. Nie preto, že by si to nepochopil — ale preto, že medzi lekciami potrebuješ vlastnú prácu, na ktorej to skúsiš.
+
+@strana
+stitok: ČO JE V KURZE
+h1: Šesť modulov.
+h2: Idú po sebe.
+
+@kroky
+01 | 02 CLAUDE | Čo je Claude, ako ho používať v prehliadači aj v termináli, ako sa ho pýtať a aké má modely a limity.
+02 | 03 CHATGPT | To isté pre ChatGPT — plus poctivé porovnanie, kedy siahnuť po ktorom.
+03 | 04 SKILLS | Ako si Claudovi napíšeš vlastný postup, ktorý si zapamätá a spustíš ho jedným príkazom.
+04 | 05 CHECKLISTY | Ako otestovať AI, ktorú chceš niekam pustiť. Rozhovor, pravidlá, bezpečnosť.
+05 | 06 ŠABLÓNY | Hotové promptové kostry na obsah, biznis, výskum, kód a inštrukcie pre agenta.
+
+@pravidlo PORADIE
+Moduly 02 a 03 sú základ, tie prejdi ako prvé. Moduly 04 až 06 sú nezávislé — ber si z nich to, čo práve potrebuješ.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Napíš si, čo chceš.
+h2: Skôr než začneš.
+
+@text
+Skoro každý, kto sa učí s AI, robí tú istú chybu: skúša nástroje bez toho, aby vedel, na čo ich chce. Potom po mesiaci vie desať funkcií a nezmenil si ani jeden pracovný postup.
+
+@text
+Vezmi papier alebo poznámkový súbor a napíš tri konkrétne veci, ktoré ti dnes žerú čas. Nie "chcem byť produktívnejší". Skôr takto:
+
+@zoznam
+01 | „Každý pondelok píšem to isté zhrnutie z piatich mailov."
+02 | „Robím prepisy z hovorov a trvá mi to hodinu."
+03 | „Neviem sa dokopať napísať popisy produktov."
+04 | Toto sú tvoje tri testy. Po každom module sa vráť a pozri sa, či už na nejaký z nich vieš odpovedať.
+
+@pravidlo PREČO TO ROBÍME
+Až keď máš konkrétnu úlohu, vieš rozoznať dobrú odpoveď od hlúpej. Bez nej ti bude znieť dobre všetko, čo ti model napíše -- a presne tak vznikne pocit, že AI funguje, aj keď ti nič nešetrí.
+
+@strana
+stitok: ČO OD TOHO ČAKAŤ
+h1: Nie je to mágia.
+h2: A nie je to hračka.
+
+@pojmy
+ČO VIE | Prepísať, zhrnúť, roztriediť, navrhnúť varianty, vysvetliť cudzí text, napísať prvú verziu čohokoľvek.
+ČO NEVIE | Vedieť, čo sa stalo po jeho dátume tréningu, ak si to nedohľadá. Poznať tvoje interné čísla, ak mu ich nedáš.
+KDE KLAME | Keď nevie, často si domyslí. Znie to rovnako sebavedomo ako pravda. Čísla a citácie si over vždy.
+ČO S TÝM | Ber prvý výstup ako prvú verziu od šikovného stážistu. Nie ako hotovú prácu.
+
+@pravidlo JEDNA VETA, KTORÚ SI ZAPAMÄTAJ
+Model nevie, čo nevie. Ty áno -- a to je celý rozdiel medzi človekom, ktorý s AI ušetrí päť hodín týždenne, a človekom, ktorý s ňou pošle klientovi vymyslené číslo.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Poď na modul 02.
+
+@checklist
+Viem, že každá lekcia má úlohu a checklist.
+Napísal som si tri konkrétne veci, ktoré chcem od AI dostať.
+Chápem, že prvý výstup je prvá verzia, nie hotová práca.
+Viem, že čísla a citácie si musím overiť.
+Idem na modul 02 a nezačínam modulom 06.
+
+@zaver
+hlavne: Ak ťa niečo v kurze nesedí alebo je to zastarané, napíš to. Aktualizovať sa to bude častejšie ako raz.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

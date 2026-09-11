@@ -1,0 +1,125 @@
+# Modul 06 — Šablóny / lekcia 5
+modul: 06 Šablóny
+cislo: 06.5
+titul: Kód a debug
+stopa: ŠABLÓNY × KUCHAR.AI
+stitky: Šablóna | 13 min | Aj pre neprogramátorov
+
+@obal
+stitok: KÓD A DEBUG
+h1: Opíš chybu.
+h2: Nie svoju
+h3: teóriu o nej.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Zadať opravu kódu tak, aby si dostal riešenie príčiny -- a nie prvý nápad, ktorý chybu prelepí.
+vedlajsie: Funguje aj vtedy, keď programovať nevieš. Väčšina práce je v tom, čo do zadania vložíš, nie v tom, čo z neho pochopíš.
+karta: VŽDY PRILOŽ | Chybovú hlášku | CELÚ, DOSLOVA
+karta: VŽDY NAPÍŠ | Čo si čakal | INAK NEVIE, ČO JE ZLE
+vysledok: Po dokončení máš šablónu, ktorá funguje na skript, tabuľku aj web -- a vieš, prečo nefunguje „nejde mi to".
+drobne: Ak pracuješ v Claude Code, väčšinu podkladu si vezme sám zo súborov. V chate mu ho musíš dať ty.
+
+@strana
+stitok: PREČO TO NEJDE
+h1: Nejde mi to
+h2: nie je popis chyby.
+
+@text
+Model ti chybu neopraví z toho, že je múdry. Opraví ju z toho, čo mu dáš. „Nejde mi to" neobsahuje ani jednu informáciu, z ktorej sa dá vychádzať -- tak si domyslí najbežnejší problém a ponúkne riešenie naň.
+
+@text
+Druhá častá chyba je opačná: namiesto chyby pošleš svoju teóriu. „Asi je problém v tom pripojení." Model ju vezme ako fakt a bude hľadať tam, aj keď je príčina inde.
+
+@kroky
+01 | ČO SI UROBIL | Presné kroky, ktorými sa chyba vyvolá. Aby sa dali zopakovať.
+02 | ČO SI ČAKAL | Bez toho model nevie, čo je vlastne zle. Toto vynecháva skoro každý.
+03 | ČO SA STALO | Chybová hláška doslova, celá. Nie prerozprávaná.
+04 | ČO SI SKÚSIL | Aby neponúkal to, čo už nefungovalo.
+
+@pravidlo TEORETIZOVANIE NECHAJ NA KONIEC
+Ak máš podozrenie, napíš ho -- ale označené: „môj tip, ktorý nemusí byť správny". Inak si model tvoju domnienku vezme ako zadanie a nájde ti riešenie na problém, ktorý nemáš.
+
+@strana
+stitok: ŠABLÓNA
+h1: Kód
+h2: a debug.
+
+@terminal ŠABLÓNA — OPRAVA CHYBY
+KONTEXT
+Prostredie: [jazyk / nástroj / verzia / OS]
+Čo ten kód má robiť: [jedna veta]
+
+ČO SOM UROBIL
+1. [krok]
+2. [krok]
+
+ČO SOM ČAKAL
+[konkrétny výsledok]
+
+ČO SA STALO
+[chybová hláška doslova, celá]
+
+KÓD
+[vlož relevantnú časť, nie celý projekt]
+
+ČO SOM SKÚSIL
+- [pokus] -> [výsledok]
+
+CHCEM
+1. Príčinu — prečo sa to deje
+2. Opravu — najmenšiu možnú zmenu
+3. Ako si overím, že je to opravené
+
+NIKDY
+- Neprepisuj mi celý súbor, keď stačí pár riadkov.
+- Nepridávaj knižnice, ktoré tam nie sú.
+- Ak si nie si istý príčinou, povedz to a navrhni, ako ju zistiť.
+
+@strana
+stitok: DRUHÝ ŤAH
+h1: Pýtaj si príčinu,
+h2: nie záplatu.
+
+@text
+Model rád ponúkne rýchlu opravu, ktorá chybu prikryje. Funguje to -- kým to za týždeň nepraskne inde. Preto je v šablóne bod „príčinu" ako prvý a „opravu" až druhý.
+
+@pojmy
+NAJMENŠIA ZMENA | „Oprav to najmenším možným zásahom a povedz, čo presne si zmenil a prečo."
+OVERENIE | „Ako si overím, že to funguje?" -- konkrétny príkaz alebo krok, nie „skús to".
+DVE MOŽNOSTI | „Daj rýchlu záplatu aj správnu opravu. Povedz, čo riskujem pri každej."
+NEROZUMIEM | „Vysvetli mi to tak, ako by si to vysvetľoval niekomu, kto tento jazyk nepozná."
+
+@pravidlo KEĎ NEPROGRAMUJEŠ
+Posledný bod používaj bez ostychu. To, že nerozumieš kódu, neznamená, že ho nemôžeš opraviť -- znamená to, že si musíš vypýtať vysvetlenie skôr, než niečo spustíš. Nikdy nespúšťaj kód, ktorému nerozumieš, na dátach, ktoré nemáš zálohované.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jedna chyba.
+h2: Dva pokusy.
+
+@zoznam
+01 | Nájdi si niečo, čo ti reálne nefunguje. Skript, vzorec v tabuľke, nastavenie, čokoľvek.
+02 | Napíš to najprv tak, ako by si to napísal bežne -- jednou vetou. Výsledok si nechaj.
+03 | Vyplň šablónu celú, vrátane „čo som čakal" a celej chybovej hlášky.
+04 | Porovnaj: v prvom prípade ti ponúkol riešenie na svoju domnienku. V druhom na tvoju chybu.
+05 | Než čokoľvek spustíš, vypýtaj si vysvetlenie a zálohu. V tomto poradí.
+
+@pravidlo ČO SI Z TOHO ODNIESŤ
+Rozdiel medzi tými dvoma pokusmi nie je v modeli. Je v chybovej hláške, ktorú si v prvom prípade neposlal -- a ktorá obsahovala odpoveď.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Aj bez programovania.
+
+@checklist
+Prikladám chybovú hlášku doslova a celú.
+Píšem, čo som čakal, nielen čo sa stalo.
+Svoje domnienky označujem ako domnienky.
+Pýtam si príčinu pred opravou.
+Pýtam si spôsob, ako si overím, že je to opravené.
+Kódu, ktorý spúšťam, rozumiem aspoň v hrubom.
+Dáta, na ktorých to skúšam, mám zálohované.
+
+@zaver
+hlavne: Posledná lekcia kurzu: system prompt a inštrukcie pre agenta -- keď to má bežať bez teba.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>02.3 Claude Code</title>
+<link rel="stylesheet" href="../build/styl.css">
+</head>
+<body>
+<section class="strana strana--titulna">
+  <div class="obal"></div>
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">CLAUDE × KUCHAR.AI</div></div>
+  <div class="obal__telo">
+    <div class="obal__stitok">CLAUDE CODE</div>
+    <div class="obal__nadpis"><b>Nekopíruj kód.</b><span>Pusť ho k súborom.</span></div>
+  </div>
+  <div class="uvod dvojstlpec">
+    <div class="dvojstlpec__stitok">ČO ŤA TÁTO LEKCIA NAUČÍ</div>
+    <div class="dvojstlpec__telo">
+      <div class="uvod__hlavne">Nainštalovať Claude Code, otvoriť s ním prvý projekt, dať mu trvalé pravidlá cez CLAUDE.md a nastaviť, čo smie a čo nie.</div>
+      <div class="uvod__vedlajsie">Nie je to nástroj len pre programátorov. Je to Claude, ktorý vidí priečinok a vie v ňom robiť — aj keď sú v ňom texty, tabuľky a poznámky.</div>
+    </div>
+  </div>
+  <div class="stitky"><div class="stitok">Claude Code</div><div class="stitok">18 min</div><div class="stitok">Mierne pokročilý</div></div>
+  <div class="karty"><div class="karta"><div class="karta__hore">INŠTALÁCIA</div><div class="karta__stred">jeden príkaz</div><div class="karta__dole">MAC, LINUX, WINDOWS</div></div><div class="karta"><div class="karta__hore">PRAVIDLÁ</div><div class="karta__stred">CLAUDE.md</div><div class="karta__dole">ČÍTA HO PRED KAŽDOU PRÁCOU</div></div></div>
+  <div class="zaver">
+    <div class="zaver__veta">Po dokončení máš Claude Code spustený vo vlastnom priečinku, s vlastným CLAUDE.md a s premyslenými povoleniami.</div>
+    <div class="zaver__drobne">Stav k 10. 9. 2026. Príkazy a cesty overené v oficiálnej dokumentácii code.claude.com — odkazy sú na poslednej strane.</div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>01 / 7</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">CLAUDE × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">ČO TO VLASTNE JE</div>
+    <div class="nadpis"><b>Claude, ktorý</b><span>vidí priečinok.</span></div>
+    <div class="blok"><p class="odsek">Claude Code je Claude spustený vo vnútri priečinka. Číta súbory, ktoré tam sú, mení ich, spúšťa príkazy a vie použiť git. Rozdiel oproti chatu nie je v tom, že by bol múdrejší — je v tom, že medzi ním a tvojou prácou nie je schránka.</p></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div class="krok__stitok">TERMINÁL</div><div class="krok__text">Základná podoba. Napíšeš <code>claude</code> v priečinku a začneš písať po slovensky.</div></div><div class="krok"><div class="krok__cislo">02</div><div class="krok__stitok">EDITOR</div><div class="krok__text">Rozšírenie do VS Code / Cursor a plugin do JetBrains. To isté, len s náhľadom zmien.</div></div><div class="krok"><div class="krok__cislo">03</div><div class="krok__stitok">DESKTOP APP</div><div class="krok__text">Samostatná aplikácia. Vidíš zmeny vizuálne, vieš pustiť viac sedení naraz.</div></div><div class="krok"><div class="krok__cislo">04</div><div class="krok__stitok">WEB</div><div class="krok__text"><code>claude.ai/code</code> v prehliadači, bez inštalácie. Dobré na dlhé úlohy, ktoré nechceš mať na svojom počítači.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">NEJDE LEN O KÓD</div><div class="pravidlo__text">Priečinok s dvadsiatimi PDF-kami, tabuľkou a poznámkami je pre Claude Code rovnaký projekt ako repozitár. „Prejdi tie faktúry a sprav z nich prehľad” je úplne legitímne zadanie.</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>02 / 7</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">CLAUDE × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">INŠTALÁCIA</div>
+    <div class="nadpis"><b>Jeden príkaz.</b><span>Potom prihlásenie.</span></div>
+    <div class="blok"><div class="terminal__stitok">TERMINÁL — MAC, LINUX, WSL</div><div class="terminal">curl -fsSL https://claude.ai/install.sh | bash</div></div><div class="blok"><div class="terminal__stitok">POWERSHELL — WINDOWS</div><div class="terminal">irm https://claude.ai/install.ps1 | iex</div></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div class="krok__stitok">SPUSTI</div><div class="krok__text">Prejdi do priečinka svojho projektu a napíš <code>claude</code>. Pri prvom spustení sa otvorí prehliadač na prihlásenie.</div></div><div class="krok"><div class="krok__cislo">02</div><div class="krok__stitok">PRIHLÁS SA</div><div class="krok__text">Účtom Claude Pro alebo Max. Claude Code je v cene plateného predplatného.</div></div><div class="krok"><div class="krok__cislo">03</div><div class="krok__stitok">OVER</div><div class="krok__text">Napíš <code>/status</code>. Uvidíš, ktorým účtom si prihlásený a aký model beží.</div></div></div><div class="blok"><p class="drobne">Na Windowse sa oplatí mať nainštalovaný Git for Windows — bez neho Claude Code používa PowerShell namiesto bash-u. Ak inštalácia spadne, <code>/doctor</code> a dokumentácia troubleshootingu povedia prečo.</p></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>03 / 7</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">CLAUDE × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">CLAUDE.MD</div>
+    <div class="nadpis"><b>Napíš raz.</b><span>Platí vždy.</span></div>
+    <div class="blok"><p class="odsek"><code>CLAUDE.md</code> je obyčajný textový súbor v koreni projektu. Claude Code ho prečíta na začiatku každého sedenia. Je to miesto, kam napíšeš to, čo by si inak vysvetľoval znova a znova.</p></div><div class="blok"><div class="terminal__stitok">CLAUDE.MD — PRÍKLAD</div><div class="terminal"># Pravidlá projektu
+
+- Odpovedaj po slovensky.
+- Pred commitom spusti: npm test
+- Texty pre klienta píš krátkymi vetami, bez slova „riešenie".
+- Súbory v priečinku /archiv nikdy nemeň.</div></div><div class="blok"><div class="pojem"><div class="pojem__stitok">KAM TO DAŤ</div><div class="pojem__text"><code>./CLAUDE.md</code> v koreni projektu. Osobné pravidlá pre všetky projekty patria do <code>~/.claude/CLAUDE.md</code>.</div></div><div class="pojem"><div class="pojem__stitok">AKO DLHÉ</div><div class="pojem__text">Do 200 riadkov. Dlhší súbor zaberá kontext a Claude sa ho drží horšie.</div></div><div class="pojem"><div class="pojem__stitok">AKO PÍSAŤ</div><div class="pojem__text">Konkrétne a overiteľne. „Odsadzuj dvoma medzerami” áno, „formátuj pekne” nie.</div></div><div class="pojem"><div class="pojem__stitok">RÝCHLY ŠTART</div><div class="pojem__text">Príkaz <code>/init</code> prejde projekt a vygeneruje ti prvú verziu. Potom ju uprav.</div></div><div class="pojem"><div class="pojem__stitok">ČO TO NIE JE</div><div class="pojem__text">Nie je to zámok. Sú to inštrukcie, nie vynútené pravidlo — to sú povolenia.</div></div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>04 / 7</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">CLAUDE × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POVOLENIA</div>
+    <div class="nadpis"><b>Čo smie.</b><span>A čo nikdy.</span></div>
+    <div class="blok"><p class="odsek">Claude Code sa pýta skôr, než niečo zmení alebo spustí. Čítanie súborov v projekte nepotrebuje súhlas, zápis a príkazy áno. Tri odpovede v tom okne majú rôznu váhu: raz, do konca sedenia, alebo natrvalo.</p></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div class="krok__stitok">REŽIMY</div><div class="krok__text">Predvolený sa pýta pri každom novom nástroji. <code>plan</code> len číta a navrhuje. <code>acceptEdits</code> automaticky prijíma úpravy súborov.</div></div><div class="krok"><div class="krok__cislo">02</div><div class="krok__stitok">PRAVIDLÁ</div><div class="krok__text">V <code>/permissions</code> si nastavíš allow / ask / deny. Vyhodnocujú sa v poradí <strong>deny <svg class="sipka sipka--vpravo" viewBox="0 0 12 10" aria-hidden="true"><path d="M1 5 L11 5 M7.4 1.4 L11 5 L7.4 8.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square"/></svg> ask <svg class="sipka sipka--vpravo" viewBox="0 0 12 10" aria-hidden="true"><path d="M1 5 L11 5 M7.4 1.4 L11 5 L7.4 8.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square"/></svg> allow</strong>, prvá zhoda rozhoduje.</div></div><div class="krok"><div class="krok__cislo">03</div><div class="krok__stitok">ZÁPIS</div><div class="krok__text">Trvalé súhlasy si Claude Code ukladá do <code>.claude/settings.local.json</code> v koreni repozitára.</div></div></div><div class="blok"><div class="terminal__stitok">PRÍKLADY PRAVIDIEL</div><div class="terminal">Bash(npm run build)     # povoliť presne tento príkaz
+Read(./.env)            # pravidlo pre čítanie jedného súboru
+WebFetch(domain:docs.sk)# pravidlo pre jednu doménu
+Bash(rm *)              # toto daj do deny a nechaj tak</div></div><div class="blok pravidlo"><div class="pravidlo__stitok">JEDINÉ PRAVIDLO, KTORÉ NEPORUŠ</div><div class="pravidlo__text">Režim <code>bypassPermissions</code> vypína pýtanie sa úplne. Používaj ho len v kontajneri alebo virtuálnom stroji, kde nemá čo pokaziť. Na svojom počítači nikdy.</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>05 / 7</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">CLAUDE × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">PRVÁ ÚLOHA</div>
+    <div class="nadpis"><b>Jeden priečinok.</b><span>Jedna zmena.</span></div>
+    <div class="blok"><div class="riadok"><div class="riadok__cislo">01</div><div class="riadok__text">Vytvor si nový prázdny priečinok a skopíruj doň pár svojich súborov — pokojne texty alebo tabuľky, nie kód.</div></div><div class="riadok"><div class="riadok__cislo">02</div><div class="riadok__text">Spusti <code>claude</code> a napíš: „Prejdi súbory v tomto priečinku a napíš mi, čo v nich je.”</div></div><div class="riadok"><div class="riadok__cislo">03</div><div class="riadok__text">Potom si vypýtaj skutočnú zmenu: „Vytvor PREHLAD.md so zhrnutím a odkazmi na jednotlivé súbory.”</div></div><div class="riadok"><div class="riadok__cislo">04</div><div class="riadok__text">Keď sa spýta na povolenie zápisu, prečítaj si, čo presne chce urobiť. Až potom potvrď.</div></div><div class="riadok"><div class="riadok__cislo">05</div><div class="riadok__text">Vytvor <code>CLAUDE.md</code> s troma pravidlami a zopakuj tú istú úlohu. Všimni si rozdiel.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">BEZPEČNÝ ŠTART</div><div class="pravidlo__text">Prvýkrát to nepúšťaj na priečinok, ktorý nemáš zálohovaný alebo v gite. Nie preto, že by to Claude pokazil naschvál — ale preto, že sa učíš ty, nie on.</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>06 / 7</span></div>
+</section>
+<section class="strana strana--vnutorna">
+  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">CLAUDE × KUCHAR.AI</div></div>
+  <div class="telo">
+    <div class="nadpis__stitok">FINÁLNY CHECKLIST</div>
+    <div class="nadpis"><b>Hotovo.</b><span>Máš to v termináli.</span></div>
+    <div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Claude Code je nainštalovaný a <code>/status</code> ukazuje môj účet.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Spustil som ho aspoň raz vo vlastnom priečinku.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Mám vytvorený <code>CLAUDE.md</code> s konkrétnymi pravidlami.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Viem, že pravidlá povolení idú v poradí deny <svg class="sipka sipka--vpravo" viewBox="0 0 12 10" aria-hidden="true"><path d="M1 5 L11 5 M7.4 1.4 L11 5 L7.4 8.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square"/></svg> ask <svg class="sipka sipka--vpravo" viewBox="0 0 12 10" aria-hidden="true"><path d="M1 5 L11 5 M7.4 1.4 L11 5 L7.4 8.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square"/></svg> allow.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text"><code>bypassPermissions</code> nepoužívam na svojom počítači.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Prvý test som púšťal na priečinku, ktorý mám zálohovaný.</div></div></div><div class="blok odkazy"><a class="odkaz" href="https://code.claude.com/docs/en/overview"><span class="odkaz__nazov">INŠTALÁCIA A PREHĽAD</span><span class="odkaz__akcia">OTVOR<svg class="sipka" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 L8 2 M3.4 2 L8 2 L8 6.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span></a><a class="odkaz" href="https://code.claude.com/docs/en/memory"><span class="odkaz__nazov">CLAUDE.MD A PAMÄŤ</span><span class="odkaz__akcia">OTVOR<svg class="sipka" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 L8 2 M3.4 2 L8 2 L8 6.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span></a></div><div class="blok odkaz-na-koniec"><div class="odkaz-na-koniec__hlavne">Ďalšia lekcia: ako pustiť Claude Code cez OmniRoute, keď nechceš platiť predplatné.</div><div class="odkaz-na-koniec__vedlajsie">Ďalšie praktické AI návody nájdeš na @kuchar.ai</div></div>
+  </div>
+  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>07 / 7</span></div>
+</section>
+</body>
+</html>

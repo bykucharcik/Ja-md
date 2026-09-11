@@ -1,0 +1,104 @@
+# Modul 02 — Claude / lekcia 6
+modul: 02 Claude
+cislo: 02.6
+titul: Modely a limity
+stopa: CLAUDE × KUCHAR.AI
+stitky: Modely | 12 min | Praktické
+
+@obal
+stitok: MODELY A LIMITY
+h1: Neber vždy
+h2: ten najsilnejší.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Vybrať model podľa úlohy, nie podľa názvu -- a pochopiť, prečo ti limit dôjde uprostred práce.
+vedlajsie: Sú štyri, líšia sa rýchlosťou, cenou a tým, koľko textu uvezú naraz. Rozdiel na jednoduchej úlohe nespoznáš. Na ťažkej áno.
+karta: NAJVIAC POUŽÍVANÝ | Opus 5 | ZLOŽITÁ PRÁCA, KÓD
+karta: NAJRÝCHLEJŠÍ | Haiku 4.5 | KRÁTKE A OPAKOVANÉ VECI
+vysledok: Po dokončení vieš pri každej úlohe povedať, ktorý model chceš a prečo.
+drobne: Stav k 10. 9. 2026 podľa platform.claude.com/docs/en/models/overview. Ktoré modely máš v claude.ai reálne v ponuke, závisí od plánu -- over si to v prepínači modelu.
+
+@strana
+stitok: ŠTYRI MODELY
+h1: Nie lepší
+h2: a horší.
+
+@text
+Modely nie sú rebríček od najhoršieho po najlepší. Sú to štyri body na osi medzi „rýchle a lacné" a „pomalé a dôkladné". Silnejší model na jednoduchej úlohe ti nedá lepšiu odpoveď -- dá ti tú istú odpoveď pomalšie a za viac.
+
+@tabulka MODEL | NA ČO JE | KONTEXT | RÝCHLOSŤ
+Claude Fable 5.1 | Najnáročnejšie uvažovanie a dlhé agentické úlohy. | 1M tokenov | Najpomalší
+Claude Opus 5 | Zložitá práca, kód, firemné úlohy. Predvolená voľba. | 1M tokenov | Stredná
+Claude Sonnet 5 | Najlepší pomer rýchlosti a inteligencie. | 1M tokenov | Rýchly
+Claude Haiku 4.5 | Krátke, opakované a jednoduché veci. | 200K tokenov | Najrýchlejší
+
+@pravidlo AKO SI TO ZAPAMÄTAŤ
+Haiku na triedenie a prepisovanie. Sonnet na bežný deň. Opus, keď ide o niečo, čo musí sedieť. Fable vtedy, keď ti ani Opus nestačil -- nie ako prvá voľba.
+
+@strana
+stitok: KONTEXT
+h1: Milión tokenov
+h2: nie je milión slov.
+
+@text
+Kontext je to, koľko textu model uvezie **naraz** -- tvoja otázka, nahraté súbory, celá história rozhovoru aj jeho vlastná odpoveď. Keď sa naplní, staršie časti rozhovoru vypadnú a model si prestane pamätať, čo ste riešili na začiatku.
+
+@pojmy
+1M TOKENOV | Zhruba 555 tisíc slov na súčasnom tokenizéri. Prakticky: veľmi veľa, ale nie nekonečno.
+200K TOKENOV | Zhruba 150 tisíc slov. Na bežný rozhovor a pár dokumentov to bohato stačí.
+ČO HO ŽERIE | Dlhé nahraté súbory a dlhá história. Nie tvoja otázka.
+AKO ŠETRIŤ | Na novú tému otvor nový chat. Nahrávaj tú časť dokumentu, ktorú naozaj potrebuješ.
+
+@pravidlo PRAKTICKÝ DÔSLEDOK
+Ak ti model v dlhom rozhovore začne zabúdať zadanie, nie je pokazený. Došlo mu miesto. Zhrň, na čom ste sa dohodli, otvor nový chat a začni tým zhrnutím.
+
+@strana
+stitok: LIMITY
+h1: Päť hodín.
+h2: Potom pauza.
+
+@text
+Predplatné neráta správy, ale spotrebu v čase. Limit sa počíta v päťhodinových reláciách a po ich uplynutí sa obnoví. Plán Max má k tomu ešte týždenný strop naprieč všetkými modelmi.
+
+@kroky
+01 | JEDEN MEŠEC | Claude Code aj chat ťahajú z toho istého limitu. Ranná práca v termináli ti ukrojí z popoludňajších chatov.
+02 | SILNEJŠÍ MODEL BERIE VIAC | Ak celý deň točíš Opus na veciach, na ktoré stačí Haiku, minieš limit na polovici práce.
+03 | DLHÝ ROZHOVOR BERIE VIAC | Každá ďalšia správa nesie so sebou celú históriu. Dlhý chat je drahší než nový.
+
+@pravidlo AKO SI PREDĹŽIŤ DEŇ
+Ťažký model si nechaj na ťažké kroky. Prípravu, triedenie a prepisy nechaj na rýchly. Nie je to šetrenie pre šetrenie -- je to rozdiel medzi „vydržal mi do večera" a „došlo mi o druhej".
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Tá istá vec.
+h2: Na dvoch modeloch.
+
+@zoznam
+01 | Vyber si úlohu, ktorú robíš často -- prepis, zhrnutie, triedenie poznámok.
+02 | Spusti ju na najrýchlejšom dostupnom modeli. Zmeraj, ako dlho to trvalo, a odlož výsledok.
+03 | Spusti tú istú úlohu na najsilnejšom, ktorý máš. Porovnaj.
+04 | Ak je výsledok prakticky rovnaký, máš odpoveď: túto úlohu odteraz robíš na rýchlom.
+05 | Zopakuj to s úlohou, ktorá je naozaj ťažká. Tam bude rozdiel viditeľný -- a tam ten silný model patrí.
+
+@pravidlo ČO SI Z TOHO ODNIESŤ
+Neexistuje „najlepší model". Existuje tvoja tabuľka, ktorú si urobíš za dvadsať minút a ktorá ti bude platiť rok.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Vieš, čo si vyberáš.
+
+@checklist
+Viem vymenovať štyri modely a povedať, na čo sú.
+Viem, že kontext je celá história, nielen moja otázka.
+Keď model začne zabúdať, otvorím nový chat so zhrnutím.
+Viem, že Claude Code a chat ťahajú z jedného limitu.
+Otestoval som svoju bežnú úlohu na dvoch modeloch.
+Ťažký model používam na ťažké kroky, nie na všetko.
+
+@odkazy
+PREHĽAD MODELOV | https://platform.claude.com/docs/en/models/overview
+AKO FUNGUJE KONTEXT | https://platform.claude.com/docs/en/build-with-claude/context-windows
+
+@zaver
+hlavne: Modul 02 máš za sebou. Ďalej je ChatGPT -- a poctivé porovnanie, ktoré ti povie, kedy siahnuť po ktorom.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

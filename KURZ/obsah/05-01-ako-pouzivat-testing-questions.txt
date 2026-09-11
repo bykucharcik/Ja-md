@@ -1,0 +1,105 @@
+# Modul 05 — Checklisty / lekcia 1
+modul: 05 Checklisty
+cislo: 05.1
+titul: Ako používať Testing Questions
+stopa: CHECKLISTY × KUCHAR.AI
+stitky: Testovanie | 14 min | Než to pustíš von
+
+@obal
+stitok: AKO POUŽÍVAŤ TESTING QUESTIONS
+h1: Neplať za to,
+h2: že ti to
+h3: odpovie pekne.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Otestovať AI, ktorú chceš niekam pustiť, podľa pevného zoznamu otázok s výsledkom prešiel / neprešiel.
+vedlajsie: Bez zoznamu testuješ náladu. S ním máš tabuľku, ktorú vieš ukázať klientovi aj sebe o mesiac.
+karta: VÝSLEDOK | Prešiel / Neprešiel | ŽIADNE „BOLO TO OK"
+karta: TRI OBLASTI | Rozhovor, pravidlá, útoky | KAŽDÁ MÁ VLASTNÚ LEKCIU
+vysledok: Po dokončení máš tabuľku testov a pravidlo, koľko musí prejsť, aby si to mohol pustiť ďalej.
+drobne: Použi to na chatbota, asistenta, agenta aj na vlastný skill. Čím viac vie tvoja AI urobiť sama, tým prísnejšie to nastav.
+
+@strana
+stitok: PREČO TO ROBIŤ
+h1: Páčilo sa mi to
+h2: nie je test.
+
+@text
+Keď si postavíš asistenta a vyskúšaš ho na piatich otázkach, ktoré ťa napadli, otestoval si presne tých päť otázok -- a všetky si vymyslel ty, teda človek, ktorý vie, čo má odpovedať. Používatelia takí nebudú.
+
+@text
+Testing Questions je pevný zoznam, ktorý máš napísaný **skôr**, než začneš skúšať. Prejdeš ho celý, každú položku označíš prešiel alebo neprešiel, a až potom sa rozhoduješ.
+
+@kroky
+01 | NAPÍŠ VOPRED | Otázky pripravíš predtým, než vidíš odpovede. Inak si podvedome vyberieš tie, ktoré prejdú.
+02 | ZAPÍŠ VÝSLEDOK | Ku každej otázke jedno slovo. Žiadne „skoro dobré". Buď to prešlo, alebo nie.
+03 | URČ HRANICU | Koľko musí prejsť, aby si to pustil von. Hranicu si stanovíš skôr, než uvidíš skóre.
+
+@pravidlo NAJDÔLEŽITEJŠIA VETA V CELOM MODULE
+Hranicu si určuješ **pred** testom. Keď ju určuješ po ňom, vždy vyjde presne tam, kde ti to práve vyhovuje.
+
+@strana
+stitok: TABUĽKA
+h1: Šesť stĺpcov.
+h2: Nič viac.
+
+@tabulka STĹPEC | ČO DO NEHO IDE
+ID | Poradové číslo. Aby sa dalo povedať „padlo nám 12".
+Oblasť | Rozhovor / Pravidlá / Útoky. Podľa toho, čo testuješ.
+Otázka alebo vstup | Presne to, čo napíšeš. Doslova, aby sa to dalo zopakovať.
+Čo je správne | Ako vyzerá dobrá odpoveď. Napísané vopred.
+Výsledok | Prešiel / Neprešiel. Nič medzi tým.
+Poznámka | Len ak neprešlo: čo presne bolo zle.
+
+@pravidlo STĹPEC, KTORÝ VŠETCI VYNECHÁVAJÚ
+„Čo je správne" napísané **vopred**. Bez neho sa pri každej odpovedi rozhoduješ nanovo a tvoje kritérium sa posúva podľa toho, ako veľmi chceš, aby to už prešlo.
+
+@strana
+stitok: HRANICA
+h1: Deväť z desiatich
+h2: nemusí stačiť.
+
+@text
+Klasická otázka: ak asistent odmietne škodlivý prompt deväťkrát z desiatich, prešiel? Odpoveď závisí od toho, čo sa stane pri tom desiatom. A to je jediné, čo tú hranicu má určovať.
+
+@tabulka ČO AI ROBÍ | KOĽKO MUSÍ PREJSŤ | PREČO
+Odpovedá na otázky, človek to číta | Väčšina testov | Chybu chytí človek pred použitím.
+Píše texty, ktoré idú von po schválení | Takmer všetko | Chyba prejde, ak schvaľovateľ nedáva pozor.
+Koná sama -- píše, posiela, mení údaje | Všetko z oblasti Pravidlá a Útoky | Chybu nikto nechytí. Až následok.
+Pracuje s osobnými alebo finančnými údajmi | Všetko, bez výnimky | Tu sa nevyjednáva.
+
+@pravidlo AK NEPREJDE
+Neprešiel test neznamená zahoď to. Znamená: oprav inštrukciu, zapíš, čo si zmenil, a **spusti celý zoznam znova**. Nie len tú jednu otázku -- oprava jednej veci často pokazí druhú.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Dvanásť otázok.
+h2: Dnes.
+
+@zoznam
+01 | Vezmi AI, ktorú už používaš -- asistenta, projekt s inštrukciami alebo skill.
+02 | Napíš dvanásť testov: štyri na priebeh rozhovoru, štyri na dodržiavanie pravidiel, štyri na pokusy o obídenie.
+03 | Ku každému napíš stĺpec „čo je správne". Skôr, než čokoľvek spustíš.
+04 | Urči hranicu podľa tabuľky na predchádzajúcej strane a zapíš si ju.
+05 | Prejdi všetkých dvanásť, zapíš prešiel/neprešiel a spočítaj.
+06 | Ak si pod hranicou, oprav inštrukcie a spusti celých dvanásť znova.
+
+@pravidlo PREČO PRÁVE DVANÁSŤ
+Menej ako desať je vzorka, z ktorej nič nevyčítaš. Viac ako dvadsať prvýkrát neurobíš. Dvanásť spravíš za pol hodiny a už to niečo znamená.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Máš tabuľku.
+
+@checklist
+Otázky som napísal skôr, než som videl odpovede.
+Pri každej mám napísané, čo je správna odpoveď.
+Výsledok zapisujem ako prešiel / neprešiel, nič medzi tým.
+Hranicu som určil pred testom, nie po ňom.
+Hranica zodpovedá tomu, čo moja AI reálne robí.
+Po oprave púšťam celý zoznam, nie len tú jednu otázku.
+Tabuľku mám uloženú, aby sa dala zopakovať o mesiac.
+
+@zaver
+hlavne: Ďalšie tri lekcie sú tie zoznamy: General Conversation Flow, AI Compliance a AI Prompt Hacking.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

@@ -1,0 +1,113 @@
+# Modul 06 — Šablóny / lekcia 2
+modul: 06 Šablóny
+cislo: 06.2
+titul: Obsah a copy
+stopa: ŠABLÓNY × KUCHAR.AI
+stitky: Šablóna | 12 min | Texty
+
+@obal
+stitok: OBSAH A COPY
+h1: Prestaň pýtať text.
+h2: Pýtaj si
+h3: voľbu.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Zadať písanie tak, aby ti nevyšla vata -- a vedieť, čo do zadania pridať, keď ti vyjde.
+vedlajsie: Texty sú oblasť, kde model najľahšie napíše niečo, čo znie dobre a nehovorí nič. Lieči sa to podkladom a zákazmi.
+karta: TAJOMSTVO | Konkrétny údaj | BEZ NEHO VYJDE VATA
+karta: DRUHÝ ŤAH | Tri varianty | VYBERAŤ JE RÝCHLEJŠIE
+vysledok: Po dokončení máš šablónu na texty a tri varianty jedného svojho textu na výber.
+drobne: Platí pre príspevky, maily, popisy produktov aj dlhšie články. Mení sa len dĺžka a formát, nie štruktúra zadania.
+
+@strana
+stitok: PREČO VYCHÁDZA VATA
+h1: Vata vzniká
+h2: z prázdneho podkladu.
+
+@text
+„Revolučné riešenie, ktoré vám ušetrí čas a posunie vás ďalej." Túto vetu vieš prilepiť k akémukoľvek produktu na svete. Presne to je vata -- text, ktorý prežije výmenu témy.
+
+@text
+Vzniká vtedy, keď v zadaní nie je jediný údaj, ktorý by sa o inom produkte povedať nedal. Model nemá z čoho stavať, tak stavia z priemeru.
+
+@pravidlo TEST VATY
+Prečítaj si výstup a spýtaj sa: dala by sa táto veta použiť aj pre konkurenciu? Ak áno, vyhoď ju. Čo zostane, je tvoj text.
+
+@strana
+stitok: ŠABLÓNA
+h1: Obsah a copy.
+h2: Skopíruj.
+
+@terminal ŠABLÓNA — TEXT
+ROLA
+Si copywriter pre [odvetvie]. Píšeš pre [kto to číta, čo rieši].
+
+ÚLOHA
+Napíš [typ textu] o [téma].
+
+PODKLAD — POUŽI IBA TOTO
+- Čo to je: [jedna veta]
+- Pre koho: [konkrétne, nie „pre každého"]
+- 3 konkrétne fakty: [číslo, čas, materiál, výsledok]
+- Čo to NEROBÍ: [ohraničenie, ktoré buduje dôveru]
+- Cena / podmienky: [ak sú verejné]
+
+VÝSTUP
+Formát: [nadpis + 3 odseky / 5 bodov / mail]
+Dĺžka: [počet slov]
+Tón: [krátke vety, bez prísloviek]
+
+NIKDY
+- Nevymýšľaj čísla, vlastnosti ani referencie.
+- Nepoužívaj slová: revolučný, inovatívny, riešenie, jednoducho.
+- Žiadny úvod typu „v dnešnej dobe".
+
+DAJ MI 3 VARIANTY, každý iným uhlom. Označ, čomu si v ktorom dal prednosť.
+
+@strana
+stitok: TRI VARIANTY
+h1: Vyberať je rýchlejšie
+h2: než opisovať.
+
+@text
+Najrýchlejšia cesta k dobrému textu nevedie cez presnejšie zadanie, ale cez výber. Popísať slovami tón, ktorý chceš, je ťažké. Ukázať prstom na ten správny z troch je ľahké.
+
+@pojmy
+UHOL, NIE ŠTÝL | „Tri varianty: jeden cez problém, jeden cez výsledok, jeden cez príbeh zákazníka." To sú rôzne texty, nie tri prefarbenia toho istého.
+POVEDZ, ČO SEDELO | Po výbere: „Vezmi variant 2, ale nadpis z variantu 1." Toto je najúčinnejšia veta v celej lekcii.
+ULOŽ SI VÝHERCU | Hotový text, s ktorým si spokojný, použi nabudúce ako vzor formy.
+NEROB ŠIESTICH | Viac variantov neznamená lepší výber. Znamená to dlhšie čítanie a horšiu pozornosť.
+
+@pravidlo KEĎ SÚ VŠETKY TRI ZLÉ
+Nepýtaj si ďalšie tri. Problém je v podklade -- chýbajú konkrétne fakty. Vráť sa do bloku PODKLAD a doplň tri údaje, ktoré sa o nikom inom povedať nedajú.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jeden text.
+h2: Dva pokusy.
+
+@zoznam
+01 | Vyber si text, ktorý reálne potrebuješ napísať.
+02 | Vyplň šablónu, ale blok PODKLAD nechaj schválne chudobný -- len tému. Spusti.
+03 | Doplň do PODKLADU tri konkrétne fakty a zoznam zakázaných slov. Spusti znova.
+04 | Na oba výstupy použi test vaty: podčiarkni každú vetu, ktorá by sedela aj konkurencii.
+05 | Z troch variantov vyber jeden a povedz, čo si berieš z ktorého. Až to je tvoj hotový text.
+
+@pravidlo ČO SI Z TOHO ODNIESŤ
+Rozdiel medzi tými dvoma pokusmi nie je v modeli ani v šikovnosti promptu. Je v troch faktoch, ktoré si napísal do podkladu. To je celá práca.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Bez vaty.
+
+@checklist
+V podklade mám tri konkrétne fakty, ktoré neplatia o konkurencii.
+Mám napísané, pre koho text je -- konkrétne.
+Mám zoznam zakázaných slov.
+Pýtam si tri varianty rôznymi uhlami, nie tri prefarbenia.
+Po výbere hovorím, čo beriem z ktorého.
+Na výstup som použil test vaty.
+
+@zaver
+hlavne: Ďalšia šablóna: biznis a operácie -- tam, kde výstupom nie je text, ale rozhodnutie alebo postup.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai
