@@ -89,7 +89,7 @@ Pravidlá určujú, čo načítať a kam uložiť výsledok.
 V novom sedení vznikol výstup podľa mojich podkladov.
 Viem odlíšiť trvalé pravidlo od jednorazovej opravy.
 
-@box O KROK ĎALEJ
+@box PRE POKROČILÝCH
 Do kontextu doplň aj vzor dobrého výsledku a vysvetli, prečo je dobrý. Konkrétna ukážka je často užitočnejšia než ďalších 20 všeobecných pravidiel.
 
 @terazty TERAZ TY

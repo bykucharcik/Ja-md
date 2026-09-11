@@ -30,7 +30,7 @@ Postup: z prepisu priprav 3 scenáre a skontroluj tvrdenia. | Skill
 Aktuálne čísla alebo dnešný prepis. | Vstup ku konkrétnej úlohe.
 
 @box PREČO SA NENAČÍTAVA VŠETKO NARAZ
-Claude vidí názvy a popisy dostupných skills, ako keby pozeral na chrbty kníh v knižnici. Celý postup si otvorí až vtedy, keď ho potrebuje. Aj samotné popisy ale zaberajú miesto — **sto skills nie je automaticky zadarmo ani prehľadne.** Preto je modul 04.3 o poriadku.
+Claude vidí názvy a popisy dostupných skills, ako keby pozeral na chrbty kníh v knižnici. Celý postup si otvorí až vtedy, keď ho potrebuje. Aj samotné popisy ale zaberajú miesto — **sto skills nie je automaticky zadarmo ani prehľadne.** Preto je lekcia 04.3 o poriadku.
 
 @strana
 stitok: POSTUP
@@ -57,20 +57,30 @@ Hlavička je krátky blok nastavení medzi `---`, volá sa YAML. `name` pomenuje
 Cenová ponuka z potvrdeného cenníka. Jasné vstupy, opakovaný postup a výsledok, ktorý sa dá skontrolovať číslom. Na tomto príklade prejdeme celý zvyšok modulu — vrátane toho, kde sa to pokazí.
 
 @strana
+stitok: POSTUP
+h1: Vyber si svoj prvý postup. Päť viet.
+
+@kroky
+01 | Napíš tri veci, ktoré robíš stále rovnako. | Nie tri veci, ktoré by si chcel automatizovať. Tri, ktoré si už aspoň raz dotiahol do dobrého výsledku.
+02 | Ku každej doplň päť viet. | Spúšťam ho, keď _____. Potrebuje _____. Vytvorí _____. Nesmie _____. Správnosť overím _____.
+03 | Vyhoď tie, pri ktorých sa zaseknete. | Ak nevieš doplniť piatu vetu, nemáš postup. Máš prianie. Sprav tú úlohu najprv ručne s AI a zachyť kroky, ktoré fungovali.
+04 | Z tej, čo zostala, bude tvoj skill. | Vyber tú, ktorá sa opakuje najčastejšie. Nie tú, čo je najzložitejšia.
+
+@box NAJCENNEJŠIA ČASŤ SKILLU
+Nie je to postup. Je to **kontrola kvality a tvoje konkrétne opravy.** Vetou „napíš dobrý text" opakovateľný postup nevytvoríš. Vetou „skontroluj, že súčet sedí a chýbajúce položky sú označené" áno.
+
+@strana
 stitok: HOTOVO AŽ VTEDY, KEĎ…
 h1: Vieš to zopakovať aj bez tohto PDF.
 
 @checklist
-Viem odlíšiť trvalé pravidlo, kontext a skill.
-Mám vybraný jeden opakovaný postup.
-Viem pomenovať jeho vstupy, výstup aj kontrolu.
+Mám napísané, kam patrí trvalé pravidlo, kam kontext a kam postup.
+Mám vybraný jeden postup a k nemu doplnené všetkých päť viet.
+Viem pomenovať, čím overím, že jeho výsledok je správny.
+Ten postup som už aspoň raz spravil ručne a viem, ako vyzerá dobrý výstup.
 
-@box TERAZ VYBER SVOJ POSTUP
-Doplň päť viet: Spúšťam ho, keď _____. Potrebuje _____. Vytvorí _____. Nesmie _____. Správnosť overím _____.
-Ak to nevieš doplniť, ešte nie si pripravený. Sprav najprv tú úlohu ručne s AI a zachyť kroky, ktoré fungovali.
-
-@box NAJCENNEJŠIA ČASŤ SKILLU
-Nie je to postup. Je to **kontrola kvality a tvoje konkrétne opravy.** Vetou „napíš dobrý text” opakovateľný postup nevytvoríš. Vetou „skontroluj, že súčet sedí a chýbajúce položky sú označené” áno.
+@box PRE POKROČILÝCH
+Popis (`description`) je jediná vec, ktorú Claude vidí, kým skill nevyvolá. Preto tam nepíš len účel, ale aj **spúšťaciu situáciu** — „použi pri žiadosti o cenovú ponuku alebo rozpočet". Zlý popis je najčastejší dôvod, prečo sa dobrý skill nikdy sám nenačíta.
 
 @terazty TERAZ TY
 Doplň tých päť viet o svojom postupe. V 04.2 z nich vznikne prvý skill.

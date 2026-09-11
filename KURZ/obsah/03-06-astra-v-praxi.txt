@@ -29,7 +29,7 @@ Aktuálny research | Nájsť primárne zdroje, porovnať podmienky a doložiť z
 Dlhšie zadanie | Držať cieľ, reagovať na usmernenie počas práce a dokončiť dohodnutý výstup.
 
 @box DOSTUPNOSŤ
-Oficiálny prehľad Work/Codex uvádza Astru aj pri Plus. Neplatí teda plošné „Astra je iba na Pro”. Konkrétny prístup a limit si over v prepínači a v prehľade používania svojho účtu.
+Oficiálny prehľad uvádza Astru aj pri Plus, v ChatGPT Work a Codex. Neplatí teda plošné „Astra je iba na Pro". Zavádza sa ale postupne, takže aj oprávnený účet ju ešte nemusí mať. Konkrétny prístup a limit si over v prepínači a v prehľade používania. Stav k 11. 9. 2026.
 
 @strana
 stitok: POSTUP
@@ -49,7 +49,7 @@ Na konci over, či dokument obsahuje všetky kritériá.
 
 @kroky
 01 | Skontroluj začiatok, nie koniec. | Over, či vybrané nástroje naozaj patria do požadovanej kategórie. Chybný smer oprav hneď.
-02 | Usmerni ju počas behu. | „Zúž to na export TXT, video a tímové poznámky nepotrebujeme.” V podporovanom prostredí vieš zadanie doplniť aj počas práce.
+02 | Usmerni ju počas behu. | „Zúž to na export TXT, video a tímové poznámky nepotrebujeme." V podporovanom prostredí vieš zadanie doplniť aj počas práce.
 03 | Otvor výsledok a over odkazy. | Ceny na zdrojových stránkach, prepočty, čitateľnosť PDF. Skutočné odkazy sú dôležitejšie než presvedčivý tón.
 04 | Porovnaj s bežným modelom. | Rovnaké zadanie aj kritériá. Zmeraj chyby a svoj čas opráv.
 
@@ -76,5 +76,6 @@ Pri dlhšej úlohe si vypýtaj priebežný súbor so stavom práce. Dôležité 
 Ulož porovnanie aj vlastný výsledok testu. V 03.7 sa naučíš zadávať tak, aby si vedel dohľadať, odkiaľ sa vzalo každé číslo.
 
 @zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: GPT-5.6 a GPT-6 Pro v ChatGPT | https://help.openai.com/en/articles/20001354-gpt-56-in-chatgpt
 OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes
 OpenAI: zadávanie úloh | https://developers.openai.com/codex/prompting

@@ -7,7 +7,7 @@ varianta: c
 @obal
 cislo: 03.3
 stitok: ŠESŤ REŽIMOV, KTORÉ NEPOUŽÍVAŠ
-h1: 98 % ľudí používa jeden režim na všetko. Preto majú priemerné výsledky.
+h1: Používaš jedno pole na všetko. Pritom si platíš šesť rôznych nástrojov.
 slub: Prejdeš šesť režimov, pri každom zistíš, kde sa zapína a na akú prácu ho použiť. Dva si hneď vyskúšaš.
 cas: 6 min | ČÍTANIE
 cas: 25–35 min | PRAX
@@ -36,16 +36,16 @@ stitok: POSTUP
 h1: Vyskúšaj tie dva, ktoré ti dnes ušetria najviac.
 
 @kroky
-01 | Otvor svoj text v Canvase. | Vlož hotový text, zapni Canvas. Označ jeden odsek a napíš: „len tento uprav na kratší a konkrétnejší, zvyšok nechaj.”
+01 | Otvor svoj text v Canvase. | Vlož hotový text, zapni Canvas. Označ jeden odsek a napíš: „len tento uprav na kratší a konkrétnejší, zvyšok nechaj."
 02 | Over, či naozaj nechal zvyšok. | Prvá vec, ktorú si skontroluj. Keď prepísal aj ostatné, máš zlú zmenu vrátiť na jeden klik.
 03 | Pusti si study na téme z tohto kurzu. | `@study` a vlož napríklad túto lekciu. Nechaj si ju rozobrať a potom sa nechaj vyskúšať.
-04 | Odpovedz bez pozerania. | Rozdiel medzi „chápem to” a „viem to” zistíš presne tu. To druhé ti ostane o mesiac.
+04 | Odpovedz bez pozerania. | Rozdiel medzi „chápem to" a „viem to" zistíš presne tu. To druhé ti ostane o mesiac.
 
 @box HLASOVÝ REŽIM: KDE TO NAOZAJ ZABERIE
 Nie je to hračka na diktovanie. Je to premýšľanie nahlas s niekým, kto ti odpovedá. Cesta autom, prechádzka, čakanie na kávu — všetky tie chvíle, keď si v hlave meliaš ten istý problém dokola. Nastav si jedno hlavné zariadenie, appku doinštaluj na ostatné a v nastaveniach ich prepoj. Potom vieš odkiaľkoľvek prebrať stav projektu a vypýtať si ďalší krok.
 
 @box PRE POKROČILÝCH
-Pokročilá verzia hlasu zvládne zdieľanie obrazovky alebo kamery naživo. Namiesto opisovania problému ho jednoducho ukážeš: „tu som zasekol, čo s tým?” Na podporovaných Apple zariadeniach sa dá cez Apple Intelligence prepojiť aj Siri, takže máš jedného asistenta všade namiesto prepínania medzi dvoma.
+Pokročilá verzia hlasu zvládne zdieľanie obrazovky alebo kamery naživo. Namiesto opisovania problému ho jednoducho ukážeš: „tu som zasekol, čo s tým?" Na podporovaných Apple zariadeniach sa dá cez Apple Intelligence prepojiť aj Siri, takže máš jedného asistenta všade namiesto prepínania medzi dvoma.
 
 @strana
 stitok: POSTUP
@@ -55,14 +55,14 @@ h1: Deep research a agent. Dva ťažké kalibre.
 Tieto dva si nechaj na prácu, ktorá by ťa inak stála hodiny. Na bežnú otázku sú to kanóny na vrabce a spotrebu ti zjedia rýchlo.
 
 @kod DEEP RESEARCH — TAKTO SA TO ZADÁVA
-Porovnaj 3 nástroje na prepis porád pre slovenský tím.
-Kritériá: podpora slovenčiny, export textu,
-mesačná cena pre 5 ľudí a limity.
-Použi aktuálne oficiálne zdroje.
-Ku každému údaju daj odkaz a dátum kontroly,
-neoverené označ.
-Ceny počítaj z rovnakej fakturačnej periodicity
-a ukáž výpočet. Nič nekupuj ani neregistruj.
+Zisti, ako sa za posledných 6 mesiacov zmenili podmienky
+free tierov u AI nástrojov na tvorbu videa.
+Zaujímajú ma limity, vodoznak a práva na výstup.
+Použi oficiálne stránky a podmienky používania,
+nie blogy a porovnávače.
+Ku každému tvrdeniu daj odkaz a dátum kontroly.
+Čo si nevedel overiť, vypíš zvlášť ako neoverené.
+Na konci napíš, čo z toho platí len pre platené plány.
 
 @text drobne
 Čím konkrétnejšia otázka, tým lepší report. Jednoriadková otázka ti vráti jednoriadkovú hodnotu. A po dobehnutí si vždy otvor aspoň tri odkazy — presvedčivý tón nie je dôkaz.

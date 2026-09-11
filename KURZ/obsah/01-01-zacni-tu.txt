@@ -54,12 +54,17 @@ stitok: HOTOVO AŽ VTEDY, KEĎ…
 h1: Vieš to zopakovať aj bez tohto PDF.
 
 @checklist
-Mám 3 konkrétne úlohy a jednu vybranú.
-Viem, aký súbor alebo výsledok má vzniknúť.
-Mám zapísaný pôvodný čas alebo označený odhad.
+Mám zapísané 3 konkrétne úlohy a jednu z nich označenú ako prvú.
+Pri každej mám napísané, aký súbor alebo výsledok má vzniknúť.
+Mám zapísané číslo: koľko minút mi tá úloha dnes trvá.
+Viem, koľkokrát do mesiaca sa opakuje.
 
-@box O KROK ĎALEJ
-Už AI používaš? Vyber úlohu, pri ktorej stále veľa kopíruješ alebo opravuješ. Práve tam hľadaj zlepšenie.
+@box PRE POKROČILÝCH
+Už AI používaš? Vyber úlohu, pri ktorej stále veľa kopíruješ alebo opravuješ — práve tam je najväčšia úspora. A rovno si zapíš, koľko z výstupu dnes prepisuješ ručne. To číslo je tvoja základná čiara pre celý kurz.
 
 @terazty TERAZ TY
 Zapíš prvú úlohu. Potom otvor 02.1 a vyber, kde ju Claude spracuje.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude: prehľad modelov | https://platform.claude.com/docs/en/models/overview
+OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes

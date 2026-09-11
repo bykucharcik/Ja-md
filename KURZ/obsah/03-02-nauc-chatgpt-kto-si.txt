@@ -67,10 +67,10 @@ h1: Dve veci, ktoré ťa ochránia pred sebavedomým nezmyslom.
 Nastavený ChatGPT je príjemnejší. Nie je automaticky presnejší. Tieto dva návyky ti ušetria najviac hanby.
 
 @box ADVOKÁT DIABLA
-ChatGPT je postavený tak, aby s tebou súhlasil. Opýtaj sa najhoršie položenú otázku sveta a nájde spôsob, ako povedať „áno, presne tak”. Keď od neho berieš rozhodnutia, otoč to: **„Nesúhlas so mnou. Zahraj advokáta diabla. Daj mi najsilnejší argument, prečo sa mýlim.”** A druhá veta, ktorá vytiahne najviac: **„Čo sú moje slepé miesta? Čo som sa ťa nespýtal, ale mal som?”**
+ChatGPT je postavený tak, aby s tebou súhlasil. Opýtaj sa najhoršie položenú otázku sveta a nájde spôsob, ako povedať „áno, presne tak". Keď od neho berieš rozhodnutia, otoč to: **„Nesúhlas so mnou. Zahraj advokáta diabla. Daj mi najsilnejší argument, prečo sa mýlim."** A druhá veta, ktorá vytiahne najviac: **„Čo sú moje slepé miesta? Čo som sa ťa nespýtal, ale mal som?"**
 
 @box TEST NA HALUCINÁCIE ZA JEDNU VETU
-Na začiatku dôležitého chatu napíš: „Oslovuj ma menom Tomáš.” Keď v odpovediach zrazu meno zmizne a začne sa „skvelá otázka”, stratil niť. Vtedy zastav a over si všetko, čo ti odvtedy napísal. Funguje to preto, že prvé pokyny sa vytrácajú ako prvé.
+Na začiatku dôležitého chatu napíš: „Oslovuj ma menom Tomáš." Keď v odpovediach zrazu meno zmizne a začne sa „skvelá otázka", stratil niť. Vtedy zastav a over si všetko, čo ti odvtedy napísal. Funguje to preto, že prvé pokyny sa vytrácajú ako prvé.
 
 @strana
 stitok: HOTOVO AŽ VTEDY, KEĎ…

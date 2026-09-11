@@ -113,7 +113,7 @@ PREHLAD.md existuje a sedí na 3 vstupy.
 CLAUDE.md má konkrétne pravidlá.
 Viem nájsť /status, /permissions a /context.
 
-@box O KROK ĎALEJ
+@box PRE POKROČILÝCH
 Pri dlhšej práci si nechaj uložiť stav: cieľ, hotové kroky, otvorené otázky a ďalší krok. Nové sedenie potom nezačínaš vysvetľovaním celej histórie.
 
 @box ČO S TÝM VIEŠ SPRAVIŤ ĎALEJ

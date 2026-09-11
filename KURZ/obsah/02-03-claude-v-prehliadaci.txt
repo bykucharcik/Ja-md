@@ -1,12 +1,12 @@
 # Modul 02 — Claude / lekcia 3
 modul: 02 Claude
 cislo: 02.3
-titul: Claude v prehliadači
+titul: Projects: Claudov pracovný stôl
 varianta: c
 
 @obal
 cislo: 02.3
-stitok: CLAUDE V PREHLIADAČI
+stitok: PROJECTS: CLAUDOV PRACOVNÝ STÔL
 h1: Projekt si pamätá to, čo mu dáš. A nič viac.
 slub: Založíš projekt s vlastnými pravidlami, nahráš správne podklady a upravíš prvý artefakt po častiach.
 cas: 5 min | ČÍTANIE
@@ -37,7 +37,7 @@ Projekty zakladaj podľa **oddelených svetov**, nie podľa tém. Dvaja klienti 
 
 @strana
 stitok: POSTUP
-h1: Nastav si projekt „Moje texty“.
+h1: Nastav si projekt „Moje texty".
 
 @kroky
 01 | Otvor Projects. | Na claude.ai nájdi Projects a vytvor nový. Pomenuj ho podľa práce, ktorú v ňom budeš robiť.
@@ -79,7 +79,7 @@ Viem, že pamäť projektu je oddelená od bežných chatov.
 Mám artefakt a overený export.
 Výsledok som otestoval aj v novom chate.
 
-@box O KROK ĎALEJ
+@box PRE POKROČILÝCH
 História, pamäť a projektové podklady sú tri rôzne veci. Zatvorením okna sa chat nevymaže. Na pravidlá sa spoliehaj cez inštrukcie projektu — a dôležité fakty si aj tak over.
 
 @terazty TERAZ TY

@@ -38,7 +38,7 @@ Uveď vstupné hodnoty, vzorec, výsledok, jednotky a zaokrúhlenie.
 Skontroluj, že si nesčítal rozdielne meny alebo obdobia.
 
 @box PREČO PRÁVE TAKTO
-Web sa vie spustiť aj sám. Výslovná požiadavka ale jasne určí, že chceš aktuálne overenie, a nie odpoveď z pamäte modelu. Veta „nedopĺňaj” pomáha — kontrolu ti však nenahradí.
+Web sa vie spustiť aj sám. Výslovná požiadavka ale jasne určí, že chceš aktuálne overenie, a nie odpoveď z pamäte modelu. Veta „nedopĺňaj" pomáha — kontrolu ti však nenahradí.
 
 @strana
 stitok: POSTUP
@@ -46,7 +46,7 @@ h1: Oddeľ fakty, štýl a pamäť.
 
 @kroky
 01 | Vezmi jedno zadanie z 02.10. | Dopĺňaj len tú šablónu, ktorú úloha naozaj potrebuje. Pri prepisovaní tvojho vlastného textu nemá čo hľadať na webe.
-02 | Urči rozsah číslom. | „5 bodov, každý najviac 2 vety.” To je kontrolovateľné. „Stručne” nie je.
+02 | Urči rozsah číslom. | „5 bodov, každý najviac 2 vety." To je kontrolovateľné. „Stručne" nie je.
 03 | Skontroluj personalizáciu. | Ak mieša tvoje preferencie so štýlom klienta, pomenuj klienta priamo v zadaní. Pozri aj globálne a projektové inštrukcie.
 04 | Urob čistý porovnávací test. | Ak máš dočasný chat, použi ho — beží bez bežnej pamäte. Samotný nový chat nemusí znamenať nulovú personalizáciu.
 
@@ -66,13 +66,13 @@ h1: Vieš to zopakovať aj bez tohto PDF.
 @checklist
 Mám uložené zadanie pre web, súbor aj výpočet.
 Viem dohľadať zdroj každého dôležitého tvrdenia.
-Rozsah zadávam číslom, nie slovom „stručne”.
+Rozsah zadávam číslom, nie slovom „stručne".
 Pri chybe kontrolujem aj podklady a inštrukcie, nielen prompt.
 
 @box MEŇ VŽDY LEN JEDNU PREMENNÚ
 Keď naraz zapneš web, zmeníš model aj pamäť, nemáš ako zistiť, čo spôsobilo rozdiel. Toto je najčastejšia chyba pri testovaní AI a robia ju aj ľudia, ktorí ju používajú roky.
 
-@box PRI OBRÁZKOCH
+@box PRE POKROČILÝCH: OBRÁZKY
 Zadaj objekt, účel, rozmer a to, čo musí zostať čitateľné. Pridaj referenciu a pomenuj, čo z nej prevziať — farby, svetlo alebo rozloženie. Presné dátové grafy vždy skontroluj podľa vstupných čísel.
 
 @terazty TERAZ TY

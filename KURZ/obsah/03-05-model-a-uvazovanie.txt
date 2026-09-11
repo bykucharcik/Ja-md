@@ -41,7 +41,7 @@ h1: Zisti, kedy sa ti oplatí čakať.
 
 @kroky
 01 | Zvoľ bežnú aj ťažšiu úlohu. | Napríklad skrátenie e-mailu a porovnanie dvoch ponúk so skrytými rozdielmi.
-02 | Kritériá napíš vopred. | „E-mail musí zachovať termín a 3 body.” „Porovnanie musí uviesť všetky náklady a nejasnosti.” Kritériá stanovené po odpovedi nie sú kritériá.
+02 | Kritériá napíš vopred. | „E-mail musí zachovať termín a 3 body." „Porovnanie musí uviesť všetky náklady a nejasnosti." Kritériá stanovené po odpovedi nie sú kritériá.
 03 | Otestuj východiskové nastavenie. | Ulož výsledok a zapíš model, úsilie aj čas.
 04 | Zvýš úsilie na tom istom modeli. | V novom chate rovnaký vstup. Ak túto voľbu nemáš, porovnaj dva dostupné režimy a označ, že ide o iný typ testu.
 05 | Spočítaj opravy, nie dojem. | Ak kvalita nestúpla dosť na to, aby sa ti oplatilo čakať, zostaň pri jednoduchšom nastavení.
@@ -59,10 +59,10 @@ stitok: HOTOVO AŽ VTEDY, KEĎ…
 h1: Vieš to zopakovať aj bez tohto PDF.
 
 @checklist
-Viem odlíšiť model od úrovne uvažovania.
-Porovnával som podľa kritérií napísaných vopred.
-Mám pravidlo pre jednoduchú aj zložitú úlohu.
-Viem, že vyššie úsilie nie je záruka správnosti.
+Mám zapísané, aké modely a aké stupne uvažovania vidím vo svojom účte.
+Kritériá som napísal pred prvým behom, nie po ňom.
+Mám vyplnený zápis testu pre obe nastavenia vrátane času opráv.
+Mám napísané pravidlo: na bežnú úlohu _____, na zložitú _____.
 
 @box VIAC PREMÝŠĽANIA NENAHRADÍ CHÝBAJÚCE DÁTA
 Vyššie uvažovanie môže zlepšiť správnosť. Nedoplní chýbajúci podklad ani neaktuálny zdroj. Keď model nemá z čoho čerpať, dlhšie premýšľanie mu len dá viac času vymyslieť si to presvedčivejšie.
@@ -74,5 +74,6 @@ Ultra v podporovaných prostrediach pridáva delegovanie na subagentov. Pri poro
 Zapíš si, pri ktorej práci ti vyššie úsilie pomohlo. Potom otvor 03.6 a pusti na to Astru.
 
 @zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
-OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes
+OpenAI: GPT-5.6 v ChatGPT | https://help.openai.com/en/articles/20001354-gpt-56-in-chatgpt
+OpenAI: GPT-5.6 | https://openai.com/index/gpt-5-6/
 OpenAI: Codex CLI | https://developers.openai.com/codex/cli

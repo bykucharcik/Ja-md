@@ -38,10 +38,10 @@ h1: Vyplň si tri riadky. Potom sa rozhodni.
 
 @kroky
 01 | Vyber rovnaké vstupy. | Jedna textová, jedna súborová a jedna náročnejšia úloha. Použi svoje úlohy z modulu 01.
-02 | Kritériá napíš vopred. | Presné čísla, kompletné body, správny štýl, otvoriteľný súbor. Konkrétne, nie „nech je to dobré”.
+02 | Kritériá napíš vopred. | Presné čísla, kompletné body, správny štýl, otvoriteľný súbor. Konkrétne, nie „nech je to dobré".
 03 | Spusti a zaznamenaj nastavenia. | Model, úsilie, nástroje, zdroje. Meraj aj svoj čas na zadanie a na opravy.
 04 | Vyhodnoť chyby, nie dojem. | Over obsah proti vstupu. Pri tesnom rozdiele úlohu zopakuj.
-05 | Zapíš rozhodnutie aj s dátumom. | „Na prehľady používam X, lebo…” a dôvod, kedy to znova otestovať.
+05 | Zapíš rozhodnutie aj s dátumom. | „Na prehľady používam X, lebo…" a dôvod, kedy to znova otestovať.
 
 @box TVOJA TABUĽKA
 1. Úloha: _______ | Nástroj: _______ | Minúty opráv: _______

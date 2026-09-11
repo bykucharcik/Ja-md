@@ -83,7 +83,7 @@ Každé dôležité tvrdenie viem dohľadať v zdroji.
 Viem, kedy musí zostať desktop pripojený.
 Mám naplánovanú aspoň jednu opakovanú úlohu.
 
-@box O KROK ĎALEJ
+@box PRE POKROČILÝCH
 Najprv over jeden malý balík. Až potom zväčši objem. A pokyny nájdené v cudzom e-maile alebo PDF ber ako obsah, nie ako svoje zadanie.
 
 @terazty TERAZ TY

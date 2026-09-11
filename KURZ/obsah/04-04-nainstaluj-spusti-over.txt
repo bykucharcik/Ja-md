@@ -53,7 +53,7 @@ Použi cvičný cenník a nič neodosielaj.
 `allowed-tools` | Predschváli vybrané nástroje v rámci skillu. Nie je to zákaz ostatných.
 
 @box POVOLENIA SÚ INÁ VRSTVA
-Oprávnenia sa nastavujú samostatne cez `/permissions`. Ani ručné spustenie, ani veta „nič neposielaj” v texte skillu nie sú technické obmedzenie — sú to pokyny, nie zámok. Pri cvičení nechaj predvolené schvaľovanie a používaj cvičné podklady.
+Oprávnenia sa nastavujú samostatne cez `/permissions`. Ani ručné spustenie, ani veta „nič neposielaj" v texte skillu nie sú technické obmedzenie — sú to pokyny, nie zámok. Pri cvičení nechaj predvolené schvaľovanie a používaj cvičné podklady.
 
 @strana
 stitok: POSTUP
@@ -78,7 +78,7 @@ stitok: HOTOVO AŽ VTEDY, KEĎ…
 h1: Toto je tvoj výsledok.
 
 @text
-Máš vybranú úlohu, vlastný kontext, vhodný nástroj a jeden otestovaný postup, ktorý vieš spustiť znova. To je celý rozdiel medzi „skúšam AI” a „AI mi robí prácu”. Teraz ho nasaď na najbližšiu skutočnú zákazku a **až podľa nej** rozhodni, čo má zmysel automatizovať ďalej.
+Máš vybranú úlohu, vlastný kontext, vhodný nástroj a jeden otestovaný postup, ktorý vieš spustiť znova. To je celý rozdiel medzi „skúšam AI" a „AI mi robí prácu". Teraz ho nasaď na najbližšiu skutočnú zákazku a **až podľa nej** rozhodni, čo má zmysel automatizovať ďalej.
 
 @checklist
 Skill sa načítal a funguje na novom vstupe.
@@ -86,7 +86,7 @@ Chýbajúci údaj neviedol k vymyslenej odpovedi.
 Viem rozlíšiť problém s cestou, s postupom a s povolením.
 Mám vlastné meranie výsledku, nie dojem.
 
-@box ÚSPEŠNÝ TEST JE ZAČIATOK
+@box PRE POKROČILÝCH
 Pri každej zmene podkladov, modelu alebo dôležitého kroku zopakuj bežný aj hraničný test. Presne tak sa z návodu postupne stáva spoľahlivý pracovný postup. Modely sa menia častejšie, než si myslíš.
 
 @box ČO ĎALEJ

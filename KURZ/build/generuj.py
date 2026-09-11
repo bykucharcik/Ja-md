@@ -124,7 +124,7 @@ def t(surovy):
     bezpecny = VZOR_TUCNE.sub(r"<strong>\1</strong>", bezpecny)
     bezpecny = VZOR_KOD.sub(r"<code>\1</code>", bezpecny)
     bezpecny = bezpecny.replace(" -&gt; ", f" {SIPKA_VPRAVO} ").replace(" -- ", " — ")
-    bezpecny = VZOR_UVODZOVKY.sub("„\\1”", bezpecny)
+    bezpecny = VZOR_UVODZOVKY.sub("„\\1“", bezpecny)
     return bezpecny
 
 

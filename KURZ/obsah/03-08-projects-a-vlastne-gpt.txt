@@ -33,7 +33,7 @@ stitok: POSTUP
 h1: Postav prvý projekt a hneď ho otestuj.
 
 @kroky
-01 | Vytvor projekt. | V ľavom paneli nový projekt. Pomenuj ho „AI obsah” alebo menom klienta. Jeden klient = jeden projekt.
+01 | Vytvor projekt. | V ľavom paneli nový projekt. Pomenuj ho „AI obsah" alebo menom klienta. Jeden klient = jeden projekt.
 02 | Pridaj projektové inštrukcie. | V menu projektu otvor inštrukcie a vlož prispôsobený text nižšie.
 03 | Nahraj podklady. | Popis publika, schválené fakty, dobré ukážky. Pri cenníku vždy uveď dátum platnosti.
 04 | Otvor nový chat v projekte. | Zadaj jednu konkrétnu úlohu a over, či naozaj siahol po správnych podkladoch.
@@ -70,7 +70,7 @@ Nepredpokladal som, že sa s podkladmi prenesú aj integrácie.
 Preniesť vieš inštrukcie a podklady. Funkcie, akcie a integrácie sa **nepresunú automaticky**. Inak budeš hľadať chybu tam, kde nie je.
 
 @box PRE POKROČILÝCH
-Daj projektu pravidlo pre konflikty: „Ak sa dva podklady rozchádzajú, ukáž rozdiel a dátumy. Nevyberaj potichu jeden.”
+Daj projektu pravidlo pre konflikty: „Ak sa dva podklady rozchádzajú, ukáž rozdiel a dátumy. Nevyberaj potichu jeden."
 
 @terazty TERAZ TY
 Ulož úspešnú šablónu do projektu. V 03.9 porovnáš Clauda a ChatGPT na svojich úlohách.

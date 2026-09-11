@@ -7,7 +7,7 @@ varianta: d
 @obal
 cislo: 03.4
 stitok: KONEKTORY A NAPLÁNOVANÉ ÚLOHY
-h1: Asistent za 100 000 eur ročne. Alebo desať minút nastavenia.
+h1: Prestaň sa pýtať, čo máš v pošte. Nechaj si to zhrnúť ešte pred kávou.
 slub: Pripojíš Gmail a kalendár, nastavíš jednu opakovanú úlohu a ráno ti príde hotový prehľad namiesto päťdesiatich mailov.
 cas: 5 min | ČÍTANIE
 cas: 20–30 min | PRAX
@@ -21,7 +21,7 @@ stitok: AKO NAD TÝM ROZMÝŠĽAŤ
 h1: Prestaň sa pýtať. Začni zadávať.
 
 @text
-Spomeň si, ako vyzeral tvoj prvý smartfón. Na počasie appka, na lety appka, na hudbu appka. Dvadsať malých nástrojov, medzi ktorými prepínaš ty. ChatGPT má vlastnú obdobu obchodu s appkami — len s tým rozdielom, že po pripojení v nich **prácu urobí za teba**.
+Spomeň si, ako vyzeral tvoj prvý smartfón. Na počasie appka, na lety appka, na hudbu appka. Dvadsať malých nástrojov, medzi ktorými prepínaš ty. ChatGPT má vlastnú obdobu obchodu s appkami — len s tým rozdielom, že po pripojení v nich **prácu urobí za teba**. Dnes z toho postavíme dve veci: ranný prehľad pošty a jednu úlohu, ktorá beží bez teba.
 
 @tabulka ČO PRIPOJIŤ NAJPRV | ČO ZA TEBA ROBÍ
 Gmail | Zhrnie poštu, roztriedi, čo treba dnes a čo počká, pripraví návrhy odpovedí.
@@ -47,8 +47,8 @@ Pri prvej skupine napíš jednou vetou, čo odo mňa chcú.
 Nič neodosielaj. Nič neoznačuj ako prečítané.
 
 @kroky
-01 | Pusti to ručne tri dni po sebe. | Uvidíš, či triedi tak, ako by si triedil ty. Ak nie, doplň vlastné pravidlo: „faktúry daj vždy do prvej skupiny.”
-02 | Pridaj kalendár. | „Kde mám tento týždeň voľné dvojhodinové okná?” Prestaneš to lúštiť očami.
+01 | Pusti to ručne tri dni po sebe. | Uvidíš, či triedi tak, ako by si triedil ty. Ak nie, doplň vlastné pravidlo: „faktúry daj vždy do prvej skupiny."
+02 | Pridaj kalendár. | „Kde mám tento týždeň voľné dvojhodinové okná?" Prestaneš to lúštiť očami.
 03 | Až keď to funguje, naplánuj to. | V ľavom paneli otvor naplánované úlohy, vyber deň a čas a vlož presne to zadanie, ktoré ti fungovalo ručne.
 04 | Skontroluj prvý automatický beh. | Naplánovaná úloha, ktorú si nikdy neskontroloval, je len tichý zdroj chýb.
 

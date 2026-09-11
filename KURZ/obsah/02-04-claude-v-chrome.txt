@@ -66,12 +66,13 @@ h1: Vieš to zopakovať aj bez tohto PDF.
 
 @checklist
 Rozšírenie je nainštalované a prihlásené.
-Rozumiem trom úrovniam povolení.
+Viem vymenovať tri úrovne povolení a kde sa každá prepína.
 Prvý test som púšťal na stránke bez citlivých údajov.
-Viem, ktoré akcie Claude neurobí ani so súhlasom.
+Viem vymenovať aspoň tri akcie, ktoré Claude neurobí ani so súhlasom.
+Trvalé povolenie som dal len na stránke, kde viem, čo najhoršie sa môže stať.
 
-@box O KROK ĎALEJ
-Chrome je pre prácu **v prehliadači**. Keď potrebuješ siahnuť na súbory v počítači, to už je Cowork alebo Claude Code. Nepokúšaj sa jedným nástrojom robiť oboje.
+@box PRE POKROČILÝCH
+Chrome je na prácu **v prehliadači**. Keď treba siahnuť na súbory v počítači, to je Cowork alebo Claude Code. A trvalé povolenie dávaj len na stránkach, kde ťa chyba nebolí — na jednu kartu sa dá zabudnúť, na trvalý súhlas nie.
 
 @terazty TERAZ TY
 Nechaj Clauda spraviť jednu vec, ktorú by si inak klikal ručne. V 02.5 ho pustíš k svojim súborom.

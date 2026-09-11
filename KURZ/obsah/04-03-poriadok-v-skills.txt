@@ -7,7 +7,7 @@ varianta: d
 @obal
 cislo: 04.3
 stitok: PORIADOK V SKILLS
-h1: O mesiac chceš nájsť fungujúci postup. Nie päť verzií „final”.
+h1: O mesiac chceš nájsť fungujúci postup. Nie päť verzií „final".
 slub: Usporiadaš svoje skills, oddelíš podklady od postupov a staré verzie odložíš mimo aktívneho zoznamu.
 cas: 4 min | ČÍTANIE
 cas: 15–20 min | PRAX
