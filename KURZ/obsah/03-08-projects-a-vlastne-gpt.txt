@@ -1,0 +1,80 @@
+# Modul 03 — ChatGPT / lekcia 8
+modul: 03 ChatGPT
+cislo: 03.8
+titul: Projects a vlastné GPT
+varianta: d
+
+@obal
+cislo: 03.8
+stitok: PROJECTS A VLASTNÉ GPT
+h1: Prestaň pri každom chate nalepovať tie isté podklady.
+slub: Nastavíš projekt s vlastnými inštrukciami a podkladmi a zistíš, kedy potrebuješ pracovný priestor a kedy vlastné GPT.
+cas: 5 min | ČÍTANIE
+cas: 15–25 min | PRAX
+priprav: ChatGPT účet, 2–3 relevantné podklady a vlastná šablóna zadania z 02.10.
+bod: Projekt verzus vlastné GPT
+bod: Prvý projekt na klienta
+bod: Test na výsledku
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Vyber podľa toho, ako chceš pracovať.
+
+@tabulka | PROJECT | VLASTNÉ GPT
+Čo to je | Miesto pre súvisiace chaty, súbory a inštrukcie. | Asistent nakonfigurovaný na jeden konkrétny účel.
+Kedy sa hodí | Dlhšia práca s jedným klientom alebo témou. | Opakované zadanie podľa jedného postupu.
+Kde žije výstup | V projekte, spolu s celou históriou. | Kdekoľvek ho spustíš, podľa nastavených oprávnení.
+
+@box DOSTUPNOSŤ SI OVER V ÚČTE
+Tvorba a zdieľanie GPT závisia od aktuálneho účtu a pracovného priestoru. Ak možnosť vytvoriť GPT nevidíš, nenastavuj sa podľa starého screenshotu z internetu. Na dnešnú úlohu ti projekt úplne stačí.
+
+@strana
+stitok: POSTUP
+h1: Postav prvý projekt a hneď ho otestuj.
+
+@kroky
+01 | Vytvor projekt. | V ľavom paneli nový projekt. Pomenuj ho „AI obsah” alebo menom klienta. Jeden klient = jeden projekt.
+02 | Pridaj projektové inštrukcie. | V menu projektu otvor inštrukcie a vlož prispôsobený text nižšie.
+03 | Nahraj podklady. | Popis publika, schválené fakty, dobré ukážky. Pri cenníku vždy uveď dátum platnosti.
+04 | Otvor nový chat v projekte. | Zadaj jednu konkrétnu úlohu a over, či naozaj siahol po správnych podkladoch.
+
+@kod INŠTRUKCIE NA SKOPÍROVANIE
+Pomáhaš mi s AI obsahom pre slovenských netechnických ľudí.
+Píš prirodzene, konkrétne a bez zbytočného úvodu.
+Pri novom technickom pojme pridaj krátke vysvetlenie.
+Vychádzaj zo schválených súborov v projekte.
+Nevymýšľaj moje skúsenosti, čísla ani výsledky.
+Ak zadanie potrebuje aktuálny údaj, over ho v primárnom
+zdroji a uveď odkaz. Rozsah určuje konkrétna úloha.
+
+@kod TESTOVACIE ZADANIE
+Z priložených poznámok priprav 3 hooky pre Reels.
+Každý do 12 slov. Ku každému pridaj jednu vetu,
+čo musí video ukázať, aby hook splnilo.
+Nevymýšľaj výsledky ani štatistiky.
+
+@text drobne
+Na výstupe skontroluj tri veci: je jazyk prirodzený, vie začiatočník, o čo ide, a dokáže obsah splniť sľub hooku? Ak nie, máš clickbait.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Mám nastavený projekt a prvý overený výstup.
+Viem odlíšiť projekt od vlastného GPT.
+Podklady majú dátum platnosti.
+Nepredpokladal som, že sa s podkladmi prenesú aj integrácie.
+
+@box KEĎ PRENÁŠAŠ Z VLASTNÉHO GPT
+Preniesť vieš inštrukcie a podklady. Funkcie, akcie a integrácie sa **nepresunú automaticky**. Inak budeš hľadať chybu tam, kde nie je.
+
+@box PRE POKROČILÝCH
+Daj projektu pravidlo pre konflikty: „Ak sa dva podklady rozchádzajú, ukáž rozdiel a dátumy. Nevyberaj potichu jeden.”
+
+@terazty TERAZ TY
+Ulož úspešnú šablónu do projektu. V 03.9 porovnáš Clauda a ChatGPT na svojich úlohách.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: projekty a chaty | https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+OpenAI: vlastné GPT | https://help.openai.com/en/articles/8554397-creating-a-gpt

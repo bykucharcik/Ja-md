@@ -1,0 +1,94 @@
+# Modul 03 — ChatGPT / lekcia 2
+modul: 03 ChatGPT
+cislo: 03.2
+titul: Nauč ChatGPT, kto si
+varianta: b
+
+@obal
+cislo: 03.2
+stitok: NAUČ CHATGPT, KTO SI
+h1: Každé ráno sa zobudí a nevie o tebe nič. Toto to zmení.
+slub: Nastavíš vlastné inštrukcie, zapneš a upraceš pamäť a naučíš sa rozdiel, ktorý si mýli väčšina ľudí.
+cas: 5 min | ČÍTANIE
+cas: 20–25 min | PRAX
+priprav: ChatGPT účet a 10 minút na poctivé odpovede o sebe. Robíš to raz.
+bod: Inštrukcie verzus pamäť
+bod: Rozhovor, ktorý to vyplní za teba
+bod: Upratanie zlých spomienok
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Predstav si asistenta, ktorý každý deň stratí pamäť.
+
+@text
+Najmúdrejší človek, akého poznáš. Vie skoro všetko. Ale každé ráno zabudne, kto si, čo robíš a ako to chceš spracované. Za týždeň by ťa to dohnalo k šialenstvu. **A presne takto ChatGPT používa väčšina ľudí.** Rozdiel medzi frustrujúcim a výborným nástrojom nie je model. Je to prvých desať minút nastavenia.
+
+@tabulka | VLASTNÉ INŠTRUKCIE | PAMÄŤ
+Čo to je | Čo mu povieš raz. | Čo si postupne všimne sám.
+Prirovnanie | Jednostranový brief pre nového kolegu v prvý deň. | Všetko, čo sa naučil od druhého dňa ďalej.
+Kedy sa mení | Keď to ideš prepísať ty. | Priebežne, ako pracuješ a opravuješ.
+Čo tam patrí | Kto si, čo robíš, aký tón, čomu sa vyhnúť. | Tvoje preferencie, projekty, opakované opravy.
+
+@box TOTO JE DÔVOD, PREČO TO VÄČŠINE NEFUNGUJE
+Väčšina ľudí pamäť **nikdy nezapne**. Je to ako prijať človeka s tým, že sa nikdy nezlepší. Settings -> Personalization -> Memory. Zapni to teraz, potom pokračuj v čítaní.
+
+@strana
+stitok: POSTUP
+h1: Nepíš brief z hlavy. Nechaj sa vyspovedať.
+
+@text
+Sedieť pred prázdnym poľom a vymýšľať, čo o sebe napísať, je nuda. Rýchlejšia cesta: nech sa ťa vypytuje on.
+
+@kod ROZHOVOR, KTORÝ SI PUSTÍŠ RAZ
+Spravíš so mnou krátky rozhovor, aby si ma spoznal.
+Pýtaj sa po jednej otázke a čakaj na odpoveď.
+Prejdi: čo robím a pre koho, moje ciele na rok,
+ako chcem mať vysvetlené veci, aký tón mi vyhovuje,
+čomu sa mám vyhnúť a v čom sa mýliš, keď ma nepoznáš.
+
+Potom mi napíš hotový text do 1 500 znakov,
+ktorý si vložím do vlastných inštrukcií.
+Píš v prvej osobe, konkrétne, bez marketingových fráz.
+
+@kroky
+01 | Odpovedaj naozaj. | Jednoslovné odpovede dajú jednoslovný brief. Týchto desať minút sa vráti stokrát.
+02 | Vlož to do Personalization. | Pred uložením si text prečítaj. Čo nesedí, prepíš vlastnými slovami.
+03 | Prenes pamäť z inej AI. | Vypýtaj si tam súhrn toho, čo o tebe vie, a vlož ho sem. Nezačínaš od nuly.
+04 | Uprac staré spomienky. | Manage memories ukáže zoznam. Zastarané položky zmaž.
+
+@box ČO TAM URČITE NAPÍŠ
+Čo tvoríš a komu. Aký tón. Krátke odpovede alebo aj uvažovanie. A hlavne **čomu sa má vyhnúť** — to ľudia vynechávajú a potom sa čudujú, prečo im to píše emoji.
+
+@strana
+stitok: POSTUP
+h1: Dve veci, ktoré ťa ochránia pred sebavedomým nezmyslom.
+
+@text
+Nastavený ChatGPT je príjemnejší. Nie je automaticky presnejší. Tieto dva návyky ti ušetria najviac hanby.
+
+@box ADVOKÁT DIABLA
+ChatGPT je postavený tak, aby s tebou súhlasil. Opýtaj sa najhoršie položenú otázku sveta a nájde spôsob, ako povedať „áno, presne tak”. Keď od neho berieš rozhodnutia, otoč to: **„Nesúhlas so mnou. Zahraj advokáta diabla. Daj mi najsilnejší argument, prečo sa mýlim.”** A druhá veta, ktorá vytiahne najviac: **„Čo sú moje slepé miesta? Čo som sa ťa nespýtal, ale mal som?”**
+
+@box TEST NA HALUCINÁCIE ZA JEDNU VETU
+Na začiatku dôležitého chatu napíš: „Oslovuj ma menom Tomáš.” Keď v odpovediach zrazu meno zmizne a začne sa „skvelá otázka”, stratil niť. Vtedy zastav a over si všetko, čo ti odvtedy napísal. Funguje to preto, že prvé pokyny sa vytrácajú ako prvé.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Mám zapnutú pamäť a viem, kde ju spravujem.
+Vlastné inštrukcie sú vyplnené vlastnými slovami.
+Napísal som aj to, čomu sa má vyhnúť.
+Pri dôležitých otázkach si pýtam protiargument.
+Viem, ako spoznať, že sa rozhovor rozpadá.
+
+@box PRE POKROČILÝCH
+Keď píšeš pre klienta, tvoja personalizácia ti lezie do výstupu. Vtedy klienta a jeho štýl pomenuj priamo v zadaní — alebo si naňho urob samostatný projekt s vlastnými inštrukciami (03.8).
+
+@terazty TERAZ TY
+Pusti si ten rozhovor a nastavenie dokonči dnes. V 03.3 si otvoríš šesť režimov, o ktorých väčšina ľudí nevie.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: pamäť a ako funguje | https://help.openai.com/en/articles/8983148-memory-faq
+OpenAI: vlastné inštrukcie | https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt

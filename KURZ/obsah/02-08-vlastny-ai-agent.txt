@@ -1,0 +1,101 @@
+# Modul 02 — Claude / lekcia 8
+modul: 02 Claude
+cislo: 02.8
+titul: Vlastný AI agent
+varianta: d
+
+@obal
+cislo: 02.8
+stitok: VLASTNÝ AI AGENT
+h1: Najal si šikovného cudzinca. Teraz ho zauč.
+slub: Pripravíš priečinok s vlastným kontextom a otestuješ agenta na jednej opakovanej úlohe.
+cas: 6 min | ČÍTANIE
+cas: 45–60 min | PRAX
+priprav: Claude Code z 02.5, vybraná úloha a vlastné podklady. Stačí jedna rola alebo jeden projekt.
+bod: Čo agent potrebuje
+bod: Tvoj kontext v súboroch
+bod: Prvý overiteľný výsledok
+
+@strana
+stitok: AKO TO FUNGUJE VNÚTRI
+h1: Agent potrebuje vedieť, čo znamená hotovo.
+
+@text
+Agent pracuje v cykle: načíta situáciu, vyberie ďalší krok, použije nástroj a vyhodnotí výsledok. Dokola, kým nie je hotovo. Zastaviť ho môže limit, chyba alebo chýbajúci prístup — preto potrebuje konkrétny cieľ a spôsob kontroly.
+
+@tabulka ČASŤ | ČO MU DÁŠ | PRÍKLAD
+Kontext | Fakty o tvojej práci a publiku. | Pre koho tvoríš a čo ponúkaš.
+Model | Dostupný model podľa náročnosti. | Bežné spracovanie alebo hlbšia analýza.
+Nástroje | Prístup potrebný na úlohu. | Čítanie súborov, web, konektor.
+Skills | Postup, ktorý sa má opakovať. | Ako pripraviť a skontrolovať scenár.
+
+@box SLABÉ ZADANIE
+„Sprav mi research." Chýba téma, rozsah aj výstup. Agent sa zastaví vtedy, keď to sám uzná za vhodné.
+
+@box POUŽITEĽNÉ ZADANIE
+Nájdi 5 nástrojov na prepis slovenských porád. Pri každom uveď podporu slovenčiny, cenu z oficiálneho webu, odkaz a dátum kontroly. Neoverený údaj označ. Ulož porovnanie do vystupy/prepisy.md. Nič nekupuj ani neregistruj.
+
+@strana
+stitok: POSTUP
+h1: Priprav si základňu pre jednu rolu.
+
+@kroky
+01 | Vytvor projektový priečinok. | Pomenuj ho napríklad `AI-obsah`. V Claude Code ho otvor postupom z 02.5.
+02 | Nechaj sa vyspovedať. | Vlož prompt nižšie. Odpovedaj vlastnými slovami — pokojne hlasom.
+03 | Ulož a prečítaj kontext. | Nechaj vytvoriť súbory z tabuľky. Vymaž domnienky. Rozlišuj, čo je fakt a čo len plán.
+04 | Priprav krátky CLAUDE.md. | Daj doň pravidlá a jasne urči, ktoré súbory má pri konkrétnej práci čítať. Zmienka o priečinku nezaručuje načítanie všetkého.
+
+@box PROMPT NA ZBER KONTEXTU
+Chcem ťa používať na tvorbu môjho AI obsahu. Pýtaj sa ma po jednej otázke na publikum, cieľ, štýl, pravdivé skúsenosti a obmedzenia. Po 8 odpovediach navrhni krátke súbory do kontext/. Nevymýšľaj fakty. Čo ostáva otvorené, označ NA DOPLNENIE. Pred uložením mi ukáž návrh.
+
+@tabulka SÚBOR | ČO DOŇ PATRÍ
+kontext/o-mne.md | Moja rola a potvrdené skúsenosti.
+kontext/biznis.md | Ponuka a jej aktuálny stav.
+kontext/zakaznik.md | Publikum, problémy a slovník.
+kontext/ton-hlasu.md | Pravidlá plus dobrá a zlá ukážka.
+kontext/pamat.md | Schválené opravy, ktoré majú platiť ďalej.
+
+@strana
+stitok: POSTUP
+h1: Over ho v novom sedení.
+
+@kod PRÍKLAD PRAVIDIEL DO CLAUDE.md
+# AI obsah
+- Pred tvorbou obsahu prečítaj kontext/zakaznik.md
+  a kontext/ton-hlasu.md.
+- Pri zmienke o mne načítaj kontext/o-mne.md.
+- Ponuku over v kontext/biznis.md.
+- Prečítaj relevantné schválené opravy v kontext/pamat.md.
+- Nevydávaj plán za dosiahnutý výsledok.
+- Výsledky ukladaj do vystupy/.
+- Nové trvalé pravidlo mi pred zápisom do pamäte ukáž.
+
+@kroky
+01 | Otvor nové sedenie. | Cez `/context` skontroluj načítanie CLAUDE.md. Zadaj: „Pred úlohou načítaj potrebný kontext a vypíš použité súbory."
+02 | Zadaj reálny výstup. | Napríklad 3 hooky a 1 scenár z tvojho podkladu. Skontroluj jazyk, cieľovku a presnosť tvrdení.
+03 | Zapíš užitočnú opravu. | „Pri každej novinke uveď zdroj" je trvalé pravidlo. „Dnes to skráť" nie je.
+04 | Pripoj len potrebný nástroj. | Ak úloha potrebuje e-mail, vyber schválený konektor a otestuj čítanie jednej položky. Na prvý obsahový výstup často stačia súbory.
+
+@box PREČO TO NIE JE HOTOVÁ AUTOMATIZÁCIA
+Nastavil si pracovné prostredie pre agenta. Pravidelné spúšťanie, dohľad a napojenie firemných systémov sú ďalšia úloha. Zatiaľ over, že postup funguje na jednom výsledku.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Kontext obsahuje moje fakty, nie domyslený životopis.
+Pravidlá určujú, čo načítať a kam uložiť výsledok.
+V novom sedení vznikol výstup podľa mojich podkladov.
+Viem odlíšiť trvalé pravidlo od jednorazovej opravy.
+
+@box O KROK ĎALEJ
+Do kontextu doplň aj vzor dobrého výsledku a vysvetli, prečo je dobrý. Konkrétna ukážka je často užitočnejšia než ďalších 20 všeobecných pravidiel.
+
+@terazty TERAZ TY
+Dokonči jeden výstup s vlastným kontextom. V 02.9 zistíš, aký model naň vlastne potrebuješ.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude Code: pamäť a CLAUDE.md | https://code.claude.com/docs/en/memory
+Claude Code: konektory cez MCP | https://code.claude.com/docs/en/mcp
+Claude Code: skills | https://code.claude.com/docs/en/skills

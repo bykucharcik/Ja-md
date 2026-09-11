@@ -1,0 +1,65 @@
+# Modul 01 — Štart
+modul: 01 Štart
+cislo: 01
+titul: Začni tu
+varianta: a
+
+@obal
+cislo: 01
+stitok: ZAČNI TU
+h1: Čo keby AI spravila tú úlohu, ktorú stále odkladáš?
+slub: Vyberieš si 3 vlastné úlohy a jednu z nich budeš počas kurzu meniť na postup, ktorý vieš zopakovať.
+cas: 4 min | ČÍTANIE
+cas: 10–15 min | PRAX
+priprav: Počítač, poznámky a účet v Claudovi alebo ChatGPT. Na štart nepotrebuješ platiť oba nástroje.
+bod: Vyberieš si prvý výsledok
+bod: Zistíš poradie lekcií
+bod: Nastavíš si meranie úspory
+
+@strana
+stitok: PREČO TENTO KURZ
+h1: Tento kurz má skončiť hotovou prácou.
+
+@text
+Som Tomáš. Nie som programátor. AI používam pri obsahu, e-commerce a práci na firemných procesoch. Preto pôjdeme od konkrétnej úlohy: čo máš dnes na stole a čo z toho vieš odovzdať AI.
+
+@tabulka MODUL | ČO SI ODNESIEŠ
+01 / Štart | 3 úlohy a jasný prvý cieľ.
+02 / Claude | Nastavená pamäť, projekt, prvý súbor z Claude Code, vlastný agent.
+03 / ChatGPT | Nastavená personalizácia, režimy, konektory a vlastné rozhodnutie.
+04 / Skills | Jeden vlastný postup, ktorý vieš spustiť znova.
+
+@box AKO POSTUPOVAŤ
+Choď v poradí 01 -> 02 -> 03 -> 04. OmniRoute na konci modulu 02 je voliteľná technickejšia odbočka. Moduly 05 a 06 nie sú súčasťou tohto vydania. PDF funguje samostatne; video na splnenie úloh nepotrebuješ.
+
+@strana
+stitok: POSTUP
+h1: Vyber prácu, ktorú spoznáš ako hotovú.
+
+@kroky
+01 | Napíš 3 opakované úlohy. | Napríklad zhrnutie porady, návrh 3 Reels alebo prehľad faktúr. Vyber niečo, čo vieš sám skontrolovať.
+02 | Ku každej dopíš výstup. | „Z prepisu chcem tabuľku úloh, zodpovedných ľudí a termínov." To je lepšie zadanie než „pomôž mi s poradami".
+03 | Odmeraj dnešný čas. | Zaznač minúty pri najbližšom ručnom spracovaní. Ak zatiaľ odhaduješ, označ číslo ako odhad.
+04 | Vyber jednu na začiatok. | Má sa opakovať, mať dostupné podklady a nízke následky chyby. Ostatné dve si nechaj na porovnanie v module 03.
+
+@box TVOJ ZÁPIS
+Úloha: _____ | Vstup: _____ | Hotový výstup: _____
+Dnes mi trvá: _____ min | Zopakujem ju: _____-krát mesačne
+
+@box AKO ZISTÍŠ, ČI TO MÁ HODNOTU
+Úspora času = pôvodný čas − zadanie − kontrola − opravy. Čakanie na AI si meraj zvlášť. Rýchla odpoveď, ktorú hodinu opravuješ, ti nepomohla.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Mám 3 konkrétne úlohy a jednu vybranú.
+Viem, aký súbor alebo výsledok má vzniknúť.
+Mám zapísaný pôvodný čas alebo označený odhad.
+
+@box O KROK ĎALEJ
+Už AI používaš? Vyber úlohu, pri ktorej stále veľa kopíruješ alebo opravuješ. Práve tam hľadaj zlepšenie.
+
+@terazty TERAZ TY
+Zapíš prvú úlohu. Potom otvor 02.1 a vyber, kde ju Claude spracuje.

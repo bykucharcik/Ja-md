@@ -1,0 +1,100 @@
+# Modul 02 — Claude / lekcia 11 (voliteľná)
+modul: 02 Claude
+cislo: 02.11
+titul: OmniRoute: voliteľný experiment
+varianta: c
+
+@obal
+cislo: 02.11
+stitok: OMNIROUTE: VOLITEĽNÝ EXPERIMENT
+h1: Claude Code vie bežať aj na inom modeli. Najprv si over, kam idú tvoje dáta.
+slub: Spustíš lokálny router, pripojíš ho ku Claude Code a na cvičnej úlohe overíš, ktorý model prácu naozaj urobil.
+cas: 6 min | ČÍTANIE
+cas: 30–45 min | PRAX
+priprav: Claude Code, terminál a podporovaný Node.js. Táto lekcia je voliteľná. Zvyšok kurzu ju nepotrebuje.
+bod: Čo router robí
+bod: Inštalácia a pripojenie
+bod: Kontrola trasy a návrat
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Router je prostredník medzi nástrojom a modelom.
+
+@text
+Claude Code pošle požiadavku lokálnemu OmniRoute. Ten ju nasmeruje k poskytovateľovi, ktorého si nastavil. Môže ísť o platené API, tvoje oprávnené pripojenie alebo dostupný free model. **Router ti nezaručí Clauda zadarmo.** Zaručí ti len to, že požiadavka pôjde inam.
+
+@tabulka ČO SI OVERIŤ PRED PRVÝM SPUSTENÍM | PREČO
+Poskytovateľ a model | To, že píšeš do Claude Code, neurčuje, aký model odpovedal.
+Cena a kvóta | Free ponuka môže mať limit, zmeniť sa alebo zo dňa na deň skončiť.
+Cesta dát | Lokálny router vie posielať tvoje prompty na vzdialené servery.
+Podpora funkcií | Iný model nemusí rovnako zvládať nástroje, formáty a dlhý kontext.
+
+@box NA ČOM ZAČAŤ
+Verejný text alebo tri cvičné poznámky. Firemné podklady pripoj až po tom, čo si overil poskytovateľa, spracovanie dát a pravidlá svojej firmy. Do náhodných free trás neprepínaj bez rozmyslu — je to prvá vec, ktorou si ľudia bez toho, aby si to všimli, pošlú klientske dáta neznámo kam.
+
+@strana
+stitok: POSTUP
+h1: Najprv router. Potom Claude Code.
+
+@kroky
+01 | Over Node.js. | V termináli zadaj `node --version`. Dokumentácia uvádza `>=22.22.2 <23` alebo `>=24.0.0 <27`. Jednoduchá voľba je vetva 24.x, inštalátor ber z nodejs.org.
+02 | Nainštaluj a spusti router. | Príkazy nižšie zadaj po jednom. Okno so spusteným `omniroute` nechaj otvorené — keď ho zavrieš, router prestane bežať.
+03 | Otvor dashboard. | V prehliadači choď na `http://localhost:20128`. Dokonči ponúknuté nastavenie a skontroluj poskytovateľa, model a jeho kvótu.
+04 | Priprav profily. | V druhom termináli otvor svoj cvičný priečinok. Najprv `--dry-run`, až potom ostrý beh. Názov profilu použi presne ten, ktorý ti nástroj vypísal.
+
+@kod TERMINÁL 1
+node --version
+npm install -g omniroute
+omniroute
+
+@kod TERMINÁL 2 — V CVIČNOM PRIEČINKU
+omniroute setup-claude --dry-run
+omniroute setup-claude
+omniroute launch --profile NAZOV_PROFILU
+
+@text drobne
+`NAZOV_PROFILU` nahraď skutočným názvom vytvoreného profilu. Príkazy zodpovedajú návodu projektu k 11. 9. 2026. Ak sa verzia líši, použi `omniroute --help` a prepojený návod.
+
+@strana
+stitok: POSTUP
+h1: Otestuj trasu aj samotný výsledok.
+
+@kod ZADANIE NA TEST
+Z 3 cvičných poznámok vytvor PREHLAD.md.
+Pri každej vypíš názov a 3 hlavné body.
+Chýbajúce údaje nedopĺňaj. Pôvodné súbory nemeň.
+Na konci over, či sú v prehľade všetky 3 vstupy.
+
+@kroky
+01 | Pozri záznam v dashboarde. | Over poskytovateľa a model skutočne použitej požiadavky. Ak router siahol po záložnej trase, zapíš aj to — inak porovnávaš niečo iné, než si myslíš.
+02 | Porovnaj výstup. | Presnosť, počet opráv a čas oproti tvojmu bežnému nastaveniu. Rovnaké podklady, rovnaké zadanie.
+03 | Vráť sa na pôvodné nastavenie. | Ukonči sedenie, otvor nový terminál a spusti priamo `claude` bez `omniroute launch`. Pri oddelených profiloch sa tvoje bežné nastavenie nemení. Over si účet aj model.
+
+@tabulka KEĎ TO NEJDE | PRVÁ KONTROLA
+Dashboard sa neotvorí | Beží proces? Sedí port 20128? Použi `omniroute doctor`.
+Chyba autentifikácie | Spúšťaj profil cez `omniroute launch` — doplní token z aktívneho kontextu.
+Claude obchádza router | Pri ručnom `ANTHROPIC_BASE_URL` nepíš `/v1` na koniec. Potom reštart.
+Model nie je v `/model` | Nie každý identifikátor sa v zozname zobrazí. Použi vytvorený profil a over log routera.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Router beží a poznám trasu, ktorou išla moja požiadavka.
+Cvičný výstup som skontroloval proti vstupom.
+Viem sa jedným príkazom vrátiť k bežnému Claude Code.
+Overil som, kam idú dáta, skôr než som poslal čokoľvek svoje.
+
+@box ČAS JE TIEŽ NÁKLAD
+Do úspory si započítaj nastavenie, chyby aj čas opráv. Cieľ nie je používať router preto, že existuje. Cieľ je zistiť, či ti táto cesta dá viac, než ťa stojí.
+
+@box PRE POKROČILÝCH
+Pri testovaní nechaj fixný model aj trasu. Automatické prepínanie zvýši dostupnosť, ale zmení výsledky a férové porovnanie je potom nemožné.
+
+@terazty TERAZ TY
+Zapíš si jednou vetou, či ti experiment priniesol použiteľný výsledok. Potom pokračuj lekciou 03.1.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OmniRoute: repozitár a návody | https://github.com/musistudio/omniroute
+Claude Code: nastavenia a premenné | https://code.claude.com/docs/en/settings

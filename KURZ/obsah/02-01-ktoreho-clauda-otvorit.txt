@@ -1,0 +1,74 @@
+# Modul 02 — Claude / lekcia 1
+modul: 02 Claude
+cislo: 02.1
+titul: Ktorého Clauda otvoriť
+varianta: a
+
+@obal
+cislo: 02.1
+stitok: KTOREHO CLAUDA OTVORIŤ
+h1: Platíš za päť nástrojov. Používaš jeden.
+slub: Priradíš svoje 3 úlohy k chatu, Chromu, Claude Code, Coworku alebo Designu. A budeš vedieť prečo.
+cas: 4 min | ČÍTANIE
+cas: 5–10 min | PRAX
+priprav: Úlohy z modulu 01. Dostupnosť produktov si over vo svojom účte, líši sa podľa plánu.
+bod: Model verzus aplikácia
+bod: Päť miest na prácu
+bod: Výber na tvojich úlohách
+
+@strana
+stitok: ZÁKLAD
+h1: Rovnaká značka. Iné možnosti.
+
+@text
+Claude je rodina modelov od Anthropicu. Model spracuje vstup a navrhne ďalší krok. Aplikácia mu dá nástroje, súbory a oprávnenia. V rôznych produktoch nemusí bežať rovnaký model ani rovnaké nastavenie.
+
+@text
+Preto nemá zmysel pýtať sa, ktorý Claude je lepší. Otázka je, **čoho sa smie dotknúť** a **koľko krokov spraví bez teba**.
+
+@tabulka KDE | KEDY HO OTVORIŤ | PRÍKLAD VÝSTUPU
+Chat / claude.ai | Chceš písať, rozobrať podklad alebo upraviť artefakt. | Návrh e-mailu, rozbor PDF.
+Claude v Chrome | Práca je na stránke, ktorú máš otvorenú. | Vyplnený formulár, porovnanie 4 e-shopov.
+Claude Code | Chceš pracovať v priečinku a meniť súbory. | PREHLAD.md z poznámok.
+Cowork | Deleguješ úlohu s viacerými krokmi a pripojenými appkami. | Report z podkladov a mailov.
+Design | Chceš návrh, ktorého rozloženie budeš ďalej upravovať. | Prezentácia, one-pager, prototyp.
+
+@box NEPODCEŇUJ CHAT
+Aj chat vie použiť web, spracovať súbory a vytvoriť výstup. Na dobrý e-mail nemusíš stavať agenta. Zložitejší nástroj pridaj až vtedy, keď narazíš na konkrétnu prekážku.
+
+@strana
+stitok: POSTUP
+h1: Začni jedným konkrétnym výstupom.
+
+@kroky
+01 | Pomenuj výsledok. | Nie „marketing". Napíš „3 scenáre Reels z môjho podkladu, každý do 90 slov".
+02 | Urči, odkiaľ prídu podklady. | Nahratý súbor? Priečinok v počítači? Otvorená stránka? Pripojený e-mail? Podľa toho vyber prostredie.
+03 | Pozri, či máš potrebnú funkciu. | Otvor svoj účet. Ak produkt alebo konektor nemáš, zvoľ dostupnú cestu s ručne nahratým podkladom.
+04 | Urob prvý pokus. | Po prvom výstupe voľbu vyhodnoť. Ak si strávil viac času kopírovaním než prácou, vybral si zle.
+
+@box SKOPÍRUJ A DOPLŇ
+Chcem vytvoriť [výstup]. Podklady mám [kde]. Potrebujem, aby si [činnosť]. Najprv povedz, či tu máš potrebné nástroje a prístup. Čo nemáš, neprisľubuj.
+
+@box PRE POKROČILÝCH
+Pri porovnaní si zapíš aj model. Inak zameníš rozdiel medzi modelmi za rozdiel medzi aplikáciami a vyvodíš zlý záver.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Ku každej úlohe mám produkt a dôvod.
+Viem, kde sú podklady a aký prístup potrebujem.
+Vybral som jeden prvý pokus.
+
+@box O KROK ĎALEJ
+Keď ti vyjde, že všetko patrí do chatu, sú tvoje úlohy buď naozaj malé, alebo napísané pribežne. Skús do každej dopísať sloveso a konkrétny súbor na výstupe.
+
+@terazty TERAZ TY
+Priraď svoje úlohy. V 02.2 naučíš Clauda, kto si — a prestaneš to vysvetľovať v každej správe.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude: prehľad modelov | https://platform.claude.com/docs/en/models/overview
+Claude Code: inštalácia | https://code.claude.com/docs/en/overview
+Cowork: začíname | https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork
+Claude v Chrome | https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome

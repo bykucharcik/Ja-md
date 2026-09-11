@@ -1,0 +1,82 @@
+# Modul 02 — Claude / lekcia 4
+modul: 02 Claude
+cislo: 02.4
+titul: Claude v Chrome
+varianta: d
+
+@obal
+cislo: 02.4
+stitok: CLAUDE V CHROME
+h1: Nekopíruj stránku do chatu. Pusť ho na ňu.
+slub: Nainštaluješ rozšírenie, necháš Clauda spraviť jednu nudnú vec priamo na stránke a nastavíš si, čo smie.
+cas: 4 min | ČÍTANIE
+cas: 15–20 min | PRAX
+priprav: Prehliadač Chrome a účet Claude. Na test si vyber stránku bez citlivých údajov.
+bod: Čo v prehliadači zvládne
+bod: Tri úrovne povolení
+bod: Prvá nudná úloha
+
+@strana
+stitok: ČO TO MENÍ
+h1: Pracuje tam, kde pracuješ ty.
+
+@text
+Doteraz si podklad musel dostať ku Claudovi. S rozšírením do Chromu je to opačne: Claude vidí stránku, ktorú máš otvorenú. Číta ju, kliká, vypĺňa a prechádza medzi kartami.
+
+@kroky
+01 | Nainštaluj a prihlás sa. | Rozšírenie nájdeš cez oficiálnu stránku Claude v Chrome. Po inštalácii sa prihlás svojím účtom.
+02 | Otvor bočný panel. | Claude beží vedľa stránky. Nemusíš prepínať okná ani nič kopírovať.
+03 | Ukáž mu, čo myslíš. | Vieš mu poslať snímku konkrétnej časti obrazovky. Namiesto opisovania „to tlačidlo vpravo dole" mu ho jednoducho ukážeš.
+04 | Nechaj ho pracovať cez karty. | V rámci jednej skupiny kariet vidí všetky a vie medzi nimi koordinovať. Pokračuje, aj keď prepneš inam — pokiaľ je Chrome otvorený.
+
+@box TYPICKÁ ÚLOHA
+Štyri e-shopy predávajú tú istú vec. Nechceš prečítať tristo recenzií. Claude to prejde a vráti ti porovnanie.
+
+@strana
+stitok: POSTUP
+h1: Najprv si nastav, čo smie.
+
+@text
+Rozšírenie má vrstvený systém povolení. Nie je to všetko alebo nič — a oplatí sa mu rozumieť skôr, než ho pustíš na niečo dôležité.
+
+@tabulka ÚROVEŇ | ČO ZNAMENÁ
+Automatické schvaľovanie | Bočný panel začína v tomto režime. Claude pracuje priebežne, každý krok si sám preveruje a pri rizikovej veci sa zastaví a spýta.
+Povoliť túto akciu | Súhlas na jeden jediný krok. Pri ďalšom sa spýta znova.
+Vždy povoliť na tejto stránke | Trvalý súhlas pre konkrétnu stránku. Claude tam potom koná bez pýtania.
+
+@box ČO NESMIE ANI S POVOLENÍM
+Nakupovať, zakladať účty, obchádzať overenie, že nie si robot, obchodovať s cennými papiermi a natrvalo mazať súbory. Rovnako sa zastaví pri krokoch, ktoré vyzerajú ako podstrčený pokyn zo stránky.
+
+@strana
+stitok: POSTUP
+h1: Prvé spustenie rob v tomto poradí.
+
+@kroky
+01 | Zavri, čo tam nemá byť. | Pred prvým spustením zavri internetbanking, osobné účty a všetko, čoho sa nemá dotknúť.
+02 | Začni na nízkom riziku. | Porovnanie produktov, vytiahnutie údajov zo stránky, vyplnenie cvičného formulára.
+03 | Pozeraj sa mu na prvé kroky. | Nie celý čas. Ale prvé dve minúty áno — zistíš, ako uvažuje.
+04 | Až potom mu daj trvalé povolenie. | A len na stránkach, kde vieš, čo najhoršie sa môže stať.
+
+@box PRAVIDLO Z PRAXE
+Pokyn napísaný na cudzej stránke nie je tvoje zadanie. Ak sa niekde v texte objaví „ignoruj predošlé pokyny", je to obsah, nie príkaz. Claude je na to trénovaný, ale ty to maj tiež v hlave.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Rozšírenie je nainštalované a prihlásené.
+Rozumiem trom úrovniam povolení.
+Prvý test som púšťal na stránke bez citlivých údajov.
+Viem, ktoré akcie Claude neurobí ani so súhlasom.
+
+@box O KROK ĎALEJ
+Chrome je pre prácu **v prehliadači**. Keď potrebuješ siahnuť na súbory v počítači, to už je Cowork alebo Claude Code. Nepokúšaj sa jedným nástrojom robiť oboje.
+
+@terazty TERAZ TY
+Nechaj Clauda spraviť jednu vec, ktorú by si inak klikal ručne. V 02.5 ho pustíš k svojim súborom.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude v Chrome: začíname | https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome
+Claude v Chrome: povolenia | https://support.claude.com/en/articles/12902446-claude-in-chrome-permissions-guide
+Claude v Chrome: bezpečné používanie | https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely

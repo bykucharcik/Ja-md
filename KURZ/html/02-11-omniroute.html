@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>02.11 OmniRoute: voliteľný experiment</title>
+<link rel="stylesheet" href="../build/styl.css">
+</head>
+<body>
+<section class="strana obal obal--c">
+  <div class="pas"></div>
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.11</span></div>
+  <div class="obal__hlava">
+    <div class="obal__cislo">02.11</div>
+    <div class="obal__stitok">OMNIROUTE: VOLITEĽNÝ EXPERIMENT</div>
+    <div class="obal__nadpis">Claude Code vie bežať aj na inom modeli. Najprv si over, kam idú tvoje dáta.</div>
+  </div>
+  
+  <div class="obal__spodok">
+    <div class="obal__slub">Spustíš lokálny router, pripojíš ho ku Claude Code a na cvičnej úlohe overíš, ktorý model prácu naozaj urobil.</div>
+    <div class="casy"><div class="cas"><div class="cas__cislo">6 min</div><div class="cas__popis">ČÍTANIE</div></div><div class="cas"><div class="cas__cislo">30–45 min</div><div class="cas__popis">PRAX</div></div></div>
+    <div class="obal__pripravLabel">ČO SI PRIPRAV</div><div class="obal__priprav">Claude Code, terminál a podporovaný Node.js. Táto lekcia je voliteľná. Zvyšok kurzu ju nepotrebuje.</div>
+    <div class="body"><div class="body__riadok"><div class="body__cislo">01</div><div class="body__text">Čo router robí</div></div><div class="body__riadok"><div class="body__cislo">02</div><div class="body__text">Inštalácia a pripojenie</div></div><div class="body__riadok"><div class="body__cislo">03</div><div class="body__text">Kontrola trasy a návrat</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">OmniRoute: voliteľný experiment</span><span class="paticka__cislo">57</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.11</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">AKO NAD TÝM ROZMÝŠĽAŤ</div>
+    <div class="nadpis">Router je prostredník medzi nástrojom a modelom.</div>
+    <div class="blok"><p class="odsek">Claude Code pošle požiadavku lokálnemu OmniRoute. Ten ju nasmeruje k poskytovateľovi, ktorého si nastavil. Môže ísť o platené API, tvoje oprávnené pripojenie alebo dostupný free model. <strong>Router ti nezaručí Clauda zadarmo.</strong> Zaručí ti len to, že požiadavka pôjde inam.</p></div><div class="blok"><table class="tabulka"><thead><tr><th>ČO SI OVERIŤ PRED PRVÝM SPUSTENÍM</th><th>PREČO</th></tr></thead><tbody><tr><td>Poskytovateľ a model</td><td>To, že píšeš do Claude Code, neurčuje, aký model odpovedal.</td></tr><tr><td>Cena a kvóta</td><td>Free ponuka môže mať limit, zmeniť sa alebo zo dňa na deň skončiť.</td></tr><tr><td>Cesta dát</td><td>Lokálny router vie posielať tvoje prompty na vzdialené servery.</td></tr><tr><td>Podpora funkcií</td><td>Iný model nemusí rovnako zvládať nástroje, formáty a dlhý kontext.</td></tr></tbody></table></div><div class="blok"><div class="box"><div class="box__stitok">NA ČOM ZAČAŤ</div><div class="box__text">Verejný text alebo tri cvičné poznámky. Firemné podklady pripoj až po tom, čo si overil poskytovateľa, spracovanie dát a pravidlá svojej firmy. Do náhodných free trás neprepínaj bez rozmyslu — je to prvá vec, ktorou si ľudia bez toho, aby si to všimli, pošlú klientske dáta neznámo kam.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">OmniRoute: voliteľný experiment</span><span class="paticka__cislo">58</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.11</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Najprv router. Potom Claude Code.</div>
+    <div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Over Node.js.</div><div class="krok__text">V termináli zadaj <code>node --version</code>. Dokumentácia uvádza <code>&gt;=22.22.2 &lt;23</code> alebo <code>&gt;=24.0.0 &lt;27</code>. Jednoduchá voľba je vetva 24.x, inštalátor ber z nodejs.org.</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Nainštaluj a spusti router.</div><div class="krok__text">Príkazy nižšie zadaj po jednom. Okno so spusteným <code>omniroute</code> nechaj otvorené — keď ho zavrieš, router prestane bežať.</div></div></div><div class="krok"><div class="krok__cislo">03</div><div><div class="krok__nazov">Otvor dashboard.</div><div class="krok__text">V prehliadači choď na <code>http://localhost:20128</code>. Dokonči ponúknuté nastavenie a skontroluj poskytovateľa, model a jeho kvótu.</div></div></div><div class="krok"><div class="krok__cislo">04</div><div><div class="krok__nazov">Priprav profily.</div><div class="krok__text">V druhom termináli otvor svoj cvičný priečinok. Najprv <code>--dry-run</code>, až potom ostrý beh. Názov profilu použi presne ten, ktorý ti nástroj vypísal.</div></div></div></div><div class="blok"><div class="box box--kod"><div class="box__stitok">TERMINÁL 1</div><div class="box__text">node --version
+npm install -g omniroute
+omniroute</div></div></div><div class="blok"><div class="box box--kod"><div class="box__stitok">TERMINÁL 2 — V CVIČNOM PRIEČINKU</div><div class="box__text">omniroute setup-claude --dry-run
+omniroute setup-claude
+omniroute launch --profile NAZOV_PROFILU</div></div></div><div class="blok"><p class="drobne"><code>NAZOV_PROFILU</code> nahraď skutočným názvom vytvoreného profilu. Príkazy zodpovedajú návodu projektu k 11. 9. 2026. Ak sa verzia líši, použi <code>omniroute --help</code> a prepojený návod.</p></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">OmniRoute: voliteľný experiment</span><span class="paticka__cislo">59</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.11</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Otestuj trasu aj samotný výsledok.</div>
+    <div class="blok"><div class="box box--kod"><div class="box__stitok">ZADANIE NA TEST</div><div class="box__text">Z 3 cvičných poznámok vytvor PREHLAD.md.
+Pri každej vypíš názov a 3 hlavné body.
+Chýbajúce údaje nedopĺňaj. Pôvodné súbory nemeň.
+Na konci over, či sú v prehľade všetky 3 vstupy.</div></div></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Pozri záznam v dashboarde.</div><div class="krok__text">Over poskytovateľa a model skutočne použitej požiadavky. Ak router siahol po záložnej trase, zapíš aj to — inak porovnávaš niečo iné, než si myslíš.</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Porovnaj výstup.</div><div class="krok__text">Presnosť, počet opráv a čas oproti tvojmu bežnému nastaveniu. Rovnaké podklady, rovnaké zadanie.</div></div></div><div class="krok"><div class="krok__cislo">03</div><div><div class="krok__nazov">Vráť sa na pôvodné nastavenie.</div><div class="krok__text">Ukonči sedenie, otvor nový terminál a spusti priamo <code>claude</code> bez <code>omniroute launch</code>. Pri oddelených profiloch sa tvoje bežné nastavenie nemení. Over si účet aj model.</div></div></div></div><div class="blok"><table class="tabulka"><thead><tr><th>KEĎ TO NEJDE</th><th>PRVÁ KONTROLA</th></tr></thead><tbody><tr><td>Dashboard sa neotvorí</td><td>Beží proces? Sedí port 20128? Použi <code>omniroute doctor</code>.</td></tr><tr><td>Chyba autentifikácie</td><td>Spúšťaj profil cez <code>omniroute launch</code> — doplní token z aktívneho kontextu.</td></tr><tr><td>Claude obchádza router</td><td>Pri ručnom <code>ANTHROPIC_BASE_URL</code> nepíš <code>/v1</code> na koniec. Potom reštart.</td></tr><tr><td>Model nie je v <code>/model</code></td><td>Nie každý identifikátor sa v zozname zobrazí. Použi vytvorený profil a over log routera.</td></tr></tbody></table></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">OmniRoute: voliteľný experiment</span><span class="paticka__cislo">60</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.11</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">HOTOVO AŽ VTEDY, KEĎ…</div>
+    <div class="nadpis">Vieš to zopakovať aj bez tohto PDF.</div>
+    <div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Router beží a poznám trasu, ktorou išla moja požiadavka.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Cvičný výstup som skontroloval proti vstupom.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Viem sa jedným príkazom vrátiť k bežnému Claude Code.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Overil som, kam idú dáta, skôr než som poslal čokoľvek svoje.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">ČAS JE TIEŽ NÁKLAD</div><div class="box__text">Do úspory si započítaj nastavenie, chyby aj čas opráv. Cieľ nie je používať router preto, že existuje. Cieľ je zistiť, či ti táto cesta dá viac, než ťa stojí.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">PRE POKROČILÝCH</div><div class="box__text">Pri testovaní nechaj fixný model aj trasu. Automatické prepínanie zvýši dostupnosť, ale zmení výsledky a férové porovnanie je potom nemožné.</div></div></div><div class="blok terazty"><div class="terazty__stitok">TERAZ TY</div><div class="terazty__text">Zapíš si jednou vetou, či ti experiment priniesol použiteľný výsledok. Potom pokračuj lekciou 03.1.</div></div><div class="blok zdroje"><div class="zdroje__stitok">OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026</div><div class="zdroje__zoznam"><a href="https://github.com/musistudio/omniroute">OmniRoute: repozitár a návody</a><a href="https://code.claude.com/docs/en/settings">Claude Code: nastavenia a premenné</a></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">OmniRoute: voliteľný experiment</span><span class="paticka__cislo">61</span></div>
+</section>
+</body>
+</html>

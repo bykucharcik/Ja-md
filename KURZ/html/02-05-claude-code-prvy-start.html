@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>02.5 Claude Code: prvý štart</title>
+<link rel="stylesheet" href="../build/styl.css">
+</head>
+<body>
+<section class="strana obal obal--a">
+  <div class="pas"></div>
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.5</span></div>
+  <div class="obal__hlava">
+    <div class="obal__cislo">02.5</div>
+    <div class="obal__stitok">CLAUDE CODE: PRVÝ ŠTART</div>
+    <div class="obal__nadpis">Volá sa Code. Nemusíš vedieť programovať.</div>
+  </div>
+  
+  <div class="obal__spodok">
+    <div class="obal__slub">Dáš mu 3 súbory a necháš z nich spraviť prehľad. Potom mu napíšeš pravidlá, ktoré bude držať.</div>
+    <div class="casy"><div class="cas"><div class="cas__cislo">7 min</div><div class="cas__popis">ČÍTANIE</div></div><div class="cas"><div class="cas__cislo">25–40 min</div><div class="cas__popis">PRAX</div></div></div>
+    <div class="obal__pripravLabel">ČO SI PRIPRAV</div><div class="obal__priprav">Mac, Windows alebo Linux, internet a platený Claude účet. Prihlásenie cez predplatné a platené API sú dva odlišné spôsoby účtovania.</div>
+    <div class="body"><div class="body__riadok"><div class="body__cislo">01</div><div class="body__text">Inštalácia a prihlásenie</div></div><div class="body__riadok"><div class="body__cislo">02</div><div class="body__text">Priečinok a prvý výstup</div></div><div class="body__riadok"><div class="body__cislo">03</div><div class="body__text">Pravidlá a povolenia</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Claude Code: prvý štart</span><span class="paticka__cislo">26</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.5</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">NEŽ ZAČNEME</div>
+    <div class="nadpis">Názov ťa nemá odradiť.</div>
+    <div class="blok"><p class="odsek">Claude Code je Claude, ktorý vidí priečinok. Číta súbory, mení ich a spúšťa príkazy. To, že sa volá Code, je historické — rovnako dobre prejde dvadsať PDF-iek, tabuľku a poznámky.</p></div><div class="blok"><p class="odsek">A nemusíš na to otvárať terminál. <strong>V desktopovej aplikácii Claude je karta Code.</strong> Ak už používaš Cowork, aplikáciu máš nainštalovanú a Claude Code v nej nájdeš tiež.</p></div><div class="blok"><table class="tabulka"><thead><tr><th>CESTA</th><th>PRE KOHO</th></tr></thead><tbody><tr><td>Desktopová aplikácia</td><td>Ak nechceš príkazový riadok. Karta Code, zmeny vidíš vizuálne.</td></tr><tr><td>Terminál</td><td>Ak ti príkazový riadok nevadí. Najviac možností, najrýchlejšie.</td></tr><tr><td>Editor / web</td><td>Rozšírenia do editorov a <code>claude.ai/code</code> v prehliadači bez inštalácie.</td></tr></tbody></table></div><div class="blok"><div class="box"><div class="box__stitok">AK SI NETECHNICKÝ</div><div class="box__text">Choď cez desktopovú aplikáciu. Zvyšok tejto lekcie ukazuje terminál, lebo tam vidíš presne, čo sa deje — ale klikacia cesta vedie k tomu istému výsledku.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Claude Code: prvý štart</span><span class="paticka__cislo">27</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.5</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Najprv inštalácia. Po jednom príkaze.</div>
+    <div class="blok"><p class="odsek">Terminál je okno, do ktorého zadávaš príkazy počítaču. Na Macu otvor Spotlight cez Cmd + medzerník a vyhľadaj Terminal. Vo Windows vyhľadaj PowerShell v Štarte. Vyber iba príkaz pre svoj systém.</p></div><div class="blok"><div class="box box--kod"><div class="box__stitok">MAC / LINUX / WSL</div><div class="box__text">curl -fsSL https://claude.ai/install.sh | bash</div></div></div><div class="blok"><div class="box box--kod"><div class="box__stitok">WINDOWS / POWERSHELL</div><div class="box__text">irm https://claude.ai/install.ps1 | iex</div></div></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Počkaj na dokončenie.</div><div class="krok__text">Potom terminál zavri a otvor znova. Príkaz nižšie overí, že je nástroj nainštalovaný.</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Spusti prihlásenie.</div><div class="krok__text">Zadaj <code>claude</code> a dokonči prihlásenie v prehliadači. Ak chceš čerpať predplatné, vyber svoj Claude účet, nie samostatné API účtovanie.</div></div></div></div><div class="blok"><div class="box box--kod"><div class="box__stitok">OVERENIE V TERMINÁLI</div><div class="box__text">claude --version</div></div></div><div class="blok"><div class="box"><div class="box__stitok">AK TO NEJDE</div><div class="box__text">„Command not found”: otvor nový terminál a pozri návod na inštaláciu. Pri probléme v spustenom Claude Code použi <code>/doctor</code>. Git for Windows je odporúčaný pre Bash; podľa aktuálnej dokumentácie je možný aj PowerShell.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Claude Code: prvý štart</span><span class="paticka__cislo">28</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.5</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Otvor priečinok a najprv sa pýtaj.</div>
+    <div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Vytvor si cvičnú zložku.</div><div class="krok__text">Vo Finderi alebo Prieskumníkovi vytvor priečinok <code>AI-test</code>. Skopíruj doň 3 krátke poznámky. Originály nechaj inde.</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Prejdi do nej v termináli.</div><div class="krok__text">Zadaj <code>cd</code>, medzeru a cestu v úvodzovkách. Na Macu môžeš priečinok pretiahnuť do terminálu za <code>cd</code>.</div></div></div><div class="krok"><div class="krok__cislo">03</div><div><div class="krok__nazov">Spusti Claude Code.</div><div class="krok__text">Zadaj <code>claude</code>. Pri otázke na dôveryhodnosť priečinka skontroluj zobrazenú cestu. Potom <code>/status</code> na kontrolu účtu.</div></div></div><div class="krok"><div class="krok__cislo">04</div><div><div class="krok__nazov">Najprv sa pýtaj.</div><div class="krok__text">Vlož prvé zadanie nižšie. Over, či našiel správne súbory. Až potom zadaj vytvorenie prehľadu.</div></div></div></div><div class="blok"><div class="box box--kod"><div class="box__stitok">TERMINÁL / CESTU NAHRAĎ</div><div class="box__text">cd "CESTA_K_PRIECINKU_AI-test"
+claude</div></div></div><div class="blok"><div class="box"><div class="box__stitok">PRVÉ ZADANIE</div><div class="box__text">Prečítaj 3 poznámky v tomto priečinku. Vypíš názvy a pri každej jednou vetou obsah. Zatiaľ nič neupravuj. Ak súbor nevieš prečítať, povedz ktorý.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">DRUHÉ ZADANIE</div><div class="box__text">Vytvor PREHLAD.md: pri každej poznámke názov, 3 hlavné body a prípadné úlohy. Neznáme termíny označ NEUVEDENÉ. Pôvodné súbory nemeň. Na konci over prehľad oproti všetkým 3 vstupom.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Claude Code: prvý štart</span><span class="paticka__cislo">29</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.5</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Daj mu pravidlá, ktoré vieš skontrolovať.</div>
+    <div class="blok"><p class="odsek"><code>CLAUDE.md</code> je textový súbor s pravidlami projektu. Najjednoduchšie je povedať Claude Code, nech ho vytvorí z textu nižšie. Potom ho otvor a prečítaj. <code>/init</code> vie pripraviť východiskovú verziu, <code>/memory</code> slúži na správu pamäte a pravidiel.</p></div><div class="blok"><div class="box box--kod"><div class="box__stitok">VZOR OBSAHU CLAUDE.md</div><div class="box__text"># Pravidlá projektu
+- Odpovedaj po slovensky, stručne a konkrétne.
+- Pracuj len s podkladmi, ktoré patria k úlohe.
+- Chýbajúce údaje označ NEUVEDENÉ.
+- Výsledky ukladaj do vystupy/.
+- Pôvodné súbory bez môjho súhlasu neprepisuj.
+- Pred odovzdaním porovnaj výstup so zadaním.</div></div></div><div class="blok"><table class="tabulka"><thead><tr><th>REŽIM / PRÍKAZ</th><th>NA ČO JE</th></tr></thead><tbody><tr><td>Plan</td><td>Preskúmanie a návrh postupu pred realizáciou.</td></tr><tr><td>Default</td><td>Bežná práca s kontrolou oprávnení podľa nastavení.</td></tr><tr><td>acceptEdits</td><td>Automatické prijímanie úprav súborov. Nezapínaj bez rozmyslu.</td></tr><tr><td>/permissions</td><td>Správa allow, ask a deny. Zákaz má prednosť pred povolením.</td></tr><tr><td>/context</td><td>Ukáže využitie kontextu a načítané pravidlá.</td></tr></tbody></table></div><div class="blok"><div class="box"><div class="box__stitok">DÔLEŽITÝ ROZDIEL</div><div class="box__text">Veta v <code>CLAUDE.md</code> je inštrukcia, nie technická blokácia. Oprávnenia sa nastavujú zvlášť. Na cvičenie používaj kópie a nezapínaj <code>bypassPermissions</code>.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Claude Code: prvý štart</span><span class="paticka__cislo">30</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.5</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">HOTOVO AŽ VTEDY, KEĎ…</div>
+    <div class="nadpis">Vieš to zopakovať aj bez tohto PDF.</div>
+    <div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Claude Code sa spustí v priečinku AI-test.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">PREHLAD.md existuje a sedí na 3 vstupy.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">CLAUDE.md má konkrétne pravidlá.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Viem nájsť /status, /permissions a /context.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">O KROK ĎALEJ</div><div class="box__text">Pri dlhšej práci si nechaj uložiť stav: cieľ, hotové kroky, otvorené otázky a ďalší krok. Nové sedenie potom nezačínaš vysvetľovaním celej histórie.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">ČO S TÝM VIEŠ SPRAVIŤ ĎALEJ</div><div class="box__text">Ľudia bez programátorského vzdelania si takto stavajú vlastné malé nástroje — od trackera tréningov po prehľad, ktorý si roky ťahali v exceli. Opíšeš, čo chceš, po slovensky. Zvyšok je jeho práca.</div></div></div><div class="blok terazty"><div class="terazty__stitok">TERAZ TY</div><div class="terazty__text">Otvor PREHLAD.md a over všetky body. V 02.6 tú istú prácu deleguješ bez terminálu.</div></div><div class="blok zdroje"><div class="zdroje__stitok">OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026</div><div class="zdroje__zoznam"><a href="https://code.claude.com/docs/en/overview">Claude Code: inštalácia</a><a href="https://code.claude.com/docs/en/memory">Claude Code: pamäť a CLAUDE.md</a><a href="https://code.claude.com/docs/en/permissions">Claude Code: oprávnenia</a></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Claude Code: prvý štart</span><span class="paticka__cislo">31</span></div>
+</section>
+</body>
+</html>

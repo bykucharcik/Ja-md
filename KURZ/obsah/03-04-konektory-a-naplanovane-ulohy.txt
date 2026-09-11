@@ -1,0 +1,94 @@
+# Modul 03 — ChatGPT / lekcia 4
+modul: 03 ChatGPT
+cislo: 03.4
+titul: Konektory a naplánované úlohy
+varianta: d
+
+@obal
+cislo: 03.4
+stitok: KONEKTORY A NAPLÁNOVANÉ ÚLOHY
+h1: Asistent za 100 000 eur ročne. Alebo desať minút nastavenia.
+slub: Pripojíš Gmail a kalendár, nastavíš jednu opakovanú úlohu a ráno ti príde hotový prehľad namiesto päťdesiatich mailov.
+cas: 5 min | ČÍTANIE
+cas: 20–30 min | PRAX
+priprav: ChatGPT účet s možnosťou pripájať appky. Gmail alebo Google Kalendár.
+bod: Vlastný obchod s appkami
+bod: Ranný prehľad pošty
+bod: Úloha, ktorá beží bez teba
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Prestaň sa pýtať. Začni zadávať.
+
+@text
+Spomeň si, ako vyzeral tvoj prvý smartfón. Na počasie appka, na lety appka, na hudbu appka. Dvadsať malých nástrojov, medzi ktorými prepínaš ty. ChatGPT má vlastnú obdobu obchodu s appkami — len s tým rozdielom, že po pripojení v nich **prácu urobí za teba**.
+
+@tabulka ČO PRIPOJIŤ NAJPRV | ČO ZA TEBA ROBÍ
+Gmail | Zhrnie poštu, roztriedi, čo treba dnes a čo počká, pripraví návrhy odpovedí.
+Kalendár | Nájde voľné okná, navrhne termín, skontroluje kolízie.
+Úložisko dokumentov | Siahne do tvojich súborov bez nahrávania jedného po druhom.
+Ostatné appky | Hudba, cestovanie a ďalšie — pridávaj až vtedy, keď prvé dve bežia.
+
+@box KDE TO NÁJDEŠ
+V ľavom paneli otvor pripojenia (appky, konektory). Pripojíš účet, odsúhlasíš oprávnenia. Až po tomto kroku má ChatGPT do danej služby prístup — samotná veta v chate ho nevytvorí. To je presne tá vec, ktorá ľuďom nesedí z lekcie 03.1.
+
+@strana
+stitok: POSTUP
+h1: Prvá vec, ktorú s tým sprav: ráno.
+
+@text
+Prvých tridsať minút dňa a otvorená schránka s päťdesiatimi mailmi je najhorší možný štart. Toto to otočí.
+
+@kod RANNÝ PREHĽAD — VLOŽ DO CHATU
+Zhrň mi maily, ktoré prišli od včera od 18:00.
+Roztrieď ich do troch skupín:
+(1) treba odpovedať dnes, (2) počká, (3) netreba nič.
+Pri prvej skupine napíš jednou vetou, čo odo mňa chcú.
+Nič neodosielaj. Nič neoznačuj ako prečítané.
+
+@kroky
+01 | Pusti to ručne tri dni po sebe. | Uvidíš, či triedi tak, ako by si triedil ty. Ak nie, doplň vlastné pravidlo: „faktúry daj vždy do prvej skupiny.”
+02 | Pridaj kalendár. | „Kde mám tento týždeň voľné dvojhodinové okná?” Prestaneš to lúštiť očami.
+03 | Až keď to funguje, naplánuj to. | V ľavom paneli otvor naplánované úlohy, vyber deň a čas a vlož presne to zadanie, ktoré ti fungovalo ručne.
+04 | Skontroluj prvý automatický beh. | Naplánovaná úloha, ktorú si nikdy neskontroloval, je len tichý zdroj chýb.
+
+@box ČO PLÁNOVAŤ A ČO NIE
+**Áno:** čokoľvek monotónne, čo sa deje podľa kalendára. Týždenná pripomienka členovi tímu. Kontrola stavu projektu v pondelok ráno. Prehľad pošty každý deň o ôsmej.
+**Nie:** motivačný citát každé ráno. Jednorazová rezervácia na štvrtok. To nie je automatizácia, to je šum.
+
+@strana
+stitok: POSTUP
+h1: Keď to spojíš dokopy, vznikne asistent.
+
+@text
+Samotné konektory sú pohodlie. Konektory plus režim agenta sú niečo iné — vtedy prestaneš zadávať jednotlivé kroky a začneš zadávať výsledok.
+
+@kod TAKTO VYZERÁ ZADANIE NA VÝSLEDOK
+Nájdi 3 hotely v Lisabone pod 200 eur za noc s bazénom.
+Potom pozri môj kalendár a nájdi termín, keď som voľný.
+Zhrň mi to do prehľadu a priprav návrh potvrdzovacieho mailu.
+Nič nerezervuj a nič neodosielaj — všetko mi daj na schválenie.
+
+@box KONTROLU DRŽÍŠ TY
+Pri každom kroku, ktorý ťa k niečomu zaväzuje — platba, odoslanie, potvrdenie rezervácie — sa systém spýta a ty to podpíšeš. Berie ti nudnú prácu, nie rozhodnutia. Pred spustením aj tak zavri karty s bankovníctvom a citlivými účtami.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Mám pripojený aspoň jeden konektor a viem, kde to spravovať.
+Ranný prehľad mi bežal ručne aspoň tri dni.
+Mám jednu naplánovanú úlohu, ktorá dáva zmysel.
+Skontroloval som jej prvý automatický beh.
+Viem, čo pred agentom zavrieť a čo mu nedovoliť.
+
+@box PRE POKROČILÝCH
+Naplánovaná úloha nemusí končiť u teba. Vie poslať týždennú pripomienku kolegovi, pripraviť podklad pred poradou alebo skontrolovať stav a ozvať sa len vtedy, keď niečo nesedí. Nastavíš raz, pracuje ďalej bez teba.
+
+@terazty TERAZ TY
+Nastav si ranný prehľad pošty ešte dnes večer. Zajtra uvidíš rozdiel. V 03.5 si vyberieš správny model a úroveň uvažovania.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: konektory a appky | https://help.openai.com/en/articles/11487775-connectors-in-chatgpt
+OpenAI: naplánované úlohy | https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt

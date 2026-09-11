@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Generátor kurzu kuchar.ai
-=========================
+Generátor kurzu AI DO PRAXE
+===========================
 
 Číta lekcie z KURZ/obsah/*.txt, vyrobí z nich HTML (KURZ/html/)
-a z HTML vytlačí PDF cez Chromium (KURZ/pdf/).
+a z HTML vytlačí PDF cez Chromium (KURZ/pdf/). Na konci zlepí všetko
+do KURZ/KURZ-CELY.pdf.
 
     python3 KURZ/build/generuj.py            # všetko
     python3 KURZ/build/generuj.py 02-01      # len lekcie, ktorých názov obsahuje "02-01"
@@ -25,17 +26,15 @@ OBSAH = KOREN / "obsah"
 VYSTUP_HTML = KOREN / "html"
 VYSTUP_PDF = KOREN / "pdf"
 
-AUTOR = "TOMÁŠ KUCHARČÍK"
-ZNACKA = "@kuchar.ai"
+ZNACKA = "AI DO PRAXE"
+AUTOR  = "Tomáš Kucharčík — kuchar.ai"
 
 
 # ----------------------------------------------------------------- parser
 
 def rozdel_lekciu(text):
     """Rozdelí súbor lekcie na hlavičku (meta) a zoznam blokov."""
-    meta = {}
-    bloky = []
-    aktualny = None
+    meta, bloky, aktualny = {}, [], None
 
     for surovy in text.splitlines():
         riadok = surovy.rstrip()
@@ -43,8 +42,7 @@ def rozdel_lekciu(text):
         if riadok.startswith("@"):
             if aktualny:
                 bloky.append(aktualny)
-            hlava = riadok[1:].strip()
-            druh, _, argument = hlava.partition(" ")
+            druh, _, argument = riadok[1:].strip().partition(" ")
             aktualny = {"druh": druh.strip(), "argument": argument.strip(), "riadky": []}
             continue
 
@@ -69,7 +67,7 @@ def rozdel_lekciu(text):
 
 
 def polia(blok):
-    """Riadky typu 'kluc: hodnota' v bloku prevedie na slovník (viacnásobné kľúče do zoznamu)."""
+    """Riadky typu 'kluc: hodnota' prevedie na slovník (viacnásobné kľúče do zoznamu)."""
     vysledok = {}
     for riadok in blok["riadky"]:
         if not riadok.strip():
@@ -77,8 +75,7 @@ def polia(blok):
         kluc, oddelovac, hodnota = riadok.partition(":")
         if not oddelovac:
             continue
-        kluc = kluc.strip()
-        hodnota = hodnota.strip()
+        kluc, hodnota = kluc.strip(), hodnota.strip()
         if kluc in vysledok:
             if not isinstance(vysledok[kluc], list):
                 vysledok[kluc] = [vysledok[kluc]]
@@ -98,12 +95,20 @@ def zoznam(hodnota):
 
 VZOR_TUCNE = re.compile(r"\*\*(.+?)\*\*")
 VZOR_KOD = re.compile(r"`(.+?)`")
-
-
 # jednopísmenové predložky a spojky sa v slovenčine nenechávajú na konci riadku
 VZOR_PREDLOZKA = re.compile(r"(^|[\s(„])([aiouvszkAIOUVSZK])\s+")
-# „úvodzovky" -> „úvodzovky“
 VZOR_UVODZOVKY = re.compile(r"„([^„”“]*?)\"")
+
+SIPKA_VPRAVO = (
+    '<svg class="sipka sipka--vpravo" viewBox="0 0 12 10" aria-hidden="true">'
+    '<path d="M1 5 L11 5 M7.4 1.4 L11 5 L7.4 8.6" fill="none" '
+    'stroke="currentColor" stroke-width="1.3" stroke-linecap="square"/></svg>'
+)
+SIPKA = (
+    '<svg class="sipka" viewBox="0 0 10 10" aria-hidden="true">'
+    '<path d="M2 8 L8 2 M3.4 2 L8 2 L8 6.6" fill="none" '
+    'stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>'
+)
 
 
 def t(surovy):
@@ -114,7 +119,7 @@ def t(surovy):
     """
     text = surovy or ""
     for _ in range(2):  # dva prechody kvôli prekrývajúcim sa zhodám
-        text = VZOR_PREDLOZKA.sub("\\1\\2\u00a0", text)
+        text = VZOR_PREDLOZKA.sub("\\1\\2 ", text)
     bezpecny = html_mod.escape(text, quote=False)
     bezpecny = VZOR_TUCNE.sub(r"<strong>\1</strong>", bezpecny)
     bezpecny = VZOR_KOD.sub(r"<code>\1</code>", bezpecny)
@@ -131,74 +136,55 @@ def rozsek(riadok, pocet=None):
     return casti
 
 
+def odseky(riadky):
+    """Zlúči riadky na odseky oddelené prázdnym riadkom."""
+    von, aktualny = [], []
+    for riadok in riadky:
+        if riadok.strip():
+            aktualny.append(riadok.strip())
+        elif aktualny:
+            von.append(" ".join(aktualny))
+            aktualny = []
+    if aktualny:
+        von.append(" ".join(aktualny))
+    return von
+
+
 # ----------------------------------------------------------------- bloky
 
 def blok_kroky(blok):
+    """@kroky -- riadky 'NN | Nadpis kroku | vysvetlenie'."""
     von = []
     for riadok in blok["riadky"]:
         if not riadok.strip():
             continue
-        casti = rozsek(riadok)
-        if len(casti) >= 3:
-            cislo, stitok, text = casti[0], casti[1], " | ".join(casti[2:])
-            trieda = ""
-        else:
-            cislo, stitok, text = casti[0], "", " | ".join(casti[1:])
-            trieda = " krok--bez"
+        cislo, nazov, text = rozsek(riadok, 3)[:3]
+        popis = f'<div class="krok__text">{t(text)}</div>' if text else ""
         von.append(
-            f'<div class="krok{trieda}">'
-            f'<div class="krok__cislo">{t(cislo)}</div>'
-            f'<div class="krok__stitok">{t(stitok)}</div>'
-            f'<div class="krok__text">{t(text)}</div></div>'
+            f'<div class="krok"><div class="krok__cislo">{t(cislo)}</div>'
+            f'<div><div class="krok__nazov">{t(nazov)}</div>{popis}</div></div>'
         )
     return '<div class="blok">' + "".join(von) + "</div>"
 
 
-def blok_zoznam(blok):
-    von = []
-    for index, riadok in enumerate(r for r in blok["riadky"] if r.strip()):
-        casti = rozsek(riadok, 2)
-        cislo = casti[0] if len(casti) > 1 else f"{index + 1:02d}"
-        text = casti[1] if len(casti) > 1 else casti[0]
-        von.append(
-            f'<div class="riadok"><div class="riadok__cislo">{t(cislo)}</div>'
-            f'<div class="riadok__text">{t(text)}</div></div>'
-        )
-    return '<div class="blok">' + "".join(von) + "</div>"
+def blok_box(blok):
+    """@box ŠTÍTOK -- mäkký rámček so štítkom. Zachová riadkovanie."""
+    stitok = blok["argument"] or "POZNÁMKA"
+    kod = "kod" in stitok.lower() or blok["riadky"] and blok["riadky"][0].startswith("#")
+    riadky = [t(r) if r.strip() else "" for r in blok["riadky"]]
+    trieda = " box--kod" if kod else ""
+    return (f'<div class="blok"><div class="box{trieda}">'
+            f'<div class="box__stitok">{t(stitok)}</div>'
+            f'<div class="box__text">{chr(10).join(riadky)}</div></div></div>')
 
 
-def blok_pojmy(blok):
-    """@pojmy -- dvojice štítok | vysvetlenie. S argumentom "kod" ostanú
-    štítky tak, ako sú napísané (pre názvy polí a príkazov)."""
-    von = []
-    trieda = " pojem__stitok--kod" if "kod" in blok["argument"] else ""
-    for riadok in blok["riadky"]:
-        if not riadok.strip():
-            continue
-        stitok, text = rozsek(riadok, 2)[:2]
-        von.append(
-            f'<div class="pojem"><div class="pojem__stitok{trieda}">{t(stitok)}</div>'
-            f'<div class="pojem__text">{t(text)}</div></div>'
-        )
-    return '<div class="blok">' + "".join(von) + "</div>"
-
-
-def blok_terminal(blok):
-    stitok = blok["argument"] or "TERMINAL"
+def blok_kod(blok):
+    """@kod ŠTÍTOK -- to isté ako box, ale vždy s hustejšou sadzbou a bez úprav textu."""
+    stitok = blok["argument"] or "SKOPÍRUJ"
     kod = html_mod.escape("\n".join(blok["riadky"]), quote=False)
-    return (
-        f'<div class="blok"><div class="terminal__stitok">{t(stitok)}</div>'
-        f'<div class="terminal">{kod}</div></div>'
-    )
-
-
-def blok_pravidlo(blok):
-    stitok = blok["argument"] or "PRAVIDLO"
-    text = " ".join(r.strip() for r in blok["riadky"] if r.strip())
-    return (
-        f'<div class="blok pravidlo"><div class="pravidlo__stitok">{t(stitok)}</div>'
-        f'<div class="pravidlo__text">{t(text)}</div></div>'
-    )
+    return (f'<div class="blok"><div class="box box--kod">'
+            f'<div class="box__stitok">{t(stitok)}</div>'
+            f'<div class="box__text">{kod}</div></div></div>')
 
 
 def blok_tabulka(blok):
@@ -216,37 +202,33 @@ def blok_tabulka(blok):
     return '<div class="blok">' + "".join(von) + "</div>"
 
 
-def blok_checklist(blok):
+def blok_pojmy(blok):
+    """@pojmy -- dvojice 'ŠTÍTOK | vysvetlenie'. Argument "kod" nechá štítky malými."""
+    trieda = " pojem__stitok--kod" if "kod" in blok["argument"] else ""
     von = []
     for riadok in blok["riadky"]:
         if not riadok.strip():
             continue
-        von.append(
-            '<div class="odrazka"><div class="odrazka__box"></div>'
-            f'<div class="odrazka__text">{t(riadok.strip())}</div></div>'
-        )
+        stitok, text = rozsek(riadok, 2)[:2]
+        von.append(f'<div class="pojem"><div class="pojem__stitok{trieda}">{t(stitok)}</div>'
+                   f'<div class="pojem__text">{t(text)}</div></div>')
     return '<div class="blok">' + "".join(von) + "</div>"
 
 
-SIPKA_VPRAVO = (
-    '<svg class="sipka sipka--vpravo" viewBox="0 0 12 10" aria-hidden="true">'
-    '<path d="M1 5 L11 5 M7.4 1.4 L11 5 L7.4 8.6" fill="none" '
-    'stroke="currentColor" stroke-width="1.3" stroke-linecap="square"/></svg>'
-)
+def blok_text(blok):
+    trieda = "drobne" if "drobne" in blok["argument"] else "odsek"
+    von = [f'<p class="{trieda}">{t(o)}</p>' for o in odseky(blok["riadky"])]
+    return '<div class="blok">' + "".join(von) + "</div>"
 
-SIPKA = (
-    '<svg class="sipka" viewBox="0 0 10 10" aria-hidden="true">'
-    '<path d="M2 8 L8 2 M3.4 2 L8 2 L8 6.6" fill="none" '
-    'stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>'
-)
+
+def blok_checklist(blok):
+    von = ['<div class="odrazka"><div class="odrazka__box"></div>'
+           f'<div class="odrazka__text">{t(r.strip())}</div></div>'
+           for r in blok["riadky"] if r.strip()]
+    return '<div class="blok">' + "".join(von) + "</div>"
 
 
 def blok_video(blok):
-    """@video NÁZOV | dĺžka | adresa -- veľká klikateľná karta na video.
-
-    Video sa do PDF vložiť nedá (prehralo by sa len v Adobe Acrobate).
-    Karta preto odkazuje tam, kde video naozaj beží.
-    """
     von = []
     for riadok in blok["riadky"]:
         if not riadok.strip():
@@ -254,146 +236,112 @@ def blok_video(blok):
         nazov, dlzka, adresa = rozsek(riadok, 3)[:3]
         von.append(
             f'<a class="video" href="{html_mod.escape(adresa, quote=True)}">'
-            f'<div class="video__vlavo">'
-            f'<div class="video__stitok">{t(blok["argument"] or "VIDEO")}</div>'
+            f'<div><div class="video__stitok">{t(blok["argument"] or "VIDEO")}</div>'
             f'<div class="video__nazov">{t(nazov)}</div></div>'
-            f'<div class="video__vpravo">'
-            f'<div class="video__dlzka">{t(dlzka)}</div>'
-            f'<div class="video__akcia">POZRI{SIPKA}</div></div></a>'
-        )
+            f'<div><div class="video__dlzka">{t(dlzka)}</div>'
+            f'<div class="video__akcia">POZRI{SIPKA}</div></div></a>')
     return '<div class="blok">' + "".join(von) + "</div>"
 
 
-def blok_odkazy(blok):
+def blok_terazty(blok):
+    text = " ".join(r.strip() for r in blok["riadky"] if r.strip())
+    return ('<div class="blok terazty">'
+            f'<div class="terazty__stitok">{t(blok["argument"] or "TERAZ TY")}</div>'
+            f'<div class="terazty__text">{t(text)}</div></div>')
+
+
+def blok_zdroje(blok):
     von = []
     for riadok in blok["riadky"]:
         if not riadok.strip():
             continue
         nazov, adresa = rozsek(riadok, 2)[:2]
-        von.append(
-            f'<a class="odkaz" href="{html_mod.escape(adresa, quote=True)}">'
-            f'<span class="odkaz__nazov">{t(nazov)}</span>'
-            f'<span class="odkaz__akcia">OTVOR{SIPKA}</span></a>'
-        )
-    return '<div class="blok odkazy">' + "".join(von) + "</div>"
-
-
-def blok_text(blok):
-    von = []
-    velky = "velky" in blok["argument"]
-    drobne = "drobne" in blok["argument"]
-    trieda = "odsek odsek--velky" if velky else ("drobne" if drobne else "odsek")
-    odsek = []
-    for riadok in blok["riadky"]:
-        if riadok.strip():
-            odsek.append(riadok.strip())
-        elif odsek:
-            von.append(f'<p class="{trieda}">{t(" ".join(odsek))}</p>')
-            odsek = []
-    if odsek:
-        von.append(f'<p class="{trieda}">{t(" ".join(odsek))}</p>')
-    return '<div class="blok">' + "".join(von) + "</div>"
-
-
-def blok_zaver(blok):
-    pole = polia(blok)
-    return (
-        '<div class="blok odkaz-na-koniec">'
-        f'<div class="odkaz-na-koniec__hlavne">{t(pole.get("hlavne", ""))}</div>'
-        f'<div class="odkaz-na-koniec__vedlajsie">{t(pole.get("vedlajsie", ""))}</div></div>'
-    )
+        von.append(f'<a href="{html_mod.escape(adresa, quote=True)}">{t(nazov)}</a>')
+    return ('<div class="blok zdroje">'
+            f'<div class="zdroje__stitok">{t(blok["argument"] or "OFICIÁLNE ZDROJE")}</div>'
+            f'<div class="zdroje__zoznam">{"".join(von)}</div></div>')
 
 
 BLOKY = {
     "kroky": blok_kroky,
-    "zoznam": blok_zoznam,
-    "pojmy": blok_pojmy,
-    "terminal": blok_terminal,
-    "pravidlo": blok_pravidlo,
+    "box": blok_box,
+    "kod": blok_kod,
     "tabulka": blok_tabulka,
+    "pojmy": blok_pojmy,
+    "text": blok_text,
     "checklist": blok_checklist,
     "video": blok_video,
-    "odkazy": blok_odkazy,
-    "text": blok_text,
-    "zaver": blok_zaver,
+    "terazty": blok_terazty,
+    "zdroje": blok_zdroje,
 }
 
 
 # ----------------------------------------------------------------- strany
 
-def hlavicka(stopa, titulna=False):
-    return (
-        '<div class="hlavicka">'
-        f'<div class="hlavicka__znacka">{t(ZNACKA)}</div>'
-        f'<div class="hlavicka__stopa">{t(stopa)}</div></div>'
-    )
+def hlavicka(meta):
+    return (f'<div class="hlavicka"><span>{t(ZNACKA)}</span>'
+            f'<span>LEKCIA {t(meta.get("cislo", ""))}</span></div>')
 
 
-def paticka(cislo, celkom):
-    return (
-        f'<div class="paticka"><span>{t(AUTOR)}</span>'
-        f"<span>{cislo:02d} / {celkom}</span></div>"
-    )
+def paticka(meta, cislo):
+    return (f'<div class="paticka"><span class="paticka__nazov">{t(meta.get("titul", ""))}</span>'
+            f'<span class="paticka__cislo">{cislo:02d}</span></div>')
 
 
-def strana_obal(blok, meta, stopa, cislo, celkom):
+def strana_obal(blok, meta, cislo):
     pole = polia(blok)
-    stitky = "".join(
-        f'<div class="stitok">{t(s)}</div>'
-        for s in [c.strip() for c in meta.get("stitky", "").split("|")] if s
-    )
-    karty = []
-    for surova in zoznam(pole.get("karta")):
-        hore, stred, dole = rozsek(surova, 3)[:3]
-        karty.append(
-            '<div class="karta">'
-            f'<div class="karta__hore">{t(hore)}</div>'
-            f'<div class="karta__stred">{t(stred)}</div>'
-            f'<div class="karta__dole">{t(dole)}</div></div>'
-        )
-    return f"""<section class="strana strana--titulna">
-  <div class="obal"></div>
-  {hlavicka(stopa, titulna=True)}
-  <div class="obal__telo">
+    varianta = (pole.get("varianta") or meta.get("varianta") or "a").lower()
+
+    casy = "".join(
+        f'<div class="cas"><div class="cas__cislo">{t(c.split("|")[0].strip())}</div>'
+        f'<div class="cas__popis">{t(c.split("|")[1].strip() if "|" in c else "")}</div></div>'
+        for c in zoznam(pole.get("cas")))
+
+    body = "".join(
+        f'<div class="body__riadok"><div class="body__cislo">{i:02d}</div>'
+        f'<div class="body__text">{t(b)}</div></div>'
+        for i, b in enumerate(zoznam(pole.get("bod")), start=1))
+
+    priprav = ""
+    if pole.get("priprav"):
+        priprav = (f'<div class="obal__pripravLabel">ČO SI PRIPRAV</div>'
+                   f'<div class="obal__priprav">{t(pole["priprav"])}</div>')
+
+    return f"""<section class="strana obal obal--{varianta}">
+  <div class="pas"></div>
+  {hlavicka(meta)}
+  <div class="obal__hlava">
+    <div class="obal__cislo">{t(pole.get('cislo', meta.get('cislo', '')))}</div>
     <div class="obal__stitok">{t(pole.get('stitok', ''))}</div>
-    <div class="obal__nadpis"><b>{t(pole.get('h1', ''))}</b><span>{t(pole.get('h2', ''))}</span>{'<span>' + t(pole.get('h3', '')) + '</span>' if pole.get('h3') else ''}</div>
+    {'<div class="obal__nadpis">' + t(pole.get('h1', '')) + '</div>' if varianta != 'b' else ''}
   </div>
-  <div class="uvod dvojstlpec">
-    <div class="dvojstlpec__stitok">{t(pole.get('nadstitok', 'ČO ŤA TÁTO LEKCIA NAUČÍ'))}</div>
-    <div class="dvojstlpec__telo">
-      <div class="uvod__hlavne">{t(pole.get('hlavne', ''))}</div>
-      <div class="uvod__vedlajsie">{t(pole.get('vedlajsie', ''))}</div>
-    </div>
+  {'<div class="obal__nadpis">' + t(pole.get('h1', '')) + '</div>' if varianta == 'b' else ''}
+  <div class="obal__spodok">
+    <div class="obal__slub">{t(pole.get('slub', ''))}</div>
+    <div class="casy">{casy}</div>
+    {priprav}
+    <div class="body">{body}</div>
   </div>
-  <div class="stitky">{stitky}</div>
-  <div class="karty">{''.join(karty)}</div>
-  <div class="zaver">
-    <div class="zaver__veta">{t(pole.get('vysledok', ''))}</div>
-    <div class="zaver__drobne">{t(pole.get('drobne', ''))}</div>
-  </div>
-  {paticka(cislo, celkom)}
+  {paticka(meta, cislo)}
 </section>"""
 
 
-def strana_vnutorna(hlava, obsahove_bloky, stopa, cislo, celkom):
+def strana_vnutorna(hlava, obsahove_bloky, meta, cislo):
     pole = polia(hlava)
     telo = "".join(BLOKY[b["druh"]](b) for b in obsahove_bloky if b["druh"] in BLOKY)
-    druhy_riadok = f'<span>{t(pole.get("h2", ""))}</span>' if pole.get("h2") else ""
-    return f"""<section class="strana strana--vnutorna">
-  {hlavicka(stopa)}
+    return f"""<section class="strana">
+  {hlavicka(meta)}
   <div class="telo">
-    <div class="nadpis__stitok">{t(pole.get('stitok', ''))}</div>
-    <div class="nadpis"><b>{t(pole.get('h1', ''))}</b>{druhy_riadok}</div>
+    <div class="nadpis__stitok">{t(pole.get('stitok', 'POSTUP'))}</div>
+    <div class="nadpis">{t(pole.get('h1', ''))}</div>
     {telo}
   </div>
-  {paticka(cislo, celkom)}
+  {paticka(meta, cislo)}
 </section>"""
 
 
-def zostav_html(meta, bloky):
-    stopa = meta.get("stopa", "KUCHAR.AI")
-    strany = []
-    aktualna = None
+def zostav_html(meta, bloky, prve_cislo=1):
+    strany, aktualna = [], None
     for blok in bloky:
         if blok["druh"] in ("obal", "strana"):
             if aktualna:
@@ -404,23 +352,13 @@ def zostav_html(meta, bloky):
     if aktualna:
         strany.append(aktualna)
 
-    # vnútorné strany majú len dva riadky nadpisu, obal tri
-    for strana in strany:
-        pole = polia(strana["hlava"])
-        nadbytocne = [k for k in ("h3", "h4") if k in pole]
-        if strana["typ"] == "obal":
-            nadbytocne = [k for k in ("h4",) if k in pole]
-        if nadbytocne:
-            print(f"  !!   {meta.get('titul', '?')}: strana \"{pole.get('stitok', '')}\" "
-                  f"má naviac {', '.join(nadbytocne)} — nezobrazí sa")
-
-    celkom = len(strany)
     kusy = []
-    for index, strana in enumerate(strany, start=1):
+    for index, strana in enumerate(strany):
+        cislo = prve_cislo + index
         if strana["typ"] == "obal":
-            kusy.append(strana_obal(strana["hlava"], meta, stopa, index, celkom))
+            kusy.append(strana_obal(strana["hlava"], meta, cislo))
         else:
-            kusy.append(strana_vnutorna(strana["hlava"], strana["bloky"], stopa, index, celkom))
+            kusy.append(strana_vnutorna(strana["hlava"], strana["bloky"], meta, cislo))
 
     nazov = html_mod.escape(f"{meta.get('cislo', '')} {meta.get('titul', 'Lekcia')}".strip())
     return f"""<!doctype html>
@@ -428,6 +366,75 @@ def zostav_html(meta, bloky):
 <head>
 <meta charset="utf-8">
 <title>{nazov}</title>
+<link rel="stylesheet" href="../build/styl.css">
+</head>
+<body>
+{chr(10).join(kusy)}
+</body>
+</html>""", len(strany)
+
+
+
+# ----------------------------------------------------------------- plán kurzu
+
+PLAN_STRANY = [
+    {
+        "cislo": "01",
+        "stitok": "ZAČNI VÝSLEDKOM",
+        "h1": "Menej skúšania.\nViac hotovej práce.",
+        "poznamka": "Časy sú odhady čítania a samostatnej praxe, nie dĺžka videí. "
+                    "Najprv prejdi lekciu. Potom sprav úlohu. Až potom pokračuj.",
+        "moduly": ["01 Štart", "02 Claude"],
+    },
+    {
+        "cislo": "02",
+        "stitok": "ZAČNI VÝSLEDKOM",
+        "h1": "Od dobrého zadania\nk vlastnému postupu.",
+        "poznamka": "Na konci každej lekcie nájdeš kontrolu výsledku, tip navyše "
+                    "a ďalší konkrétny krok.",
+        "moduly": ["03 ChatGPT", "04 Skills"],
+    },
+]
+
+
+def zostav_plan(lekcie):
+    """Dve úvodné strany s obsahom kurzu. `lekcie` = [(meta, prva_strana), ...]."""
+    kusy = []
+    for strana in PLAN_STRANY:
+        telo = []
+        for modul in strana["moduly"]:
+            riadky = [(m, c) for m, c in lekcie if m.get("modul") == modul]
+            if not riadky:
+                continue
+            telo.append(f'<div class="plan__modul">{t(modul)}</div>')
+            for meta, cislo in riadky:
+                telo.append(
+                    f'<div class="riadok">'
+                    f'<div class="riadok__cislo">{t(meta.get("cislo", ""))}</div>'
+                    f'<div class="riadok__nazov">{t(meta.get("titul", ""))}</div>'
+                    f'<div class="riadok__strana">{cislo}</div></div>')
+        nadpis = t(strana["h1"]).replace("\n", "<br>")
+        kusy.append(f"""<section class="strana plan">
+  <div class="pas"></div>
+  <div class="hlavicka"><span>{t(ZNACKA)}</span><span>TVOJ PLÁN KURZU</span></div>
+  <div class="plan__cislo">{t(strana['cislo'])}</div>
+  <div class="plan__hlava">
+    <div class="plan__stitok">{t(strana['stitok'])}</div>
+    <div class="plan__nadpis">{nadpis}</div>
+  </div>
+  <div class="plan__spodok">
+    <div class="plan__poznamka">{t(strana['poznamka'])}</div>
+    {"".join(telo)}
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Tvoj plán kurzu</span>
+    <span class="paticka__cislo">{len(kusy) + 1:02d}</span></div>
+</section>""")
+
+    return f"""<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>Tvoj plán kurzu</title>
 <link rel="stylesheet" href="../build/styl.css">
 </head>
 <body>
@@ -458,24 +465,24 @@ def vytlac_pdf(dvojice):
 
     cesta_prehliadaca = najdi_chromium()
     with sync_playwright() as p:
-        prehliadac = p.chromium.launch(executable_path=cesta_prehliadaca) if cesta_prehliadaca else p.chromium.launch()
+        prehliadac = (p.chromium.launch(executable_path=cesta_prehliadaca)
+                      if cesta_prehliadaca else p.chromium.launch())
         strana = prehliadac.new_page()
         for cesta_html, cesta_pdf in dvojice:
             strana.goto(cesta_html.as_uri())
             strana.emulate_media(media="print")
             strana.wait_for_timeout(220)
 
-            # varovanie, ak sa obsah nezmestí na stranu (orezalo by sa to)
             pretecene = strana.evaluate("""() => {
                 const zle = [];
-                document.querySelectorAll('.telo').forEach((telo, i) => {
+                document.querySelectorAll('.telo, .obal__spodok, .plan__spodok').forEach((telo, i) => {
                     const presah = telo.scrollHeight - telo.clientHeight;
-                    if (presah > 2) zle.push([i + 2, Math.round(presah)]);
+                    if (presah > 2) zle.push([i + 1, Math.round(presah)]);
                 });
                 return zle;
             }""")
-            for cislo_strany, presah in pretecene:
-                print(f"  !!   {cesta_pdf.stem}: strana {cislo_strany} pretekla o ~{presah} px — skráť text")
+            for index, presah in pretecene:
+                print(f"  !!   {cesta_pdf.stem}: blok {index} pretiekol o ~{presah} px — skráť text")
 
             # 720 × 900 pt = 10 × 12.5 palca
             strana.pdf(path=str(cesta_pdf), width="10in", height="12.5in",
@@ -492,28 +499,47 @@ def main():
     VYSTUP_HTML.mkdir(parents=True, exist_ok=True)
     VYSTUP_PDF.mkdir(parents=True, exist_ok=True)
 
-    subory = sorted(OBSAH.glob("*.txt"))
-    if argumenty:
-        subory = [s for s in subory if any(a in s.name for a in argumenty)]
+    vsetky = sorted(OBSAH.glob("*.txt"))
+    # priebežné číslovanie strán naprieč celým kurzom
+    cisla, dalsie = {}, 3
+    for subor in vsetky:
+        meta, bloky = rozdel_lekciu(subor.read_text(encoding="utf-8"))
+        cisla[subor] = dalsie
+        dalsie += sum(1 for b in bloky if b["druh"] in ("obal", "strana"))
+
+    if not argumenty:
+        zoznam_lekcii = []
+        for subor in vsetky:
+            meta, _ = rozdel_lekciu(subor.read_text(encoding="utf-8"))
+            zoznam_lekcii.append((meta, cisla[subor]))
+        cesta_plan = VYSTUP_HTML / "00-plan.html"
+        cesta_plan.write_text(zostav_plan(zoznam_lekcii), encoding="utf-8")
+        print(f"  HTML {cesta_plan.name}")
+        plan_dvojica = [(cesta_plan, VYSTUP_PDF / "00-plan.pdf")]
+    else:
+        plan_dvojica = []
+
+    subory = [s for s in vsetky if not argumenty or any(a in s.name for a in argumenty)]
     if not subory:
         print("Nenašiel som žiadny súbor v KURZ/obsah/.")
         return 1
 
     dvojice = []
     for subor in subory:
-        meta, bloky = rozdel_lekciu(subor.read_text(encoding="utf-8"))
-        zastupne = sorted(set(re.findall(r"\{\{[A-Z0-9_]+\}\}", subor.read_text(encoding="utf-8"))))
+        surovy = subor.read_text(encoding="utf-8")
+        zastupne = sorted(set(re.findall(r"\{\{[A-Z0-9_]+\}\}", surovy)))
         if zastupne:
             print(f"  !!   {subor.stem}: nedoplnené {', '.join(zastupne)}")
 
+        meta, bloky = rozdel_lekciu(surovy)
+        html, _ = zostav_html(meta, bloky, cisla[subor])
         cesta_html = VYSTUP_HTML / (subor.stem + ".html")
-        cesta_html.write_text(zostav_html(meta, bloky), encoding="utf-8")
+        cesta_html.write_text(html, encoding="utf-8")
         print(f"  HTML {cesta_html.name}")
         dvojice.append((cesta_html, VYSTUP_PDF / (subor.stem + ".pdf")))
 
     if not bez_pdf:
-        vytlac_pdf(dvojice)
-        # celý kurz v jednom PDF — len keď sme generovali všetko
+        vytlac_pdf(plan_dvojica + dvojice)
         if not argumenty:
             import kniha
             kniha.zlucit()

@@ -6,83 +6,58 @@
 <link rel="stylesheet" href="../build/styl.css">
 </head>
 <body>
-<section class="strana strana--titulna">
-  <div class="obal"></div>
-  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">SKILLS × KUCHAR.AI</div></div>
-  <div class="obal__telo">
+<section class="strana obal obal--d">
+  <div class="pas"></div>
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.3</span></div>
+  <div class="obal__hlava">
+    <div class="obal__cislo">04.3</div>
     <div class="obal__stitok">PORIADOK V SKILLS</div>
-    <div class="obal__nadpis"><b>Chaos v priečinkoch</b><span>je chaos</span><span>aj v hlave.</span></div>
+    <div class="obal__nadpis">O mesiac chceš nájsť fungujúci postup. Nie päť verzií „final”.</div>
   </div>
-  <div class="uvod dvojstlpec">
-    <div class="dvojstlpec__stitok">ČO ŤA TÁTO LEKCIA NAUČÍ</div>
-    <div class="dvojstlpec__telo">
-      <div class="uvod__hlavne">Usporiadať skills tak, aby si sa v nich vyznal ty aj AI — a aby ti hľadanie nežralo čas pri každej úlohe.</div>
-      <div class="uvod__vedlajsie">Neporiadok nie je len estetický problém. Každý zbytočný súbor a každý nejasný názov stojí AI jedno kolo navyše.</div>
-    </div>
+  
+  <div class="obal__spodok">
+    <div class="obal__slub">Usporiadaš svoje skills, oddelíš podklady od postupov a staré verzie odložíš mimo aktívneho zoznamu.</div>
+    <div class="casy"><div class="cas"><div class="cas__cislo">4 min</div><div class="cas__popis">ČÍTANIE</div></div><div class="cas"><div class="cas__cislo">15–20 min</div><div class="cas__popis">PRAX</div></div></div>
+    <div class="obal__pripravLabel">ČO SI PRIPRAV</div><div class="obal__priprav">Aspoň jeden skill z 04.2 a prístup k jeho priečinku.</div>
+    <div class="body"><div class="body__riadok"><div class="body__cislo">01</div><div class="body__text">Osobné a projektové miesto</div></div><div class="body__riadok"><div class="body__cislo">02</div><div class="body__text">Podklady a archív</div></div><div class="body__riadok"><div class="body__cislo">03</div><div class="body__text">Audit a kontrola kontextu</div></div></div>
   </div>
-  <div class="stitky"><div class="stitok">Skills</div><div class="stitok">13 min</div><div class="stitok">Nudné a dôležité</div></div>
-  <div class="karty"><div class="karta"><div class="karta__hore">JEDNO MIESTO</div><div class="karta__stred">skills/</div><div class="karta__dole">JEDEN SKILL = JEDEN PRIEČINOK</div></div><div class="karta"><div class="karta__hore">PRAVIDLO</div><div class="karta__stred">Názov = čo to robí</div><div class="karta__dole">NIE KEDY SI TO SPRAVIL</div></div></div>
-  <div class="zaver">
-    <div class="zaver__veta">Po dokončení máš štruktúru, ktorá unesie aj päťdesiat skills bez toho, aby si v nej blúdil.</div>
-    <div class="zaver__drobne">Toto je najnudnejšia lekcia v module a zároveň tá, na ktorej to väčšine ľudí po troch mesiacoch padne.</div>
-  </div>
-  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>01 / 6</span></div>
+  <div class="paticka"><span class="paticka__nazov">Poriadok v skills</span><span class="paticka__cislo">111</span></div>
 </section>
-<section class="strana strana--vnutorna">
-  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">SKILLS × KUCHAR.AI</div></div>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.3</span></div>
   <div class="telo">
-    <div class="nadpis__stitok">PREČO TO RIEŠIME</div>
-    <div class="nadpis"><b>Neporiadok</b><span>platíš dvakrát.</span></div>
-    <div class="blok"><p class="odsek">Prvýkrát ho platíš ty, keď hľadáš, kde si čo dal. Druhýkrát ho platí AI — a to je tá časť, ktorú nevidíš.</p></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div class="krok__stitok">KAŽDÉ HĽADANIE JE KOLO NAVYŠE</div><div class="krok__text">Keď súbor nie je tam, kde má byť, agent spraví kolo naviac, aby ho našiel. Pomalšie a drahšie.</div></div><div class="krok"><div class="krok__cislo">02</div><div class="krok__stitok">NEJASNÝ NÁZOV = ZLÝ ODHAD</div><div class="krok__text">Podľa názvu a popisu sa rozhoduje, čo otvoriť. <code>poznamky2-final.md</code> mu nepovie nič.</div></div><div class="krok"><div class="krok__cislo">03</div><div class="krok__stitok">DUPLICITY SI ODPORUJÚ</div><div class="krok__text">Dva skills na to isté s inými pravidlami znamenajú, že výsledok je náhoda.</div></div><div class="krok"><div class="krok__cislo">04</div><div class="krok__stitok">NABOBTNANÉ SÚBORY ŽERÚ MIESTO</div><div class="krok__text">Všetko, čo sa načítava vždy, ti uberá z okna, ešte než položíš otázku.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">AKO SI TO OVERIŤ</div><div class="pravidlo__text">V Claude Code napíš <code>/context</code>. Ukáže ti, koľko z okna je zabraté ešte pred prvou správou. Ak ti nabobtnané súbory zožerú pätinu, vieš, kde začať upratovať.</div></div>
+    <div class="nadpis__stitok">AKO NAD TÝM ROZMÝŠĽAŤ</div>
+    <div class="nadpis">Každý skill nech má jedno jasné miesto.</div>
+    <div class="blok"><p class="odsek">Chaos v priečinkoch nie je len estetický problém. Duplicitné a protirečiace si postupy zaberajú kontext a nútia AI vyberať medzi verziami, ktoré ani ty nevieš rozlíšiť. <strong>Neporiadok vytvára trenie priamo v práci.</strong></p></div><div class="blok"><table class="tabulka"><thead><tr><th>UMIESTNENIE</th><th>KEDY HO POUŽIŤ</th></tr></thead><tbody><tr><td><code>~/.claude/skills/</code></td><td>Osobné skills dostupné na tomto počítači vo všetkých projektoch.</td></tr><tr><td><code>&lt;projekt&gt;/.claude/skills/</code></td><td>Postupy, ktoré patria ku konkrétnemu projektu alebo klientovi.</td></tr><tr><td>Mimo priečinkov skills</td><td>Archív starších verzií, ktoré sa už nemajú ponúkať.</td></tr></tbody></table></div><div class="blok"><p class="drobne">Znak <code>~</code> označuje tvoj používateľský priečinok. Bodka v <code>.claude</code> znamená skrytý priečinok. Lokálne umiestnenie sa automaticky neprenesie do iného počítača ani do cloudového prostredia.</p></div><div class="blok"><div class="box box--kod"><div class="box__stitok">TAKTO VYZERÁ JEDEN UPRATANÝ SKILL</div><div class="box__text">.claude/skills/cenova-ponuka/
+  SKILL.md
+  cennik.md
+  priklad-vystupu.md
+  testy.md</div></div></div><div class="blok"><div class="box"><div class="box__stitok">ŠTYRI PRAVIDLÁ, KTORÉ STAČIA</div><div class="box__text">Jeden názov = jeden zrozumiteľný účel. Podklady nech sú pri skille alebo majú jasnú cestu. Zmeny rob v aktívnej verzii, nie v kópii. Staré verzie zálohuj mimo priečinkov, z ktorých sa skills načítavajú.</div></div></div>
   </div>
-  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>02 / 6</span></div>
+  <div class="paticka"><span class="paticka__nazov">Poriadok v skills</span><span class="paticka__cislo">112</span></div>
 </section>
-<section class="strana strana--vnutorna">
-  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">SKILLS × KUCHAR.AI</div></div>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.3</span></div>
   <div class="telo">
-    <div class="nadpis__stitok">ŠTRUKTÚRA</div>
-    <div class="nadpis"><b>Jedno miesto.</b><span>Plochá, bez výnimiek.</span></div>
-    <div class="blok"><div class="terminal__stitok">AKO TO MAŤ</div><div class="terminal">~/.claude/skills/            &lt;- osobné, platia všade
-  cenova-ponuka/
-    SKILL.md
-    cennik.md                &lt;- podklad ku skillu
-  tyzdenny-report/
-    SKILL.md
-  kontrola-textu/
-    SKILL.md
-
-&lt;projekt&gt;/.claude/skills/    &lt;- projektové, idú do gitu
-  onboarding-klienta/
-    SKILL.md</div></div><div class="blok"><div class="pojem"><div class="pojem__stitok">OSOBNÉ vs PROJEKTOVÉ</div><div class="pojem__text">Čo používaš všade, daj do <code>~/.claude/skills/</code>. Čo platí len pre jeden projekt alebo tím, daj do projektu a commitni.</div></div><div class="pojem"><div class="pojem__stitok">JEDEN SKILL = JEDEN PRIEČINOK</div><div class="pojem__text">Nikdy nemiešaj dva postupy do jedného. Keď sa jeden zmení, rozbiješ druhý.</div></div><div class="pojem"><div class="pojem__stitok">PODKLADY DNU</div><div class="pojem__text">Cenník, vzorový výstup, šablóna — daj ich do priečinka toho skillu a odkáž sa na ne zo <code>SKILL.md</code>.</div></div><div class="pojem"><div class="pojem__stitok">NEROB PODPRIEČINKY PODĽA TÉM</div><div class="pojem__text"><code>skills/marketing/...</code> znie logicky a je to zbytočná vrstva. Plochá štruktúra sa lepšie hľadá.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">NÁZOV PRIEČINKA JE PRÍKAZ</div><div class="pravidlo__text">Z názvu vznikne <code>/prikaz</code>. Preto: malé písmená, pomlčky, sloveso alebo vec. <code>cenova-ponuka</code> áno. <code>Ponuky_v2_FINAL</code> nie — to sa ti bude písať každý deň.</div></div>
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Uprac bez toho, aby si niečo rozbil.</div>
+    <div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Nechaj si vypísať inventár.</div><div class="krok__text">Použi prompt nižšie. Prvý priechod nech <strong>iba číta a navrhuje</strong>, nič nemení.</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Odstráň nejasné názvy.</div><div class="krok__text"><code>cenova-ponuka</code> je lepšie než <code>skill-final-2</code>. Zmenou <code>name</code> sa mení aj <code>/príkaz</code>.</div></div></div><div class="krok"><div class="krok__cislo">03</div><div><div class="krok__nazov">Over odkazy na podklady.</div><div class="krok__text">Ak presunieš cenník, oprav jeho cestu v <code>SKILL.md</code>. Relatívna cesta platí od miesta, na ktoré návod odkazuje.</div></div></div><div class="krok"><div class="krok__cislo">04</div><div><div class="krok__nazov">Presuň archív preč.</div><div class="krok__text">Napríklad do <code>AI-archiv/</code> vedľa projektu. Potom over ponuku cez <code>/</code> a spusti jeden test.</div></div></div><div class="krok"><div class="krok__cislo">05</div><div><div class="krok__nazov">Pozri <code>/context</code>.</div><div class="krok__text">Zisti, čo ti zaberá kontext. Skracuj nadbytočné inštrukcie a opakovania, nie dôležité pravidlá naslepo.</div></div></div></div><div class="blok"><div class="box box--kod"><div class="box__stitok">PROMPT NA AUDIT</div><div class="box__text">Prejdi moje projektové skills. Zatiaľ nič nemeň.
+Vypíš názov, účel, používané podklady
+a možné duplicity alebo rozpory.
+Označ chýbajúce súbory.
+Navrhni, čo ponechať, zlúčiť alebo presunúť
+do archívu mimo aktívnych priečinkov.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">ZÁLOHA A ZDIEĽANIE</div><div class="box__text">Commit uloží verziu — sám o sebe ju nezverejní. Pred zdieľaním skontroluj súkromné údaje, prístupy a cenníky. Takto ľudia najčastejšie omylom zverejnia klientske sadzby.</div></div></div>
   </div>
-  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>03 / 6</span></div>
+  <div class="paticka"><span class="paticka__nazov">Poriadok v skills</span><span class="paticka__cislo">113</span></div>
 </section>
-<section class="strana strana--vnutorna">
-  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">SKILLS × KUCHAR.AI</div></div>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.3</span></div>
   <div class="telo">
-    <div class="nadpis__stitok">HYGIENA</div>
-    <div class="nadpis"><b>Štyri pravidlá.</b><span>Od prvého dňa.</span></div>
-    <div class="blok"><div class="pojem"><div class="pojem__stitok">JEDEN ÚČEL</div><div class="pojem__text">Ak skill robí tri veci, rozdeľ ho. Tri malé skills fungujú lepšie než jeden veľký, ktorý sa načíta celý.</div></div><div class="pojem"><div class="pojem__stitok">ŽIADNE MŔTVOLY</div><div class="pojem__text">Skill, ktorý si tri mesiace nepustil, zmaž alebo presuň do <code>archiv/</code>. Mŕtve skills mätú výber.</div></div><div class="pojem"><div class="pojem__stitok">VŽDY OPRAVUJ, NIKDY NEPRIDÁVAJ</div><div class="pojem__text">Keď niečo nefunguje, uprav existujúci skill. Nerob <code>cenova-ponuka-2</code>. Takto vzniká ten chaos.</div></div><div class="pojem"><div class="pojem__stitok">RAZ ZA ČAS UPRATOVANIE</div><div class="pojem__text">Otvor sedenie a povedz: <strong>„Prejdi moje skills, nájdi duplicity a protirečenia a napíš mi, čo zjednotiť.”</strong> Spraví to za teba.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">TEST PORIADKU</div><div class="pravidlo__text">Otvor Claude Code, napíš <code>/</code> a pozri sa na zoznam. Vieš pri každom názve <strong>bez otvárania</strong> povedať, čo robí a kedy sa spustí? Ak nie, ten názov alebo popis je zlý — a rovnako to vidí aj Claude.</div></div>
+    <div class="nadpis__stitok">HOTOVO AŽ VTEDY, KEĎ…</div>
+    <div class="nadpis">Vieš to zopakovať aj bez tohto PDF.</div>
+    <div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Každý skill má jasný názov a jeden účel.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Odkazy na podklady po presune fungujú.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Archív nie je v aktívnych priečinkoch.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Po uprataní prešiel skúšobný vstup.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">PRE POKROČILÝCH</div><div class="box__text">V <code>testy.md</code> uchovaj vstupy, očakávané výsledky a dátum poslednej kontroly. Keď zmeníš model alebo cenník, máš na čom za dve minúty overiť, či postup stále funguje. Bez toho zisťuješ chybu až u klienta.</div></div></div><div class="blok terazty"><div class="terazty__stitok">TERAZ TY</div><div class="terazty__text">Over jednu úlohu po uprataní. V 04.4 si prejdeš inštaláciu a diagnostiku, keď sa skill nespustí.</div></div><div class="blok zdroje"><div class="zdroje__stitok">OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026</div><div class="zdroje__zoznam"><a href="https://code.claude.com/docs/en/skills">Claude Code: skills</a><a href="https://code.claude.com/docs/en/memory">Claude Code: pamäť a CLAUDE.md</a></div></div>
   </div>
-  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>04 / 6</span></div>
-</section>
-<section class="strana strana--vnutorna">
-  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">SKILLS × KUCHAR.AI</div></div>
-  <div class="telo">
-    <div class="nadpis__stitok">PRVÁ ÚLOHA</div>
-    <div class="nadpis"><b>Uprac to</b><span>kým je čoho málo.</span></div>
-    <div class="blok"><div class="riadok"><div class="riadok__cislo">01</div><div class="riadok__text">Otvor <code>~/.claude/skills/</code> a pozri sa, čo tam máš. Ak je to prázdne, tým lepšie — začneš správne.</div></div><div class="riadok"><div class="riadok__cislo">02</div><div class="riadok__text">Skontroluj názvy. Každý musí byť malými písmenami, s pomlčkami a musí hovoriť, čo robí.</div></div><div class="riadok"><div class="riadok__cislo">03</div><div class="riadok__text">Prejdi popisy. Pri každom si polož otázku: spustil by sa, keby som zadal úlohu vlastnými slovami?</div></div><div class="riadok"><div class="riadok__cislo">04</div><div class="riadok__text">Podklady, ktoré k skillom patria, presuň do ich priečinkov a odkáž sa na ne zo <code>SKILL.md</code>.</div></div><div class="riadok"><div class="riadok__cislo">05</div><div class="riadok__text">Čo tri mesiace nepoužívaš, presuň do <code>archiv/</code>. Nemaž, ak sa bojíš — ale nech to nie je v zozname.</div></div><div class="riadok"><div class="riadok__cislo">06</div><div class="riadok__text">Spusti <code>/context</code> a pozri sa, koľko ti zaberá základ. Ak je to veľa, skráť <code>CLAUDE.md</code>.</div></div></div><div class="blok pravidlo"><div class="pravidlo__stitok">PREČO TERAZ, KEĎ MÁŠ DVA SKILLS</div><div class="pravidlo__text">Lebo o pol roka ich budeš mať tridsať a vtedy sa ti do toho už nebude chcieť. Systém, ktorý si nastavíš pri druhom skille, ťa nestojí nič. Ten istý systém pri tridsiatom je popoludnie práce.</div></div>
-  </div>
-  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>05 / 6</span></div>
-</section>
-<section class="strana strana--vnutorna">
-  <div class="hlavicka"><div class="hlavicka__znacka">@kuchar.ai</div><div class="hlavicka__stopa">SKILLS × KUCHAR.AI</div></div>
-  <div class="telo">
-    <div class="nadpis__stitok">FINÁLNY CHECKLIST</div>
-    <div class="nadpis"><b>Hotovo.</b><span>Máš v tom systém.</span></div>
-    <div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Skills mám na jednom mieste, každý vo vlastnom priečinku.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Názvy sú malými písmenami s pomlčkami a hovoria, čo skill robí.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Viem pri každom bez otvárania povedať, kedy sa spustí.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Podklady sú v priečinku svojho skillu.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Nepoužívané skills nie sú v zozname.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Keď niečo nefunguje, opravujem existujúci skill namiesto nového.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Poznám <code>/context</code> a viem, koľko mi zaberá základ.</div></div></div><div class="blok odkazy"><a class="odkaz" href="https://code.claude.com/docs/en/skills"><span class="odkaz__nazov">DOKUMENTÁCIA SKILLS</span><span class="odkaz__akcia">OTVOR<svg class="sipka" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 L8 2 M3.4 2 L8 2 L8 6.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span></a><a class="odkaz" href="https://code.claude.com/docs/en/memory"><span class="odkaz__nazov">CLAUDE.MD A PAMÄŤ</span><span class="odkaz__akcia">OTVOR<svg class="sipka" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 L8 2 M3.4 2 L8 2 L8 6.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span></a></div><div class="blok odkaz-na-koniec"><div class="odkaz-na-koniec__hlavne">Posledná lekcia modulu: ako skill nainštalovať, spustiť a čo robiť, keď mlčí.</div><div class="odkaz-na-koniec__vedlajsie">Ďalšie praktické AI návody nájdeš na @kuchar.ai</div></div>
-  </div>
-  <div class="paticka"><span>TOMÁŠ KUCHARČÍK</span><span>06 / 6</span></div>
+  <div class="paticka"><span class="paticka__nazov">Poriadok v skills</span><span class="paticka__cislo">114</span></div>
 </section>
 </body>
 </html>

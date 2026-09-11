@@ -30,6 +30,12 @@ def uroby_pdf(lekcie):
     obsah = []
     posledny_modul = None
 
+    plan = g.VYSTUP_PDF / "00-plan.pdf"
+    if plan.exists():
+        obsah.append([1, "Tvoj plán kurzu", 1])
+        with pymupdf.open(plan) as d:
+            spolu.insert_pdf(d)
+
     for stem, meta, _ in lekcie:
         zdroj = g.VYSTUP_PDF / f"{stem}.pdf"
         if not zdroj.exists():

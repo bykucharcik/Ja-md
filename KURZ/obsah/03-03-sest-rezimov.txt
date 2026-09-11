@@ -1,0 +1,93 @@
+# Modul 03 — ChatGPT / lekcia 3
+modul: 03 ChatGPT
+cislo: 03.3
+titul: Šesť režimov, ktoré nepoužívaš
+varianta: c
+
+@obal
+cislo: 03.3
+stitok: ŠESŤ REŽIMOV, KTORÉ NEPOUŽÍVAŠ
+h1: 98 % ľudí používa jeden režim na všetko. Preto majú priemerné výsledky.
+slub: Prejdeš šesť režimov, pri každom zistíš, kde sa zapína a na akú prácu ho použiť. Dva si hneď vyskúšaš.
+cas: 6 min | ČÍTANIE
+cas: 25–35 min | PRAX
+priprav: ChatGPT účet, slúchadlá na hlasový režim a jeden text, ktorý chceš upraviť.
+bod: Šesť režimov a ich účel
+bod: Canvas a study naostro
+bod: Agent a jeho hranice
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: ChatGPT nie je jeden nástroj. Je to šesť nástrojov v jednom poli.
+
+@tabulka REŽIM | KEDY HO ZAPNÚŤ | AKO
+Canvas | Hotový text, v ktorom chceš prepísať len jeden odsek. | Vyber Canvas pri poli správy.
+Study | Učíš sa novú tému a chceš si overiť, či ti to naozaj ostalo. | Tlačidlo plus, napíš `@study`.
+Hlas | Auto, prechádzka, sauna. Všade, kde nechceš písať. | Ikona hlasu v appke.
+Obrázky | Rýchly vizuál, úprava vlastnej fotky, náhľad priestoru. | Opíš, čo chceš, alebo nahraj fotku.
+Agent | Opakovaná klikacia práca na weboch. | Tlačidlo plus, režim agenta.
+Deep research | Otázka, na ktorú by si inak čítal 50 článkov. | Tlačidlo plus, `@Deepresearch`.
+
+@box NAJVÄČŠIA ÚSPORA ZA NAJMENEJ PRÁCE
+**Canvas.** Dostaneš text, ktorý je z 90 % dobrý, a jeden odsek sedí zle. Bežná cesta: prepíšeš celé zadanie a on ti pokazí aj tie časti, s ktorými si bol spokojný. Canvas otvorí editor vedľa chatu. Označíš problémový kus, povieš, čo s ním, a zvyšok ostane nedotknutý. Keď to raz vyskúšaš, späť už nejdeš.
+
+@strana
+stitok: POSTUP
+h1: Vyskúšaj tie dva, ktoré ti dnes ušetria najviac.
+
+@kroky
+01 | Otvor svoj text v Canvase. | Vlož hotový text, zapni Canvas. Označ jeden odsek a napíš: „len tento uprav na kratší a konkrétnejší, zvyšok nechaj.”
+02 | Over, či naozaj nechal zvyšok. | Prvá vec, ktorú si skontroluj. Keď prepísal aj ostatné, máš zlú zmenu vrátiť na jeden klik.
+03 | Pusti si study na téme z tohto kurzu. | `@study` a vlož napríklad túto lekciu. Nechaj si ju rozobrať a potom sa nechaj vyskúšať.
+04 | Odpovedz bez pozerania. | Rozdiel medzi „chápem to” a „viem to” zistíš presne tu. To druhé ti ostane o mesiac.
+
+@box HLASOVÝ REŽIM: KDE TO NAOZAJ ZABERIE
+Nie je to hračka na diktovanie. Je to premýšľanie nahlas s niekým, kto ti odpovedá. Cesta autom, prechádzka, čakanie na kávu — všetky tie chvíle, keď si v hlave meliaš ten istý problém dokola. Nastav si jedno hlavné zariadenie, appku doinštaluj na ostatné a v nastaveniach ich prepoj. Potom vieš odkiaľkoľvek prebrať stav projektu a vypýtať si ďalší krok.
+
+@box PRE POKROČILÝCH
+Pokročilá verzia hlasu zvládne zdieľanie obrazovky alebo kamery naživo. Namiesto opisovania problému ho jednoducho ukážeš: „tu som zasekol, čo s tým?” Na podporovaných Apple zariadeniach sa dá cez Apple Intelligence prepojiť aj Siri, takže máš jedného asistenta všade namiesto prepínania medzi dvoma.
+
+@strana
+stitok: POSTUP
+h1: Deep research a agent. Dva ťažké kalibre.
+
+@text
+Tieto dva si nechaj na prácu, ktorá by ťa inak stála hodiny. Na bežnú otázku sú to kanóny na vrabce a spotrebu ti zjedia rýchlo.
+
+@kod DEEP RESEARCH — TAKTO SA TO ZADÁVA
+Porovnaj 3 nástroje na prepis porád pre slovenský tím.
+Kritériá: podpora slovenčiny, export textu,
+mesačná cena pre 5 ľudí a limity.
+Použi aktuálne oficiálne zdroje.
+Ku každému údaju daj odkaz a dátum kontroly,
+neoverené označ.
+Ceny počítaj z rovnakej fakturačnej periodicity
+a ukáž výpočet. Nič nekupuj ani neregistruj.
+
+@text drobne
+Čím konkrétnejšia otázka, tým lepší report. Jednoriadková otázka ti vráti jednoriadkovú hodnotu. A po dobehnutí si vždy otvor aspoň tri odkazy — presvedčivý tón nie je dôkaz.
+
+@box AGENT: ČO SMIE A ČO NIE
+Agent si otvorí prehliadač a klikaním prejde weby za teba. Vyplní formulár, porovná ceny, pozbiera možnosti. **Nikdy za teba nepotvrdí nákup, odoslanie ani rezerváciu bez tvojho schválenia** — pri každom kroku, ktorý ťa k niečomu zaväzuje, sa spýta. Pred spustením zavri karty s bankou a osobnými účtami a začni niečím nedôležitým, aby si videl, ako sa správa.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Viem pomenovať všetkých šesť režimov a kde sa zapínajú.
+V Canvase som upravil odsek bez prepísania zvyšku.
+Vyskúšal som study a nechal sa vyskúšať.
+Viem, kedy sa oplatí deep research a kedy je to plytvanie.
+Viem, kde má agent hranicu a čo si pred ním zavriem.
+
+@box O KROK ĎALEJ
+Obrázky sú silná stránka ChatGPT. Keď ti výsledok takmer sedí, nezačínaj odznova — povedz v tom istom chate, čo zmeniť. Vlastnú fotku vieš nahrať a nechať upraviť. Na presné dátové grafy sa nespoliehaj, tie si vždy prekontroluj proti vstupným číslam.
+
+@terazty TERAZ TY
+Vyber jeden režim, ktorý si dnes nepoužil, a zajtra ho nasaď na skutočnú prácu. V 03.4 z ChatGPT spravíš asistenta, ktorý siahne do tvojich appiek.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: canvas | https://help.openai.com/en/articles/9930697-what-is-the-canvas-feature-in-chatgpt
+OpenAI: deep research | https://help.openai.com/en/articles/10500283-deep-research-faq
+OpenAI: režim agenta | https://help.openai.com/en/articles/11752874-chatgpt-agent

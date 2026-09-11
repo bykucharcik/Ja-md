@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>02.8 Vlastný AI agent</title>
+<link rel="stylesheet" href="../build/styl.css">
+</head>
+<body>
+<section class="strana obal obal--d">
+  <div class="pas"></div>
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.8</span></div>
+  <div class="obal__hlava">
+    <div class="obal__cislo">02.8</div>
+    <div class="obal__stitok">VLASTNÝ AI AGENT</div>
+    <div class="obal__nadpis">Najal si šikovného cudzinca. Teraz ho zauč.</div>
+  </div>
+  
+  <div class="obal__spodok">
+    <div class="obal__slub">Pripravíš priečinok s vlastným kontextom a otestuješ agenta na jednej opakovanej úlohe.</div>
+    <div class="casy"><div class="cas"><div class="cas__cislo">6 min</div><div class="cas__popis">ČÍTANIE</div></div><div class="cas"><div class="cas__cislo">45–60 min</div><div class="cas__popis">PRAX</div></div></div>
+    <div class="obal__pripravLabel">ČO SI PRIPRAV</div><div class="obal__priprav">Claude Code z 02.5, vybraná úloha a vlastné podklady. Stačí jedna rola alebo jeden projekt.</div>
+    <div class="body"><div class="body__riadok"><div class="body__cislo">01</div><div class="body__text">Čo agent potrebuje</div></div><div class="body__riadok"><div class="body__cislo">02</div><div class="body__text">Tvoj kontext v súboroch</div></div><div class="body__riadok"><div class="body__cislo">03</div><div class="body__text">Prvý overiteľný výsledok</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Vlastný AI agent</span><span class="paticka__cislo">42</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.8</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">AKO TO FUNGUJE VNÚTRI</div>
+    <div class="nadpis">Agent potrebuje vedieť, čo znamená hotovo.</div>
+    <div class="blok"><p class="odsek">Agent pracuje v cykle: načíta situáciu, vyberie ďalší krok, použije nástroj a vyhodnotí výsledok. Dokola, kým nie je hotovo. Zastaviť ho môže limit, chyba alebo chýbajúci prístup — preto potrebuje konkrétny cieľ a spôsob kontroly.</p></div><div class="blok"><table class="tabulka"><thead><tr><th>ČASŤ</th><th>ČO MU DÁŠ</th><th>PRÍKLAD</th></tr></thead><tbody><tr><td>Kontext</td><td>Fakty o tvojej práci a publiku.</td><td>Pre koho tvoríš a čo ponúkaš.</td></tr><tr><td>Model</td><td>Dostupný model podľa náročnosti.</td><td>Bežné spracovanie alebo hlbšia analýza.</td></tr><tr><td>Nástroje</td><td>Prístup potrebný na úlohu.</td><td>Čítanie súborov, web, konektor.</td></tr><tr><td>Skills</td><td>Postup, ktorý sa má opakovať.</td><td>Ako pripraviť a skontrolovať scenár.</td></tr></tbody></table></div><div class="blok"><div class="box"><div class="box__stitok">SLABÉ ZADANIE</div><div class="box__text">„Sprav mi research.” Chýba téma, rozsah aj výstup. Agent sa zastaví vtedy, keď to sám uzná za vhodné.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">POUŽITEĽNÉ ZADANIE</div><div class="box__text">Nájdi 5 nástrojov na prepis slovenských porád. Pri každom uveď podporu slovenčiny, cenu z oficiálneho webu, odkaz a dátum kontroly. Neoverený údaj označ. Ulož porovnanie do vystupy/prepisy.md. Nič nekupuj ani neregistruj.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Vlastný AI agent</span><span class="paticka__cislo">43</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.8</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Priprav si základňu pre jednu rolu.</div>
+    <div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Vytvor projektový priečinok.</div><div class="krok__text">Pomenuj ho napríklad <code>AI-obsah</code>. V Claude Code ho otvor postupom z 02.5.</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Nechaj sa vyspovedať.</div><div class="krok__text">Vlož prompt nižšie. Odpovedaj vlastnými slovami — pokojne hlasom.</div></div></div><div class="krok"><div class="krok__cislo">03</div><div><div class="krok__nazov">Ulož a prečítaj kontext.</div><div class="krok__text">Nechaj vytvoriť súbory z tabuľky. Vymaž domnienky. Rozlišuj, čo je fakt a čo len plán.</div></div></div><div class="krok"><div class="krok__cislo">04</div><div><div class="krok__nazov">Priprav krátky CLAUDE.md.</div><div class="krok__text">Daj doň pravidlá a jasne urči, ktoré súbory má pri konkrétnej práci čítať. Zmienka o priečinku nezaručuje načítanie všetkého.</div></div></div></div><div class="blok"><div class="box"><div class="box__stitok">PROMPT NA ZBER KONTEXTU</div><div class="box__text">Chcem ťa používať na tvorbu môjho AI obsahu. Pýtaj sa ma po jednej otázke na publikum, cieľ, štýl, pravdivé skúsenosti a obmedzenia. Po 8 odpovediach navrhni krátke súbory do kontext/. Nevymýšľaj fakty. Čo ostáva otvorené, označ NA DOPLNENIE. Pred uložením mi ukáž návrh.</div></div></div><div class="blok"><table class="tabulka"><thead><tr><th>SÚBOR</th><th>ČO DOŇ PATRÍ</th></tr></thead><tbody><tr><td>kontext/o-mne.md</td><td>Moja rola a potvrdené skúsenosti.</td></tr><tr><td>kontext/biznis.md</td><td>Ponuka a jej aktuálny stav.</td></tr><tr><td>kontext/zakaznik.md</td><td>Publikum, problémy a slovník.</td></tr><tr><td>kontext/ton-hlasu.md</td><td>Pravidlá plus dobrá a zlá ukážka.</td></tr><tr><td>kontext/pamat.md</td><td>Schválené opravy, ktoré majú platiť ďalej.</td></tr></tbody></table></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Vlastný AI agent</span><span class="paticka__cislo">44</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.8</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Over ho v novom sedení.</div>
+    <div class="blok"><div class="box box--kod"><div class="box__stitok">PRÍKLAD PRAVIDIEL DO CLAUDE.md</div><div class="box__text"># AI obsah
+- Pred tvorbou obsahu prečítaj kontext/zakaznik.md
+  a kontext/ton-hlasu.md.
+- Pri zmienke o mne načítaj kontext/o-mne.md.
+- Ponuku over v kontext/biznis.md.
+- Prečítaj relevantné schválené opravy v kontext/pamat.md.
+- Nevydávaj plán za dosiahnutý výsledok.
+- Výsledky ukladaj do vystupy/.
+- Nové trvalé pravidlo mi pred zápisom do pamäte ukáž.</div></div></div><div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Otvor nové sedenie.</div><div class="krok__text">Cez <code>/context</code> skontroluj načítanie CLAUDE.md. Zadaj: „Pred úlohou načítaj potrebný kontext a vypíš použité súbory.”</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Zadaj reálny výstup.</div><div class="krok__text">Napríklad 3 hooky a 1 scenár z tvojho podkladu. Skontroluj jazyk, cieľovku a presnosť tvrdení.</div></div></div><div class="krok"><div class="krok__cislo">03</div><div><div class="krok__nazov">Zapíš užitočnú opravu.</div><div class="krok__text">„Pri každej novinke uveď zdroj” je trvalé pravidlo. „Dnes to skráť” nie je.</div></div></div><div class="krok"><div class="krok__cislo">04</div><div><div class="krok__nazov">Pripoj len potrebný nástroj.</div><div class="krok__text">Ak úloha potrebuje e-mail, vyber schválený konektor a otestuj čítanie jednej položky. Na prvý obsahový výstup často stačia súbory.</div></div></div></div><div class="blok"><div class="box"><div class="box__stitok">PREČO TO NIE JE HOTOVÁ AUTOMATIZÁCIA</div><div class="box__text">Nastavil si pracovné prostredie pre agenta. Pravidelné spúšťanie, dohľad a napojenie firemných systémov sú ďalšia úloha. Zatiaľ over, že postup funguje na jednom výsledku.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Vlastný AI agent</span><span class="paticka__cislo">45</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 02.8</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">HOTOVO AŽ VTEDY, KEĎ…</div>
+    <div class="nadpis">Vieš to zopakovať aj bez tohto PDF.</div>
+    <div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Kontext obsahuje moje fakty, nie domyslený životopis.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Pravidlá určujú, čo načítať a kam uložiť výsledok.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">V novom sedení vznikol výstup podľa mojich podkladov.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Viem odlíšiť trvalé pravidlo od jednorazovej opravy.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">O KROK ĎALEJ</div><div class="box__text">Do kontextu doplň aj vzor dobrého výsledku a vysvetli, prečo je dobrý. Konkrétna ukážka je často užitočnejšia než ďalších 20 všeobecných pravidiel.</div></div></div><div class="blok terazty"><div class="terazty__stitok">TERAZ TY</div><div class="terazty__text">Dokonči jeden výstup s vlastným kontextom. V 02.9 zistíš, aký model naň vlastne potrebuješ.</div></div><div class="blok zdroje"><div class="zdroje__stitok">OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026</div><div class="zdroje__zoznam"><a href="https://code.claude.com/docs/en/memory">Claude Code: pamäť a CLAUDE.md</a><a href="https://code.claude.com/docs/en/mcp">Claude Code: konektory cez MCP</a><a href="https://code.claude.com/docs/en/skills">Claude Code: skills</a></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Vlastný AI agent</span><span class="paticka__cislo">46</span></div>
+</section>
+</body>
+</html>

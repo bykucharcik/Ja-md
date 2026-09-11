@@ -1,0 +1,91 @@
+# Modul 02 — Claude / lekcia 2
+modul: 02 Claude
+cislo: 02.2
+titul: Nauč Clauda, kto si
+varianta: b
+
+@obal
+cislo: 02.2
+stitok: NAUČ CLAUDA, KTO SI
+h1: Každé ráno sa budí a nevie o tebe nič.
+slub: Nastavíš pamäť, prenesieš si kontext z inej AI a necháš sa vyspovedať. Raz — a platí to ďalej.
+cas: 5 min | ČÍTANIE
+cas: 45–60 min | PRAX
+priprav: Účet na claude.ai. Ak používaš inú AI, maj ju po ruke — prenesieš si z nej pamäť.
+bod: E-mail, ktorý ti zostane
+bod: Pamäť a import z inej AI
+bod: Rozhovor, ktorý ťa opíše
+
+@strana
+stitok: NAJPRV JEDNA NUDNÁ VEC
+h1: Na akom e-maile máš účet?
+
+@text
+Znie to ako detail. Nie je. Všetko, čo sa Claude o tebe naučí, visí na tom účte. Ak si ho založil na firemnom e-maile a raz odídeš, odíde s ním aj mesiace nastavovania.
+
+@kroky
+01 | Pozri sa, kde máš účet. | Ak je na e-maile, ktorý ti o rok nemusí patriť, rieš to teraz. Nie o rok.
+02 | Over si možnosti zmeny. | Podmienky zmeny e-mailu sa menia. Pozri si aktuálny stav v nastaveniach účtu alebo v podpore.
+03 | Nový účet zakladaj na osobný e-mail. | Aj keď Clauda používaš na prácu. Nastavenie je tvoje, nie zamestnávateľov.
+
+@box PREČO TO RIEŠIME HNEĎ
+Zvyšok tejto lekcie je hodina práce. Je škoda spraviť ju na účte, o ktorý môžeš prísť.
+
+@strana
+stitok: POSTUP
+h1: Zapni pamäť a prenes si kontext.
+
+@text
+Pamäť je to, čo si Claude odnáša z rozhovorov naprieč chatmi. Ak prichádzaš od inej AI, nemusíš začínať od nuly — Claude má na prenos vlastný postup.
+
+@kroky
+01 | Otvor import pamäte. | Na domovskej obrazovke nájdi kartu na import pamäte a spusti ju. Claude ti ukáže prompt a políčko na vloženie.
+02 | Spusti prompt v starej AI. | Skopíruj ten prompt do svojho pôvodného nástroja. Vypíše ti, čo o tebe vie: štýl odpovedí, osobné údaje, projekty, ciele, nástroje a opravy, ktoré si mu dával.
+03 | Vlož výsledok späť. | Text vlož do políčka v Claudovi a potvrď. Claude si z neho vytiahne jednotlivé záznamy do pamäte.
+04 | Skontroluj, čo si prebral. | V Nastaveniach otvor Capabilities a zobraz si pamäť. Uvidíš ju presne tak, ako ju vidí Claude. Čo tam nepatrí, zmaž.
+
+@box POZOR NA JEDNU VEC
+Import väčšinou prenesie pracovné veci a osobné podhodnotí. Preto nasleduje druhý krok — necháš sa vyspovedať.
+
+@box PRE POKROČILÝCH
+Import pamäte je dostupný na plánoch Free, Pro aj Max. Ak si sa bál prejsť na Clauda len preto, že „ťa tá druhá AI pozná", toto je presne tá prekážka, ktorú to odstraňuje.
+
+@strana
+stitok: POSTUP
+h1: Nechaj sa vyspovedať. Hovor, nepíš.
+
+@text
+Najlepší kontext nevznikne tak, že si sadneš a napíšeš esej o sebe. Vznikne tak, že ti niekto kladie otázky a ty odpovedáš.
+
+@box SKOPÍRUJ DO CLAUDA
+Chcem, aby si ma poznal a vedel so mnou pracovať dlhodobo. Vypytuj sa ma po jednej otázke naraz — na moju prácu, publikum, ciele, štýl, skutočné skúsenosti a na to, čo o mne nikdy nesmieš tvrdiť. Pýtaj sa aj na osobnú stránku, nielen pracovnú. Po každej odpovedi pokračuj ďalšou otázkou. Keď budeme hotoví, zhrň to, čo si sa dozvedel, a ukáž mi to skôr, než si to uložíš.
+
+@kroky
+01 | Odpovedaj hlasom. | Použi hlasový vstup v Claudovi alebo diktovanie v počítači. Hodinu rozprávania zvládneš. Hodinu písania nie.
+02 | Hovor pravdu, nie ideál. | Ak si niečo ešte nedosiahol, povedz to. Vymyslený životopis sa ti vráti v každom texte, ktorý napíše.
+03 | Prečítaj si zhrnutie. | Každý riadok. Čo tam necháš, to bude Claude opakovať mesiace.
+04 | Ulož a over. | Otvor nový chat a spýtaj sa „čo o mne vieš?". Ak tam niečo chýba alebo prebýva, oprav to v pamäti.
+
+@box KEĎ TO ROBÍŠ PRE TÍM
+Rovnaký postup daj každému, kto u vás Clauda začína používať. Je to najrýchlejšie zaškolenie, aké existuje — a spraví si ho každý sám.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Účet mám na e-maile, o ktorý neprídem.
+Pamäť je zapnutá a viem, kde si ju pozrieť.
+Prešiel som rozhovorom a zhrnutie som si prečítal.
+V novom chate Claude vie, kto som.
+
+@box O KROK ĎALEJ
+Pamäť sa nemá plniť sama a nikdy sa nečistiť. Raz za pár mesiacov otvor sedenie a napíš: „Prejdi moju pamäť, nájdi zastarané alebo protirečivé záznamy a navrhni, čo zmazať."
+
+@terazty TERAZ TY
+Prejdi si pamäť a zmaž z nej jednu vec, ktorá tam nepatrí. V 02.3 nastavíš projekt.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude: import a export pamäte | https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude
+Claude: pamäť a vyhľadávanie v chatoch | https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context
+Prejsť na Clauda bez straty kontextu | https://claude.com/import-memory

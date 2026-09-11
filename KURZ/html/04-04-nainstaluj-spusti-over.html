@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<title>04.4 Nainštaluj, spusti a over skill</title>
+<link rel="stylesheet" href="../build/styl.css">
+</head>
+<body>
+<section class="strana obal obal--a">
+  <div class="pas"></div>
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.4</span></div>
+  <div class="obal__hlava">
+    <div class="obal__cislo">04.4</div>
+    <div class="obal__stitok">NAINŠTALUJ, SPUSTI A OVER SKILL</div>
+    <div class="obal__nadpis">Keď sa skill nespustí, nemusíš ho hneď prepisovať.</div>
+  </div>
+  
+  <div class="obal__spodok">
+    <div class="obal__slub">Dostaneš skill na správne miesto, spustíš ho ručne a podľa tabuľky zistíš, či problém vznikol pri načítaní alebo vo výsledku.</div>
+    <div class="casy"><div class="cas"><div class="cas__cislo">6 min</div><div class="cas__popis">ČÍTANIE</div></div><div class="cas"><div class="cas__cislo">20–30 min</div><div class="cas__popis">PRAX</div></div></div>
+    <div class="obal__pripravLabel">ČO SI PRIPRAV</div><div class="obal__priprav">Lokálny Claude Code a vlastný alebo skontrolovaný priečinok skillu so SKILL.md.</div>
+    <div class="body"><div class="body__riadok"><div class="body__cislo">01</div><div class="body__text">Správna cesta a súbory</div></div><div class="body__riadok"><div class="body__cislo">02</div><div class="body__text">Spustenie a oprávnenia</div></div><div class="body__riadok"><div class="body__cislo">03</div><div class="body__text">Diagnostika a záverečný test</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Nainštaluj, spusti a over skill</span><span class="paticka__cislo">115</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.4</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Skopíruj celý priečinok. Nie jeden súbor.</div>
+    <div class="blok"><div class="krok"><div class="krok__cislo">01</div><div><div class="krok__nazov">Najprv si skill prečítaj.</div><div class="krok__text">Pri skille od niekoho iného to platí dvojnásobne. Čo robí, aké skripty spúšťa, kam posiela dáta.</div></div></div><div class="krok"><div class="krok__cislo">02</div><div><div class="krok__nazov">Vyber miesto.</div><div class="krok__text">Na kurz sa hodí projektová cesta <code>&lt;projekt&gt;/.claude/skills/</code>. Osobné miesto použi, až keď postup chceš aj inde.</div></div></div><div class="krok"><div class="krok__cislo">03</div><div><div class="krok__nazov">Skopíruj celý balík.</div><div class="krok__text"><code>SKILL.md</code> sám nestačí, ak odkazuje na cenník alebo skripty. A priečinok nesmie byť vnorený dvakrát.</div></div></div><div class="krok"><div class="krok__cislo">04</div><div><div class="krok__nazov">Otvor Claude Code v projekte.</div><div class="krok__text">Napíš <code>/</code> a hľadaj názov. Ak sa zmena neprejaví, otvor nové sedenie.</div></div></div></div><div class="blok"><div class="box box--kod"><div class="box__stitok">NECH TO VYTVORÍ ZA TEBA</div><div class="box__text">Vytvor projektový skill cenova-ponuka
+v .claude/skills/cenova-ponuka/. Použi presný obsah
+SKILL.md a cennik.md z lekcie 04.2.
+Na konci vypíš vytvorené cesty a over názvy súborov.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">HOTOVÉ SKILLS OD INÝCH</div><div class="box__text">Cudzí skill je stiahnutý priečinok. Postup je ten istý: <strong>prečítaj, čo robí</strong>, ulož do <code>.claude/skills/</code> a prvý test pusti na cvičných dátach.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">KEĎ UKLADÁŠ RUČNE</div><div class="box__text">Vo Windows zobraz prípony súborov a pri ukladaní zvoľ všetky typy, názov <code>SKILL.md</code> a kódovanie UTF-8. Na Macu čistý text, nie RTF.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Nainštaluj, spusti a over skill</span><span class="paticka__cislo">116</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.4</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Ručné spustenie je najlepší prvý test.</div>
+    <div class="blok"><div class="box box--kod"><div class="box__stitok">V CLAUDE CODE</div><div class="box__text">/cenova-ponuka Priprav návrh: 3 texty a 2 prepisy.
+Použi cvičný cenník a nič neodosielaj.</div></div></div><div class="blok"><table class="tabulka"><thead><tr><th>NASTAVENIE</th><th>ČO ZNAMENÁ</th></tr></thead><tbody><tr><td><code>name</code></td><td>Názov skillu aj príkazu. Keď chýba, môže sa použiť názov priečinka.</td></tr><tr><td><code>description</code></td><td>Účel a situácie na použitie. Pomáha pri automatickom výbere.</td></tr><tr><td><code>disable-model-invocation</code></td><td>Skill spúšťaš ručne, automatický výber je vypnutý.</td></tr><tr><td><code>allowed-tools</code></td><td>Predschváli vybrané nástroje v rámci skillu. Nie je to zákaz ostatných.</td></tr></tbody></table></div><div class="blok"><div class="box"><div class="box__stitok">POVOLENIA SÚ INÁ VRSTVA</div><div class="box__text">Oprávnenia sa nastavujú samostatne cez <code>/permissions</code>. Ani ručné spustenie, ani veta „nič neposielaj” v texte skillu nie sú technické obmedzenie — sú to pokyny, nie zámok. Pri cvičení nechaj predvolené schvaľovanie a používaj cvičné podklady.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Nainštaluj, spusti a over skill</span><span class="paticka__cislo">117</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.4</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">POSTUP</div>
+    <div class="nadpis">Najprv zisti, kde sa to zaseklo.</div>
+    <div class="blok"><table class="tabulka"><thead><tr><th>ČO VIDÍŠ</th><th>ČO SKONTROLOVAŤ</th></tr></thead><tbody><tr><td>Skill nie je v ponuke</td><td>Správny projekt, <code>.claude/skills/</code>, presný názov <code>SKILL.md</code> a platnú hlavičku.</td></tr><tr><td>Ručne ide, automaticky nie</td><td><code>description</code>, <code>disable-model-invocation</code>, podobné skills a dostupnosť v prostredí.</td></tr><tr><td>Načíta sa, ale chýba podklad</td><td>Názov súboru a relatívnu cestu. Je cenník naozaj vedľa <code>SKILL.md</code>?</td></tr><tr><td>Akcia je zablokovaná</td><td>Oprávnenia alebo obmedzenia prostredia. Blokácia nie je chyba textu skillu.</td></tr><tr><td>Výsledok je zlý</td><td>Vstup, postup a kritériá. Oprav konkrétny krok a test zopakuj.</td></tr></tbody></table></div><div class="blok"><div class="box box--kod"><div class="box__stitok">ZÁVEREČNÝ TEST KURZU</div><div class="box__text">Spusti svoj skill na úplne novom vstupe.
+Over všetky údaje a výpočty.
+Potom zámerne vynechaj jeden dôležitý údaj
+a skontroluj, či sa spýta alebo ho označí.
+Zapíš si čas na zadanie, kontrolu aj opravy.</div></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Nainštaluj, spusti a over skill</span><span class="paticka__cislo">118</span></div>
+</section>
+<section class="strana">
+  <div class="hlavicka"><span>AI DO PRAXE</span><span>LEKCIA 04.4</span></div>
+  <div class="telo">
+    <div class="nadpis__stitok">HOTOVO AŽ VTEDY, KEĎ…</div>
+    <div class="nadpis">Toto je tvoj výsledok.</div>
+    <div class="blok"><p class="odsek">Máš vybranú úlohu, vlastný kontext, vhodný nástroj a jeden otestovaný postup, ktorý vieš spustiť znova. To je celý rozdiel medzi „skúšam AI” a „AI mi robí prácu”. Teraz ho nasaď na najbližšiu skutočnú zákazku a <strong>až podľa nej</strong> rozhodni, čo má zmysel automatizovať ďalej.</p></div><div class="blok"><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Skill sa načítal a funguje na novom vstupe.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Chýbajúci údaj neviedol k vymyslenej odpovedi.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Viem rozlíšiť problém s cestou, s postupom a s povolením.</div></div><div class="odrazka"><div class="odrazka__box"></div><div class="odrazka__text">Mám vlastné meranie výsledku, nie dojem.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">ÚSPEŠNÝ TEST JE ZAČIATOK</div><div class="box__text">Pri každej zmene podkladov, modelu alebo dôležitého kroku zopakuj bežný aj hraničný test. Presne tak sa z návodu postupne stáva spoľahlivý pracovný postup. Modely sa menia častejšie, než si myslíš.</div></div></div><div class="blok"><div class="box"><div class="box__stitok">ČO ĎALEJ</div><div class="box__text">Moduly 05 a 06 nie sú súčasťou tohto vydania. Na dokončenie svojho postupu ich nepotrebuješ.</div></div></div><div class="blok terazty"><div class="terazty__stitok">TERAZ TY</div><div class="terazty__text">Pri najbližšej opakovanej úlohe spusti svoj skill. Zapíš jednu konkrétnu vec, ktorú ešte potrebuje zlepšiť — a oprav ju.</div></div><div class="blok zdroje"><div class="zdroje__stitok">OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026</div><div class="zdroje__zoznam"><a href="https://code.claude.com/docs/en/skills">Claude Code: skills</a><a href="https://code.claude.com/docs/en/iam">Claude Code: oprávnenia</a><a href="https://code.claude.com/docs/en/settings">Claude Code: nastavenia</a></div></div>
+  </div>
+  <div class="paticka"><span class="paticka__nazov">Nainštaluj, spusti a over skill</span><span class="paticka__cislo">119</span></div>
+</section>
+</body>
+</html>

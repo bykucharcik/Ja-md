@@ -1,0 +1,101 @@
+# Modul 04 — Skills / lekcia 4
+modul: 04 Skills
+cislo: 04.4
+titul: Nainštaluj, spusti a over skill
+varianta: a
+
+@obal
+cislo: 04.4
+stitok: NAINŠTALUJ, SPUSTI A OVER SKILL
+h1: Keď sa skill nespustí, nemusíš ho hneď prepisovať.
+slub: Dostaneš skill na správne miesto, spustíš ho ručne a podľa tabuľky zistíš, či problém vznikol pri načítaní alebo vo výsledku.
+cas: 6 min | ČÍTANIE
+cas: 20–30 min | PRAX
+priprav: Lokálny Claude Code a vlastný alebo skontrolovaný priečinok skillu so SKILL.md.
+bod: Správna cesta a súbory
+bod: Spustenie a oprávnenia
+bod: Diagnostika a záverečný test
+
+@strana
+stitok: POSTUP
+h1: Skopíruj celý priečinok. Nie jeden súbor.
+
+@kroky
+01 | Najprv si skill prečítaj. | Pri skille od niekoho iného to platí dvojnásobne. Čo robí, aké skripty spúšťa, kam posiela dáta.
+02 | Vyber miesto. | Na kurz sa hodí projektová cesta `<projekt>/.claude/skills/`. Osobné miesto použi, až keď postup chceš aj inde.
+03 | Skopíruj celý balík. | `SKILL.md` sám nestačí, ak odkazuje na cenník alebo skripty. A priečinok nesmie byť vnorený dvakrát.
+04 | Otvor Claude Code v projekte. | Napíš `/` a hľadaj názov. Ak sa zmena neprejaví, otvor nové sedenie.
+
+@kod NECH TO VYTVORÍ ZA TEBA
+Vytvor projektový skill cenova-ponuka
+v .claude/skills/cenova-ponuka/. Použi presný obsah
+SKILL.md a cennik.md z lekcie 04.2.
+Na konci vypíš vytvorené cesty a over názvy súborov.
+
+@box HOTOVÉ SKILLS OD INÝCH
+Cudzí skill je stiahnutý priečinok. Postup je ten istý: **prečítaj, čo robí**, ulož do `.claude/skills/` a prvý test pusti na cvičných dátach.
+
+@box KEĎ UKLADÁŠ RUČNE
+Vo Windows zobraz prípony súborov a pri ukladaní zvoľ všetky typy, názov `SKILL.md` a kódovanie UTF-8. Na Macu čistý text, nie RTF.
+
+@strana
+stitok: POSTUP
+h1: Ručné spustenie je najlepší prvý test.
+
+@kod V CLAUDE CODE
+/cenova-ponuka Priprav návrh: 3 texty a 2 prepisy.
+Použi cvičný cenník a nič neodosielaj.
+
+@tabulka NASTAVENIE | ČO ZNAMENÁ
+`name` | Názov skillu aj príkazu. Keď chýba, môže sa použiť názov priečinka.
+`description` | Účel a situácie na použitie. Pomáha pri automatickom výbere.
+`disable-model-invocation` | Skill spúšťaš ručne, automatický výber je vypnutý.
+`allowed-tools` | Predschváli vybrané nástroje v rámci skillu. Nie je to zákaz ostatných.
+
+@box POVOLENIA SÚ INÁ VRSTVA
+Oprávnenia sa nastavujú samostatne cez `/permissions`. Ani ručné spustenie, ani veta „nič neposielaj” v texte skillu nie sú technické obmedzenie — sú to pokyny, nie zámok. Pri cvičení nechaj predvolené schvaľovanie a používaj cvičné podklady.
+
+@strana
+stitok: POSTUP
+h1: Najprv zisti, kde sa to zaseklo.
+
+@tabulka ČO VIDÍŠ | ČO SKONTROLOVAŤ
+Skill nie je v ponuke | Správny projekt, `.claude/skills/`, presný názov `SKILL.md` a platnú hlavičku.
+Ručne ide, automaticky nie | `description`, `disable-model-invocation`, podobné skills a dostupnosť v prostredí.
+Načíta sa, ale chýba podklad | Názov súboru a relatívnu cestu. Je cenník naozaj vedľa `SKILL.md`?
+Akcia je zablokovaná | Oprávnenia alebo obmedzenia prostredia. Blokácia nie je chyba textu skillu.
+Výsledok je zlý | Vstup, postup a kritériá. Oprav konkrétny krok a test zopakuj.
+
+@kod ZÁVEREČNÝ TEST KURZU
+Spusti svoj skill na úplne novom vstupe.
+Over všetky údaje a výpočty.
+Potom zámerne vynechaj jeden dôležitý údaj
+a skontroluj, či sa spýta alebo ho označí.
+Zapíš si čas na zadanie, kontrolu aj opravy.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Toto je tvoj výsledok.
+
+@text
+Máš vybranú úlohu, vlastný kontext, vhodný nástroj a jeden otestovaný postup, ktorý vieš spustiť znova. To je celý rozdiel medzi „skúšam AI” a „AI mi robí prácu”. Teraz ho nasaď na najbližšiu skutočnú zákazku a **až podľa nej** rozhodni, čo má zmysel automatizovať ďalej.
+
+@checklist
+Skill sa načítal a funguje na novom vstupe.
+Chýbajúci údaj neviedol k vymyslenej odpovedi.
+Viem rozlíšiť problém s cestou, s postupom a s povolením.
+Mám vlastné meranie výsledku, nie dojem.
+
+@box ÚSPEŠNÝ TEST JE ZAČIATOK
+Pri každej zmene podkladov, modelu alebo dôležitého kroku zopakuj bežný aj hraničný test. Presne tak sa z návodu postupne stáva spoľahlivý pracovný postup. Modely sa menia častejšie, než si myslíš.
+
+@box ČO ĎALEJ
+Moduly 05 a 06 nie sú súčasťou tohto vydania. Na dokončenie svojho postupu ich nepotrebuješ.
+
+@terazty TERAZ TY
+Pri najbližšej opakovanej úlohe spusti svoj skill. Zapíš jednu konkrétnu vec, ktorú ešte potrebuje zlepšiť — a oprav ju.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude Code: skills | https://code.claude.com/docs/en/skills
+Claude Code: oprávnenia | https://code.claude.com/docs/en/iam
+Claude Code: nastavenia | https://code.claude.com/docs/en/settings

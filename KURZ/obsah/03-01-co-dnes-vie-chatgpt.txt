@@ -1,0 +1,78 @@
+# Modul 03 — ChatGPT / lekcia 1
+modul: 03 ChatGPT
+cislo: 03.1
+titul: Čo dnes vie ChatGPT
+varianta: a
+
+@obal
+cislo: 03.1
+stitok: ČO DNES VIE CHATGPT
+h1: Platíš 100 % ceny a používaš 2 % nástroja.
+slub: Zistíš, čo máš vo svojom účte naozaj dostupné, a hneď to otestuješ na vlastnom súbore.
+cas: 4 min | ČÍTANIE
+cas: 10–15 min | PRAX
+priprav: ChatGPT účet a krátke PDF alebo textový dokument bez citlivých údajov.
+bod: Chat, Work a Codex
+bod: Audit vlastného účtu
+bod: Prvý test so súborom
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: ChatGPT nie je jedno okno. Je to niekoľko pracovísk.
+
+@text
+Väčšina ľudí otvorí jedno pole na písanie a to je celé. Pritom pod tým istým účtom máš niekoľko odlišných miest a každé je stavané na iný typ práce. Vybrať to správne je rozdiel medzi „pekne to znie” a „mám to hotové”.
+
+@tabulka MIESTO | NA ČO JE POSTAVENÉ
+Chat | Otázky, texty, rýchle spracovanie podkladu s dostupnými nástrojmi.
+ChatGPT Work | Dlhšia práca s dokumentmi, súbormi a pripojenými službami.
+Codex | Práca v projekte: súbory, kód, kontroly a zmeny v prostredí.
+Projects | Spoločné podklady a inštrukcie pre skupinu súvisiacich chatov.
+Web / prehliadač | Hľadanie aktuálnych zdrojov, v podporovanom režime aj práca so stránkou.
+
+@box MODEL NEMÁ AUTOMATICKY PRÍSTUP KU VŠETKÉMU
+Pripojená appka, nahratý súbor a priečinok na tvojom disku sú tri odlišné veci. Ak chceš, aby ti pracoval s e-mailom, musíš mať pripojenie a oprávnenie. Samotné zadanie mu prístup nevytvorí. Toto je najčastejší dôvod, prečo ľuďom „AI klame” — v skutočnosti len nemá, kam siahnuť.
+
+@strana
+stitok: POSTUP
+h1: Desaťminútový audit účtu. Sprav ho teraz.
+
+@kroky
+01 | Pozri dostupné modely. | Otvor prepínač modelu pri poli správy a zapíš, čo tam naozaj vidíš. Ponuka sa líši podľa plánu, režimu a postupného zavádzania funkcií. Neriaď sa videom spred pol roka.
+02 | Nájdi režim práce. | Ak máš Chat aj Work, na väčší výstup vyber Work. Ak nie, prvý súborový test sprav v dostupnom chate.
+03 | Nahraj dokument. | Priloženie súboru, krátke PDF, potom zadanie nižšie. Citované strany si otvor a pozri.
+04 | Pozri personalizáciu. | V Settings nájdi Personalization. Čo je tam zastarané, oprav alebo zmaž. Podrobne to rozoberieme v 03.2.
+
+@kod PRVÉ ZADANIE
+Prečítaj priložené PDF a vypíš 5 hlavných bodov.
+Ku každému pripoj číslo strany.
+Ak niektorú stranu nevieš prečítať, označ ju.
+Nepridávaj externé informácie.
+Na konci napíš, ktoré tvrdenia si mám osobne overiť.
+
+@box KEĎ NENAČÍTA CELÝ SÚBOR
+Skús menší alebo čitateľnejší dokument. Pri skene môže byť potrebné rozpoznanie textu. Namiesto dohadovania si vypýtaj zoznam spracovaných a nespracovaných strán — dostaneš odpoveď namiesto dojmu.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Viem, aké modely a režimy mám vo svojom účte.
+Spracoval som vlastný dokument a otvoril citované strany.
+Viem, že pripojenie a nahratý súbor nie sú to isté.
+Pozrel som personalizáciu a odstránil zastarané údaje.
+
+@box PLÁN SI VYBER PODĽA POTREBY
+Free a Go poslúžia na štart, Plus na širšie používanie, Pro na vyššiu záťaž. Tímové plány pridávajú správu a firemné nastavenia. Pred zmenou predplatného si konkrétnu funkciu, limit a cenu over priamo v účte — ceny aj názvy sa menia rýchlejšie, než stihne ktorýkoľvek kurz.
+
+@box PRE POKROČILÝCH
+Prístup k lokálnym súborom si vypýtaj výslovne: „Vieš v tomto prostredí čítať tento priečinok a zapisovať doň?” Webový chat a aplikácia na počítači nemusia mať rovnaké možnosti.
+
+@terazty TERAZ TY
+Ulož výsledok prvého testu. V 03.2 prestaneš ChatGPT každý deň vysvetľovať, kto si.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes
+OpenAI: projekty a chaty | https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+OpenAI: personalizácia | https://help.openai.com/en/articles/8983148-memory-faq

@@ -1,0 +1,75 @@
+# Modul 03 — ChatGPT / lekcia 9
+modul: 03 ChatGPT
+cislo: 03.9
+titul: ChatGPT alebo Claude?
+varianta: a
+
+@obal
+cislo: 03.9
+stitok: CHATGPT ALEBO CLAUDE?
+h1: Vyhráva ten, po ktorom máš menej práce.
+slub: Otestuješ svoje tri úlohy v oboch nástrojoch a vyjde ti tabuľka, ktorý používaš na čo. S dátumom a dôvodom.
+cas: 4 min | ČÍTANIE
+cas: 30–45 min | PRAX
+priprav: Tvoje 3 úlohy z modulu 01. Ak nemáš oba nástroje, urob prvý záznam v dostupnom a druhý doplníš neskôr.
+bod: Generalista verzus špecialista
+bod: Férové porovnanie
+bod: Vlastná tabuľka výberu
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Generalista alebo špecialista. To je celá otázka.
+
+@text
+Predstav si nábor. Univerzálny človek ti spraví väčšinu vecí slušne, ale nič výnimočne. Špecialista je opačný prípad. Keby si potreboval operáciu mozgu, nechceš praktického lekára. **Pri AI je to rovnaké** — otázka nie je, ktorý nástroj je lepší, ale ktorý je lepší na to, čo práve robíš.
+
+@tabulka ČO TVORÍŠ | ČO MÁ ZMYSEL POROVNAŤ
+Text z podkladu | Claude chat a ChatGPT s rovnakým briefom aj ukážkou štýlu.
+Výstup z priečinka | Claude Code a dostupné lokálne prostredie Codex alebo Work.
+Dokument cez viac krokov | Cowork a ChatGPT Work s porovnateľným prístupom k dátam.
+Obrázky a vizuál | Generovanie obrázkov je silná stránka ChatGPT, nie Clauda. Claude Design rieši návrh a rozloženie, nie fotku.
+
+@box NEPODSUŇ JEDNÉMU VÝHODU
+Keď má jeden projekt rok tvojich podkladov a druhý dostane jednu vetu, netestuješ modely. Testuješ celé nastavenie. Aj to je užitočné — len to neoznačuj za čisté porovnanie.
+
+@strana
+stitok: POSTUP
+h1: Vyplň si tri riadky. Potom sa rozhodni.
+
+@kroky
+01 | Vyber rovnaké vstupy. | Jedna textová, jedna súborová a jedna náročnejšia úloha. Použi svoje úlohy z modulu 01.
+02 | Kritériá napíš vopred. | Presné čísla, kompletné body, správny štýl, otvoriteľný súbor. Konkrétne, nie „nech je to dobré”.
+03 | Spusti a zaznamenaj nastavenia. | Model, úsilie, nástroje, zdroje. Meraj aj svoj čas na zadanie a na opravy.
+04 | Vyhodnoť chyby, nie dojem. | Over obsah proti vstupu. Pri tesnom rozdiele úlohu zopakuj.
+05 | Zapíš rozhodnutie aj s dátumom. | „Na prehľady používam X, lebo…” a dôvod, kedy to znova otestovať.
+
+@box TVOJA TABUĽKA
+1. Úloha: _______ | Nástroj: _______ | Minúty opráv: _______
+2. Úloha: _______ | Nástroj: _______ | Minúty opráv: _______
+3. Úloha: _______ | Nástroj: _______ | Minúty opráv: _______
+
+@box AK VYJDE REMÍZA
+Zostaň pri nástroji, v ktorom sa ti dobre pracuje a máš pripravené podklady. Nový test má zmysel po zmene funkcií alebo pri konkrétnom probléme. Samotné prepínanie nie je pokrok.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Mám zaznamenané porovnateľné vstupy aj nastavenia.
+Kontroloval som správnosť aj vlastný čas opráv.
+Mám pravidlo pre všetky 3 úlohy alebo označené nedokončené meranie.
+Rozhodnutie má dátum a dôvod na nový test.
+
+@box AK POTREBUJEŠ IBA JEDEN NÁSTROJ
+Začni tým, ktorý už máš. Druhý pridaj vtedy, keď vieš pomenovať konkrétnu slabinu alebo funkciu, ktorá ti chýba. Dve predplatné bez dôvodu nie sú výbava, sú to náklady.
+
+@box PRE POKROČILÝCH
+Pri dôležitej opakovanej úlohe pridaj aj hraničný test: neúplný vstup, rozporný údaj alebo chýbajúcu cenu. Rozdiely medzi nástrojmi sa ukážu práve tam, nie na peknej modelovej úlohe.
+
+@terazty TERAZ TY
+Vyber jeden postup, ktorý chceš opakovať. V module 04 z neho spravíš skill, ktorý si už nikdy nebudeš musieť pamätať.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes
+Claude: prehľad modelov | https://platform.claude.com/docs/en/models/overview

@@ -1,0 +1,80 @@
+# Modul 03 — ChatGPT / lekcia 6
+modul: 03 ChatGPT
+cislo: 03.6
+titul: GPT-6 Astra v praxi
+varianta: b
+
+@obal
+cislo: 03.6
+stitok: GPT-6 ASTRA V PRAXI
+h1: Daj jej úlohu, ktorú by si inak skladal z piatich krokov.
+slub: Pripravíš brief na viackrokovú úlohu, necháš vzniknúť hotový dokument a zmeriaš, koľko práce ti po nej ostalo.
+cas: 5 min | ČÍTANIE
+cas: 25–40 min | PRAX
+priprav: ChatGPT Work alebo Codex s dostupnou Astrou. Ak ju nemáš, prejdi postup na svojom modeli — ale výsledok neoznačuj za test Astry.
+bod: Na čo je Astra
+bod: Brief na viackrokovú úlohu
+bod: Ako posúdiť výsledok
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Skús celý pracovný postup, nie jednu otázku.
+
+@text
+Astra je model na náročnú prácu naprieč kódom, appkami a výskumom. Jej skutočný prínos ale závisí aj od toho, aké nástroje má v danom prostredí. **Silný model bez prístupu k súboru ten súbor nespracuje.** Preto pred testom vždy over, čo má k dispozícii.
+
+@tabulka SITUÁCIA | ČO JE NA NEJ DOBRÝ TEST
+Viac podkladov naraz | Spojiť informácie, označiť rozpory a vyrobiť použiteľný dokument.
+Aktuálny research | Nájsť primárne zdroje, porovnať podmienky a doložiť záver odkazmi.
+Dlhšie zadanie | Držať cieľ, reagovať na usmernenie počas práce a dokončiť dohodnutý výstup.
+
+@box DOSTUPNOSŤ
+Oficiálny prehľad Work/Codex uvádza Astru aj pri Plus. Neplatí teda plošné „Astra je iba na Pro”. Konkrétny prístup a limit si over v prepínači a v prehľade používania svojho účtu.
+
+@strana
+stitok: POSTUP
+h1: Zadaj výstup aj spôsob, akým sa dá overiť.
+
+@kod SKOPÍRUJ DO WORK
+Porovnaj 3 nástroje na prepis porád pre slovenský tím.
+Kritériá: podpora slovenčiny, export textu,
+mesačná cena pre 5 ľudí a limity.
+Použi aktuálne oficiálne zdroje. Ku každému údaju
+daj odkaz a dátum kontroly, neoverené označ.
+
+Vytvor porovnanie.pdf a odporúčanie do 150 slov.
+Ceny počítaj z rovnakej fakturačnej periodicity
+a ukáž výpočet. Nič nekupuj ani neregistruj.
+Na konci over, či dokument obsahuje všetky kritériá.
+
+@kroky
+01 | Skontroluj začiatok, nie koniec. | Over, či vybrané nástroje naozaj patria do požadovanej kategórie. Chybný smer oprav hneď.
+02 | Usmerni ju počas behu. | „Zúž to na export TXT, video a tímové poznámky nepotrebujeme.” V podporovanom prostredí vieš zadanie doplniť aj počas práce.
+03 | Otvor výsledok a over odkazy. | Ceny na zdrojových stránkach, prepočty, čitateľnosť PDF. Skutočné odkazy sú dôležitejšie než presvedčivý tón.
+04 | Porovnaj s bežným modelom. | Rovnaké zadanie aj kritériá. Zmeraj chyby a svoj čas opráv.
+
+@box ČO TU NEBUDEME PREDSTIERAŤ
+Jedno benchmarkové skóre ti nepovie, koľko opráv zostane pri **tvojej** úlohe. Meriame správnosť, úplnosť a tvoj čas.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Výstup obsahuje všetky kritériá zo zadania.
+Overil som odkazy aj výpočty v zdrojoch.
+Mám zapísaný model, čas behu a čas opráv.
+Viem, ktoré nástroje mal model v tom prostredí dostupné.
+
+@box KEĎ MÁŠ LEN INÝ MODEL
+Použi ho na rovnaký postup a názov modelu zapíš do merania. Vyššie úsilie na inom modeli je samostatný test, nie náhrada merania Astry. Nepredávaj si to sám sebe ako niečo iné.
+
+@box PRE POKROČILÝCH
+Pri dlhšej úlohe si vypýtaj priebežný súbor so stavom práce. Dôležité rozhodnutia a zdroje tak ostanú použiteľné aj vtedy, keď budeš pokračovať v novom chate.
+
+@terazty TERAZ TY
+Ulož porovnanie aj vlastný výsledok testu. V 03.7 sa naučíš zadávať tak, aby si vedel dohľadať, odkiaľ sa vzalo každé číslo.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes
+OpenAI: zadávanie úloh | https://developers.openai.com/codex/prompting

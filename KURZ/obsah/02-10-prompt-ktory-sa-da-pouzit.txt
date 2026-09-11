@@ -1,0 +1,104 @@
+# Modul 02 — Claude / lekcia 10
+modul: 02 Claude
+cislo: 02.10
+titul: Prompt, ktorý sa dá použiť
+varianta: b
+
+@obal
+cislo: 02.10
+stitok: PROMPT, KTORÝ SA DÁ POUŽIŤ
+h1: „Napíš to lepšie” je dôvod, prečo to opravuješ piatykrát.
+slub: Napíšeš zadanie zo štyroch častí, pridáš ukážku hotového výsledku a slabú odpoveď opravíš jednou vetou namiesto celého prepisovania.
+cas: 5 min | ČÍTANIE
+cas: 15–20 min | PRAX
+priprav: Jeden text alebo podklad, s ktorým chceš dnes naozaj pracovať. Claude chat alebo Claude Code.
+bod: Štyri časti zadania
+bod: Hotový príklad na skopírovanie
+bod: Oprava v troch vetách
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Daj AI to, čo by potreboval aj človek.
+
+@text
+Keby si tú istú úlohu zadal brigádnikovi, nepovieš mu „napíš to lepšie”. Povieš mu, kto je, čo má vzniknúť, z čoho má vychádzať a ako vyzerá hotovo. AI nepotrebuje nič navyše. Potrebuje presne toto.
+
+@tabulka ČASŤ | OTÁZKA, NA KTORÚ ODPOVEDÁ | PRÍKLAD
+Rola a publikum | Kto píše a komu? | Tvorca AI obsahu pre netechnických ľudí.
+Úloha | Čo má vzniknúť? | Scenár Reels o práci s PDF.
+Podklad | Z čoho má vychádzať? | Moje poznámky a overený návod nižšie.
+Výstup | Ako vyzerá hotovo? | Hook, príklad, kroky, CTA. Do 90 slov.
+
+@kod ŠABLÓNA NA SKOPÍROVANIE
+Pomôž mi ako [rola] pre [publikum].
+Vytvor [konkrétny výsledok].
+Vychádzaj z [podklad nižšie / priložený súbor].
+Výstup: [formát, rozsah, jazyk].
+Dodrž [kritériá].
+
+Nevymýšľaj chýbajúce fakty. Ak chýba niečo podstatné,
+najprv sa spýtaj. Drobný predpoklad viditeľne označ.
+
+@box TOTO NIE JE POVINNÁ FORMULA
+Pri „prelož túto vetu” stačí jazyk a text. Dlhý brief má zmysel tam, kde by si inak vysvetľoval tri kolá opráv. Pravidlo: čím menej vieš opísať hotový výsledok, tým dlhšie musí byť zadanie.
+
+@strana
+stitok: POSTUP
+h1: Takto vyzerá zadanie, ktoré funguje na prvý raz.
+
+@kod HOTOVÝ PRÍKLAD
+Z poznámok nižšie sprav slovenský scenár Reels pre človeka,
+ktorý používa AI len občas. Téma: zhrnutie PDF.
+Najviac 90 slov. Začni konkrétnym problémom, ukáž postup
+na príklade a skonči jednou úlohou pre diváka.
+Nepridávaj čísla ani schopnosti, ktoré v podklade nie sú.
+
+Podklad: používateľ nahrá čitateľné PDF, vypýta si 5 bodov
+a pri každom číslo strany. Potom si ich overí v dokumente.
+
+@text drobne
+Všimni si, čo tam je navyše oproti bežnej otázke: publikum, presný rozsah, štruktúra a jedna zákazová veta. Štyri riadky práce ušetria tri kolá opráv.
+
+@box TRI VECI, KTORÉ ZDVIHNÚ KVALITU OKAMŽITE
+**Ukážka.** Prilož jeden text, ktorý sa ti páči: „drž sa tohto tónu”. Jeden dobrý vzor zaberie viac než odsek prídavných mien.
+**Zákaz.** Napíš, čo nechceš. „Bez emoji, bez otázok na začiatku, bez slova riešenie.”
+**Poistka proti výmyslom.** „Ak si niečím nie si istý, napíš NEVIEM.” Model dostane povolenie priznať medzeru namiesto toho, aby ju vyplnil.
+
+@strana
+stitok: POSTUP
+h1: Oprava má tri vety. Nie nový prompt.
+
+@kroky
+01 | Povedz, čo fungovalo. | „Príklad aj kroky nechaj, tie sú zrozumiteľné.” Bez toho ti model prepíše aj to dobré.
+02 | Pomenuj slabé miesto. | „Prvá veta iba opisuje tému. Chcem, aby pomenovala problém s dlhým dokumentom.”
+03 | Urči konkrétnu zmenu. | „Daj 3 varianty len prvej vety, každý do 12 slov.” Čím užšie zadanie, tým menej škody na zvyšku.
+04 | Vyber a skontroluj celok. | Po spojení prever, či hook sľubuje presne to, čo zvyšok textu dodá.
+
+@box KEĎ SA TOČÍŠ V KRUHU
+Po štvrtej oprave už rozhovor obsahuje protichodné pokyny a model sa ich snaží splniť všetky naraz. Zhrň, čo už sedí, otvor nové sedenie a začni čistým briefom plus najlepším doterajším vzorom. Nezahadzuješ prácu. Zahadzuješ chaos.
+
+@box PRE POKROČILÝCH
+**Advokát diabla.** „Nájdi tri najslabšie miesta tohto textu a povedz, prečo sú slabé.” Dostaneš kritiku namiesto pochvaly.
+**Slepé miesta.** „Čo som sa ťa nespýtal, ale mal som?” Často vytiahne vec, ktorá ti chýbala celý čas.
+**Zoznam na overenie.** Pri faktickom obsahu si vypýtaj zvlášť: „vypíš všetky tvrdenia, ktoré si nemal v podklade.” To je tvoj kontrolný zoznam pred zverejnením.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Moje zadanie má rolu, úlohu, podklad aj formát.
+Priložil som skutočný podklad, nie opis podkladu.
+Napísal som, čo nechcem.
+Opravu som pomenoval konkrétne, nie „sprav to lepšie”.
+Hook sľubuje presne to, čo text dodá.
+
+@box CHYBA NEMUSÍ BYŤ V TEBE
+Dobré zadanie zvyšuje šancu na dobrý výsledok. Neodstráni limity modelu, zlý podklad ani chýbajúci nástroj. Keď to zlyhá aj po dobrom briefe, hľadaj príčinu inde: slabý model na túto prácu, nečitateľný súbor, chýbajúci prístup.
+
+@terazty TERAZ TY
+Ulož si svoju najlepšiu šablónu tam, kde ju nabudúce nájdeš. V module 04 z nej spravíš skill, ktorý si nemusíš pamätať vôbec.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude: prehľad promptovania | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+Claude: príklady v zadaní | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/multishot-prompting

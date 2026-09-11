@@ -1,0 +1,78 @@
+# Modul 03 — ChatGPT / lekcia 5
+modul: 03 ChatGPT
+cislo: 03.5
+titul: ChatGPT: model a uvažovanie
+varianta: a
+
+@obal
+cislo: 03.5
+stitok: CHATGPT: MODEL A UVAŽOVANIE
+h1: Na skrátenie mailu nepotrebuješ to isté, čo na analýzu dvoch ponúk.
+slub: Oddelíš model od úsilia, otestuješ oboje na vlastnej práci a vyjde ti pravidlo, kedy sa oplatí čakať dlhšie.
+cas: 5 min | ČÍTANIE
+cas: 20–30 min | PRAX
+priprav: ChatGPT alebo Work. Na test potrebuješ rovnaký podklad v dvoch nových chatoch.
+bod: Luna, Terra, Sol a Astra
+bod: Úsilie verzus čas
+bod: Porovnanie na vlastnej práci
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Sleduj dve nastavenia, nie jedno.
+
+@text
+**Model** určuje, čo nástroj vie. **Úroveň uvažovania** určuje, koľko úsilia tomu venuje, kým odpovie. Sú to dve nezávislé páčky a väčšina ľudí o tej druhej ani nevie.
+
+@tabulka MODEL | NA ČO JE ROZUMNÝ PRVÝ TEST
+GPT-5.6 Luna | Krátke triedenie, extrakcia údajov, jednoduché úpravy.
+GPT-5.6 Terra | Bežné dokumenty, reporty, každodenná práca.
+GPT-5.6 Sol | Náročnejšie zadania, analýzy, zložitejšie projekty.
+GPT-6 Astra | Komplexná práca naprieč nástrojmi. Má vlastnú lekciu 03.6.
+
+@text drobne
+Názvy sú stavom k 11. 9. 2026. Vyššie úsilie môže pomôcť pri zložitých úlohách, ale zvyšuje čas aj spotrebu.
+
+@box PREČO TU NIE JE JEDNA TABUĽKA PRE VŠETKÝCH
+Bežný Chat môže používať označenia ako Instant alebo Think. Work a Codex môžu ponúkať Low, Medium, High, Extra High, Max či Ultra. Nie sú to univerzálne štyri stupne na každom účte. Vyberaj z toho, čo naozaj vidíš vo svojom prepínači — nie z toho, čo videl niekto na YouTube.
+
+@strana
+stitok: POSTUP
+h1: Zisti, kedy sa ti oplatí čakať.
+
+@kroky
+01 | Zvoľ bežnú aj ťažšiu úlohu. | Napríklad skrátenie e-mailu a porovnanie dvoch ponúk so skrytými rozdielmi.
+02 | Kritériá napíš vopred. | „E-mail musí zachovať termín a 3 body.” „Porovnanie musí uviesť všetky náklady a nejasnosti.” Kritériá stanovené po odpovedi nie sú kritériá.
+03 | Otestuj východiskové nastavenie. | Ulož výsledok a zapíš model, úsilie aj čas.
+04 | Zvýš úsilie na tom istom modeli. | V novom chate rovnaký vstup. Ak túto voľbu nemáš, porovnaj dva dostupné režimy a označ, že ide o iný typ testu.
+05 | Spočítaj opravy, nie dojem. | Ak kvalita nestúpla dosť na to, aby sa ti oplatilo čakať, zostaň pri jednoduchšom nastavení.
+
+@box ZÁPIS TESTU
+Úloha: _____ | Model / úsilie: _____
+Faktické chyby: _____ | Chýbajúce body: _____
+Čas behu: _____ | Môj čas opráv: _____
+
+@box KDE TO MENIŤ
+V ChatGPT Work nájdeš ovládanie modelu aj uvažovania pri poli správy. V Codex CLI slúži `/model`. Vyberaj len z možností, ktoré ponúka tvoj model a prostredie.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Viem odlíšiť model od úrovne uvažovania.
+Porovnával som podľa kritérií napísaných vopred.
+Mám pravidlo pre jednoduchú aj zložitú úlohu.
+Viem, že vyššie úsilie nie je záruka správnosti.
+
+@box VIAC PREMÝŠĽANIA NENAHRADÍ CHÝBAJÚCE DÁTA
+Vyššie uvažovanie môže zlepšiť správnosť. Nedoplní chýbajúci podklad ani neaktuálny zdroj. Keď model nemá z čoho čerpať, dlhšie premýšľanie mu len dá viac času vymyslieť si to presvedčivejšie.
+
+@box PRE POKROČILÝCH
+Ultra v podporovaných prostrediach pridáva delegovanie na subagentov. Pri porovnaní preto zapíš nielen model a úsilie, ale aj počet agentov a dostupné nástroje — inak porovnávaš dve úplne odlišné zostavy.
+
+@terazty TERAZ TY
+Zapíš si, pri ktorej práci ti vyššie úsilie pomohlo. Potom otvor 03.6 a pusti na to Astru.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes
+OpenAI: Codex CLI | https://developers.openai.com/codex/cli

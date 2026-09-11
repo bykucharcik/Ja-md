@@ -1,134 +1,80 @@
-# Modul 04 — Claude Skills / lekcia 1
-modul: 04 Claude Skills
+# Modul 04 — Skills / lekcia 1
+modul: 04 Skills
 cislo: 04.1
-titul: Čo je skill a na čo slúži
-stopa: SKILLS × KUCHAR.AI
-stitky: Skills | 13 min | Jadro modulu
+titul: Čo je skill
+varianta: b
 
 @obal
-stitok: ČO JE SKILL A NA ČO SLÚŽI
-h1: Tvoj postup.
-h2: Zabalený tak,
-h3: že ho spustíš.
-nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
-hlavne: Pochopiť, čo je skill, prečo ich môžeš mať sto bez toho, aby ti to prekážalo, a čím sa líši od CLAUDE.md.
-vedlajsie: Skill je miesto, kde si ukladáš to, ako sa veci robia u teba. Je to jediná časť tvojho setupu, ktorú nikto iný nemá.
-karta: JEDEN SÚBOR | SKILL.md | HLAVIČKA + POSTUP
-karta: NAČÍTA SA | Až keď treba | STO SKILLS NIČ NESTOJÍ
-vysledok: Po dokončení vieš, čo do skillu patrí, čo tam nepatrí a prečo je to najcennejšia vec v celom setupe.
-drobne: Stav k 11. 9. 2026 podľa code.claude.com/docs/en/skills. Formát je stabilný, polia pribúdajú -- odkaz na dokumentáciu je na konci.
+cislo: 04.1
+stitok: ČO JE SKILL
+h1: Dobrý postup nemusíš vysvetľovať pri každej úlohe znova.
+slub: Rozlíšiš trvalé pravidlo, kontext a postup a vyberieš si jednu opakovanú činnosť pre svoj prvý skill.
+cas: 4 min | ČÍTANIE
+cas: 10–15 min | PRAX
+priprav: Claude Code a jeden postup, ktorý si už aspoň raz dotiahol do dobrého výsledku.
+bod: Skill po ľudsky
+bod: Čo patrí kam
+bod: Výber vlastného postupu
 
 @strana
-stitok: PREDSTAVA
-h1: Regál s knihami.
-h2: Nie kopa na stole.
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Skill je recept, ktorý si AI vezme sama.
 
 @text
-Predstav si, že má Claude za sebou regál. Na chrbte každej knihy je len **názov a jedna veta o tom, kedy ju otvoriť**. To je jediné, čo vidí stále.
+Recept má vstupy, postup a kontrolu, ako má vyzerať hotový výsledok. Skill je presne to isté, uložené v priečinku so súborom `SKILL.md`. Claude Code ho vie načítať pri vhodnej úlohe alebo ho vyvoláš príkazom `/nazov`. **Prestaneš vysvetľovať a začneš spúšťať.**
 
-@text
-Keď mu zadáš úlohu, prebehne očami po chrbtoch. Keď jedna sedí, knihu vytiahne a prečíta celú. Ostatných deväťdesiatdeväť ostáva zavretých.
+@tabulka ČO POTREBUJEŠ ULOŽIŤ | KAM TO PATRÍ
+Trvalé pravidlo: píš po slovensky. | `CLAUDE.md`
+Fakty o publiku alebo ponuke. | Kontextový súbor alebo projektové podklady.
+Postup: z prepisu priprav 3 scenáre a skontroluj tvrdenia. | Skill
+Aktuálne čísla alebo dnešný prepis. | Vstup ku konkrétnej úlohe.
 
-@kroky
-01 | PRETO MÔŽU BYŤ DLHÉ | Skill môže mať päťsto riadkov a kým ho nepoužiješ, nestojí ťa nič.
-02 | PRETO ROZHODUJE POPIS | Podľa tej jednej vety sa rozhoduje, či knihu vytiahne. Zlý popis = skill, ktorý sa nikdy nespustí.
-03 | PRETO TO NIE JE CLAUDE.MD | `CLAUDE.md` sa načíta **vždy**. Skill **keď treba**. Ak si to pomýliš, buď ti CLAUDE.md nabobtná, alebo skill nikdy nenaskočí.
-
-@pravidlo AKO ROZDELIŤ, ČO KAM IDE
-Platí to stále a pri každej úlohe? -> `CLAUDE.md`. Je to postup, ktorý robíš občas? -> skill. „Píšem po slovensky" je CLAUDE.md. „Takto robím cenovú ponuku" je skill.
+@box PREČO SA NENAČÍTAVA VŠETKO NARAZ
+Claude vidí názvy a popisy dostupných skills, ako keby pozeral na chrbty kníh v knižnici. Celý postup si otvorí až vtedy, keď ho potrebuje. Aj samotné popisy ale zaberajú miesto — **sto skills nie je automaticky zadarmo ani prehľadne.** Preto je modul 04.3 o poriadku.
 
 @strana
-stitok: ANATÓMIA
-h1: Priečinok.
-h2: A v ňom jeden súbor.
+stitok: POSTUP
+h1: Čo musí byť v dobrom skille.
 
-@text
-Skill nie je aplikácia. Je to priečinok s jedným povinným súborom `SKILL.md`. Hore YAML hlavička medzi troma pomlčkami, pod ňou obyčajný text -- tvoj postup, napísaný normálne, pokojne po slovensky.
+@tabulka ČASŤ | PRÍKLAD
+Kedy sa použije | Keď chcem návrh cenovej ponuky z briefu a cenníka.
+Vstupy | Rozsah, položky, počty, cenník a potvrdené podmienky.
+Postup | Načítaj -> vypočítaj -> vytvor návrh -> skontroluj.
+Obmedzenia | Nevymýšľaj sadzby ani termín. Nič neposielaj.
+Kritériá hotového | Sedia položky, súčet, zdroje aj označené nejasnosti.
 
-@terminal SKILL.MD — KOSTRA
+@kod MINIMÁLNA HLAVIČKA
 ---
 name: cenova-ponuka
-description: Vyrobí cenovú ponuku pre klienta zo zadania a cenníka. Použi, keď
-  používateľ chce ponuku, rozpočet alebo cenový návrh.
+description: Pripraví návrh ponuky z briefu a cenníka.
+  Použi pri žiadosti o cenovú ponuku alebo rozpočet.
 ---
 
-# Cenová ponuka
-
-## Postup
-1. Zisti rozsah práce. Ak chýba, spýtaj sa skôr, než začneš.
-2. Vezmi sadzby z cennik.md v tomto priečinku.
-3. Vyrob tabuľku: položka, počet hodín, sadzba, cena.
-4. Pod tabuľku daj platnosť ponuky a spôsob platby.
-
-## Nikdy
-- Nevymýšľaj sadzby, ktoré nie sú v cenníku.
-- Nesľubuj termín, ktorý nemáš potvrdený.
-
-@pravidlo NAJDÔLEŽITEJŠÍ RIADOK V CELOM SÚBORE
-`description`. Je to ten chrbát knihy. Píš ju ako inštrukciu pre kolegu: **čo to robí** a **kedy to použiť**. Nie „pomáha s ponukami", ale „použi, keď chce používateľ ponuku, rozpočet alebo cenový návrh".
-
-@strana
-stitok: HLAVIČKA
-h1: Štyri polia.
-h2: Viac nepotrebuješ.
-
-@pojmy kod
-name | Názov skillu. Z neho vznikne príkaz `/name`. Ak ho vynecháš, použije sa názov priečinka.
-description | Čo robí a kedy použiť. Podľa nej sa spúšťa sám. Toto je pole, na ktorom to stojí.
-disable-model-invocation | `true` znamená, že skill spustíš len ty cez `/nazov`. Daj to všade, kde sa niečo maže, posiela alebo nasadzuje.
-allowed-tools | Nástroje predschválené pre tento skill, aby sa Claude nepýtal pri každom kroku. Používaj striedmo.
-
 @text drobne
-Polí je viac -- napríklad spustenie v samostatnom kontexte alebo pomenované argumenty. Na začiatok ich nepotrebuješ. Keď na ne narazíš, budeš vedieť prečo, a nájdeš ich v dokumentácii.
+Hlavička je krátky blok nastavení medzi `---`, volá sa YAML. `name` pomenuje príkaz. `description` vysvetlí, čo skill robí a kedy ho použiť. Pod hlavičku príde samotný postup.
+
+@box JEDEN DOBRÝ KANDIDÁT NA ŠTART
+Cenová ponuka z potvrdeného cenníka. Jasné vstupy, opakovaný postup a výsledok, ktorý sa dá skontrolovať číslom. Na tomto príklade prejdeme celý zvyšok modulu — vrátane toho, kde sa to pokazí.
 
 @strana
-stitok: PREČO TO STOJÍ ZA TO
-h1: Toto je tvoje.
-h2: Zvyšok má každý.
-
-@text
-Model má každý rovnaký. Nástroje si vie pripojiť každý. Kontext o tebe je užitočný, ale opisuje to, čo už vieš. **Skills sú jediné miesto, kde je zapísané, ako sa veci robia práve u teba** -- a to je vec, ktorú konkurencia nemá.
-
-@pojmy
-ČO DO NICH IDE | Postupy, ktoré opakuješ. Tvoje kritériá. Veci, ktoré si sa naučil až po piatich zlých pokusoch.
-PRETO SÚ CENNÉ | Keď raz napíšeš, ako sa u teba robí dobrý titulok, máš to navždy -- a spustíš to jedným príkazom.
-RASTÚ | Prvá verzia skillu nikdy nie je dobrá. Používané skills bývajú vo verzii päť až desať. To je normálne, nie zlyhanie.
-ODOVZDATEĽNÉ | Skill vieš dať kolegovi a bude pracovať tak ako ty. Toto sa o promptoch v hlave povedať nedá.
-
-@pravidlo ČÍM DLHŠIE TO ROBÍŠ, TÝM VÄČŠÍ NÁSKOK
-Prvý mesiac to vyzerá ako práca navyše. Po pol roku máš tridsať postupov, ktoré fungujú, a niekto iný začína od nuly s tým istým modelom.
-
-@strana
-stitok: PRVÁ ÚLOHA
-h1: Nájdi si ten
-h2: najnudnejší postup.
-
-@zoznam
-01 | Napíš si tri veci, ktoré robíš opakovane a **vždy rovnako**. Nie tie zaujímavé -- tie nudné.
-02 | Pri každej si odpovedz: viem to popísať v krokoch? Ak áno, je to kandidát na skill.
-03 | Pri každej si odpovedz aj: čo sa nesmie stať? To bude sekcia „Nikdy".
-04 | Vyber jednu. Tú, ktorú robíš najčastejšie, nie tú najkomplikovanejšiu.
-05 | Ďalšia lekcia ti ukáže, ako z nej za pár minút spraviť skill -- bez písania od stola.
-
-@pravidlo AKO SPOZNÁŠ DOBRÉHO KANDIDÁTA
-Keby si zajtra ochorel a musel to odovzdať niekomu inému, vedel by si to popísať na pol strany? Ak áno, je to skill. Ak by si musel sedieť vedľa neho tri dni, ešte to skillom nie je -- najprv to musíš vedieť popísať ty.
-
-@strana
-stitok: FINÁLNY CHECKLIST
-h1: Hotovo.
-h2: Chápeš regál.
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
 
 @checklist
-Viem, že Claude vidí stále len názov a popis, nie celý skill.
-Viem, prečo môžem mať sto skills bez toho, aby mi to prekážalo.
-Viem rozhodnúť, čo patrí do `CLAUDE.md` a čo do skillu.
-Viem, že `description` rozhoduje o tom, či sa skill vôbec spustí.
-Mám vybraný jeden postup, z ktorého spravím prvý skill.
+Viem odlíšiť trvalé pravidlo, kontext a skill.
+Mám vybraný jeden opakovaný postup.
+Viem pomenovať jeho vstupy, výstup aj kontrolu.
 
-@odkazy
-DOKUMENTÁCIA SKILLS | https://code.claude.com/docs/en/skills
-CLAUDE.MD A PAMÄŤ | https://code.claude.com/docs/en/memory
+@box TERAZ VYBER SVOJ POSTUP
+Doplň päť viet: Spúšťam ho, keď _____. Potrebuje _____. Vytvorí _____. Nesmie _____. Správnosť overím _____.
+Ak to nevieš doplniť, ešte nie si pripravený. Sprav najprv tú úlohu ručne s AI a zachyť kroky, ktoré fungovali.
 
-@zaver
-hlavne: Ďalšia lekcia: ako skill vytvoriť. Najrýchlejšia cesta nevedie cez písanie -- vedie cez to, že tú prácu raz normálne spravíš.
-vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai
+@box NAJCENNEJŠIA ČASŤ SKILLU
+Nie je to postup. Je to **kontrola kvality a tvoje konkrétne opravy.** Vetou „napíš dobrý text” opakovateľný postup nevytvoríš. Vetou „skontroluj, že súčet sedí a chýbajúce položky sú označené” áno.
+
+@terazty TERAZ TY
+Doplň tých päť viet o svojom postupe. V 04.2 z nich vznikne prvý skill.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude Code: skills | https://code.claude.com/docs/en/skills
+Claude Code: pamäť a CLAUDE.md | https://code.claude.com/docs/en/memory

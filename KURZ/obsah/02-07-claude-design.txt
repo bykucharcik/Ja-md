@@ -1,0 +1,92 @@
+# Modul 02 — Claude / lekcia 7
+modul: 02 Claude
+cislo: 02.7
+titul: Claude Design: návrh a export
+varianta: c
+
+@obal
+cislo: 02.7
+stitok: CLAUDE DESIGN: NÁVRH A EXPORT
+h1: Pekný návrh nestačí. Musí byť jasné, čo ponúkaš.
+slub: Z krátkeho briefu vytvoríš jednostranový materiál, doladíš rozloženie rukou a exportuješ PDF.
+cas: 5 min | ČÍTANIE
+cas: 20–35 min | PRAX
+priprav: Prístup ku Claude Design, obsah ponuky a 1 vizuálna referencia. Použi cvičnú ponuku alebo vlastné potvrdené údaje.
+bod: Brief bez hádania
+bod: Návrh a presné úpravy
+bod: Export a kontrola
+
+@strana
+stitok: NAJPRV SI UJASNIME JEDNU VEC
+h1: Toto nie je generátor obrázkov.
+
+@text
+Design je na veci so štruktúrou: mockupy, landing pages, prezentácie, one-pagery, klikateľné prototypy. Keď mu zadáš web, nevráti ti **obrázok** webu. Vráti ti web s fungujúcimi tlačidlami.
+
+@text
+Na generovanie obrázkov Claude nie je najlepší nástroj na trhu. Ak potrebuješ fotku alebo ilustráciu, vezmi na to niečo iné. Ak potrebuješ rozloženie, ktoré sa dá ďalej upravovať, si na správnom mieste.
+
+@tabulka POTREBUJEŠ | KAM S TÝM
+Landing page, mockup, prototyp | Claude Design.
+Prezentáciu alebo one-pager | Claude Design.
+Fotku, ilustráciu, vizuál na Instagram | Špecializovaný generátor obrázkov.
+Graf z tvojich čísel | Radšej Claude Code alebo Cowork z reálnych dát.
+
+@box ČO TO NAOZAJ ŠETRÍ
+Nie tie veci, na ktoré si mal dizajnéra. Tie malé, ktoré si mesiace odkladal — lebo sa ti do nich nechcelo a na dizajnéra boli malé.
+
+@strana
+stitok: POSTUP
+h1: Najprv obsah. Potom 3 smery návrhu.
+
+@kroky
+01 | Otvor Claude Design. | Vytvor nový projekt. Ak máš dizajnový systém, pripoj ho. Inak nahraj referenciu a pomenuj farby a písmo.
+02 | Vlož konkrétny brief. | Napíš, čo má vzniknúť, pre koho a ktoré informácie sa nesmú zmeniť. Chýbajúcu cenu ani výsledky nesmie AI vymyslieť.
+03 | Vyber smer. | Nechaj navrhnúť 3 odlišné rozloženia. Vyber podľa prehľadnosti, nie podľa efektnej farby.
+04 | Dolaď rukou. | Presun, veľkosť a zarovnanie rob priamo na plátne. Chat používaj na veľké zmeny, ruku na malé.
+
+@box VZOR BRIEFU
+Vytvor jednostranový prehľad služby pre netechnického majiteľa e-shopu. Obsah: problém, komu pomáhame, 3 kroky spolupráce, čo dostane a kontakt. Použi iba text a údaje v priloženom podklade. Chýbajúce údaje najprv vypíš. Štýl: svetlý krémový základ, oranžový gradient, veľké nadpisy, veľa priestoru. Navrhni 3 rozloženia. Žiadne vymyslené recenzie ani výsledky.
+
+@box NEMÁŠ VLASTNÚ PONUKU?
+Použi cvičný materiál „Ako pripraviť podklady pre AI": komu pomôže, 3 kroky prípravy a checklist. Nevytváraj fiktívny cenník ani príbeh klienta.
+
+@strana
+stitok: POSTUP
+h1: Doladenie, ktoré zlepší výsledok.
+
+@tabulka ČO NESADLO | AKO TO OPRAVIŤ
+Poradie informácií | V chate: „Presuň výsledok spolupráce nad zoznam krokov."
+Jeden blok | Komentár pri bloku: „Skráť tento text na 2 vety."
+Medzery a veľkosť | Priame ovládanie na plátne — presun, veľkosť, zarovnanie.
+Štýl ďalších výstupov | Použi rovnaký dizajnový systém a schválený vzor.
+
+@kroky
+01 | Exportuj. | Vpravo hore Export -> PDF. Na prezentáciu môžeš použiť PPTX; prototyp odovzdáš do Claude Code.
+02 | Otvor export. | Skontroluj diakritiku, okraje, poradie čítania a klikateľné odkazy. Pozri si PDF aj na mobile.
+03 | Otestuj pochopenie. | Zakry detaily. Z nadpisu a prvých blokov musí byť jasné: pre koho to je, čo dostane a čo má spraviť ďalej.
+
+@box KEĎ SA KOMENTÁR NEPREJAVÍ
+Vlož tú istú pripomienku priamo do chatu. Pri zmene smeru si najprv nechaj uložiť aktuálnu verziu, aby si mal porovnanie.
+
+@box PRE POKROČILÝCH
+Najväčšia hodnota nie je prvý pekný návrh. Je to dizajnový systém — nastavíš ho raz a desiaty výstup vyzerá ako prvý. To ti generátor obrázkov nedá nikdy.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Mám zrozumiteľný obsah aj vybraný návrh.
+Exportované PDF sa otvára a dobre číta.
+Nevymyslel som údaje, ktoré neboli v podkladoch.
+
+@box O KROK ĎALEJ
+Vypýtaj si kontrolu hierarchie: „Ktoré 3 informácie človek zbadá ako prvé? Zodpovedajú cieľu materiálu?" Potom uprav len to konkrétne slabé miesto.
+
+@terazty TERAZ TY
+Ulož jednu finálnu stranu. V 02.8 postavíš agenta, ktorý pozná tvoju prácu.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude Design: začíname | https://support.claude.com/en/articles/14604416-get-started-with-claude-design
+Claude Design: produktová stránka | https://claude.com/product/design

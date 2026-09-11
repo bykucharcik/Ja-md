@@ -1,0 +1,133 @@
+# Modul 04 — Skills / lekcia 2
+modul: 04 Skills
+cislo: 04.2
+titul: Vytvor svoj prvý skill
+varianta: c
+
+@obal
+cislo: 04.2
+stitok: VYTVOR SVOJ PRVÝ SKILL
+h1: Podaril sa ti dobrý výsledok? Ulož aj cestu, ktorá k nemu viedla.
+slub: Vytvoríš skill z hotovej práce alebo z existujúceho návodu a otestuješ ho na vstupe, pri ktorom sa musí spýtať.
+cas: 7 min | ČÍTANIE
+cas: 25–35 min | PRAX
+priprav: Claude Code a cvičný priečinok. Nižšie je kompletný príklad s modelovými cenami — nemusíš nič vymýšľať.
+bod: Dve cesty k prvému skillu
+bod: Kompletný cvičný príklad
+bod: Test, chyba a oprava
+
+@strana
+stitok: POSTUP
+h1: Vyber cestu podľa toho, čo už máš.
+
+@kroky
+01 | Cesta A: najprv sprav úlohu. | Prejdi s AI reálnu prácu, oprav výsledok a vysvetli, prečo je finálna verzia dobrá. Až potom nechaj zachytiť postup.
+02 | Vlož prompt nižšie. | Uloží všeobecný postup a oddelí údaje jedného konkrétneho klienta. To druhé je dôležitejšie, než sa zdá.
+03 | Cesta B: vychádzaj z hotového návodu. | Ak už máš checklist, dodaj ho spolu s podkladmi a ukážkou výsledku. Nech z neho vznikne skill bez vymýšľania nových pravidiel.
+04 | Prečítaj vytvorený súbor. | Skontroluj `name`, `description`, kroky a obmedzenia. Súbor sa musí volať `SKILL.md`, nie `SKILL.md.txt`.
+
+@kod PROMPT PO DOBREJ PRÁCI
+Z nášho schváleného postupu vytvor projektový skill
+cenova-ponuka v .claude/skills/cenova-ponuka/SKILL.md.
+Zachyť vstupy, kroky, moje opravy a kontrolu výsledku.
+Jednorazové údaje klienta neukladaj ako trvalé pravidlá.
+Súbory s podkladmi ulož vedľa skillu a použi relatívne odkazy.
+Nič neodosielaj ani nezverejňuj. Ukáž mi vytvorené súbory.
+
+@box NEMUSÍŠ NIČ PROGRAMOVAŤ
+Súbory vytvorí priamo Claude Code. Nepotrebuješ písať kód ani inštalovať špeciálny nástroj na tvorbu skills. Ak si na začiatku, použi cvičný príklad na ďalšej strane.
+
+@strana
+stitok: POSTUP
+h1: Kompletný cvičný skill na skopírovanie.
+
+@kod SKILL.md — V PRIEČINKU cenova-ponuka
+---
+name: cenova-ponuka
+description: Vytvorí návrh ponuky z briefu a cenníka.
+  Použi pri žiadosti o ponuku alebo rozpočet.
+disable-model-invocation: true
+---
+
+# Cenová ponuka
+
+1. Načítaj zadanie a cennik.md vedľa tohto súboru.
+2. Over položky a počty. Chýbajúci údaj si vypýtaj.
+3. Sadzby ber iba z cenníka. Nepotvrdené položky neoceňuj.
+4. Vypočítaj počet krát sadzba a celkový súčet.
+5. Vytvor návrh: položka, počet, sadzba, suma.
+6. Uveď menu a daňový režim presne podľa podkladu.
+   Ak chýba, označ ho NA POTVRDENIE.
+7. Termín, platnosť a platbu uveď iba ak sú potvrdené.
+8. Skontroluj všetky výpočty a zhodu s briefom.
+9. Ulož navrh-ponuky.md do vystupy/. Nič neposielaj.
+
+## Nikdy
+- Nevymýšľaj cenu, zľavu ani termín.
+- Neprepisuj cenník.
+- Nevydávaj návrh za schválenú ponuku.
+
+@box PREČO JE TAM RUČNÉ SPUSTENIE
+`disable-model-invocation: true` znamená, že skill vyvoláš sám príkazom. Nie je to náhrada oprávnení. Pri čisto pomocných skills môžeš pokojne nechať aj automatický výber.
+
+@strana
+stitok: POSTUP
+h1: Podklad, z ktorého skill počíta.
+
+@kod cennik.md — VEDĽA SKILL.md
+# Cvičný cenník - modelové údaje
+Mena: EUR
+Daňový režim: NA POTVRDENIE
+
+- Úprava jedného textu: 30 EUR / kus
+- Prepis jednej krátkej nahrávky: 20 EUR / kus
+
+Termín: NA POTVRDENIE
+Platnosť ponuky: NA POTVRDENIE
+Platba: NA POTVRDENIE
+
+@box VŠETKO NEPOTVRDENÉ MUSÍ OSTAŤ NEPOTVRDENÉ
+Cenník je zámerne nekompletný. Chceme vidieť, či skill doplní chýbajúce podmienky, alebo ich poctivo označí. Presne toto rozhoduje o tom, či ho pustíš na skutočnú ponuku.
+
+@strana
+stitok: POSTUP
+h1: Dva testy. Druhý je ten dôležitý.
+
+@kod TEST 1 — SPRÁVNY VÝSLEDOK
+/cenova-ponuka Priprav návrh pre cvičného klienta:
+úprava 3 textov a prepis 2 krátkych nahrávok.
+Použi cvičný cenník.
+
+@text drobne
+Očakávaný výsledok: 3 × 30 + 2 × 20 = **130 EUR.** Daňový režim, termín, platnosť a platba majú zostať NA POTVRDENIE. Výstupom je návrh. Nič sa neodosiela.
+
+@kod TEST 2 — CHÝBAJÚCI ÚDAJ
+/cenova-ponuka Pridaj do návrhu aj výrobu webu.
+
+@text drobne
+Táto položka v cenníku nie je. **Správne správanie: vypýta si cenu alebo položku označí ako neocenenú. Nesmie si vymyslieť sadzbu.** Toto je test, ktorý odlíši použiteľný skill od nebezpečného.
+
+@kroky
+01 | Keď test zlyhá, oprav konkrétny krok. | Nie celý skill. Nájdi bod, na ktorom sa to zlomilo, a prepíš len ten.
+02 | Spusti oba testy znova. | Vždy oba. Oprava jednej veci pravidelne pokazí druhú.
+03 | Pridaj tretí vstup. | Napríklad 1 text a 1 nahrávka — správny súčet je 50 EUR. Úspech na jednom zadaní nič nedokazuje.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Skill má postup, podklady aj kontrolu.
+Cvičný súčet vyšiel 130 EUR.
+Pri chýbajúcej položke si nevymyslel cenu.
+Prešiel aj nový vstup s iným počtom položiek.
+
+@box PRE POKROČILÝCH
+Pri každej úprave si zapíš: chyba -> zmenené pravidlo -> výsledok opakovaného testu. Zistíš tak nielen to, či oprava pomohla, ale aj to, či nepokazila bežný prípad. Toto je celý rozdiel medzi návodom a spoľahlivým postupom.
+
+@terazty TERAZ TY
+Ulož fungujúcu verziu a výsledky oboch testov. V 04.3 spravíš poriadok, aby si ju o mesiac našiel.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude Code: skills | https://code.claude.com/docs/en/skills
+Claude Code: oprávnenia | https://code.claude.com/docs/en/iam

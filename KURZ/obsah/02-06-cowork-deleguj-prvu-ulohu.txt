@@ -1,0 +1,95 @@
+# Modul 02 — Claude / lekcia 6
+modul: 02 Claude
+cislo: 02.6
+titul: Cowork: deleguj prvú úlohu
+varianta: b
+
+@obal
+cislo: 02.6
+stitok: COWORK: DELEGUJ PRVÚ ÚLOHU
+h1: Zadáš úlohu. Odídeš. Vrátiš sa k hotovému.
+slub: Z 5 dokumentov spravíš jeden prehľad, skontroluješ ho podľa zdrojov a naplánuješ si ranný súhrn.
+cas: 6 min | ČÍTANIE
+cas: 20–30 min | PRAX
+priprav: Platený Claude plán s Coworkom. Na lokálne súbory potrebuješ otvorenú a pripojenú desktopovú aplikáciu.
+bod: Prvá delegovaná úloha
+bod: Zadanie s hranicami
+bod: Plánovanie a Dispatch
+
+@strana
+stitok: ČO TO JE
+h1: Pracovné sedenie, nie rozhovor.
+
+@text
+Chat je konverzácia. Cowork je sedenie: opíšeš úlohu, Claude spraví plán, prejde krokmi a uloží hotovú vec. Ty ho popri tom usmerňuješ.
+
+@text
+Rozdiel oproti Claude Code je v šírke. Code žije v priečinku. Cowork siahne na priečinok **aj** na pripojené appky — a nemusíš pri tom otvoriť terminál.
+
+@kroky
+01 | Ukážeš priečinok. | Vyberieš miesto, kde má pracovať a kam uloží výsledok.
+02 | Pripojíš appky. | Podľa toho, čo má mať k dispozícii. Konektory nastavíš v Customize.
+03 | Povieš cieľ. | Nie postup. Cieľ — a ako vyzerá hotovo.
+04 | Odídeš. | Cloudové sedenie beží aj po zatvorení notebooku. Ak však potrebuje tvoj lokálny priečinok alebo prehliadač, desktopová aplikácia musí zostať dostupná.
+
+@box KLASICKÁ PRVÁ ÚLOHA
+Priečinok Downloads. Screenshoty spred dvoch rokov, PDF otvorené raz, šesť kópií tej istej fotky a tri súbory s názvom „final". Necháš ho to prejsť — a najprv ukázať, čo navrhuje spraviť.
+
+@strana
+stitok: POSTUP
+h1: Spusti úlohu na malom balíku podkladov.
+
+@kroky
+01 | Priprav 3 až 5 dokumentov. | Použi krátke cvičné poznámky. Vytvor **kópiu** priečinka a v nej podpriečinok `vystupy`.
+02 | V Claudovi vyber Cowork. | V poli na správu prepni na Cowork. Na lokálnu zložku použi desktop. Na webe súbory nahráš.
+03 | Vlož zadanie nižšie. | Skontroluj navrhnutý postup. Pri prvej úlohe nechaj zapnuté manuálne schvaľovanie.
+04 | Otvor hotový výstup. | Zobraz ho v sedení a stiahni, alebo otvor dohodnutý súbor v priečinku. Over názov aj obsah.
+
+@box SKOPÍRUJ DO COWORK
+Z priložených poznámok vytvor PREHLAD.docx. Obsah: 5 hlavných zistení, tabuľka úloh a sekcia Čo chýba. Pri každej úlohe uveď zdrojový súbor. Zodpovednú osobu a termín doplň len vtedy, ak sú v podklade — inak NEUVEDENÉ. Nič neposielaj, nemaž ani neprepisuj. Výsledok ulož do vystupy/.
+
+@tabulka KONTROLA | ČO OVERIŤ
+Úplnosť | Použil všetky podklady? Nevynechal žiadny bez vysvetlenia?
+Presnosť | Sedia mená, čísla a termíny na zdroj?
+Neistota | Je chýbajúci údaj označený, nie doplnený odhadom?
+Použiteľnosť | Vieš súbor otvoriť a podľa tabuľky ďalej pracovať?
+
+@strana
+stitok: POSTUP
+h1: Nastav si, čo sa deje bez teba.
+
+@text
+Keď ti jedna úloha vyšla, ďalší krok nie je zadávať ju každý deň ručne. Je ním naplánovať ju.
+
+@kroky
+01 | Vyber si rituál, nie nápad. | Napríklad: zhrnutie včerajška, roztriedená pošta a dnešné úlohy — pripravené skôr, než si sadneš ku káve.
+02 | Naplánuj to. | Úlohy sa dajú spúšťať opakovane. Naplánované úlohy na desktope bežia na tvojom počítači a majú prístup k lokálnym súborom; cloudové bežia aj keď máš počítač vypnutý.
+03 | Prvý týždeň kontroluj každý výstup. | Až potom mu daj voľnejšiu ruku. Automatizácia zlého postupu je len rýchlejší neporiadok.
+04 | Zadaj úlohu z mobilu. | Cez Dispatch spáruješ telefón s počítačom a pošleš úlohu, aj keď si cestou na stretnutie.
+
+@box ČO NEPLÁNOVAŤ
+Motivačný citát každé ráno. Rezerváciu stola na jeden konkrétny štvrtok. Plánuj to, čo sa **opakuje** a čo ťa **nudí**. Zvyšok nie.
+
+@box KEĎ SA NIEČO POKAZÍ
+Nevidí súbory: over vybranú zložku a desktopové pripojenie. Nevytvoril dokument: zadaj názov a formát. Pomiešal údaje: označ konkrétny riadok a zdroj, ktorý má znovu načítať.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Mám otvoriteľný súhrnný dokument.
+Každé dôležité tvrdenie viem dohľadať v zdroji.
+Viem, kedy musí zostať desktop pripojený.
+Mám naplánovanú aspoň jednu opakovanú úlohu.
+
+@box O KROK ĎALEJ
+Najprv over jeden malý balík. Až potom zväčši objem. A pokyny nájdené v cudzom e-maile alebo PDF ber ako obsah, nie ako svoje zadanie.
+
+@terazty TERAZ TY
+Oprav jednu konkrétnu chybu a ulož finálny súbor. V 02.7 premeníš podklad na vizuálny návrh.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Cowork: začíname | https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork
+Cowork na webe a mobile | https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile
+Claude Code: naplánované úlohy | https://code.claude.com/docs/en/desktop-scheduled-tasks

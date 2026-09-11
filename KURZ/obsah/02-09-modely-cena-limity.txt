@@ -1,0 +1,89 @@
+# Modul 02 — Claude / lekcia 9
+modul: 02 Claude
+cislo: 02.9
+titul: Claude: modely, cena a limity
+varianta: a
+
+@obal
+cislo: 02.9
+stitok: CLAUDE: MODELY, CENA A LIMITY
+h1: Nedávaj najdrahšiemu človeku v tíme prepisovať maily.
+slub: Zorientuješ sa v modeloch, oddelíš API cenu od predplatného a nastavíš si vlastný test kvality.
+cas: 6 min | ČÍTANIE
+cas: 20–30 min | PRAX
+priprav: Claude alebo Claude Code. Na porovnanie použi modely, ktoré už máš dostupné.
+bod: Modely ako tím
+bod: Ceny, limity a Research
+bod: Vlastný test na tvojej práci
+
+@strana
+stitok: AKO NAD TÝM ROZMÝŠĽAŤ
+h1: Modely sú tím. Nie rebríček.
+
+@text
+Predstav si to ako firmu. Najstaršieho a najdrahšieho človeka nepostavíš k odpovedaniu na bežné maily — je to plytvanie jeho časom aj tvojimi peniazmi. Dáš mu prácu, ktorú nikto iný nezvládne. Zvyšok rozdelíš.
+
+@tabulka MODEL | KOMU V TÍME ZODPOVEDÁ | ZÁKLADNÁ API CENA / 1 M TOKENOV | KONTEXT
+Haiku 4.5 | Rýchly junior na vypytovanie a triedenie. | 1 USD vstup / 5 USD výstup | 200 K
+Sonnet 5 | Denný ťahúň. Väčšina práce. | 2 USD vstup / 10 USD výstup | 1 M
+Opus 5 | Senior na zložité zadania. | 5 USD vstup / 25 USD výstup | 1 M
+Fable 5.1 | Špecialista na to, čo ostatní nedali. | 10 USD vstup / 50 USD výstup | 1 M
+
+@box ČO TIE ČÍSLA ZNAMENAJÚ PRE TEBA
+Ak platíš predplatné, neplatíš za tokeny — ale míňaš z limitu úmerne. Desaťnásobná sadzba neznamená presne desaťkrát menej správ. Spotrebu ovplyvňuje model, dĺžka práce, kontext aj nástroje. Stav dokumentácie: 11. 9. 2026, ide o základné API sadzby.
+
+@strana
+stitok: POSTUP
+h1: Dve veci, na ktorých sa dá ušetriť najviac.
+
+@kroky
+01 | Nedávaj Opus na to, čo zvládne Sonnet. | Rozhovor s vypytovaním, prepis, triedenie, extrakcia údajov — tam je silný model plytvanie. Nedostaneš lepší výsledok, dostaneš ten istý pomalšie.
+02 | Research používaj vedome. | Režim hĺbkového výskumu prejde web a zostaví ti report. Je užitočný — a spotrebu ti zje rýchlejšie než čokoľvek iné. Preto pri ňom buď maximálne konkrétny, čo má pokryť.
+03 | Pri silnom modeli píš presné zadania. | Čím drahší model, tým viac ťa stojí každý zbytočný kruh. Nepresné zadanie tam bolí dvojnásobne.
+04 | Keď ti dochádza limit, skús najprv menej úsilia. | Až potom slabší model. Nižšie nastavenie na tom istom modeli často stačí.
+
+@box AKO BY SOM ZAČAL
+Krátke triedenie alebo extrakcia: Haiku. Bežná práca: Sonnet. Zložitejšie zadanie: Opus. Náročná viackroková úloha, pri ktorej lacnejší model zlyháva: otestuj Fable. Toto je štartovacie pravidlo, nie garancia.
+
+@strana
+stitok: POSTUP
+h1: Odmeraj si to na vlastnej práci.
+
+@text
+Cudzie testy ti povedia smer. Nepovedia ti, koľko opráv zostane na tvojej úlohe. To zistíš len meraním, ktoré trvá dvadsať minút.
+
+@kroky
+01 | Vyber úlohu, ktorú robíš často. | Prepis, zhrnutie, triedenie poznámok.
+02 | Pusti ju na rýchlom modeli. | Zapíš čas a odlož výsledok.
+03 | Pusti tú istú na najsilnejšom, ktorý máš. | Rovnaký podklad, rovnaké zadanie.
+04 | Spočítaj opravy, nie dojem. | Silnejší model znie sebavedomejšie, aj keď sa mýli. Jediné férové číslo je, koľko práce ti po ňom zostalo.
+
+@box ZÁPIS TESTU
+Úloha: _____ | Model: _____
+Faktické chyby: _____ | Chýbajúce body: _____
+Čas behu: _____ | Môj čas opráv: _____
+
+@box PRE POKROČILÝCH
+Kontext je celá história rozhovoru, nielen tvoja otázka. V Claude Code ti `/context` ukáže, koľko z okna zaberá tvoje nastavenie ešte pred prvou správou. Ak ti nabobtnané súbory zožerú pätinu, vieš, kde upratovať.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Viem, ktorý model je na akú prácu.
+Viem, že API cena nie je limit predplatného.
+Research spúšťam vedome a s konkrétnym zadaním.
+Otestoval som svoju bežnú úlohu na dvoch modeloch.
+Porovnával som podľa počtu opráv, nie podľa dojmu.
+
+@box O KROK ĎALEJ
+Keď model v dlhom rozhovore začne zabúdať zadanie, nie je pokazený. Došlo mu miesto. Zhrň, na čom ste sa dohodli, otvor nové sedenie a začni tým zhrnutím.
+
+@terazty TERAZ TY
+Zapíš si pravidlo, ktorý model na ktorú prácu. V 02.10 si nastavíš zadávanie.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude: prehľad modelov | https://platform.claude.com/docs/en/models/overview
+Claude: ceny API | https://platform.claude.com/docs/en/about-claude/pricing
+Claude: cena verzus výkon | https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence

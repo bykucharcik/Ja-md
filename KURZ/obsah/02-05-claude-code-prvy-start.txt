@@ -1,0 +1,128 @@
+# Modul 02 — Claude / lekcia 5
+modul: 02 Claude
+cislo: 02.5
+titul: Claude Code: prvý štart
+varianta: a
+
+@obal
+cislo: 02.5
+stitok: CLAUDE CODE: PRVÝ ŠTART
+h1: Volá sa Code. Nemusíš vedieť programovať.
+slub: Dáš mu 3 súbory a necháš z nich spraviť prehľad. Potom mu napíšeš pravidlá, ktoré bude držať.
+cas: 7 min | ČÍTANIE
+cas: 25–40 min | PRAX
+priprav: Mac, Windows alebo Linux, internet a platený Claude účet. Prihlásenie cez predplatné a platené API sú dva odlišné spôsoby účtovania.
+bod: Inštalácia a prihlásenie
+bod: Priečinok a prvý výstup
+bod: Pravidlá a povolenia
+
+@strana
+stitok: NEŽ ZAČNEME
+h1: Názov ťa nemá odradiť.
+
+@text
+Claude Code je Claude, ktorý vidí priečinok. Číta súbory, mení ich a spúšťa príkazy. To, že sa volá Code, je historické — rovnako dobre prejde dvadsať PDF-iek, tabuľku a poznámky.
+
+@text
+A nemusíš na to otvárať terminál. **V desktopovej aplikácii Claude je karta Code.** Ak už používaš Cowork, aplikáciu máš nainštalovanú a Claude Code v nej nájdeš tiež.
+
+@tabulka CESTA | PRE KOHO
+Desktopová aplikácia | Ak nechceš príkazový riadok. Karta Code, zmeny vidíš vizuálne.
+Terminál | Ak ti príkazový riadok nevadí. Najviac možností, najrýchlejšie.
+Editor / web | Rozšírenia do editorov a `claude.ai/code` v prehliadači bez inštalácie.
+
+@box AK SI NETECHNICKÝ
+Choď cez desktopovú aplikáciu. Zvyšok tejto lekcie ukazuje terminál, lebo tam vidíš presne, čo sa deje — ale klikacia cesta vedie k tomu istému výsledku.
+
+@strana
+stitok: POSTUP
+h1: Najprv inštalácia. Po jednom príkaze.
+
+@text
+Terminál je okno, do ktorého zadávaš príkazy počítaču. Na Macu otvor Spotlight cez Cmd + medzerník a vyhľadaj Terminal. Vo Windows vyhľadaj PowerShell v Štarte. Vyber iba príkaz pre svoj systém.
+
+@kod MAC / LINUX / WSL
+curl -fsSL https://claude.ai/install.sh | bash
+
+@kod WINDOWS / POWERSHELL
+irm https://claude.ai/install.ps1 | iex
+
+@kroky
+01 | Počkaj na dokončenie. | Potom terminál zavri a otvor znova. Príkaz nižšie overí, že je nástroj nainštalovaný.
+02 | Spusti prihlásenie. | Zadaj `claude` a dokonči prihlásenie v prehliadači. Ak chceš čerpať predplatné, vyber svoj Claude účet, nie samostatné API účtovanie.
+
+@kod OVERENIE V TERMINÁLI
+claude --version
+
+@box AK TO NEJDE
+„Command not found": otvor nový terminál a pozri návod na inštaláciu. Pri probléme v spustenom Claude Code použi `/doctor`. Git for Windows je odporúčaný pre Bash; podľa aktuálnej dokumentácie je možný aj PowerShell.
+
+@strana
+stitok: POSTUP
+h1: Otvor priečinok a najprv sa pýtaj.
+
+@kroky
+01 | Vytvor si cvičnú zložku. | Vo Finderi alebo Prieskumníkovi vytvor priečinok `AI-test`. Skopíruj doň 3 krátke poznámky. Originály nechaj inde.
+02 | Prejdi do nej v termináli. | Zadaj `cd`, medzeru a cestu v úvodzovkách. Na Macu môžeš priečinok pretiahnuť do terminálu za `cd`.
+03 | Spusti Claude Code. | Zadaj `claude`. Pri otázke na dôveryhodnosť priečinka skontroluj zobrazenú cestu. Potom `/status` na kontrolu účtu.
+04 | Najprv sa pýtaj. | Vlož prvé zadanie nižšie. Over, či našiel správne súbory. Až potom zadaj vytvorenie prehľadu.
+
+@kod TERMINÁL / CESTU NAHRAĎ
+cd "CESTA_K_PRIECINKU_AI-test"
+claude
+
+@box PRVÉ ZADANIE
+Prečítaj 3 poznámky v tomto priečinku. Vypíš názvy a pri každej jednou vetou obsah. Zatiaľ nič neupravuj. Ak súbor nevieš prečítať, povedz ktorý.
+
+@box DRUHÉ ZADANIE
+Vytvor PREHLAD.md: pri každej poznámke názov, 3 hlavné body a prípadné úlohy. Neznáme termíny označ NEUVEDENÉ. Pôvodné súbory nemeň. Na konci over prehľad oproti všetkým 3 vstupom.
+
+@strana
+stitok: POSTUP
+h1: Daj mu pravidlá, ktoré vieš skontrolovať.
+
+@text
+`CLAUDE.md` je textový súbor s pravidlami projektu. Najjednoduchšie je povedať Claude Code, nech ho vytvorí z textu nižšie. Potom ho otvor a prečítaj. `/init` vie pripraviť východiskovú verziu, `/memory` slúži na správu pamäte a pravidiel.
+
+@kod VZOR OBSAHU CLAUDE.md
+# Pravidlá projektu
+- Odpovedaj po slovensky, stručne a konkrétne.
+- Pracuj len s podkladmi, ktoré patria k úlohe.
+- Chýbajúce údaje označ NEUVEDENÉ.
+- Výsledky ukladaj do vystupy/.
+- Pôvodné súbory bez môjho súhlasu neprepisuj.
+- Pred odovzdaním porovnaj výstup so zadaním.
+
+@tabulka REŽIM / PRÍKAZ | NA ČO JE
+Plan | Preskúmanie a návrh postupu pred realizáciou.
+Default | Bežná práca s kontrolou oprávnení podľa nastavení.
+acceptEdits | Automatické prijímanie úprav súborov. Nezapínaj bez rozmyslu.
+/permissions | Správa allow, ask a deny. Zákaz má prednosť pred povolením.
+/context | Ukáže využitie kontextu a načítané pravidlá.
+
+@box DÔLEŽITÝ ROZDIEL
+Veta v `CLAUDE.md` je inštrukcia, nie technická blokácia. Oprávnenia sa nastavujú zvlášť. Na cvičenie používaj kópie a nezapínaj `bypassPermissions`.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Claude Code sa spustí v priečinku AI-test.
+PREHLAD.md existuje a sedí na 3 vstupy.
+CLAUDE.md má konkrétne pravidlá.
+Viem nájsť /status, /permissions a /context.
+
+@box O KROK ĎALEJ
+Pri dlhšej práci si nechaj uložiť stav: cieľ, hotové kroky, otvorené otázky a ďalší krok. Nové sedenie potom nezačínaš vysvetľovaním celej histórie.
+
+@box ČO S TÝM VIEŠ SPRAVIŤ ĎALEJ
+Ľudia bez programátorského vzdelania si takto stavajú vlastné malé nástroje — od trackera tréningov po prehľad, ktorý si roky ťahali v exceli. Opíšeš, čo chceš, po slovensky. Zvyšok je jeho práca.
+
+@terazty TERAZ TY
+Otvor PREHLAD.md a over všetky body. V 02.6 tú istú prácu deleguješ bez terminálu.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude Code: inštalácia | https://code.claude.com/docs/en/overview
+Claude Code: pamäť a CLAUDE.md | https://code.claude.com/docs/en/memory
+Claude Code: oprávnenia | https://code.claude.com/docs/en/permissions

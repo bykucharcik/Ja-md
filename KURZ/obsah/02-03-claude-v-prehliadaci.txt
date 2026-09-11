@@ -1,0 +1,91 @@
+# Modul 02 — Claude / lekcia 3
+modul: 02 Claude
+cislo: 02.3
+titul: Claude v prehliadači
+varianta: c
+
+@obal
+cislo: 02.3
+stitok: CLAUDE V PREHLIADAČI
+h1: Projekt si pamätá to, čo mu dáš. A nič viac.
+slub: Založíš projekt s vlastnými pravidlami, nahráš správne podklady a upravíš prvý artefakt po častiach.
+cas: 5 min | ČÍTANIE
+cas: 15–20 min | PRAX
+priprav: Účet na claude.ai, 2 ukážky svojich dobrých textov a krátky popis práce.
+bod: Projekt a jeho oddelená pamäť
+bod: Inštrukcie na skopírovanie
+bod: Artefakt a test v novom chate
+
+@strana
+stitok: ČO VÄČŠINA NEVIE
+h1: Projekt má vlastnú pamäť. Oddelenú.
+
+@text
+Projekt nie je len priečinok na chaty. Má **vlastnú pamäť a vlastné podklady**, ktoré sú oddelené od zvyšku. Čo si Claude zapamätá v jednom projekte, neprenesie sa do druhého ani do bežných chatov.
+
+@text
+Väčšina ľudí to zistí až po mesiaci: v bežnom chate si vyladili tón a pozíciu, potom si založili projekt — a Claude v ňom o tom nevedel nič.
+
+@tabulka SITUÁCIA | ČO S TÝM
+Mám jednu rolu a jeden štýl | Nerob si päť projektov. Nastav pamäť a prípadne jeden projekt.
+Mám viac klientov alebo firiem | Samostatný projekt na každého. Práve tu je oddelenie výhoda, nie prekážka.
+Niečo dôležité som vyladil mimo projektu | Zopakuj to v projekte alebo to nahraj ako podklad. Samo sa to neprenesie.
+Chcem chat presunúť | Chat vieš do projektu pridať aj z neho vybrať. Nemusíš ho písať odznova.
+
+@box PRAVIDLO, KTORÉ TI UŠETRÍ ZMÄTOK
+Projekty zakladaj podľa **oddelených svetov**, nie podľa tém. Dvaja klienti = dva projekty. Dve témy pre teba = jeden projekt.
+
+@strana
+stitok: POSTUP
+h1: Nastav si projekt „Moje texty“.
+
+@kroky
+01 | Otvor Projects. | Na claude.ai nájdi Projects a vytvor nový. Pomenuj ho podľa práce, ktorú v ňom budeš robiť.
+02 | Vlož projektové inštrukcie. | Otvor nastavenie inštrukcií a vlož text nižšie. Zástupné údaje nahraď svojimi.
+03 | Pridaj podklady. | Profil publika, schválené fakty a 2 ukážky dobrých textov. Jednorazový prepis daj až do konkrétneho chatu.
+04 | Otestuj nový rozhovor. | Vnútri projektu otvor nový chat, zadaj krátku úlohu a over tón aj fakty. Samotný upload nestačí.
+
+@box INŠTRUKCIE PROJEKTU
+Tvorím AI obsah pre slovenských začiatočníkov. Píš prirodzene, krátkymi vetami a na konkrétnych príkladoch. Technický pojem pri prvom použití vysvetli. Vychádzaj zo schválených podkladov. Nevymýšľaj moje výsledky, ceny ani skúsenosti. Ak chýba podstatný údaj, spýtaj sa. Výstup prispôsob formátu v zadaní.
+
+@box NAJČASTEJŠIA CHYBA
+Nahrať tridsať dokumentov „pre istotu". Nahraj to, čo platí vždy. Čo platí raz, patrí do jedného chatu.
+
+@strana
+stitok: POSTUP
+h1: Upravuj konkrétnu časť. Neprepisuj celok.
+
+@text
+Artefakt je samostatný výstup vedľa rozhovoru — dokument, tabuľka, malá aplikácia. Dá sa upravovať po častiach. Nie každý text sa ako artefakt otvorí sám; keď ho chceš, vypýtaj si ho.
+
+@box PRVÝ TEST
+Z nahratého podkladu priprav ako artefakt 3 krátke scenáre Reels. Pri každom: hook, vysvetlenie na príklade a jedna výzva na akciu. Zachovaj môj tón. Každý scenár najviac 90 slov. Nepotvrdené tvrdenia označ.
+
+@kroky
+01 | Oprav len to, čo nesedí. | „V scenári 2 prepíš iba prvú vetu. Má pomenovať problém diváka. Telo a CTA nechaj."
+02 | Stiahni finálnu verziu. | Otvor súbor a pozri, či obsahuje poslednú úpravu. Export sa robí z artefaktu, nie z chatu.
+03 | Over hranice projektu. | V novom chate v projekte zadaj podobnú úlohu s iným podkladom. Sleduj, či sa štýl preniesol bez dlhého úvodu.
+
+@box KEĎ JE VÝSLEDOK STÁLE GENERICKÝ
+Pridaj dobrú ukážku a vysvetli na nej 2 konkrétne veci: „hook je otázka o reálnom probléme; príklad je z e-shopu". Skontroluj aj rozpory v inštrukciách a to, či podklady nie sú staré.
+
+@strana
+stitok: HOTOVO AŽ VTEDY, KEĎ…
+h1: Vieš to zopakovať aj bez tohto PDF.
+
+@checklist
+Projekt má vlastné inštrukcie a len potrebné súbory.
+Viem, že pamäť projektu je oddelená od bežných chatov.
+Mám artefakt a overený export.
+Výsledok som otestoval aj v novom chate.
+
+@box O KROK ĎALEJ
+História, pamäť a projektové podklady sú tri rôzne veci. Zatvorením okna sa chat nevymaže. Na pravidlá sa spoliehaj cez inštrukcie projektu — a dôležité fakty si aj tak over.
+
+@terazty TERAZ TY
+Ulož jeden použiteľný text. V 02.4 pustíš Clauda do prehliadača, kde pracuješ.
+
+@zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
+Claude: Projects | https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
+Claude: Artifacts | https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them
+Claude: pamäť | https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context
