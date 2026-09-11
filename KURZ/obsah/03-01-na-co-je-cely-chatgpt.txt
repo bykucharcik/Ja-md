@@ -1,0 +1,102 @@
+# Modul 03 — ChatGPT / lekcia 1
+modul: 03 ChatGPT
+cislo: 03.1
+titul: Na čo je celý ChatGPT
+stopa: CHATGPT × KUCHAR.AI
+stitky: ChatGPT | 13 min | Mapa
+
+@obal
+stitok: NA ČO JE CELÝ CHATGPT
+h1: Chat je len
+h2: predné okno.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Zorientovať sa v celom ChatGPT -- chat, práca so súbormi a appkami, prehliadač, Codex -- a vedieť, čo z toho máš na svojom pláne.
+vedlajsie: Aj tu platí rozdelenie na fázu jedna a dva. ChatGPT dnes vie pracovať sám, len to väčšina ľudí nikdy nezapne.
+karta: MODEL | GPT-5.6 | SOL / TERRA / LUNA
+karta: NAJSILNEJŠÍ | GPT-6 Astra | VLASTNÁ LEKCIA
+vysledok: Po dokončení vieš, čo tvoj plán obsahuje a ktoré nástroje ti reálne pomôžu.
+drobne: Stav k 11. 9. 2026. OpenAI mení názvy aj zloženie plánov často -- ceny a dostupnosť si over priamo v účte.
+
+@strana
+stitok: ČO JE POD KAPOTOU
+h1: Model plus
+h2: nástroje.
+
+@text
+ChatGPT nie je jedna vec. Je to model, ktorý píše text, a okolo neho sada nástrojov, ktoré vie zavolať, keď ich potrebuje. Hľadanie na webe, práca so súbormi, generovanie obrázkov, spúšťanie kódu -- to nerobí model sám od seba, to sú prídavky.
+
+@kroky
+01 | MODEL | Rozumie, uvažuje, píše. Bez nástrojov vie len to, čo má z tréningu.
+02 | NÁSTROJE | Dodajú mu prístup k aktuálnym informáciám, k tvojim súborom a k výpočtom.
+03 | PAMÄŤ | Ukladá si veci o tebe naprieč rozhovormi. Dá sa vypnúť aj vymazať v nastaveniach.
+04 | PLÁN | Určuje, ktoré modely a koľko toho máš. Nie to, aký múdry ChatGPT je.
+
+@pravidlo PRAKTICKÝ DÔSLEDOK
+Ak ti odpovie niečo zastarané, väčšinou nie je hlúpy -- len nehľadal na webe. Popros ho výslovne: „pozri sa na to na webe a daj mi zdroje."
+
+@strana
+stitok: ČO ČASOM PRIBUDLO
+h1: Už to nie je
+h2: len okno s textom.
+
+@tabulka ČASŤ | ČO ROBÍ
+Chat | Bežný rozhovor, súbory, obrázky, hlas. To, čo pozná každý.
+Práca s tvojím počítačom | V desktop appke vie ChatGPT siahnuť na tvoje lokálne súbory a aplikácie.
+Vstavaný prehliadač | Vie otvárať weby, čítať stránky, klikať a vypĺňať -- takže úlohu dotiahne na internete, nielen o nej napíše.
+Agentický režim | Vydrží na opakovanej otravnej práci. Napríklad prejsť stovky mailov a vytiahnuť z nich úlohy.
+Codex | Samostatný nástroj na kód -- písanie, review, pull requesty. Obdoba Claude Code.
+Projects | Pracovný priestor: chaty, súbory a vlastné inštrukcie pokope. Vlastná lekcia.
+
+@pravidlo POZOR NA JEDNU VEC
+Samostatný prehliadač **Atlas OpenAI ukončuje** a jeho schopnosti presúva priamo do ChatGPT a Codexu. Ak nájdeš návod na Atlas, nie je zlý -- je starý.
+
+@strana
+stitok: PLÁNY
+h1: Päť dverí.
+h2: Rôzne kľúče.
+
+@tabulka PLÁN | ČO ZA TO DOSTANEŠ | ČO SI VŠIMNI
+Free | Bežné rozhovory, tlačidlo Think na ťažšie otázky. | Model Luna. OpenAI testuje reklamy vo free verzii.
+Go | Násobne viac správ, súborov a obrázkov než Free. | Lacný vstupný plán, stále bez najsilnejšej triedy.
+Plus | Trieda Sol a úrovne uvažovania Instant / Medium / High. | Najbežnejšia voľba pre jednotlivca.
+Pro | Navyše Extra High a najsilnejšie modely vrátane GPT-6 Pro. | Dve úrovne s rôznym objemom.
+Business / Enterprise | Tímová správa, firemné nastavenia. | Jediné miesto, kde sa dnes dajú tvoriť nové GPT.
+
+@pravidlo ÚPRIMNE
+Ak si nie si istý, začni na Plus. Pro sa oplatí až vtedy, keď ti Plus dochádza -- a to zistíš tak, že ti dôjde, nie tak, že si to prečítaš.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Zisti, čo máš.
+h2: Za desať minút.
+
+@zoznam
+01 | Otvor prepínač modelu a odfoť si, čo v ňom máš. To je tvoj skutočný strop, nie to, čo píšu články.
+02 | Otvor nastavenia a nájdi pamäť. Pozri sa, čo si o tebe ChatGPT uložil. Väčšina ľudí sa tu prekvapí.
+03 | Polož otázku o niečom, čo sa stalo minulý týždeň. Pozri, či si sám hľadal na webe.
+04 | Tú istú otázku polož znova s vetou „pozri to na webe a daj mi odkazy". Porovnaj.
+05 | Nahraj jeden svoj súbor a nechaj si z neho spraviť zhrnutie.
+
+@pravidlo ČO SI Z TOHO ODNIESŤ
+Nástroje sa nezapínajú samy vždy, keď by mali. Kým si na to nezvykneš, hovor si ich nahlas: „na webe", „z toho súboru", „prepočítaj to".
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Vieš, čo máš.
+
+@checklist
+Viem, že model a nástroje sú dve rôzne veci.
+Viem, ktoré modely mám vo svojom prepínači.
+Viem, že ChatGPT vie pracovať aj s mojím počítačom a s webom.
+Pozrel som si, čo má uložené v pamäti.
+Viem si vypýtať hľadanie na webe výslovne.
+Skúsil som nahrať vlastný súbor.
+
+@odkazy
+GPT-5.6 V CHATGPT | https://help.openai.com/en/articles/20001354-gpt-5-6-in-chatgpt
+CODEX V CHATGPT | https://help.openai.com/en/articles/11369540-codex-in-chatgpt
+
+@zaver
+hlavne: Ďalšia lekcia: modely a čísla -- tri triedy, štyri úrovne uvažovania a to, čo z toho reálne potrebuješ.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

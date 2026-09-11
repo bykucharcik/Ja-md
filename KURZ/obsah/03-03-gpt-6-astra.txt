@@ -1,0 +1,107 @@
+# Modul 03 — ChatGPT / lekcia 3
+modul: 03 ChatGPT
+cislo: 03.3
+titul: GPT-6 Astra
+stopa: CHATGPT × KUCHAR.AI
+stitky: Astra | 15 min | Novinka
+
+@obal
+stitok: GPT-6 ASTRA
+h1: Nová generácia.
+h2: A prvý model,
+h3: čo ovláda počítač.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Vedieť, čo GPT-6 Astra reálne vie, čo hovoria zverejnené čísla a kedy ju potrebuješ namiesto lacnejšej triedy.
+vedlajsie: Najväčší posun nie je v písaní textu. Je v tom, že model prejde viackrokovú prácu naprieč kódom, prehliadačom a odborným softvérom -- a menej pri tom nasekne.
+karta: KDE JE SILNÁ | Počítač, kód, veda | VIACKROKOVÁ PRÁCA
+karta: KDE JU MÁŠ | Pro, Business, Enterprise | NIE NA FREE ANI PLUS
+vysledok: Po dokončení vieš, či ti za Astru stojí priplatiť -- alebo či ti stačí to, čo už máš.
+drobne: Čísla v tejto lekcii sú z materiálov OpenAI, stav k 11. 9. 2026. Sú to merania výrobcu na vlastných testoch -- ber ich ako smer, nie ako záruku.
+
+@strana
+stitok: ČO TO MENÍ
+h1: Nie lepšie vety.
+h2: Dotiahnutá práca.
+
+@text
+Pri každej novej generácii sa čaká, že bude „krajšie písať". Pri Astre je posun inde: zvláda **viackrokovú prácu naprieč nástrojmi** -- kód, prehliadač, odborný softvér -- bez toho, aby sa v polovici stratila.
+
+@kroky
+01 | POUŽÍVA POČÍTAČ | Ovládanie prehliadača a aplikácií je jedna z vecí, v ktorých je podľa OpenAI na špici.
+02 | NEČAKÁ NA NÁSTROJE | Keď spustí niečo dlhšie, premýšľa ďalej alebo rieši inú časť zadania. Nestojí.
+03 | DÁ SA USMERNIŤ ZA BEHU | Môžeš mu poslať opravu alebo zmenu zadania **uprostred práce**. Nemusíš čakať na koniec a začínať odznova.
+04 | MENEJ PREKVAPENÍ | Tu je pre bežnú prácu najväčší rozdiel -- pozri ďalšiu stranu.
+
+@pravidlo PREČO JE „USMERNENIE ZA BEHU" VÄČŠIA VEC, NEŽ ZNIE
+Pri dlhej úlohe je najhoršie zistiť po desiatich minútach, že šla zlým smerom. Keď ju vieš otočiť za behu, cena omylu padá z celej úlohy na jeden krok.
+
+@strana
+stitok: ČÍSLA
+h1: Čo hovoria
+h2: merania.
+
+@tabulka MERANIE | VÝSLEDOK
+Nechcené výsledky pri odbornej práci | Astra spravila nechcený výsledok o **89 % menej často** než GPT-5.6 Sol a o **74,7 % menej často** než Claude Fable 5.1.
+Odborná práca v termináli (Terminal-Bench Science) | Astra **64,6 %**, Claude Fable 5.1 52,6 % -- a podľa OpenAI pri zhruba o 31 % nižšej odhadovanej cene cez API.
+Bezpečnostné testovanie (ExploitBench) | Astra 100 %, GPT-5.6 Sol 78,5 %.
+Bezpečnostné testovanie (ExploitGym) | Astra 42,4 %, GPT-5.6 Sol 30,3 %.
+Dodržiavanie obmedzení | Podľa OpenAI výrazne spoľahlivejšie rešpektuje výslovné bezpečnostné pokyny než GPT-5.6 Sol.
+
+@pravidlo AKO TIETO ČÍSLA ČÍTAŤ
+Prvý riadok je pre teba najdôležitejší a zároveň najmenej efektný. „Menej nechcených výsledkov" znamená menej vecí, ktoré musíš po ňom kontrolovať a opravovať -- a to je pri agentickej práci celá hra.
+
+@text drobne
+Druhý riadok porovnáva Astru s Claude Fable 5.1. Je to meranie OpenAI na ich teste. Anthropic má svoje testy, na ktorých vychádza inak. Toto je normálne a nie je to podvod ani jednej strany -- výrobca si vyberá testy, na ktorých je dobrý. Preto sa merá na vlastnej práci.
+
+@strana
+stitok: KEDY JU POTREBUJEŠ
+h1: Málokedy.
+h2: Ale vtedy výrazne.
+
+@text
+Astra je najsilnejšia a najdrahšia. To neznamená, že ju chceš na všetko -- znamená to, že ju chceš na to, kde sa slabší model zasekne alebo nasekne chyby, ktoré musíš potom hľadať.
+
+@tabulka TVOJA ÚLOHA | ČO POUŽIŤ
+Text, mail, zhrnutie, preklad | Luna alebo Instant. Astra je tu plytvanie.
+Analýza, dlhší dokument, plán | Sol na strednom alebo vysokom uvažovaní.
+Viackroková práca cez web a appky | **Astra.** Toto je presne to, na čo je stavaná.
+Odborná práca, kde chyba niečo stojí | **Astra** -- a aj tak si to skontroluj.
+Dlhá práca, ktorú chceš usmerňovať za behu | **Astra**, práve kvôli tomu usmerňovaniu.
+
+@pravidlo TEST ZA JEDNU VETU
+Ak ti pri úlohe nevadí, keď to na tretí pokus vyjde, netreba ti Astru. Ak ťa tretí pokus stojí hodinu alebo klienta, tak áno.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jedna ťažká vec.
+h2: Dva modely.
+
+@zoznam
+01 | Vyber najzložitejšiu úlohu, akú reálne máš -- takú, čo má viac krokov a dotýka sa viacerých vecí.
+02 | Pusti ju na bežnej triede, ktorú používaš. Zmeraj čas a **spočítaj, koľko vecí si po nej musel opraviť.**
+03 | Pusti ju na Astre, ak ju máš. Ak nemáš, pusti ju na najvyššej úrovni uvažovania, akú máš.
+04 | Porovnaj to druhé číslo, nie to prvé. Nie ktorý výsledok znie lepšie -- **koľko práce ti po ňom zostalo.**
+05 | Ak je rozdiel malý, máš odpoveď a ušetril si si predplatné. Ak je veľký, vieš, za čo platíš.
+
+@pravidlo PREČO RÁTAŤ OPRAVY A NIE DOJEM
+Dojem z textu je nespoľahlivý -- silnejšie modely znejú sebavedomejšie, aj keď sa mýlia. Počet vecí, ktoré si musel prerobiť, je jediné číslo, ktoré ti nikto nenahovorí.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Vieš, čo Astra je.
+
+@checklist
+Viem, že najväčší posun je vo viackrokovej práci, nie v písaní.
+Viem, že sa dá usmerniť za behu.
+Viem, že čísla od výrobcu sú merané na jeho testoch.
+Viem, na ktoré svoje úlohy ju potrebujem a na ktoré nie.
+Porovnával som podľa počtu opráv, nie podľa dojmu.
+
+@odkazy
+GPT-6 ASTRA | https://openai.com/index/gpt-6-astra/
+ASTRA PRE PRÁCU | https://openai.com/index/gpt-6-astra-next-generation-work/
+
+@zaver
+hlavne: Ďalšia lekcia: ako sa ChatGPT pýtať a v čom sa to líši od Clauda.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

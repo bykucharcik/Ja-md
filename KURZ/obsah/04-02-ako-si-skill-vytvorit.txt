@@ -1,0 +1,114 @@
+# Modul 04 — Claude Skills / lekcia 2
+modul: 04 Claude Skills
+cislo: 04.2
+titul: Ako si skill vytvoriť
+stopa: SKILLS × KUCHAR.AI
+stitky: Skills | 14 min | Presný postup
+
+@obal
+stitok: AKO SI SKILL VYTVORIŤ
+h1: Nepíš ho.
+h2: Sprav tú prácu
+h3: a povedz uložiť.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Vyrobiť si vlastný skill dvoma spôsobmi -- a vedieť, ktorý z nich použiť na deväť z desiatich prípadov.
+vedlajsie: Skills sa nepíšu od stola. Vznikajú tak, že raz prejdeš prácu normálne a potom si ju necháš zabaliť.
+karta: CESTA A | Sprav a ulož | 90 % PRÍPADOV
+karta: CESTA B | Zadaj a nechaj napísať | KEĎ MÁŠ PODKLAD
+vysledok: Po dokončení máš vlastný skill, ktorý si spustil aspoň raz a raz už aj opravil.
+drobne: Claude má na tvorbu skills vlastný vstavaný skill. Nemusíš si ho sťahovať -- stačí povedať, čo chceš.
+
+@strana
+stitok: CESTA A
+h1: Sprav to raz.
+h2: Potom povedz „ulož to".
+
+@text
+Toto je spôsob, ktorým vzniká väčšina dobrých skills. Nesadneš si k prázdnemu súboru. Sadneš si k práci, ktorú aj tak musíš spraviť -- a na konci si ju necháš zabaliť.
+
+@kroky
+01 | SPRAV PRÁCU | Otvor nové sedenie a prejdi tú úlohu normálne. Usmerňuj, opravuj, kým nie si spokojný s výsledkom.
+02 | POVEDZ, ŽE SI SPOKOJNÝ | „Toto je presne ono." Claude tým vie, kde je hranica dobrého výstupu.
+03 | NECHAJ ZABALIŤ | **„Ulož tento postup ako skill, nech ho viem nabudúce spustiť."**
+04 | POMENUJ | Povie ti návrh názvu. Skontroluj ho -- z názvu vznikne príkaz, ktorý budeš písať.
+05 | PREČÍTAJ | Otvor `SKILL.md` a prejdi ho očami. Hlavne `description` a sekciu s obmedzeniami.
+
+@pravidlo PREČO TÁTO CESTA FUNGUJE LEPŠIE
+Keď postup píšeš od stola, zapíšeš ideálnu verziu -- tú, o ktorej si myslíš, že ju robíš. Keď ho necháš zapísať po skutočnej práci, zachytí aj tie tri veci, ktoré si cestou opravil. A práve tie tri veci sú to cenné.
+
+@strana
+stitok: CESTA B
+h1: Keď máš podklad.
+h2: Zadaj rovno.
+
+@text
+Druhá cesta sa hodí vtedy, keď už ten postup máš niekde napísaný -- v dokumente, v mailoch kolegovi, v hlave tak jasne, že ho vieš nadiktovať.
+
+@terminal ZADANIE NA SKILL
+Sprav mi skill na [čo to robí].
+
+Postup:
+1. [krok]
+2. [krok]
+3. [krok]
+
+Podklady sú v [súbor / priečinok].
+Nikdy: [čo sa nesmie stať].
+Description napíš tak, aby si ho načítal, keď poviem
+[veta, ktorou to bežne zadávam].
+
+@pravidlo POSLEDNÝ RIADOK JE TEN TRIK
+Napíš doň vetu, ktorou tú úlohu bežne zadávaš -- vlastnými slovami. Popis sa tým naladí na to, ako naozaj hovoríš, a skill sa bude spúšťať sám. Bez toho ho budeš musieť vždy volať menom.
+
+@strana
+stitok: PRVÁ VERZIA JE ZLÁ
+h1: A to je
+h2: v poriadku.
+
+@text
+Prvá verzia skillu nikdy nesedí. Používané skills bývajú vo verzii päť až desať. Nie preto, že by boli zle napísané -- ale preto, že postup sa vyjasňuje až tým, že ho púšťaš na skutočnej práci.
+
+@kroky
+01 | SPUSTI | Použi skill na reálnej úlohe, nie na testovacej.
+02 | VŠIMNI SI, ČO ŤA ŠTVALO | Jedna vec. Nezbieraj zoznam.
+03 | POVEDZ TO NAHLAS | „Uprav ten skill: [čo presne]." Opraví si ho sám, nemusíš do súboru.
+04 | ZNOVA | Ďalšie spustenie tú chybu už mať nebude. Po piatich kolách máš niečo, čo funguje.
+
+@pravidlo ČO PÍSAŤ DO OPRAVY
+Nie „bolo to zlé". Ale „v treťom kroku si vymyslel cenu, ktorá nebola v cenníku -- doplň zákaz". Skill sa opravuje konkrétnou vetou, presne ako inštrukcia.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Ten postup
+h2: zo strany 06.
+
+@zoznam
+01 | Vezmi ten postup, ktorý si si vybral v predošlej lekcii.
+02 | Otvor nové sedenie a **sprav tú prácu normálne**, až kým nie si spokojný.
+03 | Povedz: „Ulož tento postup ako skill, nech ho viem nabudúce spustiť."
+04 | Otvor `SKILL.md` a prečítaj `description`. Sedí to na vetu, ktorou to bežne zadávaš?
+05 | Doplň sekciu „Nikdy" s troma vecami, ktoré sa nesmú stať.
+06 | Spusti ho na ďalšej reálnej úlohe. Jednu vec oprav. Máš verziu dva.
+
+@pravidlo AK SA SKILL NESPUSTIL SÁM
+Nie je pokazený. Popis nesedí na to, ako hovoríš. Otvor `SKILL.md`, prečítaj `description` a prepíš ju svojimi slovami -- tými, ktorými si tú úlohu pred chvíľou zadal.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Máš prvý skill.
+
+@checklist
+Viem, že skill sa najlepšie robí po skutočnej práci, nie od stola.
+Mám vytvorený aspoň jeden vlastný skill.
+Prečítal som si jeho `description` a sedí na to, ako hovorím.
+Má sekciu s tým, čo sa nikdy nesmie stať.
+Spustil som ho na reálnej úlohe.
+Aspoň raz som ho opravil konkrétnou vetou.
+
+@odkazy
+DOKUMENTÁCIA SKILLS | https://code.claude.com/docs/en/skills
+
+@zaver
+hlavne: Ďalšia lekcia: poriadok. Desať skills v jednom priečinku je fajn. Päťdesiat bez systému je problém -- a nielen pre teba.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

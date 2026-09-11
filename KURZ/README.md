@@ -13,9 +13,10 @@ prepíšu sa.
 | Priečinok | Čo v ňom je |
 | --- | --- |
 | `obsah/` | Text lekcií. **Toto upravuješ.** Jeden súbor = jedna lekcia. |
-| `pdf/` | Hotové PDF. Generované. |
+| `pdf/` | Hotové PDF po lekciách. Generované. |
+| `KURZ-CELY.pdf` | Celý kurz v jednom súbore, s obsahom na preklikanie. Generované. |
 | `html/` | Tie isté lekcie ako webová stránka. Generované. |
-| `build/` | Generátor (`generuj.py`) a štýl (`styl.css`). |
+| `build/` | Generátor (`generuj.py`), zlučovač (`kniha.py`) a štýl (`styl.css`). |
 | `fonts/` | Písmo Inter. Nemaž — bez neho sa PDF vysádže náhradným písmom. |
 
 ## Ako to pregenerovať
@@ -36,21 +37,27 @@ Generátor sám upozorní na dve veci:
 
 - `strana X pretiekla` — na stranu sa text nezmestil a orezal by sa. Skráť ho.
 - `má naviac h3` — vnútorná strana má len dva riadky nadpisu (titulná tri).
+- `nedoplnené {{...}}` — v texte je zástupná hodnota, ktorú treba nahradiť.
 
 ## Obsah kurzu
+
+20 lekcií v štyroch otvorených moduloch.
 
 | Modul | Lekcie |
 | --- | --- |
 | 01 Start Here | Start Here |
-| 02 Claude | Čo je Claude · Claude v prehliadači · Claude Code · Claude Code cez OmniRoute · Ako sa Clauda pýtať · Modely a limity |
-| 03 ChatGPT | Čo je ChatGPT · Modely a kedy ktorý · Ako sa ChatGPT pýtať · Projects a Custom GPTs · ChatGPT vs Claude |
-| 04 Claude Skills | Čo je skill a čo je SKILL.md · Ako skills nainštalovať a spustiť |
-| 05 Checklisty | Ako používať Testing Questions · General Conversation Flow · AI Compliance · AI Prompt Hacking |
-| 06 Šablóny | Univerzálna prompt šablóna · Obsah a copy · Biznis a operácie · Výskum a rozhodnutie · Kód a debug · System prompt pre agenta |
+| 02 Claude | Na čo je celý Claude · Claude v prehliadači · Claude Code · Claude Cowork · Claude Design · **Ako si postaviť agenta** · Modely a čísla · Ako sa Clauda pýtať · Claude Code cez OmniRoute |
+| 03 ChatGPT | Na čo je celý ChatGPT · Modely a čísla · **GPT-6 Astra** · Ako sa ChatGPT pýtať · Projects a Custom GPTs · ChatGPT vs Claude |
+| 04 Claude Skills | Čo je skill a na čo slúži · Ako si skill vytvoriť · Poriadok v skills · Ako skills nainštalovať a spustiť |
 
-**Chýba:** `04 Claude Skills → Katalóg packu (36 skills)`. Tá lekcia potrebuje
-skutočné názvy tvojich 36 skills — pošli zoznam alebo priečinok `SKILLS/`
-a doplní sa.
+### Zamknuté moduly
+
+Moduly **05 Checklisty** a **06 Šablóny** sú hotové, ale zatiaľ mimo kurzu.
+Ich texty čakajú v `obsah/zamknute/`. Keď ich budeš chcieť otvoriť, presuň
+súbory späť do `obsah/` a pregeneruj — nič iné netreba.
+
+**Chýba:** lekcia `Katalóg packu (36 skills)`. Potrebuje skutočné názvy tvojich
+skills — pošli zoznam alebo priečinok `SKILLS/` a doplní sa.
 
 ## Formát súboru s lekciou
 

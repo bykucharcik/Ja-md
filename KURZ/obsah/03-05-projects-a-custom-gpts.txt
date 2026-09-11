@@ -1,0 +1,104 @@
+# Modul 03 — ChatGPT / lekcia 4
+modul: 03 ChatGPT
+cislo: 03.5
+titul: Projects a Custom GPTs
+stopa: CHATGPT × KUCHAR.AI
+stitky: Projects | 12 min | Praktické
+
+@obal
+stitok: PROJECTS A CUSTOM GPTS
+h1: Dva spôsoby.
+h2: Už nie
+h3: rovnako dostupné.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Nastaviť si Project tak, aby ti ušetril opakovanie -- a vedieť, prečo si nové Custom GPT na osobnom účte už nevytvoríš.
+vedlajsie: Projects má každý vrátane Free. Tvorba nových GPT ostala len firemným účtom. To je najdôležitejšia vec v tejto lekcii.
+karta: PROJECTS | Pre všetkých | CHATY + SÚBORY + INŠTRUKCIE
+karta: CUSTOM GPTS | Používať áno | TVORIŤ UŽ LEN VO FIRME
+vysledok: Po dokončení máš jeden Project nastavený a vieš, čo robiť s GPT, ktoré si používal doteraz.
+drobne: Stav k 10. 9. 2026 podľa OpenAI Help Center. Toto je oblasť, ktorá sa mení najčastejšie -- over si ju predtým, než na nej niečo postavíš.
+
+@strana
+stitok: DÔLEŽITÁ ZMENA
+h1: Nové GPT
+h2: si už nespravíš.
+
+@text
+Ešte donedávna si mohol na pláne Plus alebo Pro vytvoriť vlastné GPT a zverejniť ho. To už neplatí. **Tvorba a publikovanie nových GPT nie sú dostupné na osobných účtoch** -- ani na Free, Go, Plus, ani na Pro.
+
+@kroky
+01 | POUŽÍVAŤ | Existujúce GPT fungujú ďalej a vieš ich používať normálne.
+02 | UPRAVOVAŤ | Svoje staršie GPT vieš upravovať, ak máš zodpovedajúce predplatné a oprávnenia.
+03 | TVORIŤ NOVÉ | Len v pracovných priestoroch Business, Enterprise a Edu, podľa nastavení workspace-u.
+04 | ČO S TÝM | Ak si si GPT staval ako svoj nástroj, presuň ten obsah do Projektu. Robí takmer to isté.
+
+@pravidlo PREČO TO HOVORÍM HNEĎ
+Väčšina návodov na internete túto zmenu ešte nemá. Ak nájdeš tutoriál „sprav si vlastné GPT", nie je zlý -- je len starý. Nestrácaj s ním hodinu.
+
+@strana
+stitok: PROJECTS
+h1: Priečinok,
+h2: ktorý si pamätá.
+
+@text
+Project je pracovný priestor: zoskupuje chaty, drží nahraté súbory a má vlastné inštrukcie, ktoré platia pre všetky rozhovory vnútri. Je dostupný na všetkých plánoch vrátane Free.
+
+@kroky
+01 | ZALOŽ | V ľavom paneli nový Project. Pomenuj ho podľa opakovanej práce, nie podľa témy.
+02 | INŠTRUKCIE | Kto si, pre koho, akým tónom, čo nikdy, v akom jazyku. To isté ako pri Claude projekte.
+03 | SÚBORY | Nahraj podklady, ktoré platia vždy. Jednorazový dokument daj do konkrétneho chatu.
+04 | PRACUJ V ŇOM | Nové rozhovory otváraj vnútri projektu, inak o tebe zase nevie nič.
+
+@pravidlo ROZDIEL OPROTI GPT
+GPT bolo stavané ako nástroj, ktorý si niekomu dáš. Project je stavaný ako miesto, kde niečo robíš -- prípadne kde na niečom robíte viacerí. Pre vlastnú prácu je Project praktickejší aj tak.
+
+@strana
+stitok: ČO DO INŠTRUKCIÍ
+h1: Päť viet.
+h2: Nie päť odsekov.
+
+@pojmy
+KTO SI | „Som konzultant pre malé e-shopy na Slovensku." Model si inak vyberie neutrálny hlas nikoho.
+PRE KOHO | „Píšem majiteľom firiem, ktorí nie sú technickí." Toto mení slovník viac než čokoľvek iné.
+TÓN | „Krátke vety. Žiadne prívlastky navyše. Nikdy výkričník."
+ČO NIKDY | „Nevymýšľaj čísla. Ak údaj nie je v podklade, napíš NEVIEM."
+FORMA | „Odpovedaj po slovensky. Bez úvodných zdvorilostí."
+
+@pravidlo TEST DOBRÝCH INŠTRUKCIÍ
+Prečítaj si ich a spýtaj sa: viem podľa nich rozoznať zlý výstup od dobrého? Ak nie, sú príliš všeobecné. „Píš profesionálne" ti nepovie nič.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jeden Project.
+h2: Dnes večer.
+
+@zoznam
+01 | Založ Project na prácu, ktorú robíš aspoň raz týždenne.
+02 | Napíš doň päť viet podľa predchádzajúcej strany. Nie viac.
+03 | Nahraj dva až tri súbory, ktoré platia vždy.
+04 | Otvor v ňom chat a zadaj úlohu **bez** akéhokoľvek vysvetľovania kontextu.
+05 | Ak máš staré GPT, ktoré si používal -- skopíruj jeho inštrukcie a súbory sem. Odteraz ich máš na mieste, ktoré neprestane fungovať.
+
+@pravidlo AK MÁŠ VIAC ROLÍ
+Rob radšej dva malé projekty než jeden veľký. Inštrukcie pre klientske texty a inštrukcie pre interné poznámky si v jednom projekte navzájom prekážajú.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Máš svoje miesto.
+
+@checklist
+Viem, že nové GPT sa na osobnom účte už vytvoriť nedajú.
+Viem, že existujúce GPT používať môžem.
+Mám založený aspoň jeden Project.
+V inštrukciách mám aj to, čo robiť **nemá**.
+Nahral som len súbory, ktoré platia vždy.
+Obsah svojho starého GPT som presunul do Projektu.
+
+@odkazy
+PROJECTS V CHATGPT | https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt
+TVORBA A ÚPRAVA GPT | https://help.openai.com/en/articles/8554397-creating-and-editing-gpts
+
+@zaver
+hlavne: Ďalšia lekcia: ChatGPT vs Claude -- bez fandenia, len kedy siahnuť po ktorom.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

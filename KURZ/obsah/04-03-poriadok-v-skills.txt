@@ -1,0 +1,116 @@
+# Modul 04 — Claude Skills / lekcia 3
+modul: 04 Claude Skills
+cislo: 04.3
+titul: Poriadok v skills
+stopa: SKILLS × KUCHAR.AI
+stitky: Skills | 13 min | Nudné a dôležité
+
+@obal
+stitok: PORIADOK V SKILLS
+h1: Chaos v priečinkoch
+h2: je chaos
+h3: aj v hlave.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Usporiadať skills tak, aby si sa v nich vyznal ty aj AI -- a aby ti hľadanie nežralo čas pri každej úlohe.
+vedlajsie: Neporiadok nie je len estetický problém. Každý zbytočný súbor a každý nejasný názov stojí AI jedno kolo navyše.
+karta: JEDNO MIESTO | skills/ | JEDEN SKILL = JEDEN PRIEČINOK
+karta: PRAVIDLO | Názov = čo to robí | NIE KEDY SI TO SPRAVIL
+vysledok: Po dokončení máš štruktúru, ktorá unesie aj päťdesiat skills bez toho, aby si v nej blúdil.
+drobne: Toto je najnudnejšia lekcia v module a zároveň tá, na ktorej to väčšine ľudí po troch mesiacoch padne.
+
+@strana
+stitok: PREČO TO RIEŠIME
+h1: Neporiadok
+h2: platíš dvakrát.
+
+@text
+Prvýkrát ho platíš ty, keď hľadáš, kde si čo dal. Druhýkrát ho platí AI -- a to je tá časť, ktorú nevidíš.
+
+@kroky
+01 | KAŽDÉ HĽADANIE JE KOLO NAVYŠE | Keď súbor nie je tam, kde má byť, agent spraví kolo naviac, aby ho našiel. Pomalšie a drahšie.
+02 | NEJASNÝ NÁZOV = ZLÝ ODHAD | Podľa názvu a popisu sa rozhoduje, čo otvoriť. `poznamky2-final.md` mu nepovie nič.
+03 | DUPLICITY SI ODPORUJÚ | Dva skills na to isté s inými pravidlami znamenajú, že výsledok je náhoda.
+04 | NABOBTNANÉ SÚBORY ŽERÚ MIESTO | Všetko, čo sa načítava vždy, ti uberá z okna, ešte než položíš otázku.
+
+@pravidlo AKO SI TO OVERIŤ
+V Claude Code napíš `/context`. Ukáže ti, koľko z okna je zabraté ešte pred prvou správou. Ak ti nabobtnané súbory zožerú pätinu, vieš, kde začať upratovať.
+
+@strana
+stitok: ŠTRUKTÚRA
+h1: Jedno miesto.
+h2: Plochá, bez výnimiek.
+
+@terminal AKO TO MAŤ
+~/.claude/skills/            <- osobné, platia všade
+  cenova-ponuka/
+    SKILL.md
+    cennik.md                <- podklad ku skillu
+  tyzdenny-report/
+    SKILL.md
+  kontrola-textu/
+    SKILL.md
+
+<projekt>/.claude/skills/    <- projektové, idú do gitu
+  onboarding-klienta/
+    SKILL.md
+
+@pojmy
+OSOBNÉ vs PROJEKTOVÉ | Čo používaš všade, daj do `~/.claude/skills/`. Čo platí len pre jeden projekt alebo tím, daj do projektu a commitni.
+JEDEN SKILL = JEDEN PRIEČINOK | Nikdy nemiešaj dva postupy do jedného. Keď sa jeden zmení, rozbiješ druhý.
+PODKLADY DNU | Cenník, vzorový výstup, šablóna -- daj ich do priečinka toho skillu a odkáž sa na ne zo `SKILL.md`.
+NEROB PODPRIEČINKY PODĽA TÉM | `skills/marketing/...` znie logicky a je to zbytočná vrstva. Plochá štruktúra sa lepšie hľadá.
+
+@pravidlo NÁZOV PRIEČINKA JE PRÍKAZ
+Z názvu vznikne `/prikaz`. Preto: malé písmená, pomlčky, sloveso alebo vec. `cenova-ponuka` áno. `Ponuky_v2_FINAL` nie -- to sa ti bude písať každý deň.
+
+@strana
+stitok: HYGIENA
+h1: Štyri pravidlá.
+h2: Od prvého dňa.
+
+@pojmy
+JEDEN ÚČEL | Ak skill robí tri veci, rozdeľ ho. Tri malé skills fungujú lepšie než jeden veľký, ktorý sa načíta celý.
+ŽIADNE MŔTVOLY | Skill, ktorý si tri mesiace nepustil, zmaž alebo presuň do `archiv/`. Mŕtve skills mätú výber.
+VŽDY OPRAVUJ, NIKDY NEPRIDÁVAJ | Keď niečo nefunguje, uprav existujúci skill. Nerob `cenova-ponuka-2`. Takto vzniká ten chaos.
+RAZ ZA ČAS UPRATOVANIE | Otvor sedenie a povedz: **„Prejdi moje skills, nájdi duplicity a protirečenia a napíš mi, čo zjednotiť."** Spraví to za teba.
+
+@pravidlo TEST PORIADKU
+Otvor Claude Code, napíš `/` a pozri sa na zoznam. Vieš pri každom názve **bez otvárania** povedať, čo robí a kedy sa spustí? Ak nie, ten názov alebo popis je zlý -- a rovnako to vidí aj Claude.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Uprac to
+h2: kým je čoho málo.
+
+@zoznam
+01 | Otvor `~/.claude/skills/` a pozri sa, čo tam máš. Ak je to prázdne, tým lepšie -- začneš správne.
+02 | Skontroluj názvy. Každý musí byť malými písmenami, s pomlčkami a musí hovoriť, čo robí.
+03 | Prejdi popisy. Pri každom si polož otázku: spustil by sa, keby som zadal úlohu vlastnými slovami?
+04 | Podklady, ktoré k skillom patria, presuň do ich priečinkov a odkáž sa na ne zo `SKILL.md`.
+05 | Čo tri mesiace nepoužívaš, presuň do `archiv/`. Nemaž, ak sa bojíš -- ale nech to nie je v zozname.
+06 | Spusti `/context` a pozri sa, koľko ti zaberá základ. Ak je to veľa, skráť `CLAUDE.md`.
+
+@pravidlo PREČO TERAZ, KEĎ MÁŠ DVA SKILLS
+Lebo o pol roka ich budeš mať tridsať a vtedy sa ti do toho už nebude chcieť. Systém, ktorý si nastavíš pri druhom skille, ťa nestojí nič. Ten istý systém pri tridsiatom je popoludnie práce.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Máš v tom systém.
+
+@checklist
+Skills mám na jednom mieste, každý vo vlastnom priečinku.
+Názvy sú malými písmenami s pomlčkami a hovoria, čo skill robí.
+Viem pri každom bez otvárania povedať, kedy sa spustí.
+Podklady sú v priečinku svojho skillu.
+Nepoužívané skills nie sú v zozname.
+Keď niečo nefunguje, opravujem existujúci skill namiesto nového.
+Poznám `/context` a viem, koľko mi zaberá základ.
+
+@odkazy
+DOKUMENTÁCIA SKILLS | https://code.claude.com/docs/en/skills
+CLAUDE.MD A PAMÄŤ | https://code.claude.com/docs/en/memory
+
+@zaver
+hlavne: Posledná lekcia modulu: ako skill nainštalovať, spustiť a čo robiť, keď mlčí.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

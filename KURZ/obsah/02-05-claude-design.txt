@@ -1,0 +1,103 @@
+# Modul 02 — Claude / lekcia 5
+modul: 02 Claude
+cislo: 02.5
+titul: Claude Design
+stopa: CLAUDE × KUCHAR.AI
+stitky: Design | 11 min | Novinka
+
+@obal
+stitok: CLAUDE DESIGN
+h1: Keď výsledok
+h2: nie je text.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Vyrobiť deck, one-pager, landing page alebo prototyp rozhovorom -- a potom to doladiť rukou, nie ďalším promptom.
+vedlajsie: Je to plátno, nie chat. Claude navrhne, ty ťaháš, zväčšuješ a zarovnávaš. A keď z návrhu má byť softvér, pošleš to do Claude Code.
+karta: VSTUP | Text, obrázok, dokument | ALEBO TVOJ KÓD
+karta: VÝSTUP | Deck · stránka · prototyp | V TVOJOM ŠTÝLE
+vysledok: Po dokončení máš jeden hotový vizuálny výstup, ktorý si nespravil v Canve ani v PowerPointe.
+drobne: Stav k 11. 9. 2026. Claude Design je z Anthropic Labs a beží ako research preview pre platené plány -- dostupnosť si over v účte.
+
+@strana
+stitok: ČO TO JE
+h1: Plátno.
+h2: Nie okno s chatom.
+
+@text
+Design je miesto, kde vzniká vizuálna práca rozhovorom. Poviete si, čo má vzniknúť, Claude to navrhne -- a potom to **upravuješ rukou**: ťaháš prvky, meníš veľkosti, zarovnávaš. Nemusíš mu tridsaťkrát opisovať, že ten nadpis má byť o kúsok vyššie.
+
+@kroky
+01 | ZAČNEŠ | Textom, nahratým obrázkom, dokumentom (DOCX, PPTX, XLSX) -- alebo mu ukážeš svoj kód.
+02 | ŠTÝL | Pri nastavení si prečíta tvoj kód a tvoje návrhy a postaví z toho **dizajnový systém**: tvoje farby, tvoje písmo, tvoje komponenty. Ďalšie projekty ich už používajú samy.
+03 | UPRAVÍŠ | Rozloženie doladíš priamo na plátne. Rozhovor používaš na veľké zmeny, ruku na malé.
+04 | ODOVZDÁŠ | Keď má z návrhu byť skutočná vec, pošleš to do Claude Code -- nadviaže na existujúcu prácu, nie na screenshot.
+
+@pravidlo PREČO TO JE INÉ NEŽ „SPRAV MI OBRÁZOK"
+Generátor obrázkov ti dá pekný obrázok, ktorý nevieš upraviť. Design ti dá **návrh, ktorý sa dá rozobrať na kusy** -- a ktorý drží tvoju identitu naprieč vecami.
+
+@strana
+stitok: NA ČO TO POUŽIŤ
+h1: Tam, kde si doteraz
+h2: platil niekomu inému.
+
+@tabulka ČO POTREBUJEŠ | AKO TO ZADÁŠ
+Deck pre klienta | „Z tejto osnovy sprav 12 slidov v našom štýle. Prvý je problém, posledný je cena."
+One-pager na službu | „Jedna strana: čo to je, pre koho, tri dôvody, cena, kontakt. Bez vaty."
+Landing page | „Stránka pre tento produkt. Hore hook, potom tri bloky, dole formulár."
+Sociálne vizuály | „Z tohto príspevku sprav tri varianty na Instagram, každý iným uhlom."
+Prototyp, čo sa dá klikať | „Sprav klikateľný prototyp tejto appky, tri obrazovky, aby som to vedel ukázať."
+
+@pravidlo NAJVÄČŠIA HODNOTA JE V ŠTÝLE
+Jeden pekný deck ti spraví hocičo. Rozdiel je v tom, že desiaty deck vyzerá ako ten prvý -- lebo si systém nastavil raz. To je vec, ktorú ti generátor obrázkov nedá nikdy.
+
+@strana
+stitok: AKO ZADÁVAŤ
+h1: Obsah slovami.
+h2: Štýl až nakoniec.
+
+@text
+Najčastejšia chyba je, že ľudia začnú štýlom. „Sprav to moderné, minimalistické, čisté." To sú slová, ktoré neznamenajú nič konkrétne, a dostaneš priemer internetu.
+
+@pojmy
+NAJPRV ČO | Povedz, čo má byť na výstupe. Konkrétne bloky, konkrétne texty, konkrétne čísla.
+POTOM PRE KOHO | „Pre majiteľov malých e-shopov, ktorí nie sú technickí." Toto zmení celý vzhľad viac než slovo minimalistický.
+AŽ POTOM ŠTÝL | A radšej ukáž než opíš. Nahraj obrázok toho, čo sa ti páči, a povedz, čo presne na tom.
+NA KONCI ZÁKAZY | „Žiadne stock fotky ľudí v obleku. Žiadne ikonky s gradientom."
+
+@pravidlo KEĎ SA TO NEPODARÍ NA PRVÝ POKUS
+To je normálne a nemá to zmysel opisovať. Vypýtaj si tri varianty rôznym smerom, ukáž na ten najbližší a pokračuj z neho. Vyberať je vždy rýchlejšie než vysvetľovať.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jedna vec.
+h2: Ktorú odkladáš.
+
+@zoznam
+01 | Vyber vizuálnu vec, ktorú potrebuješ a odkladáš ju, lebo sa ti do nej nechce.
+02 | Napíš obsah slovami. Všetky bloky, všetky texty. Toto je devätdesiat percent práce.
+03 | Nechaj si spraviť tri varianty a vyber najbližší.
+04 | Doladenie sprav **rukou na plátne**, nie ďalšími promptami. Toto je zvyk, ktorý sa učíš.
+05 | Ak máš vlastnú stránku alebo kód, ukáž mu ich a nechaj si postaviť dizajnový systém. Druhý výstup už bude tvoj.
+
+@pravidlo ČO SI Z TOHO ODNIESŤ
+Design nenahradí dizajnéra na veľkej veci. Ale zoberie ti z krku všetky malé veci, ktoré si doteraz buď odkladal, alebo za ne platil -- a to je väčšina toho, čo reálne potrebuješ.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Máš to na čo pozerať.
+
+@checklist
+Viem, že Design je plátno, nie generátor obrázkov.
+Obsah zadávam slovami, štýl až na konci.
+Štýl radšej ukazujem než opisujem.
+Malé úpravy robím rukou, nie promptom.
+Mám nastavený dizajnový systém, aby ďalší výstup vyzeral rovnako.
+Viem, že hotový návrh viem poslať do Claude Code.
+
+@odkazy
+CLAUDE DESIGN — ZAČÍNAME | https://support.claude.com/en/articles/14604416-get-started-with-claude-design
+PRODUKTOVÁ STRÁNKA | https://claude.com/product/design
+
+@zaver
+hlavne: Ďalšia lekcia je najdôležitejšia v celom kurze: ako si postaviť vlastného agenta.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

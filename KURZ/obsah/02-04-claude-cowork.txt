@@ -1,0 +1,107 @@
+# Modul 02 — Claude / lekcia 4
+modul: 02 Claude
+cislo: 02.4
+titul: Claude Cowork
+stopa: CLAUDE × KUCHAR.AI
+stitky: Cowork | 14 min | Novinka
+
+@obal
+stitok: CLAUDE COWORK
+h1: Zadáš.
+h2: Odídeš.
+h3: Vrátiš sa k hotovému.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Používať Cowork na prácu, ktorá nie je kód -- rešerš, dokumenty, poprehadzovanie súborov, veci cez viac appiek naraz.
+vedlajsie: Je to Claude Code pre normálnu prácu. Ukážeš mu priečinok, pripojíš appky, povieš čo chceš. Spraví plán, odpracuje to a uloží výsledok.
+karta: NIE JE TO CHAT | Je to pracovné sedenie | PLÁNUJE A VYKONÁVA
+karta: VÝSTUP | Skutočný súbor | V TVOJOM PRIEČINKU
+vysledok: Po dokončení máš za sebou jednu úlohu, ktorú Cowork dotiahol bez teba.
+drobne: Stav k 11. 9. 2026. Cowork je na platených plánoch a časti funkcií sú v bete -- dostupnosť si over vo svojom účte.
+
+@strana
+stitok: ČO TO JE
+h1: Claude Code
+h2: pre ostatných.
+
+@text
+Claude Code bol postavený pre vývojárov a beží v termináli. Cowork je tá istá myšlienka -- agent, ktorý pracuje sám -- ale pre prácu, ktorá nie je kód. A nemusíš na to vedieť otvoriť terminál.
+
+@text
+Rozdiel oproti chatu je v tvare práce. Chat je rozhovor. Cowork je **sedenie**: opíšeš úlohu, on spraví plán, prejde krokmi, použije súbory a nástroje, a ty ho popri tom usmerňuješ.
+
+@kroky
+01 | UKÁŽEŠ PRIEČINOK | Vyberieš miesto na svojom počítači, kde má pracovať a kam má uložiť výsledok.
+02 | PRIPOJÍŠ APPKY | Gmail, Kalendár, Disk, Slack a ďalšie -- podľa toho, čo má mať k dispozícii.
+03 | POVIEŠ CIEĽ | Nie postup. Cieľ. „Z týchto dvadsiatich mailov mi sprav prehľad, kto čaká na odpoveď, a ulož to sem."
+04 | ODÍDEŠ | Spraví plán, prejde ho a uloží hotovú vec. Beží aj na webe a v mobile, takže sa k sedeniu vieš vrátiť odkiaľkoľvek.
+
+@pravidlo ČO ZNAMENÁ „HOTOVÁ VEC"
+Naformátovaný dokument, roztriedené súbory, spracovaná rešerš. Nie odsek v chate, ktorý si potom niekam prepíšeš. Toto je celý rozdiel.
+
+@strana
+stitok: NA ČO TO POUŽIŤ
+h1: Na to, čo ti
+h2: žerie hodiny.
+
+@tabulka ÚLOHA | AKO BY SI TO ZADAL
+Neporiadok v súboroch | „Prejdi tento priečinok, pomenuj súbory podľa obsahu a rozdeľ do podpriečinkov podľa roku."
+Rešerš pred rozhodnutím | „Porovnaj tieto tri nástroje, pozri aj na web, a ulož mi sem porovnanie so zdrojmi."
+Prehľad z mailov | „Prejdi maily za tento týždeň a sprav zoznam, kto čaká na moju odpoveď a odkedy."
+Podklad z viacerých dokumentov | „Z týchto piatich PDF sprav jeden dokument, ktorý by som vedel poslať klientovi."
+Opakovaná administratíva | „Z faktúr v priečinku sprav tabuľku: dodávateľ, suma, dátum splatnosti."
+
+@pravidlo AKO SPOZNÁŠ ÚLOHU PRE COWORK
+Má viac krokov, dotýka sa viacerých vecí a nudí ťa. Ak sa dá spraviť jednou otázkou, patrí do chatu. Ak by si na to najal brigádnika, patrí sem.
+
+@strana
+stitok: ČO SI USTRÁŽIŤ
+h1: Dostal prístup.
+h2: Ber to vážne.
+
+@text
+Cowork je užitočný presne preto, lebo má prístup k tvojim súborom a appkám. To je zároveň jediné, na čom treba dávať pozor. Nie je to o nedôvere k nástroju -- je to o tom, že veci, ktoré sa nedajú vrátiť, si zaslúžia tvoje oko.
+
+@pojmy
+ZAČNI NAČÍTANÍM | Prvé sedenia nechaj čítať a písať nové súbory. Mazanie a prepisovanie až keď vieš, ako sa správa.
+NEVRATNÉ VECI | Odoslaný mail, zmazaný súbor, zmena v cudzom systéme. Toto si nechaj potvrdzovať vždy.
+CUDZÍ OBSAH | Keď spracúva maily alebo web, číta text od cudzích ľudí. Ten text môže obsahovať pokyny. Preto mu nedávaj naraz prístup k čítaniu cudzieho obsahu **a** právo konať bez potvrdenia.
+ZÁLOHA | Prvý priečinok, ktorý mu dáš, nech je kópia. Nie originál.
+
+@pravidlo JEDNA VETA DO ZADANIA
+„Než niečo zmažeš, prepíšeš alebo odošleš, spýtaj sa ma." Stojí ťa to jeden riadok a odstráni to devätnásť z dvadsiatich zlých prekvapení.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Jeden priečinok.
+h2: Jedna nudná vec.
+
+@zoznam
+01 | Vyber úlohu, ktorá ťa nudí a má viac krokov. Nie tú najdôležitejšiu -- tú najotravnejšiu.
+02 | Sprav kópiu priečinka, s ktorým má robiť. Pracuj na kópii.
+03 | Zadaj cieľ jednou vetou a dopíš, kde má byť výsledok a v akom tvare.
+04 | Pridaj vetu o potvrdzovaní nevratných vecí.
+05 | Nechaj to dobehnúť a **nepozeraj sa mu na prsty každých tridsať sekúnd.** Presne toto je ten zvyk, ktorý sa učíš.
+
+@pravidlo AK TO SPRAVÍ ZLE
+Nezačni robiť to ručne. Pozri sa, ktorý krok sa zlomil, a doplň chýbajúcu informáciu do zadania. Väčšinou zistíš, že si niečo považoval za samozrejmé -- a on to vedieť nemohol.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Pracoval bez teba.
+
+@checklist
+Viem, že Cowork je pracovné sedenie, nie rozhovor.
+Zadávam cieľ a tvar výstupu, nie postup.
+Prvé sedenia som púšťal na kópii priečinka.
+Mám v zadaní vetu o potvrdzovaní nevratných akcií.
+Viem, prečo nedávam dokopy čítanie cudzieho obsahu a voľnú ruku konať.
+Nechal som aspoň jednu úlohu dobehnúť bez toho, aby som do nej zasahoval.
+
+@odkazy
+ZAČÍNAME S COWORK | https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork
+COWORK — PRODUKTOVÁ STRÁNKA | https://claude.com/product/cowork
+
+@zaver
+hlavne: Ďalšia lekcia: Claude Design -- keď výsledok nie je text, ale niečo, na čo sa pozerá.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

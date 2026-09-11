@@ -7,32 +7,33 @@ stitky: Claude Code | 18 min | Mierne pokročilý
 
 @obal
 stitok: CLAUDE CODE
-h1: Nekopíruj kód.
-h2: Pusť ho k súborom.
+h1: Nekopíruj.
+h2: Pusť ho
+h3: k súborom.
 nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
-hlavne: Nainštalovať Claude Code, otvoriť s ním prvý projekt, dať mu trvalé pravidlá cez CLAUDE.md a nastaviť, čo smie a čo nie.
-vedlajsie: Nie je to nástroj len pre programátorov. Je to Claude, ktorý vidí priečinok a vie v ňom robiť -- aj keď sú v ňom texty, tabuľky a poznámky.
+hlavne: Nainštalovať Claude Code, otvoriť s ním prvý priečinok, dať mu trvalé pravidlá cez CLAUDE.md a nastaviť, čo smie a čo nie.
+vedlajsie: Nie je to nástroj len pre programátorov. Je to Claude, ktorý vidí priečinok -- aj keď sú v ňom texty, tabuľky a poznámky.
 karta: INŠTALÁCIA | jeden príkaz | MAC, LINUX, WINDOWS
 karta: PRAVIDLÁ | CLAUDE.md | ČÍTA HO PRED KAŽDOU PRÁCOU
 vysledok: Po dokončení máš Claude Code spustený vo vlastnom priečinku, s vlastným CLAUDE.md a s premyslenými povoleniami.
-drobne: Stav k 10. 9. 2026. Príkazy a cesty overené v oficiálnej dokumentácii code.claude.com -- odkazy sú na poslednej strane.
+drobne: Stav k 11. 9. 2026, príkazy overené v dokumentácii code.claude.com. Odkazy sú na poslednej strane.
 
 @strana
-stitok: ČO TO VLASTNE JE
+stitok: ČO TO JE
 h1: Claude, ktorý
 h2: vidí priečinok.
 
 @text
-Claude Code je Claude spustený vo vnútri priečinka. Číta súbory, ktoré tam sú, mení ich, spúšťa príkazy a vie použiť git. Rozdiel oproti chatu nie je v tom, že by bol múdrejší -- je v tom, že medzi ním a tvojou prácou nie je schránka.
+Claude Code je Claude spustený vo vnútri priečinka. Číta súbory, mení ich, spúšťa príkazy, vie použiť git. Rozdiel oproti chatu nie je v tom, že by bol múdrejší -- je v tom, že medzi ním a tvojou prácou nie je schránka.
 
 @kroky
 01 | TERMINÁL | Základná podoba. Napíšeš `claude` v priečinku a začneš písať po slovensky.
-02 | EDITOR | Rozšírenie do VS Code / Cursor a plugin do JetBrains. To isté, len s náhľadom zmien.
+02 | EDITOR | Rozšírenie do VS Code / Cursor, plugin do JetBrains. To isté, len s náhľadom zmien.
 03 | DESKTOP APP | Samostatná aplikácia. Vidíš zmeny vizuálne, vieš pustiť viac sedení naraz.
 04 | WEB | `claude.ai/code` v prehliadači, bez inštalácie. Dobré na dlhé úlohy, ktoré nechceš mať na svojom počítači.
 
 @pravidlo NEJDE LEN O KÓD
-Priečinok s dvadsiatimi PDF-kami, tabuľkou a poznámkami je pre Claude Code rovnaký projekt ako repozitár. „Prejdi tie faktúry a sprav z nich prehľad" je úplne legitímne zadanie.
+Priečinok s dvadsiatimi PDF-kami, tabuľkou a poznámkami je preň rovnaký projekt ako repozitár. „Prejdi tie faktúry a sprav z nich prehľad" je úplne legitímne zadanie.
 
 @strana
 stitok: INŠTALÁCIA
@@ -46,12 +47,29 @@ curl -fsSL https://claude.ai/install.sh | bash
 irm https://claude.ai/install.ps1 | iex
 
 @kroky
-01 | SPUSTI | Prejdi do priečinka svojho projektu a napíš `claude`. Pri prvom spustení sa otvorí prehliadač na prihlásenie.
+01 | SPUSTI | Prejdi do priečinka a napíš `claude`. Pri prvom spustení sa otvorí prehliadač na prihlásenie.
 02 | PRIHLÁS SA | Účtom Claude Pro alebo Max. Claude Code je v cene plateného predplatného.
 03 | OVER | Napíš `/status`. Uvidíš, ktorým účtom si prihlásený a aký model beží.
 
 @text drobne
-Na Windowse sa oplatí mať nainštalovaný Git for Windows -- bez neho Claude Code používa PowerShell namiesto bash-u. Ak inštalácia spadne, `/doctor` a dokumentácia troubleshootingu povedia prečo.
+Na Windowse sa oplatí mať Git for Windows -- bez neho Claude Code používa PowerShell namiesto bash-u. Ak inštalácia spadne, `/doctor` povie prečo.
+
+@strana
+stitok: ZAČNI OTÁZKAMI
+h1: Nie úpravami.
+h2: Otázkami.
+
+@text
+Toto je rada od človeka, ktorý Claude Code postavil: **nezačínaj tým, že necháš meniť súbory.** Začni tým, že sa pýtaš na obsah priečinka. Naučí ťa to, čo tento nástroj zvládne na prvý pokus a kde ho treba viesť za ruku.
+
+@zoznam
+01 | „Čo je v tomto priečinku? Daj mi prehľad po súboroch."
+02 | „Odkiaľ sa berie to číslo v tabuľke na druhom hárku?"
+03 | „Prejdi históriu a povedz, čo sa tu za posledný mesiac zmenilo."
+04 | Až keď vieš, čo zvládne, pýtaj si zmenu -- a najprv plán: **„skôr než začneš písať, urob plán a daj mi ho schváliť."**
+
+@pravidlo PREČO PLÁN
+Keď mu zadáš veľkú úlohu naraz, občas ju trafí presne. Občas spraví niečo úplne iné, než si chcel. Vypýtaný plán pred prácou je najlacnejší spôsob, ako to zistiť **pred** tým, než sa niečo zmení.
 
 @strana
 stitok: CLAUDE.MD
@@ -59,7 +77,7 @@ h1: Napíš raz.
 h2: Platí vždy.
 
 @text
-`CLAUDE.md` je obyčajný textový súbor v koreni projektu. Claude Code ho prečíta na začiatku každého sedenia. Je to miesto, kam napíšeš to, čo by si inak vysvetľoval znova a znova.
+`CLAUDE.md` je obyčajný textový súbor v koreni priečinka. Claude Code ho prečíta na začiatku každého sedenia. Je to miesto, kam napíšeš to, čo by si inak vysvetľoval znova a znova.
 
 @terminal CLAUDE.MD — PRÍKLAD
 # Pravidlá projektu
@@ -70,11 +88,11 @@ h2: Platí vždy.
 - Súbory v priečinku /archiv nikdy nemeň.
 
 @pojmy
-KAM TO DAŤ | `./CLAUDE.md` v koreni projektu. Osobné pravidlá pre všetky projekty patria do `~/.claude/CLAUDE.md`.
+KAM TO DAŤ | `./CLAUDE.md` v koreni projektu. Osobné pravidlá pre všetky projekty do `~/.claude/CLAUDE.md`.
 AKO DLHÉ | Do 200 riadkov. Dlhší súbor zaberá kontext a Claude sa ho drží horšie.
 AKO PÍSAŤ | Konkrétne a overiteľne. „Odsadzuj dvoma medzerami" áno, „formátuj pekne" nie.
-RÝCHLY ŠTART | Príkaz `/init` prejde projekt a vygeneruje ti prvú verziu. Potom ju uprav.
-ČO TO NIE JE | Nie je to zámok. Sú to inštrukcie, nie vynútené pravidlo -- to sú povolenia.
+RÝCHLY ŠTART | `/init` prejde priečinok a vygeneruje prvú verziu. Potom ju uprav.
+RÝCHLA POZNÁMKA | Napíš `#` a vetu -- Claude si ju rovno zapíše do CLAUDE.md.
 
 @strana
 stitok: POVOLENIA
@@ -82,21 +100,21 @@ h1: Čo smie.
 h2: A čo nikdy.
 
 @text
-Claude Code sa pýta skôr, než niečo zmení alebo spustí. Čítanie súborov v projekte nepotrebuje súhlas, zápis a príkazy áno. Tri odpovede v tom okne majú rôznu váhu: raz, do konca sedenia, alebo natrvalo.
+Claude Code sa pýta skôr, než niečo zmení alebo spustí. Čítanie súborov v projekte súhlas nepotrebuje, zápis a príkazy áno. Odpovede majú rôznu váhu: raz, do konca sedenia, alebo natrvalo.
 
 @kroky
 01 | REŽIMY | Predvolený sa pýta pri každom novom nástroji. `plan` len číta a navrhuje. `acceptEdits` automaticky prijíma úpravy súborov.
-02 | PRAVIDLÁ | V `/permissions` si nastavíš allow / ask / deny. Vyhodnocujú sa v poradí **deny -> ask -> allow**, prvá zhoda rozhoduje.
-03 | ZÁPIS | Trvalé súhlasy si Claude Code ukladá do `.claude/settings.local.json` v koreni repozitára.
+02 | PRAVIDLÁ | V `/permissions` nastavíš allow / ask / deny. Vyhodnocujú sa v poradí **deny -> ask -> allow**, prvá zhoda rozhoduje.
+03 | ZÁPIS | Trvalé súhlasy sa ukladajú do `.claude/settings.local.json` v koreni repozitára.
 
 @terminal PRÍKLADY PRAVIDIEL
-Bash(npm run build)     # povoliť presne tento príkaz
-Read(./.env)            # pravidlo pre čítanie jedného súboru
-WebFetch(domain:docs.sk)# pravidlo pre jednu doménu
-Bash(rm *)              # toto daj do deny a nechaj tak
+Bash(npm run build)      # povoliť presne tento príkaz
+Read(./.env)             # pravidlo pre čítanie jedného súboru
+WebFetch(domain:docs.sk) # pravidlo pre jednu doménu
+Bash(rm *)               # toto daj do deny a nechaj tak
 
 @pravidlo JEDINÉ PRAVIDLO, KTORÉ NEPORUŠ
-Režim `bypassPermissions` vypína pýtanie sa úplne. Používaj ho len v kontajneri alebo virtuálnom stroji, kde nemá čo pokaziť. Na svojom počítači nikdy.
+Režim `bypassPermissions` vypína pýtanie úplne. Používaj ho len v kontajneri alebo virtuálnom stroji, kde nemá čo pokaziť. Na svojom počítači nikdy.
 
 @strana
 stitok: PRVÁ ÚLOHA
@@ -104,9 +122,9 @@ h1: Jeden priečinok.
 h2: Jedna zmena.
 
 @zoznam
-01 | Vytvor si nový prázdny priečinok a skopíruj doň pár svojich súborov -- pokojne texty alebo tabuľky, nie kód.
-02 | Spusti `claude` a napíš: „Prejdi súbory v tomto priečinku a napíš mi, čo v nich je."
-03 | Potom si vypýtaj skutočnú zmenu: „Vytvor PREHLAD.md so zhrnutím a odkazmi na jednotlivé súbory."
+01 | Vytvor prázdny priečinok a skopíruj doň pár svojich súborov -- pokojne texty alebo tabuľky, nie kód.
+02 | Spusti `claude` a **najprv sa pýtaj**: „Prejdi súbory a napíš mi, čo v nich je."
+03 | Potom si vypýtaj plán: „Chcem PREHLAD.md so zhrnutím. Najprv mi daj plán."
 04 | Keď sa spýta na povolenie zápisu, prečítaj si, čo presne chce urobiť. Až potom potvrď.
 05 | Vytvor `CLAUDE.md` s troma pravidlami a zopakuj tú istú úlohu. Všimni si rozdiel.
 
@@ -120,16 +138,16 @@ h2: Máš to v termináli.
 
 @checklist
 Claude Code je nainštalovaný a `/status` ukazuje môj účet.
-Spustil som ho aspoň raz vo vlastnom priečinku.
+Začal som otázkami na priečinok, nie úpravami.
+Pri väčšej úlohe si pýtam plán pred prácou.
 Mám vytvorený `CLAUDE.md` s konkrétnymi pravidlami.
-Viem, že pravidlá povolení idú v poradí deny -> ask -> allow.
+Viem, že povolenia idú v poradí deny -> ask -> allow.
 `bypassPermissions` nepoužívam na svojom počítači.
-Prvý test som púšťal na priečinku, ktorý mám zálohovaný.
 
 @odkazy
 INŠTALÁCIA A PREHĽAD | https://code.claude.com/docs/en/overview
 CLAUDE.MD A PAMÄŤ | https://code.claude.com/docs/en/memory
 
 @zaver
-hlavne: Ďalšia lekcia: ako pustiť Claude Code cez OmniRoute, keď nechceš platiť predplatné.
+hlavne: Ďalšia lekcia: Claude Cowork -- to isté, ale pre prácu, ktorá nie je kód, a s napojením na tvoje appky.
 vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

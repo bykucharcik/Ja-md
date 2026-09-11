@@ -1,0 +1,100 @@
+# Modul 02 — Claude / lekcia 1
+modul: 02 Claude
+cislo: 02.1
+titul: Na čo je celý Claude
+stopa: CLAUDE × KUCHAR.AI
+stitky: Claude | 13 min | Mapa
+
+@obal
+stitok: NA ČO JE CELÝ CLAUDE
+h1: Jeden model.
+h2: Štyri produkty.
+h3: Používaš jeden.
+nadstitok: ČO ŤA TÁTO LEKCIA NAUČÍ
+hlavne: Zorientovať sa v celom Claudovi -- chat, Claude Code, Cowork, Design -- a vedieť, ktorý z nich má tvoju úlohu spraviť.
+vedlajsie: Za všetkými je ten istý model. Líšia sa tým, čoho sa smú dotknúť a koľko práce spravia bez teba.
+karta: PÝTAŠ SA | Chat | ODPOVIE, PRÁCU SPRAVÍŠ TY
+karta: ZADÁVAŠ | Code · Cowork | SPRAVIA PRÁCU ZA TEBA
+vysledok: Po dokončení vieš pri každej svojej úlohe povedať, kam s ňou ideš a prečo.
+drobne: Stav k 11. 9. 2026. Dostupnosť produktov závisí od plánu a niektoré sú v beta alebo research preview -- over si to vo svojom účte.
+
+@strana
+stitok: ZÁKLAD
+h1: Model je motor.
+h2: Produkt je auto.
+
+@text
+Claude je jazykový model od Anthropicu. Model sám je len funkcia: dáš text, vráti text. Všetko naokolo -- okno v prehliadači, terminál, desktop appka -- je **obal**, ktorý ten model niekam pripojí a niečo mu dovolí.
+
+@text
+Preto je zbytočné pýtať sa „ktorý Claude je lepší". Je to ten istý model. Otázka znie: **čoho sa smie dotknúť** a **koľko krokov spraví bez teba**.
+
+@kroky
+01 | ROVNAKÉ | Ako uvažuje, ako píše, čo vie. To je model.
+02 | ROZDIELNE | Prístup k tvojim súborom, právo spúšťať príkazy, pripojenie na tvoje appky, dĺžka behu bez teba.
+03 | DÔSLEDOK | Nástroj nevyberáš podľa inteligencie. Vyberáš podľa toho, čo sa má na konci naozaj stať.
+
+@strana
+stitok: ŠTYRI PRODUKTY
+h1: Kde Claude býva.
+h2: A čo tam robí.
+
+@tabulka PRODUKT | ČO TO ROBÍ | KEDY PO ŇOM SIAHNUŤ
+Chat (claude.ai) | Rozhovor, rozbor, písanie. Nahráš súbory, dostaneš text. Nedotkne sa tvojho disku. | Otázka, rozbor, prvá verzia textu. Keď výsledok chceš prečítať.
+Claude Code | Beží v priečinku. Číta tvoje súbory, mení ich, spúšťa príkazy, robí s gitom. | Keď sa má niečo v tvojich súboroch naozaj zmeniť. Nie je to len na kód.
+Claude Cowork | To isté, ale pre bežnú prácu a s napojením na tvoje appky. Zadáš cieľ, odídeš, vrátiš sa k hotovému. | Dlhšia úloha cez viac nástrojov -- výskum, dokument, poprehadzovanie súborov.
+Claude Design | Plátno na návrhy: decky, one-pagery, prototypy, vizuály. Drží tvoj štýl. | Keď výsledok nie je text, ale niečo, na čo sa pozerá.
+
+@pravidlo AKO SA ROZHODNÚŤ ZA TRI SEKUNDY
+Chceš to prečítať? **Chat.** Má sa to zmeniť v súboroch? **Code.** Má to bežať bez teba cez viac appiek? **Cowork.** Má to niekto vidieť? **Design.**
+
+@strana
+stitok: ČO VÄČŠINA NEPOUŽÍVA
+h1: Deväťdesiat percent
+h2: ľudí ostane v chate.
+
+@text
+Podľa toho, čo vidím okolo seba, drvivá väčšina ľudí s Claudom iba četuje. Je to pochopiteľné -- chat je viditeľný, zvyšok si musíš nájsť. Ale je to zároveň dôvod, prečo im AI šetrí minúty namiesto hodín.
+
+@pojmy
+CHAT | Ty si vykonávacia jednotka. Claude ti povie, čo robiť, a ty to spravíš. Kopírovanie tam a späť je tvoja práca.
+CODE / COWORK | Vykonávacia jednotka je on. Ty zadávaš, kontroluješ a schvaľuješ. Tvoja práca je rozhodovať, nie prepisovať.
+PRECHOD | Nie je technický. Je to zvyk. Prvý týždeň ti bude čudné nechať niečo dobehnúť bez teba.
+BRZDA | Väčšina ľudí sa zasekne na tom, že nevie, čo by tomu vlastne zadala. Preto máš tie tri úlohy z modulu 01.
+
+@pravidlo TEST, ČI SI EŠTE VO FÁZE JEDNA
+Keď si naposledy kopíroval text z Clauda do iného okna? Ak dnes, si vo fáze jedna. Nie je to hanba -- je to len miesto, odkiaľ sa ideš pohnúť.
+
+@strana
+stitok: PRVÁ ÚLOHA
+h1: Rozdeľ si to.
+h2: Na štyri kôpky.
+
+@zoznam
+01 | Zober tie tri úlohy z modulu 01 a k jednej dopíš produkt z tabuľky na strane 03.
+02 | Ku každej napíš jednu vetu: **čo sa má na konci naozaj stať.** Nie „pomôže mi s tým", ale „v priečinku bude súbor X".
+03 | Vyber tú, pri ktorej je odpoveď najkonkrétnejšia. Tá ide prvá.
+04 | Tie dve ostatné nechaj tak. Ideš robiť jednu vec poriadne, nie tri polovične.
+
+@pravidlo AK TI VYJDE VŠETKO NA CHAT
+Tak buď sú tie úlohy naozaj malé, alebo si ich napísal príliš všeobecne. Skús ich prepísať tak, aby v každej bolo sloveso a konkrétny výstup. Zrazu ti polovica prejde do Cowork.
+
+@strana
+stitok: FINÁLNY CHECKLIST
+h1: Hotovo.
+h2: Vieš, kam klopať.
+
+@checklist
+Viem, že za všetkými produktmi je ten istý model.
+Viem vymenovať štyri produkty a povedať, na čo sú.
+Viem rozhodnúť za tri sekundy, kam patrí moja úloha.
+Pri svojich úlohách mám napísané, čo sa má na konci stať.
+Vybral som si jednu úlohu, s ktorou idem ďalej.
+
+@odkazy
+PREHĽAD MODELOV | https://platform.claude.com/docs/en/models/overview
+ČO JE CLAUDE CODE | https://code.claude.com/docs/en/overview
+
+@zaver
+hlavne: Ďalšia lekcia: Claude v prehliadači -- projekty, artefakty a súbory. Tri veci, ktoré väčšina ľudí nikdy nezapne.
+vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai

@@ -3,19 +3,20 @@ modul: 01 Start Here
 cislo: 01.1
 titul: Start Here
 stopa: ŠTART × KUCHAR.AI
-stitky: Štart | 8 min | Prečítaj prvé
+stitky: Štart | 9 min | Prečítaj prvé
 
 @obal
 stitok: START HERE
-h1: Nečítaj to celé.
-h2: Použi to.
-nadstitok: ČO ŤA TENTO KURZ NAUČÍ
-hlavne: Vedieť si vybrať nástroj, položiť otázku tak, aby si dostal použiteľnú odpoveď, a overiť si, či ju môžeš pustiť ďalej.
-vedlajsie: Nie je to prehľad AI noviniek. Je to šesť modulov, ktoré po sebe idú, a na konci každého je vec, ktorú vieš urobiť sám.
-karta: MODULOV | 6 | OD ZÁKLADOV PO ŠABLÓNY
-karta: JEDNA LEKCIA | 10–15 min | ČÍTANIE + JEDNA ÚLOHA
-vysledok: Po tomto dokumente vieš, v akom poradí to čítať a čo od každého modulu čakať.
-drobne: Fakty v kurze sú overené k 10. 9. 2026. AI nástroje sa menia každý mesiac — kde je niečo pohyblivé, je to v texte označené a máš tam odkaz na zdroj.
+h1: Chat je fáza jedna.
+h2: Ty ideš
+h3: na fázu dva.
+nadstitok: ČO TENTO KURZ ZMENÍ
+hlavne: Prestaneš sa AI pýtať a začneš jej zadávať. Rozdiel medzi tým je celý tvoj pracovný deň.
+vedlajsie: Kto používa chat, ušetrí minúty. Kto vie postaviť agenta, ušetrí dni. Medzi tými dvoma ľuďmi sa práve otvára priepasť, ktorá sa už nezatvorí.
+karta: FÁZA 1 | Chat | OTÁZKA -> ODPOVEĎ
+karta: FÁZA 2 | Agent | CIEĽ -> HOTOVÁ PRÁCA
+vysledok: Po tomto dokumente vieš, čo ťa v kurze čaká, v akom poradí to ide a prečo to nemá zmysel odkladať.
+drobne: Fakty v kurze sú overené k 11. 9. 2026 z oficiálnych zdrojov. Kde je údaj pohyblivý — ceny, názvy modelov, dostupnosť — je v lekcii dátum a odkaz.
 
 @strana
 stitok: TVOJE VIDEO
@@ -23,91 +24,87 @@ h1: Pozri to najprv.
 h2: Potom čítaj.
 
 @text
-Vo videu ti poviem, prečo je kurz postavený takto a čo z neho máš čakať. Trvá pár minút a ušetrí ti to zlé očakávania. PDF-ká sú to, k čomu sa budeš vracať -- video je to, čo ti dá kontext.
+Vo videu ti poviem, prečo je kurz postavený takto a čo z neho máš čakať. Pár minút, a ušetrí ti to zlé očakávania. PDF-ká sú to, k čomu sa budeš vracať -- video je to, čo ti dá kontext.
 
 @video ÚVODNÉ VIDEO
 Ako tento kurz použiť | 6 min | {{VIDEO_01_01}}
 
 @pravidlo AK VIDEO NEJDE
-Nič sa nedeje, kurz sa dá prejsť aj bez neho. Každá lekcia je samostatná a nepredpokladá, že si video videl.
+Nič sa nedeje. Každá lekcia je samostatná a nepredpokladá, že si video videl.
 
 @strana
-stitok: AKO TO POUŽIŤ
-h1: Jedna lekcia.
-h2: Jedna úloha.
+stitok: PREČO TERAZ
+h1: Rozdiel už
+h2: nie je v nástroji.
 
 @text
-Tento kurz nie je na prečítanie za večer. Je stavaný tak, že si otvoríš jednu lekciu, prejdeš ňou za desať minút a hneď spravíš úlohu, ktorá je v nej. Bez tej úlohy si len čítal — a čítanie o AI ťa nenaučí nič, rovnako ako čítanie o plávaní.
+Do roku 2025 bolo jedno, či AI používaš. Kto ju nepoužíval, stratil pár hodín mesačne. Dnes je to inak: rozdiel medzi človekom, ktorý AI iba píše otázky, a človekom, ktorý jej zadáva ciele, je násobok, nie percento.
 
 @kroky
-01 | PREČÍTAJ | Celú lekciu naraz. Nezastavuj sa pri každom pojme, väčšina sa vysvetlí o stranu ďalej.
-02 | SPRAV ÚLOHU | Každá lekcia má stranu "prvá úloha". Spusti ju na svojej skutočnej práci, nie na cvičnom príklade.
-03 | ODŠKRTNI | Na poslednej strane je checklist. Ak niečo neodškrtneš, vráť sa k tej strane. Nepokračuj ďalej.
+01 | CHAT | Spýtaš sa, dostaneš odpoveď, **prácu spravíš ty**. Ušetrí ti to minúty.
+02 | AGENT | Zadáš cieľ, on si to rozloží na kroky, použije nástroje a **prinesie hotovú vec**. Ušetrí ti to hodiny.
+03 | ROZDIEL | Nie je v modeli. Je v tom, či si mu dal kontext, nástroje a postupy. To sa dá naučiť za víkend.
 
-@pravidlo PRAVIDLO
-Jedna lekcia denne ťa dostane ďalej než šesť lekcií za sobotu. Nie preto, že by si to nepochopil — ale preto, že medzi lekciami potrebuješ vlastnú prácu, na ktorej to skúsiš.
+@pravidlo POCTIVO
+Čísla typu „päťnásobne produktívnejší" sú odhady ľudí, ktorí to predávajú. Neber ich ako meranie. Ber ako fakt len toto: agent spraví prácu, chat ju opíše. Zvyšok si odmeraj sám -- naučíš sa to v kurze.
 
 @strana
-stitok: ČO JE V KURZE
-h1: Šesť modulov.
+stitok: ČO SA NAUČÍŠ
+h1: Štyri moduly.
 h2: Idú po sebe.
 
 @kroky
-01 | 02 CLAUDE | Čo je Claude, ako ho používať v prehliadači aj v termináli, ako sa ho pýtať a aké má modely a limity.
-02 | 03 CHATGPT | To isté pre ChatGPT — plus poctivé porovnanie, kedy siahnuť po ktorom.
-03 | 04 SKILLS | Ako si Claudovi napíšeš vlastný postup, ktorý si zapamätá a spustíš ho jedným príkazom.
-04 | 05 CHECKLISTY | Ako otestovať AI, ktorú chceš niekam pustiť. Rozhovor, pravidlá, bezpečnosť.
-05 | 06 ŠABLÓNY | Hotové promptové kostry na obsah, biznis, výskum, kód a inštrukcie pre agenta.
+01 | 02 CLAUDE | Celý ekosystém: chat, Claude Code, Cowork, Design. Ako si postaviť vlastného agenta. Ktorý model kedy a **čo hovoria čísla**.
+02 | 03 CHATGPT | To isté pre ChatGPT vrátane GPT-6 Astra. Kde je silnejší, kde slabší, a kedy siahnuť po ktorom.
+03 | 04 SKILLS | Ako zabalíš svoj postup tak, že ho AI spustí jedným príkazom. Toto je miesto, kde sa z teba stáva niekto, kto má vlastné nástroje.
+04 | 05 + 06 | Checklisty a šablóny. **Zamknuté** -- otvoria sa neskôr.
 
 @pravidlo PORADIE
-Moduly 02 a 03 sú základ, tie prejdi ako prvé. Moduly 04 až 06 sú nezávislé — ber si z nich to, čo práve potrebuješ.
+Modul 02 je základ, ten prejdi celý. Modul 03 ber ako doplnok -- prečítaj aspoň porovnanie. Modul 04 je ten, po ktorom ti to začne šetriť čas naozaj.
+
+@strana
+stitok: ČO BUDEŠ MAŤ V RUKE
+h1: Nie poznámky.
+h2: Veci.
+
+@pojmy
+PO MODULE 02 | Nastavený Claude, vlastný CLAUDE.md a jedného agenta, ktorý ti robí konkrétnu úlohu.
+PO MODULE 03 | Vlastnú tabuľku na tri riadky: ktorý nástroj na ktorú prácu. Koniec večného rozhodovania.
+PO MODULE 04 | Aspoň jeden vlastný skill, ktorý spustíš príkazom -- a postup, ako si spraviť ďalších desať.
+CEZ CELÝ KURZ | Poriadok v priečinkoch, ktorý AI rozumie. Toto je tá nudná vec, na ktorej to väčšine ľudí padne.
+
+@pravidlo AKO SPOZNÁŠ, ŽE TO FUNGUJE
+Nie tým, že si to prečítal. Tým, že v piatok spravíš vec, ktorá ti v pondelok trvala hodinu -- a nesadneš si k nej.
 
 @strana
 stitok: PRVÁ ÚLOHA
-h1: Napíš si, čo chceš.
+h1: Napíš si tri veci.
 h2: Skôr než začneš.
 
 @text
-Skoro každý, kto sa učí s AI, robí tú istú chybu: skúša nástroje bez toho, aby vedel, na čo ich chce. Potom po mesiaci vie desať funkcií a nezmenil si ani jeden pracovný postup.
-
-@text
-Vezmi papier alebo poznámkový súbor a napíš tri konkrétne veci, ktoré ti dnes žerú čas. Nie "chcem byť produktívnejší". Skôr takto:
+Väčšina ľudí sa učí AI tak, že skúša nástroje. Po mesiaci vie desať funkcií a nezmenil ani jeden pracovný postup. Ty to spravíš opačne: najprv si napíš, čo chceš, aby za teba niekto robil.
 
 @zoznam
 01 | „Každý pondelok píšem to isté zhrnutie z piatich mailov."
 02 | „Robím prepisy z hovorov a trvá mi to hodinu."
 03 | „Neviem sa dokopať napísať popisy produktov."
-04 | Toto sú tvoje tri testy. Po každom module sa vráť a pozri sa, či už na nejaký z nich vieš odpovedať.
+04 | Toto sú tvoje tri testy. Po každom module sa vráť a pozri, či už na nejaký vieš odpovedať.
 
 @pravidlo PREČO TO ROBÍME
-Až keď máš konkrétnu úlohu, vieš rozoznať dobrú odpoveď od hlúpej. Bez nej ti bude znieť dobre všetko, čo ti model napíše -- a presne tak vznikne pocit, že AI funguje, aj keď ti nič nešetrí.
+Bez konkrétnej úlohy ti bude znieť dobre všetko, čo ti model napíše. Presne tak vznikne pocit, že AI funguje, aj keď ti nič nešetrí. Konkrétna úloha je jediná vec, ktorá ti dá merítko.
 
 @strana
-stitok: ČO OD TOHO ČAKAŤ
-h1: Nie je to mágia.
-h2: A nie je to hračka.
-
-@pojmy
-ČO VIE | Prepísať, zhrnúť, roztriediť, navrhnúť varianty, vysvetliť cudzí text, napísať prvú verziu čohokoľvek.
-ČO NEVIE | Vedieť, čo sa stalo po jeho dátume tréningu, ak si to nedohľadá. Poznať tvoje interné čísla, ak mu ich nedáš.
-KDE KLAME | Keď nevie, často si domyslí. Znie to rovnako sebavedomo ako pravda. Čísla a citácie si over vždy.
-ČO S TÝM | Ber prvý výstup ako prvú verziu od šikovného stážistu. Nie ako hotovú prácu.
-
-@pravidlo JEDNA VETA, KTORÚ SI ZAPAMÄTAJ
-Model nevie, čo nevie. Ty áno -- a to je celý rozdiel medzi človekom, ktorý s AI ušetrí päť hodín týždenne, a človekom, ktorý s ňou pošle klientovi vymyslené číslo.
-
-@strana
-stitok: FINÁLNY CHECKLIST
+stitok: POĎME NA TO
 h1: Hotovo.
-h2: Poď na modul 02.
+h2: Modul 02 ťa čaká.
 
 @checklist
-Viem, že každá lekcia má úlohu a checklist.
+Pozrel som úvodné video (alebo viem, že ho preskočiť môžem).
+Rozumiem rozdielu medzi chatom a agentom.
 Napísal som si tri konkrétne veci, ktoré chcem od AI dostať.
-Chápem, že prvý výstup je prvá verzia, nie hotová práca.
-Viem, že čísla a citácie si musím overiť.
-Idem na modul 02 a nezačínam modulom 06.
+Viem, že moduly 05 a 06 sú zatiaľ zamknuté.
+Idem na modul 02 a nezačínam modulom 04.
 
 @zaver
-hlavne: Ak ťa niečo v kurze nesedí alebo je to zastarané, napíš to. Aktualizovať sa to bude častejšie ako raz.
+hlavne: Prvá lekcia modulu 02 ti za desať minút ukáže, čo všetko Claude vlastne je -- a väčšinu z toho pravdepodobne nepoužívaš.
 vedlajsie: Ďalšie praktické AI návody nájdeš na @kuchar.ai
