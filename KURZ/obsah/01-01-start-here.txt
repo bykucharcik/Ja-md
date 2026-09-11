@@ -18,6 +18,20 @@ vysledok: Po tomto dokumente vieš, v akom poradí to čítať a čo od každéh
 drobne: Fakty v kurze sú overené k 10. 9. 2026. AI nástroje sa menia každý mesiac — kde je niečo pohyblivé, je to v texte označené a máš tam odkaz na zdroj.
 
 @strana
+stitok: TVOJE VIDEO
+h1: Pozri to najprv.
+h2: Potom čítaj.
+
+@text
+Vo videu ti poviem, prečo je kurz postavený takto a čo z neho máš čakať. Trvá pár minút a ušetrí ti to zlé očakávania. PDF-ká sú to, k čomu sa budeš vracať -- video je to, čo ti dá kontext.
+
+@video ÚVODNÉ VIDEO
+Ako tento kurz použiť | 6 min | {{VIDEO_01_01}}
+
+@pravidlo AK VIDEO NEJDE
+Nič sa nedeje, kurz sa dá prejsť aj bez neho. Každá lekcia je samostatná a nepredpokladá, že si video videl.
+
+@strana
 stitok: AKO TO POUŽIŤ
 h1: Jedna lekcia.
 h2: Jedna úloha.

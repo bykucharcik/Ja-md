@@ -241,6 +241,29 @@ SIPKA = (
 )
 
 
+def blok_video(blok):
+    """@video NÁZOV | dĺžka | adresa -- veľká klikateľná karta na video.
+
+    Video sa do PDF vložiť nedá (prehralo by sa len v Adobe Acrobate).
+    Karta preto odkazuje tam, kde video naozaj beží.
+    """
+    von = []
+    for riadok in blok["riadky"]:
+        if not riadok.strip():
+            continue
+        nazov, dlzka, adresa = rozsek(riadok, 3)[:3]
+        von.append(
+            f'<a class="video" href="{html_mod.escape(adresa, quote=True)}">'
+            f'<div class="video__vlavo">'
+            f'<div class="video__stitok">{t(blok["argument"] or "VIDEO")}</div>'
+            f'<div class="video__nazov">{t(nazov)}</div></div>'
+            f'<div class="video__vpravo">'
+            f'<div class="video__dlzka">{t(dlzka)}</div>'
+            f'<div class="video__akcia">POZRI{SIPKA}</div></div></a>'
+        )
+    return '<div class="blok">' + "".join(von) + "</div>"
+
+
 def blok_odkazy(blok):
     von = []
     for riadok in blok["riadky"]:
@@ -289,6 +312,7 @@ BLOKY = {
     "pravidlo": blok_pravidlo,
     "tabulka": blok_tabulka,
     "checklist": blok_checklist,
+    "video": blok_video,
     "odkazy": blok_odkazy,
     "text": blok_text,
     "zaver": blok_zaver,
@@ -478,6 +502,10 @@ def main():
     dvojice = []
     for subor in subory:
         meta, bloky = rozdel_lekciu(subor.read_text(encoding="utf-8"))
+        zastupne = sorted(set(re.findall(r"\{\{[A-Z0-9_]+\}\}", subor.read_text(encoding="utf-8"))))
+        if zastupne:
+            print(f"  !!   {subor.stem}: nedoplnené {', '.join(zastupne)}")
+
         cesta_html = VYSTUP_HTML / (subor.stem + ".html")
         cesta_html.write_text(zostav_html(meta, bloky), encoding="utf-8")
         print(f"  HTML {cesta_html.name}")

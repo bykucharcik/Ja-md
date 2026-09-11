@@ -94,6 +94,7 @@ h2: Vyber jeden.
 | `@terminal NÁZOV` | Kód alebo šablóna. Zachová riadkovanie tak, ako to napíšeš. |
 | `@pravidlo ŠTÍTOK` | Zvýraznený odsek so štítkom vľavo. |
 | `@checklist` | Jedna položka na riadok, dostane štvorček. |
+| `@video ŠTÍTOK` | `Názov videa \| dĺžka \| adresa` — veľká klikateľná oranžová karta. |
 | `@odkazy` | `NÁZOV \| https://...` |
 | `@zaver` | `hlavne:` a `vedlajsie:` — dve vety na koniec. |
 
@@ -104,6 +105,27 @@ h2: Vyber jeden.
 - ` -- ` → pomlčka, ` -> ` → šípka
 - `„úvodzovky"` sa samy zatvoria správne
 - za jednopísmenovými predložkami sa dopĺňa pevná medzera
+
+## Videá
+
+**Video sa do PDF vložiť nedá.** Technicky to formát umožňuje, ale prehrá sa len
+v Adobe Acrobate — v prehliadači, v náhľade na Macu ani v mobile to nikto
+neuvidí. Preto video žije na platforme a PDF naň odkazuje blokom `@video`.
+
+```
+@video ÚVODNÉ VIDEO
+Ako tento kurz použiť | 6 min | https://...
+```
+
+Kým adresu nemáš, nechaj tam zástupnú hodnotu v tvare `{{VIDEO_01_01}}`.
+Generátor ťa na každú nedoplnenú upozorní pri každom builde, takže sa nestane,
+že pošleš PDF s nefunkčným odkazom.
+
+Nájdeš ich aj ručne:
+
+```bash
+grep -rn "{{" KURZ/obsah/
+```
 
 ## Pravidlá obsahu
 
