@@ -114,7 +114,7 @@ CLAUDE.md má konkrétne pravidlá.
 Viem nájsť /status, /permissions a /context.
 
 @box PRE POKROČILÝCH
-Pri dlhšej práci si nechaj uložiť stav: cieľ, hotové kroky, otvorené otázky a ďalší krok. Nové sedenie potom nezačínaš vysvetľovaním celej histórie.
+Pri dlhšej práci si nechaj uložiť stav do súboru: cieľ, hotové kroky, otvorené otázky a ďalší krok. Nové sedenie potom nezačínaš vysvetľovaním celej histórie — otvoríš ten súbor. A `/context` ti ukáže, koľko z okna zaberá tvoje nastavenie ešte pred prvou správou.
 
 @box ČO S TÝM VIEŠ SPRAVIŤ ĎALEJ
 Ľudia bez programátorského vzdelania si takto stavajú vlastné malé nástroje — od trackera tréningov po prehľad, ktorý si roky ťahali v exceli. Opíšeš, čo chceš, po slovensky. Zvyšok je jeho práca.

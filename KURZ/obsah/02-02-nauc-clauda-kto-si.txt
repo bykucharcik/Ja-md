@@ -48,7 +48,7 @@ Pamäť je to, čo si Claude odnáša z rozhovorov naprieč chatmi. Ak prichádz
 Import väčšinou prenesie pracovné veci a osobné podhodnotí. Preto nasleduje druhý krok — necháš sa vyspovedať.
 
 @box PRE POKROČILÝCH
-Import pamäte je dostupný na plánoch Free, Pro aj Max. Ak si sa bál prejsť na Clauda len preto, že „ťa tá druhá AI pozná", toto je presne tá prekážka, ktorú to odstraňuje.
+Import pamäte je dostupný na plánoch Free, Pro, Max aj Team. Ak si sa bál prejsť na Clauda len preto, že „ťa tá druhá AI pozná", toto je presne tá prekážka, ktorú to odstraňuje.
 
 @strana
 stitok: POSTUP

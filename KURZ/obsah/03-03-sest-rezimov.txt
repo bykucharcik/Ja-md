@@ -22,11 +22,11 @@ h1: ChatGPT nie je jeden nástroj. Je to šesť nástrojov v jednom poli.
 
 @tabulka REŽIM | KEDY HO ZAPNÚŤ | AKO
 Canvas | Hotový text, v ktorom chceš prepísať len jeden odsek. | Vyber Canvas pri poli správy.
-Study | Učíš sa novú tému a chceš si overiť, či ti to naozaj ostalo. | Tlačidlo plus, napíš `@study`.
+Study | Učíš sa novú tému a chceš si overiť, či ti to naozaj ostalo. | Tools -> Study and learn, alebo napíš `@study`.
 Hlas | Auto, prechádzka, sauna. Všade, kde nechceš písať. | Ikona hlasu v appke.
 Obrázky | Rýchly vizuál, úprava vlastnej fotky, náhľad priestoru. | Opíš, čo chceš, alebo nahraj fotku.
 Agent | Opakovaná klikacia práca na weboch. | Tlačidlo plus, režim agenta.
-Deep research | Otázka, na ktorú by si inak čítal 50 článkov. | Tlačidlo plus, `@Deepresearch`.
+Deep research | Otázka, na ktorú by si inak čítal 50 článkov. | Tools -> Deep research, alebo `/Deepresearch`.
 
 @box NAJVÄČŠIA ÚSPORA ZA NAJMENEJ PRÁCE
 **Canvas.** Dostaneš text, ktorý je z 90 % dobrý, a jeden odsek sedí zle. Bežná cesta: prepíšeš celé zadanie a on ti pokazí aj tie časti, s ktorými si bol spokojný. Canvas otvorí editor vedľa chatu. Označíš problémový kus, povieš, čo s ním, a zvyšok ostane nedotknutý. Keď to raz vyskúšaš, späť už nejdeš.
@@ -38,7 +38,7 @@ h1: Vyskúšaj tie dva, ktoré ti dnes ušetria najviac.
 @kroky
 01 | Otvor svoj text v Canvase. | Vlož hotový text, zapni Canvas. Označ jeden odsek a napíš: „len tento uprav na kratší a konkrétnejší, zvyšok nechaj."
 02 | Over, či naozaj nechal zvyšok. | Prvá vec, ktorú si skontroluj. Keď prepísal aj ostatné, máš zlú zmenu vrátiť na jeden klik.
-03 | Pusti si study na téme z tohto kurzu. | `@study` a vlož napríklad túto lekciu. Nechaj si ju rozobrať a potom sa nechaj vyskúšať.
+03 | Pusti si study na téme z tohto kurzu. | V ponuke Tools vyber Study and learn (alebo napíš `@study`) a vlož napríklad túto lekciu. Nechaj sa vyskúšať.
 04 | Odpovedz bez pozerania. | Rozdiel medzi „chápem to" a „viem to" zistíš presne tu. To druhé ti ostane o mesiac.
 
 @box HLASOVÝ REŽIM: KDE TO NAOZAJ ZABERIE
@@ -65,7 +65,7 @@ Ku každému tvrdeniu daj odkaz a dátum kontroly.
 Na konci napíš, čo z toho platí len pre platené plány.
 
 @text drobne
-Čím konkrétnejšia otázka, tým lepší report. Jednoriadková otázka ti vráti jednoriadkovú hodnotu. A po dobehnutí si vždy otvor aspoň tri odkazy — presvedčivý tón nie je dôkaz.
+Než začne pracovať, ukáže ti plán výskumu. **Tam ho oprav** — potom už len beží. Report trvá zhruba 5 až 30 minút. Po dobehnutí si otvor aspoň tri odkazy; presvedčivý tón nie je dôkaz.
 
 @box AGENT: ČO SMIE A ČO NIE
 Agent si otvorí prehliadač a klikaním prejde weby za teba. Vyplní formulár, porovná ceny, pozbiera možnosti. **Nikdy za teba nepotvrdí nákup, odoslanie ani rezerváciu bez tvojho schválenia** — pri každom kroku, ktorý ťa k niečomu zaväzuje, sa spýta. Pred spustením zavri karty s bankou a osobnými účtami a začni niečím nedôležitým, aby si videl, ako sa správa.
@@ -89,5 +89,6 @@ Vyber jeden režim, ktorý si dnes nepoužil, a zajtra ho nasaď na skutočnú p
 
 @zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
 OpenAI: canvas | https://help.openai.com/en/articles/9930697-what-is-the-canvas-feature-in-chatgpt
-OpenAI: deep research | https://help.openai.com/en/articles/10500283-deep-research-faq
+OpenAI: study mode | https://help.openai.com/en/articles/11780217-chatgpt-study-mode-faq
+OpenAI: deep research | https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt
 OpenAI: režim agenta | https://help.openai.com/en/articles/11752874-chatgpt-agent

@@ -76,6 +76,6 @@ Pri dlhšej úlohe si vypýtaj priebežný súbor so stavom práce. Dôležité 
 Ulož porovnanie aj vlastný výsledok testu. V 03.7 sa naučíš zadávať tak, aby si vedel dohľadať, odkiaľ sa vzalo každé číslo.
 
 @zdroje OFICIÁLNE ZDROJE · OVERENÉ 11. 9. 2026
-OpenAI: GPT-5.6 a GPT-6 Pro v ChatGPT | https://help.openai.com/en/articles/20001354-gpt-56-in-chatgpt
-OpenAI: modely pre Work a Codex | https://help.openai.com/en/articles/9624314-model-release-notes
+OpenAI: GPT-6 Astra | https://openai.com/index/gpt-6-astra/
+OpenAI: spotreba Astry vo Work a Codex | https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex
 OpenAI: zadávanie úloh | https://developers.openai.com/codex/prompting

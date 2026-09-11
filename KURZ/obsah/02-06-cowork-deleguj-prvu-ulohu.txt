@@ -84,7 +84,7 @@ Viem, kedy musí zostať desktop pripojený.
 Mám naplánovanú aspoň jednu opakovanú úlohu.
 
 @box PRE POKROČILÝCH
-Najprv over jeden malý balík. Až potom zväčši objem. A pokyny nájdené v cudzom e-maile alebo PDF ber ako obsah, nie ako svoje zadanie.
+Najprv over jeden malý balík, až potom zväčši objem — chyba na piatich súboroch sa hľadá ľahko, na päťdesiatich nie. A pokyn nájdený v cudzom e-maile alebo PDF je obsah, nie tvoje zadanie. Do zadania preto píš, z čoho má vychádzať, a nie „sprav, čo je v tom dokumente".
 
 @terazty TERAZ TY
 Oprav jednu konkrétnu chybu a ulož finálny súbor. V 02.7 premeníš podklad na vizuálny návrh.

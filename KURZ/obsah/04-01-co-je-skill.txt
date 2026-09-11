@@ -63,7 +63,7 @@ h1: Vyber si svoj prvý postup. Päť viet.
 @kroky
 01 | Napíš tri veci, ktoré robíš stále rovnako. | Nie tri veci, ktoré by si chcel automatizovať. Tri, ktoré si už aspoň raz dotiahol do dobrého výsledku.
 02 | Ku každej doplň päť viet. | Spúšťam ho, keď _____. Potrebuje _____. Vytvorí _____. Nesmie _____. Správnosť overím _____.
-03 | Vyhoď tie, pri ktorých sa zaseknete. | Ak nevieš doplniť piatu vetu, nemáš postup. Máš prianie. Sprav tú úlohu najprv ručne s AI a zachyť kroky, ktoré fungovali.
+03 | Vyhoď tie, pri ktorých sa zasekneš. | Ak nevieš doplniť piatu vetu, nemáš postup. Máš prianie. Sprav tú úlohu najprv ručne s AI a zachyť kroky, ktoré fungovali.
 04 | Z tej, čo zostala, bude tvoj skill. | Vyber tú, ktorá sa opakuje najčastejšie. Nie tú, čo je najzložitejšia.
 
 @box NAJCENNEJŠIA ČASŤ SKILLU

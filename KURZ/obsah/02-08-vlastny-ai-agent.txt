@@ -90,7 +90,7 @@ V novom sedení vznikol výstup podľa mojich podkladov.
 Viem odlíšiť trvalé pravidlo od jednorazovej opravy.
 
 @box PRE POKROČILÝCH
-Do kontextu doplň aj vzor dobrého výsledku a vysvetli, prečo je dobrý. Konkrétna ukážka je často užitočnejšia než ďalších 20 všeobecných pravidiel.
+Do kontextu doplň vzor dobrého výsledku **a vetu, prečo je dobrý**. Jedna konkrétna ukážka zaberie viac než ďalších dvadsať všeobecných pravidiel. A keď agent spraví tú istú chybu druhýkrát, nepíš mu opravu do chatu — dopíš ju do pravidiel. Inak ju spravíš aj tretíkrát.
 
 @terazty TERAZ TY
 Dokonči jeden výstup s vlastným kontextom. V 02.9 zistíš, aký model naň vlastne potrebuješ.
