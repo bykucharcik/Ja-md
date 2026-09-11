@@ -18,6 +18,8 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 KOREN = Path(__file__).resolve().parent.parent
 OBSAH = KOREN / "obsah"
 VYSTUP_HTML = KOREN / "html"
@@ -483,6 +485,10 @@ def main():
 
     if not bez_pdf:
         vytlac_pdf(dvojice)
+        # celý kurz v jednom PDF — len keď sme generovali všetko
+        if not argumenty:
+            import kniha
+            kniha.zlucit()
 
     print(f"\nHotovo: {len(dvojice)} lekcií.")
     return 0
